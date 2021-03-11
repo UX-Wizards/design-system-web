@@ -10,6 +10,15 @@
     <script src="https://unpkg.com/prismjs@1.23.0/components/prism-core.min.js"></script>
     <script src="https://unpkg.com/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
+    <!-- Replace with Production versions when complete -->
+    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.js"></script>
+    <script crossorigin src="https://unpkg.com/@material-ui/core@4.11.3/umd/material-ui.development.js"></script>
+    <!-- Fix This -->
+    <script crossorigin src="https://unpkg.com/@material-ui/lab@5.0.0-alpha.26/umd/material-ui.development.js"></script>
+    <title>UX Wizards Design System v1</title>
   </head>
   <body class="bg-white">
     <div class="flex">
@@ -74,7 +83,20 @@
         <div class="flex-col flex-shrink-0 px-4 py-4">
           <h1 class="text-3xl pb-4">Logos and Icons</h1>
           <div class="container">
+            <h2 class="text-2xl pb-4">Logos</h2>
+            <p>The Wizards hat will always accompany the UX WIZARDS text.  The rectangular version will be the main logo and includes an arrow cursor as if the logo is being clicked on.</p><br>
+            <p>The square and circle versions are to be used for things such as our Slack group’s profile.</p><br>
+            <p class="pb-4">There are three variations in colors - white text on black, black text on white and white text on our branded Navy, Magician’s Cloak.</p>
+            <img src="assets/logos.png" alt="">
+            <h2 class="text-2xl pb-4 pt-16">Clearance</h2>
+            <p>To ensure that logos are clearly visible, surround with clear space that is free of type, graphics, and other elements to avoid visual clutter.</p>
+            <img src="assets/clearance.png" alt="">
+            <h2 class="text-2xl pb-4 pt-12">Icongraphy Style</h2>
+            <p>Icon styles explain comes here, Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall. Nearly-Headless Nick now string them together, and answer me this, which creature would you be unwilling to kiss?</p>
 
+            <img class="pt-16"src="assets/icongraphy.png" alt="">
+
+            <h2 class="text-2xl pb-4 pt-16">Library</h2>
             <div class="grid grid-cols-2 gap-4">
               <div class="flex flex-col">
                 <div class="flex flex-row bg-gray-200 rounded-t-lg">
@@ -86,7 +108,7 @@
                     😀
                   </div>
                 </div>
-                <div class="flex flex-row justify-center bg-gray-100">
+                <div class="flex flex-row justify-center bg-gray-100 rounded-b-lg">
                   <img class="w-32" src="logo.png" alt="">
                 </div>
               </div>
@@ -100,7 +122,7 @@
                     😀
                   </div>
                 </div>
-                <div class="flex flex-row justify-center bg-gray-100">
+                <div class="flex flex-row justify-center bg-gray-100 rounded-b-lg">
                   <img class="w-32" src="logo.png" alt="">
                 </div>
               </div>
@@ -114,11 +136,41 @@
                     😀
                   </div>
                 </div>
-                <div class="flex flex-row justify-center bg-gray-100">
+                <div class="flex flex-row justify-center bg-gray-100 rounded-b-lg">
                   <img class="w-32" src="logo.png" alt="">
                 </div>
               </div>
+              <div class="flex flex-col">
+                <div class="flex flex-row bg-gray-200 rounded-t-lg">
+                  <div class="text-lg">
+                    Logo Circle
+                  </div>
+                  <div class="flex-grow"></div>
+                  <div>
+                    😀
+                  </div>
+                </div>
+                <div class="flex flex-row justify-center bg-gray-100 rounded-b-lg">
+                  <img class="w-32" src="logo.png" alt="">
+                </div>
+              </div>
+            </div>  
 
+            <div class="grid grid-cols-1 my-4">
+              <div class="flex flex-col">
+                <div class="flex flex-row bg-gray-200 rounded-t-lg">
+                  <div class="text-lg">
+                    Logo Circle
+                  </div>
+                  <div class="flex-grow"></div>
+                  <div>
+                    😀
+                  </div>
+                </div>
+                <div class="flex flex-row justify-center bg-gray-100">
+                  <img class="w-4/5 py-4" src="assets/icongraphy.png" alt="">
+                </div>
+              </div>
             </div>
 
           </div>
@@ -244,5 +296,21 @@
       </main>
     </div>
 
+  <body>
+    <noscript>This site requires Javascript to be enabled</noscript>
+    <div id="app"></div>
   </body>
+
+  <footer>
+    <script type="text/babel" src="UXWIntroduction.js"></script>
+    <script type="text/babel" src="UXWVoiceAndTone.js"></script>
+    <script type="text/babel" src="UXWLogosAndIcons.js"></script>
+    <script type="text/babel" src="UXWColors.js"></script>
+    <script type="text/babel" src="UXWTypography.js"></script>
+    <script type="text/babel" src="UXWDesignAssets.js"></script>
+    <script type="text/babel" src="UXWContributors.js"></script>
+
+    <!-- The main site -->
+    <script type="text/babel" src="main.js"></script>
+  </footer>
 </html>
