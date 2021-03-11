@@ -1,9 +1,11 @@
+const { Card, CardPrimaryContent, Body2, Headline6, Subtitle2, CardActions, CardActionButtons, Button} = window['MaterialUI'];
+
 function UXWTypography(props) {
   return (
     <div className="container">
       <h2 id="typography--this-is-overpass" className="text-2xl pb-4">This is Overpass</h2>
       <p>Inspired by the typeface used in road signage all around America, Overpass represents the UX Wizards’ ever expanding reach.
-      </p><br/>
+      </p>
       <a href="https://fonts.google.com/specimen/overpass">↳ Download Overpass</a>
       <h2 id="typography--scale" className="text-2xl pb-4 pt-16">Scale</h2>
       <p>The scale is absolute, but the font-weight and styling are simply guidelines. Headings can be selected from the scale as necessary, but hierarchy must be consistent across each medium.
@@ -88,7 +90,27 @@ function UXWTypography(props) {
       </p>
       <h2 id="typography--usage" className="text-2xl pb-4 pt-16">Usage</h2>
       <p>Example</p>
+      <Card className='mdc-card demo-card'>
+        <CardPrimaryContent className='demo-card__primary-action'>
+          <div className='demo-card__primary'>
+            <Headline6 className='demo-card__title'>
+              Our Changing Planet
+            </Headline6>
+            <Subtitle2 className='demo-card__subtitle'>
+              by Kurt Wagner
+            </Subtitle2>
+          </div>
+          <Body2 className='demo-card__secondary'>
+            Visit ten places on our planet that are undergoing the biggest changes today.
+          </Body2>
+        </CardPrimaryContent>
+        <CardActions>
+          <CardActionButtons>
+            <Button>Read</Button>
+          </CardActionButtons>
+        </CardActions>
+      </Card>
       <h2 id="typography--css" className="text-2xl pb-4 pt-16">CSS</h2>
     </div>
-  )
+  );
 }
