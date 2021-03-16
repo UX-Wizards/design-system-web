@@ -10,12 +10,26 @@ function UXWIntroduction(props) {
           Greedo argazdan jinn tof verpine bothan wedge.
         </p>
         <div className="flex-grow"></div>
-        <UXWCodePanel />
+        <UXWCodePanel>
+          <div>
+{`<h1 class="uxw-h1">
+    Hello World
+</h1>
+`}
+          </div>
+          <div>
+{`.uxw-code {
+    padding: 4;
+    color: #ff0000;
+}`}
+          </div>
+        </UXWCodePanel>
       </div>
-      <h2 className="text-xl py-4">Installation and Usage</h2>
-      <p>
-        Hello World.
-      </p>
+      <UXWSubsection anchor="introduction--installation-and-usage" title="Installation and Usage">
+        <p>
+          Hello World.
+        </p>
+      </UXWSubsection>
     </div>
   )
 }
