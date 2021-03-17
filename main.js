@@ -72,7 +72,24 @@
     },
     {
       heading: "Logos and Icons (Seiko)",
-      subheadings: [],
+      subheadings: [
+        {
+          subtitle: "Logos",
+          anchor: "snav-logos",
+        },
+        {
+          subtitle: "Clearance",
+          anchor: "snav-clearance",
+        },
+        {
+          subtitle: "Icongraphy Style",
+          anchor: "snav-icongraphy",
+        },
+        {
+          subtitle: "Library",
+          anchor: "snav-library",
+        },
+      ],
       route: "/logos",
       component: <UXWLogosAndIcons />,
     },
