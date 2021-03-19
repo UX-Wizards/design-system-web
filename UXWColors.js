@@ -22,7 +22,7 @@ function UXWColors(props) {
           Using our palette
         </p>
 
-        <p className="pb-24">
+        <p className="pb-12">
         Though our palette is established, we encourage experimentation
         through blending modes and gradients. Start with the main variant in
         the left column, and supplement your designs with the alternate shades
@@ -30,26 +30,27 @@ function UXWColors(props) {
         results could be spellbinding!
         </p>
        
-  
+        <hr className="pb-12"></hr>
 
         
-          <p className="font-bold font-2xl pb-4">
+          <p className="font-bold font-4xl pb-4">
             Primary colors
           </p>
 
           <p className="pb-12">
-          The flexible and neutral Magician's Cloak, Acid, and Merlin's Beard lead the way, providing a well-balanced foundation.
+          The flexible and neutral Magician's Cloak, Acid, and Merlin's Beard
+          lead the way, providing a well-balanced foundation.
           </p>
 
-
+            
             <p className="font-bold font-2xl pb-4">
               Magician's Cloak
             </p>
 
 
            <div className="grid grid-cols-2 mx-4">
-             <div className="bg-indigo-300 text-center pt-1">Main variant</div>
-             <div className="bg-indigo-100 text-center pt-1">Alternate shades</div>
+             <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
+             <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
            </div>
 
 
@@ -74,9 +75,8 @@ function UXWColors(props) {
 
 
 
-             <div className="bg-indigo-100 h-32">
-
-               <div className="grid grid-cols-6 gap-4 m-4">
+             
+             <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
 
 
 
@@ -104,8 +104,9 @@ function UXWColors(props) {
                 <span className="font-bold">RGB:</span> <span className="font-normal">46, 62, 110</span><br/>
                 <span className="font-bold">CMYK:</span> <span className="font-normal">93, 83, 30, 17</span>
                  </p>
+
                </div>
-             </div>
+            
 
            </div>
 
@@ -119,8 +120,8 @@ function UXWColors(props) {
            <br/>
 
            <div className="grid grid-cols-2 mx-4">
-             <div className="bg-indigo-300 text-center pt-1">Main variant</div>
-             <div className="bg-indigo-100 text-center pt-1">Alternate shades</div>
+             <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
+             <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
            </div>
 
 
@@ -143,9 +144,9 @@ function UXWColors(props) {
 
 
 
-             <div className="bg-indigo-100 h-32">
+             
 
-             <div className="grid grid-cols-6 gap-4 m-4">
+             <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
                
                  <div className="box h-20 w-20 bg-purple-200 m-4 z-1">
                  <p className="z-2 text-left text-black pl-2 pt-1"><span className="text-black font-bold">A </span>PASS</p>
@@ -172,22 +173,21 @@ function UXWColors(props) {
                  </p>
 
              </div>
-             </div>
+             
 
            </div>
 
 
 
-           <div className="font-bold font-2xl">
+           <div className="font-bold font-2xl pb-4">
              <p>
                Merlin's Beard
              </p>
            </div>
-           <br/>
 
            <div className="grid grid-cols-2 mx-4">
-             <div className="bg-indigo-300 text-center pt-1">Main variant</div>
-             <div className="bg-indigo-100 text-center pt-1">Alternate shades</div>
+             <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
+             <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
            </div>
 
 
@@ -197,7 +197,7 @@ function UXWColors(props) {
              <div className=" grid grid-cols-3 bg-indigo-300 h-32">
 
                 <div className="box h-32 w-32 bg-white m-4 border-2 border-indigo-900 z-1">
-                <p className="z-2 text-left pl-2 pt-1"><span className="text-black font-bold">A </span>PASS</p>
+                <p className="z-2 text-left pl-4 pt-2"><span className="text-black font-bold">A </span>PASS</p>
                   <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                   </div>
 
@@ -208,9 +208,9 @@ function UXWColors(props) {
                  </p>
              </div>
 
-             <div className="bg-indigo-100 h-32">
+             
 
-             <div className="flex flex-row flex-wrap gap-4">
+             <div className="flex flex-row flex-wrap bg-indigo-100 h-32 m-4">
 
                   <div className="flex flex-none">
                  <div className="box h-20 w-20 bg-gray-100 m-4 z-1">
@@ -256,170 +256,301 @@ function UXWColors(props) {
 
 
              </div>
-             </div>
+             
 
            </div>
 
            
-           <div className="font-bold font-2xl pt-20">
-          <p>
+           
+          <p className="font-bold font-4xl pt-8 pb-4">
             Secondary colors
           </p>
-          </div>
-          <br/>
 
-          <p>
-          The foundation colors are balanced by the livelier colors of Steel, 
-          Mana, Jinx, and Elixir. Our brighter colors should be used with 
+          <p className="pb-4">
+          The foundation colors are balanced by the livelier colors <span className="font-bold">Steel, 
+          Mana, Jinx,</span> and <span className="font-bold">Elixir</span>. We break these into two (<span className="italic">categories</span>).</p>
+          
+          <p className="pb-4">Our (<span className="italic">secondary</span>) colors are the supporting tones
+          of Steel and Mana. Use them to help build environments within your UX
+          Wizards content.</p>
+          
+          <p className="pb-12">Our brighter (<span className="italic">accent</span>) colors should be used with 
           restraint and finesse. We want our designs to stand out, 
-          but avoid being tacky and distasteful.
+          but avoid being tacky and distasteful. Use Jinx and Elixir to specifically
+          draw attention to things on purpose.
           </p>
 
-          <br/>
-          <br/>
-          <br/>
 
-          <div className="font-bold font-2xl">
+
+
+          <div className="font-bold font-2xl pb-4">
+
             <p>
-              Steel
+              Steel (<span className="font-normal italic">secondary</span>)
+            </p>
+          </div>
+
+           <div className="grid grid-cols-2 mx-4">
+             <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
+             <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
+           </div>
+
+
+
+           <div className="grid grid-cols-2 mx-4 pb-12">
+           
+             <div className="grid grid-cols-3 bg-indigo-300 h-32">
+
+                <div className="box h-32 w-32 bg-indigo-100 m-4 z-1">
+                  <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>PASS</p>
+                  <p className="text-left text-black pl-4"><span className="text-white font-bold">A </span>FAIL</p>
+                </div>
+
+                <p className="text-left px-4 pt-6 col-span-2 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">E2E6FB</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">226, 230, 251</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">9, 7, 0, 0</span>
+                 </p> 
+             </div>
+
+
+
+             
+             <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
+
+                 <div className="box h-20 w-20 bg-indigo-50 m-4">
+                 <p className="text-left text-black pl-2 pt-4"><span className=" font-bold">A </span>PASS</p>
+                  <p className="text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
+                 </div>
+
+                 <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">F6F9FD</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">246, 249, 235</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">2, 1, 0, 0</span>
+                 </p>
+
+
+                 <div className="box h-20 w-20 bg-indigo-200 m-4">
+                 <p className="text-left text-black pl-2 pt-1"><span className=" font-bold">A </span>PASS</p>
+                  <p className="text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
+                 </div>
+
+                 <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">CDD5F2</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">205, 213, 242</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">17, 12, 0, 0</span>
+                 </p>
+
+            </div>
+             
+
+           </div>
+
+
+
+           <div className="font-bold font-2xl pb-4">
+             <p>
+               Mana (<span className="font-normal italic">secondary</span>)
+             </p>
+           </div>
+
+           <div className="grid grid-cols-2 mx-4">
+             <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
+             <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
+           </div>
+           
+
+
+           <div className="grid grid-cols-2 mx-4 pb-6">
+
+             <div className="grid grid-cols-3 bg-indigo-300 h-32">
+
+                <div className="box h-32 w-32 bg-blue-500 m-4">
+                <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>FAIL</p>
+                  <p className="text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
+                  </div>  
+
+                <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">52B9D3</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">82, 185, 211</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">62, 7, 13, 0</span>
+                 </p>
+
+             </div>
+
+
+
+             <div className="grid grid-cols-6 gap-4 m-4 bg-indigo-100 h-32">
+
+                 <div className="box h-20 w-20 bg-blue-400 m-4">
+                 <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
+                  <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
+                 </div>
+
+                 <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">68DAF9</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">104, 120, 135</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">49, 0, 3, 0</span>
+                 </p>
+
+
+
+
+                 <div className="box h-20 w-20 bg-blue-800 m-4">
+                 <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
+                  <p className="text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
+                 </div>
+
+                 <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">4999AE</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">73, 153, 174</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">71, 26, 26, 1</span>
+                 </p>
+
+             </div>
+
+           </div>
+
+
+
+
+
+           <hr className="pb-6"></hr>
+
+
+
+
+
+
+           <div className="font-bold font-2xl">
+            <p>
+              Jinx (<span className="font-normal italic">accent</span>)
             </p>
           </div>
             <br/>
 
            <div className="grid grid-cols-2 mx-4">
-             <div className="bg-indigo-300 text-center">Main variant</div>
-             <div className="bg-indigo-100 text-center">Alternate shades</div>
+             <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
+             <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
            </div>
 
 
 
-           <div className="grid grid-cols-2 mx-4">
+           <div className="grid grid-cols-2 mx-4 pb-12">
 
-             <div className="bg-indigo-300 h-32">
-                <div className="box h-32 w-32 bg-indigo-100 m-4"></div>  
+
+             <div className="grid grid-cols-3 bg-indigo-300 h-32">
+
+                <div className="box h-32 w-32 bg-pink-500 m-4">
+                  <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
+                  <p className="text-left text-white pl-4"><span className="font-bold">A </span>PASS</p>
+                </div>  
+
+                <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">ED6F85</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">237, 111, 133</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">2, 71, 30, 0</span>
+                 </p>
+
              </div>
 
-             <div className="bg-indigo-100 h-32">
-               <div className="grid grid-cols-2 gap-4 m-4">
-                 <div className="box h-16 w-16 bg-indigo-50 m-4"></div>
-                 <div className="box h-16 w-16 bg-indigo-200 m-4"></div>
+             
+               <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
+
+                 <div className="box h-20 w-20 bg-pink-200 m-4">
+                 <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
+                  <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
+                 </div>
+
+                 <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">F4ACBA</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">244, 172, 186</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">1, 40, 12, 0</span>
+                 </p>
+
+
+                 <div className="box h-20 w-20 bg-pink-700 m-4">
+                 <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
+                  <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
+                 </div>
+
+                 <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">D9556B</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">217, 85, 107</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">11, 81, 46, 1</span>
+                 </p>
+
                </div>
-             </div>
+            
 
            </div>
 
-           <br/>
-           <br/>
-           <br/>
+           
 
 
 
-           <div className="font-bold font-2xl">
+           <div className="font-bold font-2xl pb-4">
              <p>
-               Mana
+               Elixir (<span className="font-normal italic">accent</span>)
              </p>
            </div>
-           <br/>
 
            <div className="grid grid-cols-2 mx-4">
-             <div className="bg-indigo-300 text-center">Main variant</div>
-             <div className="bg-indigo-100 text-center">Alternate shades</div>
+             <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
+             <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
            </div>
 
 
 
-           <div className="grid grid-cols-2 mx-4">
+           <div className="grid grid-cols-2 mx-4 pb-24">
 
-             <div className="bg-indigo-300 h-32">
-                <div className="box h-32 w-32 bg-blue-500 m-4"></div>  
+             <div className="grid grid-cols-3 bg-indigo-300 h-32">
+                <div className="box h-32 w-32 bg-yellow-500 m-4">
+                <p className="text-left text-black pl-4 pt-2"><span className="font-bold">A </span>PASS</p>
+                  <p className="text-left text-black pl-4"><span className="text-white font-bold">A </span>FAIL</p>
+                  </div>
+
+                  <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">E6B161</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">230, 177, 97</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">10, 31, 72, 0</span>
+                 </p>
+
              </div>
 
-             <div className="bg-indigo-100 h-32">
-             <div className="grid grid-cols-2 gap-4 m-4">
-                 <div className="box h-16 w-16 bg-blue-400 m-4"></div>
-                 <div className="box h-16 w-16 bg-blue-800 m-4"></div>
+           
+             <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
+
+                 <div className="box h-20 w-20 bg-yellow-200 m-4">
+                 <p className="text-left text-black pl-2 pt-1"><span className=" font-bold">A </span>PASS</p>
+                  <p className="text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
+                 </div>
+
+                 <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">F8D399</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">248, 211, 153</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">2, 17, 44, 0</span>
+                 </p>
+
+
+
+
+                 <div className="box h-20 w-20 bg-yellow-700 m-4">
+                 <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
+                  <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
+                  </div>
+
+                 <p className="text-left col-span-2 pt-4 pb-4">
+                 <span className="font-bold">HEX:</span> <span className="font-normal">CF9748</span><br/>
+                <span className="font-bold">RGB:</span> <span className="font-normal">207, 151, 72</span><br/>
+                <span className="font-bold">CMYK:</span> <span className="font-normal">19, 42, 84, 1</span>
+                 </p>
+
              </div>
-             </div>
+             
 
            </div>
 
-           <br/>
-           <br/>
-           <br/>
-
-
-           <div className="font-bold font-2xl">
-            <p>
-              Jinx
-            </p>
-          </div>
-            <br/>
-
-           <div className="grid grid-cols-2 mx-4">
-             <div className="bg-indigo-300 text-center">Main variant</div>
-             <div className="bg-indigo-100 text-center">Alternate shades</div>
-           </div>
-
-
-
-           <div className="grid grid-cols-2 mx-4">
-
-             <div className="bg-indigo-300 h-32">
-                <div className="box h-32 w-32 bg-pink-500 m-4"></div>  
-             </div>
-
-             <div className="bg-indigo-100 h-32">
-               <div className="grid grid-cols-2 gap-4 m-4">
-                 <div className="box h-16 w-16 bg-pink-200 m-4"></div>
-                 <div className="box h-16 w-16 bg-pink-700 m-4"></div>
-               </div>
-             </div>
-
-           </div>
-
-           <br/>
-           <br/>
-           <br/>
-
-
-
-           <div className="font-bold font-2xl">
-             <p>
-               Elixir
-             </p>
-           </div>
-           <br/>
-
-           <div className="grid grid-cols-2 mx-4">
-             <div className="bg-indigo-300 text-center">Main variant</div>
-             <div className="bg-indigo-100 text-center">Alternate shades</div>
-           </div>
-
-
-
-           <div className="grid grid-cols-2 mx-4">
-
-             <div className="bg-indigo-300 h-32">
-                <div className="box h-32 w-32 bg-yellow-500 m-4"></div>  
-             </div>
-
-             <div className="bg-indigo-100 h-32">
-             <div className="grid grid-cols-2 gap-4 m-4">
-                 <div className="box h-16 w-16 bg-yellow-200 m-4"></div>
-                 <div className="box h-16 w-16 bg-yellow-700 m-4"></div>
-             </div>
-             </div>
-
-           </div>
-
-           <br/>
-           <br/>
-           <br/>
-
-
-           <br/>
-           <br/>
-           <br/>
 
 
            <p> - - ! Reminder, color swatches aren't to spec until this tag is removed ! - -</p>
