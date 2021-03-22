@@ -2,9 +2,11 @@
   const { AppBar, Drawer, Tabs, Tab, Toolbar } = window['MaterialUI'];
   const { Box, Fab } = window['MaterialUI'];
   const { List, ListItem, ListItemText } = window['MaterialUI'];
+  const { makeStyles } = window['MaterialUI'];
   const {
     HashRouter: Router,
     Switch,
+    Redirect,
     Route,
     Link: RouterLink,
     useLocation,
@@ -20,6 +22,38 @@
     right: "16px",
     outline: "none"
   }
+
+  const useStylesMain = makeStyles({
+    topappbar: {
+      backgroundColor: "#152145",
+      zIndex: 1201,
+      fontFamily: "Overpass",
+    },
+    codesnippettab: {
+      backgroundColor: "#152145",
+      fontFamily: "Overpass",
+      "&:focus": {
+        outline: "none",
+      }
+    },
+    navitem: {
+      color: "#152145",
+      fontWeight: 300,
+    },
+    navitemselected: {
+      color: "#152145",
+      fontWeight: 800,
+    }
+  })
+
+  const useStylesDrawer = makeStyles({
+    root: {
+      fontFamily: "Overpass",
+    },
+    paper: {
+      width: "28ch",
+    }
+  })
 
   const initialNavState = []
   const addNavAction = anchor => ({ type: "addVisibleNav", payload: anchor })
@@ -49,7 +83,7 @@
 
   const dswContent = [
     {
-      heading: "Introduction (Laura)",
+      heading: "Introduction",
       subheadings: [
         {
           subtitle: "Installation and Usage",
@@ -141,10 +175,40 @@
     );
   }
 
-  function UXWCodePanel(props) {
+  function UXWCodePanelSingle(props) {
+    const snippet = props.children
+    let finalSnippet = ""
+
+    let prismSnippet = ""
+    if (props.lang === "html") {
+      prismSnippet = Prism.highlight(snippet, Prism.languages.markup, 'markup');
+    } else if (props.lang === "css") {
+      prismSnippet = Prism.highlight(cssSnippet, Prism.languages.css, 'css');
+    }
+    for (let line of prismSnippet.split("\n")) {
+      finalSnippet = finalSnippet + line.replace(/^  /, "&nbsp;&nbsp;") + "<br/>"
+    }
+
+    const onCopyClick = () => {
+      navigator.clipboard.writeText(snippet)
+    }
+
+    return (
+      <div className="w-128 relative">
+        <Box className="bg-gray-100" style={{fontFamily: "monospace"}} p={3} dangerouslySetInnerHTML={{__html: finalSnippet}} />
+        <Fab style={fabCopy} size="small" onClick={onCopyClick}>
+          <i className="bi bi-clipboard"></i>
+        </Fab>
+      </div>
+    );
+  }
+
+  function UXWCodePanelHTMLCSS(props) {
     const [value, setValue] = React.useState(0);
     const htmlSnippet = props.children[0].props.children
     const cssSnippet = props.children[1].props.children
+
+    const classesMain = useStylesMain();
 
     const prismHtmlSnippet = Prism.highlight(htmlSnippet, Prism.languages.markup, 'markup');
     let finalHtmlSnippet = ""
@@ -173,9 +237,9 @@
     return (
       <div className="w-128 relative">
         <AppBar position="static">
-          <Tabs value={value} onChange={handleChange}>
-            <Tab label="HTML" style={{ outline: "none", border: "none" }} />
-            <Tab label="CSS" style={{ outline: "none", border: "none" }} />
+          <Tabs value={value} onChange={handleChange} TabIndicatorProps={{style: {backgroundColor: "#E6B161"}}}>
+            <Tab label="HTML" className={classesMain.codesnippettab} />
+            <Tab label="CSS" className={classesMain.codesnippettab} />
           </Tabs>
         </AppBar>
         <TabPanel value={value} index={0}>
@@ -211,27 +275,25 @@
     )
   }
 
-
-
   function Main(props) {
     const location = useLocation();
     const activeSubsections = useSelector((state) => state.navVisibility)
 
+    const classesMain = useStylesMain();
+    const classesDrawer = useStylesDrawer();
+
     return (
       <div className="bg-white">
         <React.Fragment>
-          <AppBar position="fixed" style={{zIndex: 1201}}>
+          <AppBar position="fixed" className={classesMain.topappbar}>
             <Toolbar>
-              <div className="flex flex-row flex-shrink-0">
-                <div className="flex flex-col">
-                  <div className="text-lg" style={{fontFamily: "Overpass"}}>UX Wizards</div>
-                  <div className="text-md" style={{fontFamily: "Overpass"}}>Design System</div>
-                </div>
+              <div className="flex flex-row flex-shrink-0 items-center">
+                <div className="text-lg">Design System</div>
                 <img className="pl-4 w-16 h-12" src="logo.png" />
               </div>
             </Toolbar>
           </AppBar>
-          <Drawer variant="permanent" >
+          <Drawer variant="permanent" classes={{root: classesDrawer.root, paper: classesDrawer.paper}} >
             <Toolbar />
             <nav>
               <List>
@@ -239,13 +301,13 @@
                   <React.Fragment key={`navlink-fragment-${index}`}>
                     <RouterLink to={route} >
                       <ListItem button key={`navlink-${index}`}>
-                        <ListItemText disableTypography primary={heading} className={`${location.pathname === route && "font-bold"}`}/>
+                        <ListItemText disableTypography primary={heading} className={location.pathname === route ? classesMain.navitemselected : classesMain.navitem} />
                       </ListItem>
                     </RouterLink>
                     {subheadings.map(({subtitle, anchor}, subindex) => (location.pathname === route &&
                     <div key={`navlink-sub-${index}-${subindex}`} onClick={() => document.getElementById(anchor).scrollIntoView({behavior: 'smooth', block: 'center'})}>
                       <ListItem button>
-                        <ListItemText disableTypography primary={subtitle} className={`pl-8 ${activeSubsections.findIndex((element) => element === anchor) !== -1 && "font-bold"}`}/>
+                        <ListItemText disableTypography primary={subtitle} className={`pl-8 ${activeSubsections.findIndex((element) => element === anchor) !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
                     ))}
@@ -259,11 +321,14 @@
               <Toolbar /> {/* Spacer */}
 
               <Switch>
+                <Route exact path="/">
+                  <Redirect to="/introduction" />
+                </Route>
                 {dswContent.map(({ route, component, heading }, index) => {
                   return (
                     <Route key={`route-${index}`} path={route}>
-                      <div className="flex-col flex-shrink-0 pb-8" key={`section-${index}`}>
-                        <h1 className="text-3xl pb-4">{heading}</h1>
+                      <div className="flex-col flex-shrink-0 pb-8" style={{fontFamily: "Overpass"}} key={`section-${index}`}>
+                        <h1 className="pb-4">{heading}</h1>
                         {component}
                       </div>
                     </Route>
