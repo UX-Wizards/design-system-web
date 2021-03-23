@@ -260,6 +260,7 @@ function UXWColors(props) {
 
            </div>
 
+          <hr className="pb-4"></hr>
            
            
           <p className="font-bold font-4xl pt-8 pb-4">
