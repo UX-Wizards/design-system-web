@@ -14,10 +14,10 @@ function UXWColors(props) {
         to provide versatility and function while still providing boundless
         room for expression.
       </p>
+      </UXWSubsection>
 
-      <p className="font-bold font-2xl pb-4">
-        Using our palette
-        </p>
+
+      <UXWSubsection anchor="colors-use" title="Using Our Palette">
 
       <p className="pb-12">
         Though our palette is established, we encourage experimentation
@@ -188,7 +188,7 @@ function UXWColors(props) {
 
 
 
-      <div className="grid grid-cols-2 mx-4 pb-28">
+      <div className="grid grid-cols-2 mx-4 mb-36">
 
         <div className="grid grid-cols-3 bg-transparent h-32">
 
@@ -256,36 +256,31 @@ function UXWColors(props) {
 
       </div>
 
+   
+     
+
       </UXWSubsection>
 
-      <hr className="pb-4"></hr>
+      <hr className="pb-12"></hr>
 
-      <UXWSubsection anchor="colors-sec" title="Secondary and Accent Colors">
-      <span className="pb-b"></span>
+      <UXWSubsection anchor="colors-sec" title="Secondary Colors">
+      <span className="pt-8 pb-4"></span>
 
       <p className="pb-4">
         The foundation colors are balanced by the livelier colors <span className="font-bold">Steel,
-          Mana, Jinx,</span> and <span className="font-bold">Elixir</span>. We break these into two (<span className="italic">categories</span>).</p>
+          Mana, Jinx,</span> and <span className="font-bold">Elixir</span>. We break these into two categories.</p>
 
-      <p className="pb-4">Our (<span className="italic">secondary</span>) colors are the supporting tones
+      <p className="pb-12">Our <span className="italic">secondary</span> colors are the supporting tones
           of Steel and Mana. Use them to help build environments within your UX
           Wizards content.</p>
 
-      <p className="pb-12">Our brighter (<span className="italic">accent</span>) colors should be used with
-          restraint and finesse. We want our designs to stand out,
-          but avoid being tacky and distasteful. Use Jinx and Elixir to specifically
-          draw attention to things on purpose.
-          </p>
 
+    
 
-
-
-      <div className="font-bold font-2xl pb-4">
-
-        <p>
-          Steel (<span className="font-normal italic">secondary</span>)
+        <p className="font-bold font-2xl pb-4">
+          Steel
             </p>
-      </div>
+     
 
       <div className="grid grid-cols-2 gap-2 mx-4">
         <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
@@ -345,11 +340,11 @@ function UXWColors(props) {
 
 
 
-      <div className="font-bold font-2xl pb-4">
-        <p>
-          Mana (<span className="font-normal italic">secondary</span>)
+      
+        <p className="font-bold font-2xl pb-4">
+          Mana
              </p>
-      </div>
+  
 
       <div className="grid grid-cols-2 gap-2 mx-4">
         <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
@@ -408,23 +403,31 @@ function UXWColors(props) {
 
       </div>
 
-
-
-
-
-      <hr className="pb-6"></hr>
-
+      </UXWSubsection>
 
 
 
 
 
-      <div className="font-bold font-2xl">
-        <p>
-          Jinx (<span className="font-normal italic">accent</span>)
+      <hr className="pb-16"></hr>
+
+      
+      <UXWSubsection anchor="colors-acc" title="Accent Colors">
+
+      <p className="pb-12">Our brighter <span className="italic">accent</span> colors should be used with
+          restraint and finesse. We want our designs to stand out,
+          but avoid being tacky and distasteful. Use Jinx and Elixir to specifically
+          draw attention to things on purpose.
+          </p>
+
+
+
+      
+        <p className="font-bold font-2xl pb-4">
+          Jinx
             </p>
-      </div>
-      <br />
+      
+      
 
       <div className="grid grid-cols-2 gap-2 mx-4">
         <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
@@ -486,11 +489,11 @@ function UXWColors(props) {
 
 
 
-      <div className="font-bold font-2xl pb-4">
-        <p>
-          Elixir (<span className="font-normal italic">accent</span>)
+     
+        <p className="font-bold font-2xl pb-4">
+          Elixir
              </p>
-      </div>
+      
 
       <div className="grid grid-cols-2 gap-2 mx-4">
         <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
@@ -545,11 +548,13 @@ function UXWColors(props) {
 
         </div>
 
+        
+       
 
       </div>
 
+      
       </UXWSubsection>
-
 
 
 
