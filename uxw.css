@@ -1,0 +1,19 @@
+
+/* Links */
+
+a {
+  color: var(--uxw-color-acid);
+  font-weight: bold;
+}
+
+/* Buttons */
+
+/* Typography */
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+/* Logos and Icons */

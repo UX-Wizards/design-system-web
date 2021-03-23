@@ -1,0 +1,16 @@
+
+/* Root */
+
+:root {
+  /* Colors */
+  --uxw-color-magicians-cloak: #152145;
+  --uxw-color-acid: #6331FD;
+  --uxw-color-jinx: #ED6F85;
+}
+
+/* Utility Helpers */
+
+.uxw-code {
+  color: var(--uxw-color-jinx);
+  font-family: monospace;
+}
