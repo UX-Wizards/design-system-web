@@ -1,0 +1,53 @@
+/* Typography */
+
+/* type scale */
+ :root {
+    --font-primary: "Overpass", sans-serif;
+
+    /* type scale */
+    --text-xs: .75rem;
+    --text-sm: .875rem;
+    --text-base: 1rem;
+    --text-lg: 1.131rem;
+    --text-xl: 1.5rem;
+    --text-2xl: 1.75rem;
+    --text-3xl: 2.25rem;
+    --text-4xl: 3.375rem;
+    
+}
+.uxw-text-label {
+    font-size: var(--text-xs);
+    line-height: 1rem;
+} 
+
+.uxw-text-meta {
+    font-size: var(--text-sm);
+    line-height: 1.25rem;
+} 
+
+.uxw-text-body {
+    font-size: var(--text-base);
+    line-height: 1.5rem;
+}
+
+.uxw-text-body--bold {
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.75rem;
+}
+
+.uxw-text-heading {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.uxw-text-heading {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.uxw-text-heading {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
