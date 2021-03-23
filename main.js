@@ -94,15 +94,42 @@
       component: <UXWIntroduction />,
     },
     {
-      heading: "Voice and Tone (Laura)",
+      heading: "Who We Are",
       subheadings: [
         {
-          subtitle: "Language",
-          anchor: "voice--voice-language",
+          subtitle: "About Us",
+          anchor: "about--about",
+        },
+        {
+          subtitle: "Our Mission",
+          anchor: "about--mission"
+        },
+        {
+          subtitle: "Personality",
+          anchor: "about--personality"
+        },
+        {
+          subtitle: "Values",
+          anchor: "about--values"
+        }
+      ],
+      route: "/about",
+      component: <UXWWhoWeAre />,
+    },
+    {
+      heading: "How We Sound (Laura)",
+      subheadings: [
+        {
+          subtitle: "Voice",
+          anchor: "voice--voice",
+        },
+        {
+          subtitle: "Tone",
+          anchor: "voice--tone"
         }
       ],
       route: "/voice",
-      component: <UXWVoiceAndTone />,
+      component: <UXWHowWeSound />,
     },
     {
       heading: "Logos and Icons (Seiko)",
