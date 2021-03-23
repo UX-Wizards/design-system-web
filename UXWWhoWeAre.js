@@ -2,7 +2,7 @@ function UXWWhoWeAre(props) {
   return (
     <div className="container">
       <UXWSubsection anchor="about--about" title="About Us">
-        <p className="mt-8">
+        <p>
           UX Wizards is a community of passionate, supportive learners and UX enthusiasts. 
         </p>
         <p>
@@ -13,12 +13,12 @@ function UXWWhoWeAre(props) {
         </p>
       </UXWSubsection>
       <UXWSubsection anchor="about--mission" title="Our Mission">
-        <p className="mt-8 italic">
+        <p className="italic">
          Our mission is a compass to guide our decisions made in the name of the community. It ensures that every event we hold, every project we start, and every piece of content we create is working toward the same goal in order to best serve our fellow Wizards.
         </p>
       </UXWSubsection>
       <UXWSubsection anchor="about--personality" title="Personality">
-        <p className="mt-8">
+        <p>
           Fun &amp; Whimsical<br />
           And occasionally nerdy. 🤓 We’re unpretentious, playful, and love a good joke or pun. 
         </p>
@@ -40,7 +40,7 @@ function UXWWhoWeAre(props) {
         </p>
       </UXWSubsection>
       <UXWSubsection anchor="about--values" title="Values">
-        <ul class="list-disc list-inside">
+        <ul className="list-disc list-inside">
           <li>Friendship - Doing things with friends makes it all that much more fun</li>
           <li>Curiosity - A passion to learn. There is no such thing as a stupid question</li>
           <li>Inclusion - All are welcome. People, opinions, backgrounds. All.</li>
