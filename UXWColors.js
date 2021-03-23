@@ -6,10 +6,8 @@ function UXWColors(props) {
       <p className="pt-8 pb-12"> - - !  Until this tag is removed, color swatches are not accurate to UXW colors ! - - </p>
 
 
-
-      <p className="font-bold font-2xl pb-4">
-        Philosophy
-      </p>
+      <UXWSubsection anchor="colors-think" title="Our Thinking">
+      <span className="pb-12"></span>
 
       <p className="pb-12">
         Our palette consists of neutral, pleasing tones balanced by vivid
@@ -29,13 +27,12 @@ function UXWColors(props) {
         on the right if you want to play around. You might be surprised, the
         results could be spellbinding!
         </p>
+      </UXWSubsection>
 
       <hr className="pb-12"></hr>
 
-
-      <p className="font-bold font-4xl pb-4">
-        Primary colors
-          </p>
+      <UXWSubsection anchor="colors-prim" title="Primary Colors">
+      <span className="pb-b"></span>
 
       <p className="pb-12">
         The flexible and neutral Magician's Cloak, Acid, and Merlin's Beard
@@ -260,12 +257,12 @@ function UXWColors(props) {
 
       </div>
 
+      </UXWSubsection>
+
       <hr className="pb-4"></hr>
 
-
-      <p className="font-bold font-4xl pt-8 pb-4">
-        Secondary colors
-          </p>
+      <UXWSubsection anchor="colors-sec" title="Secondary and Accent Colors">
+      <span className="pb-b"></span>
 
       <p className="pb-4">
         The foundation colors are balanced by the livelier colors <span className="font-bold">Steel,
@@ -552,7 +549,7 @@ function UXWColors(props) {
 
       </div>
 
-
+      </UXWSubsection>
 
       <p> - - ! Reminder, color swatches aren't to spec until this tag is removed ! - -</p>
 
