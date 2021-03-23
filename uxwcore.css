@@ -3,9 +3,34 @@
 
 :root {
   /* Colors */
-  --uxw-color-magicians-cloak: #152145;
-  --uxw-color-acid: #6331FD;
-  --uxw-color-jinx: #ED6F85;
+  --uxw-color-magicians-cloak-1: #152145;
+  --uxw-color-magicians-cloak-2: #5267A7;
+  --uxw-color-magicians-cloak-3: #2E3E6E;
+
+  --uxw-color-acid-1: #6331FD;
+  --uxw-color-acid-2: #D5CCFB;
+  --uxw-color-acid-3: #3822AC;
+
+  --uxw-color-merlins-beard-1: #FFFFFF;
+  --uxw-color-merlins-beard-2: #E6E6E6;
+  --uxw-color-merlins-beard-3: #C9CACB;
+  --uxw-color-merlins-beard-4: #747887;
+
+  --uxw-color-steel-1: #E2E6FB;
+  --uxw-color-steel-2: #F6F9FD;
+  --uxw-color-steel-3: #CDD5F2;
+
+  --uxw-color-mana-1: #52B9D3;
+  --uxw-color-mana-2: #68DAF9;
+  --uxw-color-mana-3: #4999AE;
+
+  --uxw-color-jinx-1: #ED6F85;
+  --uxw-color-jinx-2: #F4ACBA;
+  --uxw-color-jinx-3: #D9556B;
+
+  --uxw-color-elixir-1: #E6B161;
+  --uxw-color-elixir-2: #F8D399;
+  --uxw-color-elixir-3: #CF9748;
 
   /* Typography */
   --font-primary: "Overpass", sans-serif;
@@ -25,7 +50,7 @@
   --text-2xl: 1.5rem;
   --text-3xl: 1.75rem;
   --text-4xl: 2.25rem;
-  --text-5xl: 3.5rem; 
+  --text-5xl: 3.5rem;
 }
 
 /* Utility Helpers */
@@ -35,25 +60,128 @@
   font-family: monospace;
 }
 
+
+/* Colors */
+
+.uxw-bg-magicians-cloak-1 {
+  background-color: var(--uxw-color-magicians-cloak-1)
+}
+
+.uxw-bg-magicians-cloak-2 {
+  background-color: var(--uxw-color-magicians-cloak-2)
+}
+
+.uxw-bg-magicians-cloak-3 {
+  background-color: var(--uxw-color-magicians-cloak-3)
+}
+
+
+
+.uxw-bg-acid-1 {
+  background-color: var(--uxw-color-acid-1)
+}
+
+.uxw-bg-acid-2 {
+  background-color: var(--uxw-color-acid-2)
+}
+
+.uxw-bg-acid-3 {
+  background-color: var(--uxw-color-acid-3)
+}
+
+
+
+.uxw-bg-merlins-beard-1 {
+  background-color: var(--uxw-color-merlins-beard-1)
+}
+
+.uxw-bg-merlins-beard-2 {
+  background-color: var(--uxw-color-merlins-beard-2)
+}
+
+.uxw-bg-merlins-beard-3 {
+  background-color: var(--uxw-color-merlins-beard-3)
+}
+
+.uxw-bg-merlins-beard-4 {
+  background-color: var(--uxw-color-merlins-beard-4)
+}
+
+
+
+.uxw-bg-steel-1 {
+  background-color: var(--uxw-color-steel-1)
+}
+
+.uxw-bg-steel-2 {
+  background-color: var(--uxw-color-steel-2)
+}
+
+.uxw-bg-steel-3 {
+  background-color: var(--uxw-color-steel-3)
+}
+
+
+
+.uxw-bg-mana-1 {
+  background-color: var(--uxw-color-mana-1)
+}
+
+.uxw-bg-mana-2 {
+  background-color: var(--uxw-color-mana-2)
+}
+
+.uxw-bg-mana-3 {
+  background-color: var(--uxw-color-mana-3)
+}
+
+
+
+.uxw-bg-jinx-1 {
+  background-color: var(--uxw-color-jinx-1)
+}
+
+.uxw-bg-jinx-2 {
+  background-color: var(--uxw-color-jinx-2)
+}
+
+.uxw-bg-jinx-3 {
+  background-color: var(--uxw-color-jinx-3)
+}
+
+
+
+.uxw-bg-elixir-1 {
+  background-color: var(--uxw-color-elixir-1)
+}
+
+.uxw-bg-elixir-2 {
+  background-color: var(--uxw-color-elixir-2)
+}
+
+.uxw-bg-elixir-3 {
+  background-color: var(--uxw-color-elixir-3)
+}
+
 /* Typography */
 
 .uxw-text-label {
   font-size: var(--text-xs);
   line-height: 1rem;
   text-transform: uppercase;
-} 
+}
 
 .uxw-text-meta {
   font-size: var(--text-sm);
   line-height: 1.25rem;
-} 
+}
 
 .uxw-text-body {
   font-size: var(--text-base);
   line-height: 1.5rem;
 }
 
-.uxw-text-body--bold, 
+.uxw-text-body--bold,
 .uxw-button-text
 {
   font-size: var(--text-base);
@@ -88,15 +216,13 @@
   line-height: 1.75rem;
 }
 
-.uxw-text-display-2 
-{
+.uxw-text-display-2 {
   font-size: var(--text-4xl);
   font-weight: var(--extra-bold);
   line-height: 2rem;
 }
 
-.uxw-text-display-1 
-{
+.uxw-text-display-1 {
   font-size: var(--text-5xl);
   font-weight: var(--black);
   line-height: 3.5rem;
