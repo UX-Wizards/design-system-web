@@ -4,8 +4,8 @@ function UXWLogosAndIcons(props) {
       <div className="flex-col flex-shrink-0 px-4 py-4">
         <div className="container">
           <UXWSubsection anchor="snav-logos" title="Logos">
-            <p>The Wizards hat will always accompany the UX WIZARDS text.  The rectangular version will be the main logo and includes an arrow cursor as if the logo is being clicked on.</p><br/>
-            <p>The square and circle versions are to be used for things such as our Slack group’s profile.</p><br/>
+            <p>The Wizards hat will always accompany the UX WIZARDS text.  The rectangular version will be the main logo and includes an arrow cursor as if the logo is being clicked on.</p><br />
+            <p>The square and circle versions are to be used for things such as our Slack group’s profile.</p><br />
             <p className="pb-4">There are three variations in colors - white text on black, black text on white and white text on our branded Navy, Magician’s Cloak.</p>
             <img src="assets/logos.png" alt="" />
           </UXWSubsection>
@@ -14,7 +14,7 @@ function UXWLogosAndIcons(props) {
             <img src="assets/clearance.png" alt="" />
           </UXWSubsection>
           <UXWSubsection anchor="snav-icongraphy" title="Icongraphy Style">
-            <p>Icon designs are intended to be recognized and communicate immediately. Our main icons are outlined style which use a clear stroke and the Magician’s Cloak navy color. Icon + light purple circle background is a variation. This background pops and draws extra attention to the icons. </p><br/>
+            <p>Icon designs are intended to be recognized and communicate immediately. Our main icons are outlined style which use a clear stroke and the Magician’s Cloak navy color. Icon + light purple circle background is a variation. This background pops and draws extra attention to the icons. </p><br />
             <img className="my-16 w-4/5" src="assets/icongraphy.png" alt="" />
           </UXWSubsection>
           <UXWSubsection anchor="snav-library" title="Library">
@@ -28,7 +28,7 @@ function UXWLogosAndIcons(props) {
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
                     <a href="assets/library/horizontal.zip" download>
-                      <i class="bi bi-download"></i>
+                      <i className="bi bi-download"></i>
                     </a>
                   </div>
                 </div>
@@ -43,9 +43,9 @@ function UXWLogosAndIcons(props) {
                   </div>
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
-                  <a href="assets/library/square.zip" download>
-                  <i class="bi bi-download"></i>
-                  </a>
+                    <a href="assets/library/square.zip" download>
+                      <i className="bi bi-download"></i>
+                    </a>
                   </div>
                 </div>
                 <div className="flex flex-row justify-center bg-gray-100 rounded-b-lg">
@@ -59,9 +59,9 @@ function UXWLogosAndIcons(props) {
                   </div>
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
-                   <a href="assets/library/circle.zip" download>
-                   <i class="bi bi-download"></i>
-                   </a>
+                    <a href="assets/library/circle.zip" download>
+                      <i className="bi bi-download"></i>
+                    </a>
                   </div>
                 </div>
                 <div className="flex flex-row justify-center bg-gray-100 rounded-b-lg">
@@ -76,7 +76,7 @@ function UXWLogosAndIcons(props) {
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
                     <a href="assets/library/podcast.zip" download>
-                    <i class="bi bi-download"></i>
+                      <i className="bi bi-download"></i>
                     </a>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ function UXWLogosAndIcons(props) {
                   <div className="flex-grow"></div>
                   <div className="py-2 pr-4">
                     <a href="assets/library/icongraphy.zip" download>
-                    <i class="bi bi-download"></i>
+                      <i className="bi bi-download"></i>
                     </a>
                   </div>
                 </div>
