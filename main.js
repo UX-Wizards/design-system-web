@@ -315,6 +315,21 @@
     )
   }
 
+  function NextSectionLink(props) {
+    if (props.index >= dswContent.length - 1)
+    {
+      return null;
+    }
+    var next = dswContent[props.index + 1];
+    return (
+      <div className="container text-right pt-16">
+        <p className="uxw-text-meta">Next</p>
+        <RouterLink to={next.route}>{next.heading}</RouterLink>
+        {/* <a className="uxw-text-display-5" href="/">{next.heading}</a> */}
+      </div>
+    );
+  }
+
   function Main(props) {
     const location = useLocation();
     const activeSubsections = useSelector((state) => state.navVisibility)
@@ -370,6 +385,7 @@
                       <div className="flex-col flex-shrink-0 pb-8" style={{fontFamily: "Overpass"}} key={`section-${index}`}>
                         <h1 className="pb-4">{heading}</h1>
                         {component}
+                        <NextSectionLink index={index}/>
                       </div>
                     </Route>
                   )
