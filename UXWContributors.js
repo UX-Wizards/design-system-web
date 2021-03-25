@@ -73,8 +73,8 @@ const columnStyle = {
 }
 
 const cardStyle = {
-  "box-shadow": "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
-  "font-size": "16px"
+  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+  fontSize: "16px"
 }
 
 function UXWContributors(props) {
