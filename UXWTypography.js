@@ -22,58 +22,70 @@ function UXWTypography(props) {
         </thead>
         <tbody>
           <tr>
-            <td className="px-4 py-2">Extra Bold</td>
-            <td className="px-4 py-2">3.375em</td>
-            <td className="px-4 py-2">54px</td>
-            <td className="px-4 py-2 font-extrabold" style={{fontSize: "3.375em", lineHeight: 1}}>Design meets magic</td>
+            <td className="px-4 py-2">Black</td>
+            <td className="px-4 py-2">3.5em</td>
+            <td className="px-4 py-2">56px</td>
+            <td className="px-4 py-2 uxw-text-display-1">Display-1</td>
           </tr>
           <tr>
             <td className="px-4 py-2">Extra Bold</td>
             <td className="px-4 py-2">2.25em</td>
             <td className="px-4 py-2">36px</td>
-            <td className="px-4 py-2 font-extrabold text-4xl">Design meets magic</td>
+            <td className="px-4 py-2 uxw-text-display-2">Display-2</td>
           </tr>
           <tr>
             <td className="px-4 py-2">Bold</td>
             <td className="px-4 py-2">1.75</td>
-            <td className="px-4 py-2">27px</td>
-            <td className="px-4 py-2 font-bold" style={{fontSize: "1.75em", lineHeight: 1}}>Design meets magic</td>
+            <td className="px-4 py-2">28px</td>
+            <td className="px-4 py-2 uxw-text-display-3">Display-3</td>
           </tr>
           <tr>
             <td className="px-4 py-2">Regular</td>
             <td className="px-4 py-2">1.5em</td>
             <td className="px-4 py-2">24px</td>
-            <td className="px-4 py-2 text-2xl">Design meets magic</td>
+            <td className="px-4 py-2 uxw-text-display-4">Display-4</td>
           </tr>
           <tr>
             <td className="px-4 py-2">Regular</td>
-            <td className="px-4 py-2">1.313em</td>
-            <td className="px-4 py-2">21px</td>
-            <td className="px-4 py-2" style={{fontSize: "1.313em"}}>Design meets magic</td>
+            <td className="px-4 py-2">1.25em</td>
+            <td className="px-4 py-2">20px</td>
+            <td className="px-4 py-2 uxw-text-display-5">Display-5</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-2">Regular</td>
+            <td className="px-4 py-2">1.125em</td>
+            <td className="px-4 py-2">18px</td>
+            <td className="px-4 py-2 uxw-text-display">Display</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-2">Bold</td>
+            <td className="px-4 py-2">1.125em</td>
+            <td className="px-4 py-2">18px</td>
+            <td className="px-4 py-2 uxw-text-heading">Heading</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-2">Regular</td>
+            <td className="px-4 py-2">1em</td>
+            <td className="px-4 py-2">16px</td>
+            <td className="px-4 py-2 uxw-text-body">Body</td>
           </tr>
           <tr>
             <td className="px-4 py-2">Bold</td>
             <td className="px-4 py-2">1em</td>
             <td className="px-4 py-2">16px</td>
-            <td className="px-4 py-2 font-bold">Design meets magic</td>
-          </tr>
-          <tr>
-            <td className="px-4 py-2">Regular</td>
-            <td className="px-4 py-2">1em</td>
-            <td className="px-4 py-2">16px</td>
-            <td className="px-4 py-2">Design meets magic</td>
+            <td className="px-4 py-2 uxw-button-text">Button</td>
           </tr>
           <tr>
             <td className="px-4 py-2">Regular</td>
             <td className="px-4 py-2">0.875em</td>
             <td className="px-4 py-2">14px</td>
-            <td className="px-4 py-2 text-sm">Design meets magic</td>
+            <td className="px-4 py-2 uxw-text-meta">Meta</td>
           </tr>
           <tr>
             <td className="px-4 py-2">Regular</td>
             <td className="px-4 py-2">0.75em</td>
             <td className="px-4 py-2">12px</td>
-            <td className="px-4 py-2 uppercase text-xs">Design meets magic</td>
+            <td className="px-4 py-2 uxw-text-label">Label</td>
           </tr>
         </tbody>
       </table>

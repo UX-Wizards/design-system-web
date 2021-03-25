@@ -4,20 +4,27 @@
  :root {
     --font-primary: "Overpass", sans-serif;
 
+    /* font styles */
+    --regular: 400;
+    --bold: 700;
+    --extra-bold: 800;
+    --black: 900;
+
     /* type scale */
     --text-xs: .75rem;
     --text-sm: .875rem;
     --text-base: 1rem;
-    --text-lg: 1.131rem;
-    --text-xl: 1.5rem;
-    --text-2xl: 1.75rem;
-    --text-3xl: 2.25rem;
-    --text-4xl: 3.375rem;
-    
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.75rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3.5rem; 
 }
 .uxw-text-label {
     font-size: var(--text-xs);
     line-height: 1rem;
+    text-transform: uppercase;
 } 
 
 .uxw-text-meta {
@@ -30,24 +37,70 @@
     line-height: 1.5rem;
 }
 
-.uxw-text-body--bold {
+.uxw-text-body--bold, 
+.uxw-button-text
+{
     font-size: var(--text-base);
-    font-weight: 600;
-    line-height: 1.75rem;
+    font-weight: var(--bold);
+    line-height: 1.5rem;
 }
 
 .uxw-text-heading {
-    font-size: 1rem;
+    font-size: var(--text-lg);
+    font-weight: var(--bold);
     line-height: 1.75rem;
 }
 
-.uxw-text-heading {
-    font-size: 1rem;
+.uxw-text-display {
+    font-size: var(--text-lg);
     line-height: 1.75rem;
 }
 
-.uxw-text-heading {
-    font-size: 1rem;
+.uxw-text-display-5 {
+    font-size: var(--text-xl);
     line-height: 1.75rem;
 }
 
+.uxw-text-display-4 {
+    font-size: var(--text-2xl);
+    line-height: 1.75rem;
+}
+
+.uxw-text-display-3 {
+    font-size: var(--text-3xl);
+    font-weight: var(--bold);
+    line-height: 1.75rem;
+}
+
+.uxw-text-display-2 
+{
+    font-size: var(--text-4xl);
+    font-weight: var(--extra-bold);
+    line-height: 2rem;
+}
+
+.uxw-text-display-1 
+{
+    font-size: var(--text-5xl);
+    font-weight: var(--black);
+    line-height: 3.5rem;
+}
+
+/* Links */
+
+a {
+  color: var(--uxw-color-acid);
+  font-weight: bold;
+}
+
+/* Buttons */
+
+/* Typography */
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+/* Logos and Icons */

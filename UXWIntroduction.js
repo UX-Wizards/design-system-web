@@ -3,19 +3,39 @@ function UXWIntroduction(props) {
     <div className="container">
       <div className="flex flex-row">
         <p className="md:w-4/5 pr-8">
-          Lucas ipsum dolor sit amet carnor needa chazrach rebo sebulba plagueis finis di veknoid ventress.
-          Maul lando vader sy hutt nomi. Gordin haruun bail jar. Fett mothma toydarian jerec greedo bothawui sesswenna artaru zuckuss.
-          Nassau cerea sern naboo. Tagge leia obi-wan thennqora antilles. Davin selkath jobal tavion metalorn organa muunilinst jettster.
-          jinn hutt ikrit vor. Bertroff kael hutt wharl oola dagobah bibble saleucami. Colton raioballo ansionian hapan billaba wampa organa.
-          Greedo argazdan jinn tof verpine bothan wedge.
+          Welcome to the UX Wizards Design System! We created this so we could build out future websites faster based on our brand and style guide.
+          It is not a Javascript component library, but rather a CSS framework with prebuilt UI elements.
+          As you look through our design system, you'll find usable code snippets (as shown in the panel on the right) with relevant HTML and/or CSS.
+          If you run into any issues, feel free to file them in our <a href="https://github.com/UX-Wizards/design-system-web" target="_blank">Github project</a>.
         </p>
         <div className="flex-grow"></div>
-        <UXWCodePanel />
+        <UXWCodePanelHTMLCSS>
+          <div>
+{`<h1 class="uxw-h1">
+    Hello World
+</h1>
+`}
+          </div>
+          <div>
+{`.uxw-code {
+    padding: 4;
+    color: #ff0000;
+}`}
+          </div>
+        </UXWCodePanelHTMLCSS>
       </div>
-      <h2 className="text-xl py-4">Installation and Usage</h2>
-      <p>
-        Hello World.
-      </p>
+      <UXWSubsection anchor="introduction--installation-and-usage" title="Installation and Usage">
+        <p className="pb-4">
+          We include two CSS stylesheets depending on how opinionated you want the CSS to be. Use <span className="uxw-code">uxwcode.css</span> for utility style usage.
+          If you want UI elements to be automatically styled for you, we've included <span className="uxw-code">uxw.css</span> for you as well.
+          You must always include <span className="uxw-code">uxwcore.css</span> because <span className="uxw-code">uxw.css</span> is dependent on it. To include both
+          in your site, see example below.
+        </p>
+        <UXWCodePanelSingle lang="html">
+{`<link href="uxwcore.css" rel="stylesheet">
+<link href="uxw.css" rel="stylesheet">`}
+        </UXWCodePanelSingle>
+      </UXWSubsection>
     </div>
   )
 }
