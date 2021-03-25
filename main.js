@@ -16,6 +16,8 @@
   const { configureStore } = window["RTK"]
   const { Provider, useSelector } = window["ReactRedux"]
 
+  const { useEffect } = window['React'];
+
   const fabCopy = {
     position: "absolute",
     bottom: "16px",
@@ -325,9 +327,18 @@
       <div className="container text-right pt-16">
         <p className="uxw-text-meta">Next</p>
         <RouterLink to={next.route}>{next.heading}</RouterLink>
-        {/* <a className="uxw-text-display-5" href="/">{next.heading}</a> */}
       </div>
     );
+  }
+  
+function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo({top:0,left:0, behavior: "smooth"});
+    }, [pathname]);
+  
+    return null;
   }
 
   function Main(props) {
@@ -401,6 +412,7 @@
   ReactDOM.render(
     <Provider store={reduxStore}>
       <Router>
+        <ScrollToTop/>
         <Main />
       </Router>
     </Provider>
