@@ -53,10 +53,10 @@ const buttonStyle = {
   outline: "0",
   display: "inline-block",
   padding: "8px",
-  "font-size":"16px",
+  fontSize:"16px",
   color: "white",
-  "background-color": "#6331FD",
-  "text-align": "center",
+  backgroundColor: "#6331FD",
+  textAlign: "center",
   cursor: "pointer",
   width: "100%"
 }
@@ -68,7 +68,7 @@ const titleStyle = {
 const columnStyle = {
   float: "left",
   width: "33.3%",
-  "margin-bottom": "16px",
+  marginBottom: "16px",
   padding: "0 8px"
 }
 
