@@ -6,7 +6,7 @@ function UXWTypography(props) {
       <UXWSubsection anchor="typography--font" title="Font">
         <p className="max-w-prose">Inspired by the typeface used in road signage all around America, Overpass represents the UX Wizards’ ever expanding reach.
         </p>
-        <a href="https://fonts.google.com/specimen/overpass">↳ Download Overpass</a>
+        <a href="https://fonts.google.com/specimen/Overpass">↳ Download Overpass</a>
       </UXWSubsection>
       <UXWSubsection anchor="typography--scale" title="Scale">
         <p className="max-w-prose">The scale is absolute, but the font-weight and styling are simply guidelines. Headings can be selected from the scale as necessary, but hierarchy must be consistent across each medium.
