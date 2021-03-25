@@ -164,8 +164,8 @@
       heading: "Typography (Sidney)",
       subheadings: [
         {
-          subtitle: "This is Overpass",
-          anchor: "typography--this-is-overpass",
+          subtitle: "Font",
+          anchor: "typography--font",
         },
         {
           subtitle: "Scale",
@@ -178,10 +178,6 @@
         {
           subtitle: "Usage",
           anchor: "typography--usage",
-        },
-        {
-          subtitle: "CSS",
-          anchor: "typography--css",
         },
       ],
       route: "/typography",
