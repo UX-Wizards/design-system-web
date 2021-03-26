@@ -3,13 +3,10 @@ function UXWColors(props) {
     <div className="container">
 
 
-      <p className="pt-8 pb-12"> - - !  Until this tag is removed, color swatches are not accurate to UXW colors ! - - </p>
 
 
-
-      <p className="font-bold font-2xl pb-4">
-        Philosophy
-      </p>
+      <UXWSubsection anchor="colors-think" title="Our Thinking">
+      <span className="pb-12"></span>
 
       <p className="pb-12">
         Our palette consists of neutral, pleasing tones balanced by vivid
@@ -24,18 +21,17 @@ function UXWColors(props) {
 
       <p className="pb-12">
         Though our palette is established, we encourage experimentation
-        through blending modes and gradients. Start with the main variant in
+        through blending modes and gradients. Start with the base color in
         the left column, and supplement your designs with the alternate shades
         on the right if you want to play around. You might be surprised, the
         results could be spellbinding!
         </p>
+      </UXWSubsection>
 
       <hr className="pb-12"></hr>
 
-
-      <p className="font-bold font-4xl pb-4">
-        Primary colors
-          </p>
+      <UXWSubsection anchor="colors-prim" title="Primary Colors">
+      <span className="pb-b"></span>
 
       <p className="pb-12">
         The flexible and neutral Magician's Cloak, Acid, and Merlin's Beard
@@ -48,9 +44,9 @@ function UXWColors(props) {
             </p>
 
 
-      <div className="grid grid-cols-2 mx-4">
-        <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
-        <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
+      <div className="grid grid-cols-2 gap-2 mx-4">
+        <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+        <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
       </div>
 
 
@@ -58,9 +54,9 @@ function UXWColors(props) {
 
       <div className="grid grid-cols-2 mx-4 pb-12">
 
-        <div className="bg-indigo-300 h-32">
+        <div className="bg-transparent h-32">
           <div className="grid grid-cols-3">
-            <div className="box h-32 w-32 bg-indigo-900 m-4 z-1">
+            <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-magicians-cloak-1 shadow-2xl m-4 z-1">
               <p className="z-2 text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
               <p className="z-2 text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
             </div>
@@ -71,16 +67,16 @@ function UXWColors(props) {
               <span className="font-bold">CMYK:</span> <span className="font-normal">19, 14, 0, 79</span>
             </p>
           </div>
-        </div>
+        </div> 
 
 
 
 
-        <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
+        <div className="grid grid-cols-6 uxw-bg-steel-1 h-28 gap-4 shadow-lg m-4">
 
 
 
-          <div className="box h-20 w-20 bg-blue-400 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-magicians-cloak-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="z-2 text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
           </div>
@@ -94,7 +90,7 @@ function UXWColors(props) {
 
 
 
-          <div className="box h-20 w-20 bg-blue-900 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-magicians-cloak-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="z-2 text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
           </div>
@@ -119,17 +115,17 @@ function UXWColors(props) {
       </div>
       <br />
 
-      <div className="grid grid-cols-2 mx-4">
-        <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
-        <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
+      <div className="grid grid-cols-2 gap-2 mx-4">
+        <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+        <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
       </div>
 
 
 
       <div className="grid grid-cols-2 mx-4 pb-12">
 
-        <div className="grid grid-cols-3 bg-indigo-300 h-32">
-          <div className="box h-32 w-32 bg-purple-700 m-4 z-1">
+        <div className="grid grid-cols-3 bg-transparent h-32">
+          <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-acid-1 shadow-2xl m-4 z-1">
             <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
           </div>
@@ -146,9 +142,9 @@ function UXWColors(props) {
 
 
 
-        <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
+        <div className="grid grid-cols-6 uxw-bg-steel-1 h-32 shadow-lg gap-4 m-4">
 
-          <div className="box h-20 w-20 bg-purple-200 m-4 z-1">
+          <div className="box h-20 w-20 rounded-md uxw-bg-acid-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4 z-1">
             <p className="z-2 text-left text-black pl-2 pt-1"><span className="text-black font-bold">A </span>PASS</p>
             <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
           </div>
@@ -161,7 +157,7 @@ function UXWColors(props) {
 
 
 
-          <div className="box h-20 w-20 bg-purple-900 m-4 z-1">
+          <div className="box h-20 w-20 rounded-md uxw-bg-acid-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4 z-1">
             <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="z-2 text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
           </div>
@@ -185,18 +181,18 @@ function UXWColors(props) {
              </p>
       </div>
 
-      <div className="grid grid-cols-2 mx-4">
-        <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
-        <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
+      <div className="grid grid-cols-2 gap-2 mx-4">
+        <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+        <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
       </div>
 
 
 
       <div className="grid grid-cols-2 mx-4 pb-28">
 
-        <div className=" grid grid-cols-3 bg-indigo-300 h-32">
+        <div className="grid grid-cols-3 bg-transparent h-32">
 
-          <div className="box h-32 w-32 bg-white m-4 border-2 border-indigo-900 z-1">
+          <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-merlins-beard-1 shadow-lg border m-4 z-1">
             <p className="z-2 text-left pl-4 pt-2"><span className="text-black font-bold">A </span>PASS</p>
             <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
           </div>
@@ -210,10 +206,10 @@ function UXWColors(props) {
 
 
 
-        <div className="flex flex-row flex-wrap bg-indigo-100 h-32 m-4">
+        <div className="flex flex-row flex-wrap uxw-bg-steel-1 h-32 shadow-lg m-4">
 
           <div className="flex flex-none">
-            <div className="box h-20 w-20 bg-gray-100 m-4 z-1">
+            <div className="box h-20 w-20 rounded-md uxw-bg-merlins-beard-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4 z-1">
               <p className="z-2 text-left pl-2 pt-1"><span className="text-black font-bold">A </span>PASS</p>
               <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
             </div>
@@ -228,7 +224,7 @@ function UXWColors(props) {
 
 
           <div className="flex flex-none">
-            <div className="box h-20 w-20 bg-gray-300 m-4">
+            <div className="box h-20 w-20 rounded-md uxw-bg-merlins-beard-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
               <p className="z-2 text-left pl-2 pt-1"><span className="text-black font-bold">A </span>PASS</p>
               <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
             </div>
@@ -241,8 +237,8 @@ function UXWColors(props) {
           </div>
 
 
-          <div className="flex flex-none flex-grow bg-indigo-100 pb-2">
-            <div className="box h-20 w-20 bg-gray-500 m-4">
+          <div className="flex flex-none flex-grow uxw-bg-steel-1 shadow-lg pb-2">
+            <div className="box h-20 w-20 rounded-md uxw-bg-merlins-beard-4 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
               <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
               <p className="z-2 text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
             </div>
@@ -260,12 +256,12 @@ function UXWColors(props) {
 
       </div>
 
+      </UXWSubsection>
+
       <hr className="pb-4"></hr>
 
-
-      <p className="font-bold font-4xl pt-8 pb-4">
-        Secondary colors
-          </p>
+      <UXWSubsection anchor="colors-sec" title="Secondary and Accent Colors">
+      <span className="pb-b"></span>
 
       <p className="pb-4">
         The foundation colors are balanced by the livelier colors <span className="font-bold">Steel,
@@ -291,18 +287,18 @@ function UXWColors(props) {
             </p>
       </div>
 
-      <div className="grid grid-cols-2 mx-4">
-        <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
-        <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
+      <div className="grid grid-cols-2 gap-2 mx-4">
+        <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+        <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
       </div>
 
 
 
       <div className="grid grid-cols-2 mx-4 pb-12">
 
-        <div className="grid grid-cols-3 bg-indigo-300 h-32">
+        <div className="grid grid-cols-3 bg-transparent h-32">
 
-          <div className="box h-32 w-32 bg-indigo-100 m-4 z-1">
+          <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-steel-1 shadow-xl m-4 z-1">
             <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>PASS</p>
             <p className="text-left text-black pl-4"><span className="text-white font-bold">A </span>FAIL</p>
           </div>
@@ -317,9 +313,9 @@ function UXWColors(props) {
 
 
 
-        <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
+        <div className="grid grid-cols-6 uxw-bg-steel-1 h-32 gap-4 shadow-lg m-4">
 
-          <div className="box h-20 w-20 bg-indigo-50 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-steel-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="text-left text-black pl-2 pt-4"><span className=" font-bold">A </span>PASS</p>
             <p className="text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
           </div>
@@ -331,7 +327,7 @@ function UXWColors(props) {
           </p>
 
 
-          <div className="box h-20 w-20 bg-indigo-200 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-steel-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="text-left text-black pl-2 pt-1"><span className=" font-bold">A </span>PASS</p>
             <p className="text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
           </div>
@@ -355,18 +351,18 @@ function UXWColors(props) {
              </p>
       </div>
 
-      <div className="grid grid-cols-2 mx-4">
-        <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
-        <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
+      <div className="grid grid-cols-2 gap-2 mx-4">
+        <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+        <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
       </div>
 
 
 
       <div className="grid grid-cols-2 mx-4 pb-6">
 
-        <div className="grid grid-cols-3 bg-indigo-300 h-32">
+        <div className="grid grid-cols-3 bg-transparent h-32">
 
-          <div className="box h-32 w-32 bg-blue-500 m-4">
+          <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-mana-1 shadow-2xl m-4">
             <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>FAIL</p>
             <p className="text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
           </div>
@@ -381,9 +377,9 @@ function UXWColors(props) {
 
 
 
-        <div className="grid grid-cols-6 gap-4 m-4 bg-indigo-100 h-32">
+        <div className="grid grid-cols-6 gap-4 m-4 uxw-bg-steel-1 shadow-lg h-32">
 
-          <div className="box h-20 w-20 bg-blue-400 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-mana-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
           </div>
@@ -397,7 +393,7 @@ function UXWColors(props) {
 
 
 
-          <div className="box h-20 w-20 bg-blue-800 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-mana-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
           </div>
@@ -430,9 +426,9 @@ function UXWColors(props) {
       </div>
       <br />
 
-      <div className="grid grid-cols-2 mx-4">
-        <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
-        <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
+      <div className="grid grid-cols-2 gap-2 mx-4">
+        <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+        <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
       </div>
 
 
@@ -440,9 +436,9 @@ function UXWColors(props) {
       <div className="grid grid-cols-2 mx-4 pb-12">
 
 
-        <div className="grid grid-cols-3 bg-indigo-300 h-32">
+        <div className="grid grid-cols-3 bg-transparent h-32">
 
-          <div className="box h-32 w-32 bg-pink-500 m-4">
+          <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-jinx-1 shadow-2xl m-4">
             <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="text-left text-white pl-4"><span className="font-bold">A </span>PASS</p>
           </div>
@@ -456,9 +452,9 @@ function UXWColors(props) {
         </div>
 
 
-        <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
+        <div className="grid grid-cols-6 uxw-bg-steel-1 h-32 gap-4 shadow-lg m-4">
 
-          <div className="box h-20 w-20 bg-pink-200 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-jinx-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
           </div>
@@ -470,7 +466,7 @@ function UXWColors(props) {
           </p>
 
 
-          <div className="box h-20 w-20 bg-pink-700 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-jinx-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
           </div>
@@ -496,17 +492,17 @@ function UXWColors(props) {
              </p>
       </div>
 
-      <div className="grid grid-cols-2 mx-4">
-        <div className="bg-indigo-300 text-center h-8 pt-1">Main variant</div>
-        <div className="bg-indigo-100 text-center h-8 pt-1">Alternate shades</div>
+      <div className="grid grid-cols-2 gap-2 mx-4">
+        <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+        <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
       </div>
 
 
 
       <div className="grid grid-cols-2 mx-4 pb-24">
 
-        <div className="grid grid-cols-3 bg-indigo-300 h-32">
-          <div className="box h-32 w-32 bg-yellow-500 m-4">
+        <div className="grid grid-cols-3 bg-transparent h-32">
+          <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-elixir-1 shadow-2xl m-4">
             <p className="text-left text-black pl-4 pt-2"><span className="font-bold">A </span>PASS</p>
             <p className="text-left text-black pl-4"><span className="text-white font-bold">A </span>FAIL</p>
           </div>
@@ -520,9 +516,9 @@ function UXWColors(props) {
         </div>
 
 
-        <div className="grid grid-cols-6 bg-indigo-100 h-32 gap-4 m-4">
+        <div className="grid grid-cols-6 uxw-bg-steel-1 h-32 gap-4 shadow-lg m-4">
 
-          <div className="box h-20 w-20 bg-yellow-200 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-elixir-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="text-left text-black pl-2 pt-1"><span className=" font-bold">A </span>PASS</p>
             <p className="text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
           </div>
@@ -536,7 +532,7 @@ function UXWColors(props) {
 
 
 
-          <div className="box h-20 w-20 bg-yellow-700 m-4">
+          <div className="box h-20 w-20 rounded-md uxw-bg-elixir-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
             <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
             <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
           </div>
@@ -552,9 +548,7 @@ function UXWColors(props) {
 
       </div>
 
-
-
-      <p> - - ! Reminder, color swatches aren't to spec until this tag is removed ! - -</p>
+      </UXWSubsection>
 
 
 
