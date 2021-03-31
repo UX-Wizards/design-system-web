@@ -158,7 +158,34 @@
     },
     {
       heading: "Colors (Max)",
-      subheadings: [],
+      subheadings: [
+
+{
+  subtitle: "Our Thinking",
+  anchor: "colors--thinking",
+},
+
+{
+  subtitle: "Using Our Palette",
+  anchor: "colors--palette",
+},
+
+{
+  subtitle: "Primary Colors",
+  anchor: "colors--primary",
+},
+
+{
+  subtitle: "Secondary Colors",
+  anchor: "colors--secondary",
+},
+
+{
+  subtitle: "Accent Colors",
+  anchor: "colors--accent",
+},
+
+      ],
       route: "/colors",
       component: <UXWColors />,
     },
