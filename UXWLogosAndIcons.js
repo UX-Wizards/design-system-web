@@ -1,7 +1,7 @@
 function UXWLogosAndIcons(props) {
   return (
     <div className="container">
-      <div className="flex-col flex-shrink-0 px-4 py-4">
+      <div className="flex-col flex-shrink-0 py-4">
         <div className="container">
           <UXWSubsection anchor="snav-logos" title="Logos">
             <p>The Wizards hat will always accompany the UX WIZARDS text.  The rectangular version will be the main logo and includes an arrow cursor as if the logo is being clicked on.</p><br />
@@ -18,7 +18,7 @@ function UXWLogosAndIcons(props) {
             <img className="my-16 w-4/5" src="assets/icongraphy.png" alt="" />
           </UXWSubsection>
           <UXWSubsection anchor="snav-library" title="Library">
-            <p className="pb-16">Library descriptions comes here, Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall. Nearly-Headless Nick now string them together, and answer me this, which creature would you be unwilling to kiss?</p>
+            <p className="pb-16">Each download includes .png and svg formats. Also, it comes with other color options.</p>
             <div className="grid grid-cols-2 gap-8">
               <div className="flex flex-col">
                 <div className="flex flex-row bg-gray-200 rounded-t-lg">
