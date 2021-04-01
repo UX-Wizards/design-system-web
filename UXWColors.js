@@ -18,7 +18,7 @@ function UXWColors(props) {
 
       <UXWSubsection anchor="colors--palette" title="Using Our Palette">
 
-        
+
 
         <p className="pb-12">
           Though our palette is established, we encourage experimentation
@@ -38,7 +38,7 @@ function UXWColors(props) {
       <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 mt-4 mb-20">
 
         <p className="italic">
-          The flexible and neutral <span className="font-bold">Magician's Cloak</span>, 
+          The flexible and neutral <span className="font-bold">Magician's Cloak</span>,
           <span className="font-bold"> Acid</span>, and <span className="font-bold">Merlin's Beard</span> lead the way, providing a well-balanced foundation.
         </p>
 
@@ -77,15 +77,18 @@ function UXWColors(props) {
               <div className="w-2/3">
                 <UXWCodePanelHTMLCSS>
                   <div>
-                    {`<h1 class="uxw-bg-magicians-cloak-1">
-                    Hello World
-                    </h1>
-                    `}
+{`
+<h1 class="uxw-bg-magicians-cloak-1">
+  Hello World
+</h1>
+`}
                   </div>
                   <div>
-                    {`.uxw-bg-magicians-cloak-1 {
-                    background-color: #145152
-                    }`}
+{`
+.uxw-bg-magicians-cloak-1 {
+  background-color: #145152
+}
+`}
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
@@ -117,15 +120,18 @@ function UXWColors(props) {
                   <div className="m-2">
                     <UXWCodePanelHTMLCSS>
                       <div>
-                        {`<h1 class="uxw-bg-magicians-cloak-2">
-                        Hello World
-                        </h1>
-                        `}
+{`
+<h1 class="uxw-bg-magicians-cloak-2">
+  Hello World
+</h1>
+`}
                       </div>
                       <div>
-                        {`.uxw-bg-magicians-cloak-2 {
-                        background-color: #5267A7
-                        }`}
+{`
+.uxw-bg-magicians-cloak-2 {
+  background-color: #5267A7
+}
+`}
                       </div>
                     </UXWCodePanelHTMLCSS>
                   </div>
@@ -150,15 +156,18 @@ function UXWColors(props) {
                   <div className="m-2">
                     <UXWCodePanelHTMLCSS>
                       <div>
-                        {`<h1 class="uxw-bg-magicians-cloak-3">
-                          Hello World
-                          </h1>
-                          `}
+{`
+<h1 class="uxw-bg-magicians-cloak-3">
+  Hello World
+</h1>
+`}
                       </div>
                       <div>
-                        {`.uxw-bg-magicians-cloak-3 {
-                        background-color: #2E3E6E
-                        }`}
+{`
+.uxw-bg-magicians-cloak-3 {
+  background-color: #2E3E6E
+}
+`}
                       </div>
                     </UXWCodePanelHTMLCSS>
                   </div>
@@ -208,15 +217,18 @@ function UXWColors(props) {
               <div className="w-2/3">
                 <UXWCodePanelHTMLCSS>
                   <div>
-                    {`<h1 class="uxw-bg-acid-1">
-                     Hello World
-                      </h1>
-                      `}
+{`
+<h1 class="uxw-bg-acid-1">
+  Hello World
+</h1>
+`}
                   </div>
                   <div>
-                    {`.uxw-bg-acid-1 {
-                    background-color: #6331FD
-                    }`}
+{`
+.uxw-bg-acid-1 {
+  background-color: #6331FD
+}
+`}
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
@@ -248,15 +260,18 @@ function UXWColors(props) {
                 <div className="m-2">
                     <UXWCodePanelHTMLCSS>
                       <div>
-                        {`<h1 class="uxw-bg-acid-2">
-                        Hello World
-                        </h1>
-                        `}
+{`
+<h1 class="uxw-bg-acid-2">
+  Hello World
+</h1>
+`}
                       </div>
                       <div>
-                        {`.uxw-bg-acid-2 {
-                        background-color: #D5CCFB
-                        }`}
+{`
+.uxw-bg-acid-2 {
+  background-color: #D5CCFB
+}
+`}
                       </div>
                     </UXWCodePanelHTMLCSS>
                  </div>
@@ -264,7 +279,7 @@ function UXWColors(props) {
                  </div>
 
               <div className="flex flex-row mx-4 mb-4">
-              
+
                 <div className="flex flex-none w-1/2 items-center justify-center">
 
                  <div className="box h-20 w-20 rounded-md uxw-bg-acid-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4 z-1">
@@ -279,19 +294,22 @@ function UXWColors(props) {
                   </p>
 
                 </div>
-                    
+
                 <div className="m-2">
                     <UXWCodePanelHTMLCSS>
                       <div>
-                        {`<h1 class="uxw-bg-acid-3">
-                        Hello World
-                        </h1>
-                        `}
+{`
+<h1 class="uxw-bg-acid-3">
+  Hello World
+</h1>
+`}
                       </div>
                       <div>
-                        {`.uxw-bg-acid-3 {
-                        background-color: #3822AC
-                        }`}
+{`
+.uxw-bg-acid-3 {
+  background-color: #3822AC
+}
+`}
                       </div>
                     </UXWCodePanelHTMLCSS>
                  </div>
@@ -302,18 +320,18 @@ function UXWColors(props) {
             </div>
             </div>
 
-          
+
           <div className="flex flex-col flex-wrap flex-grow">
 
             <p className="font-bold font-2xl pb-4">
               Merlin's Beard
             </p>
-          
+
 
             <div className="flex flex-row pb-10">
 
               <div className="flex flex-col w-1/2">
-                          
+
                 <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
 
                 <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
@@ -334,15 +352,18 @@ function UXWColors(props) {
                 <div className="w-2/3">
                 <UXWCodePanelHTMLCSS>
                   <div>
-                    {`<h1 class="uxw-bg-merlins-beard-1">
-                     Hello World
-                      </h1>
-                      `}
+{`
+<h1 class="uxw-bg-merlins-beard-1">
+  Hello World
+</h1>
+`}
                   </div>
                   <div>
-                    {`.uxw-bg-merlins-beard-1 {
-                    background-color: #FFFFFF
-                    }`}
+{`
+.uxw-bg-merlins-beard-1 {
+  background-color: #FFFFFF
+}
+`}
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
@@ -376,15 +397,18 @@ function UXWColors(props) {
                     <div className="m-2">
                       <UXWCodePanelHTMLCSS>
                         <div>
-                          {`<h1 class="uxw-bg-merlins-beard-2">
-                          Hello World
-                          </h1>
-                          `}
+{`
+<h1 class="uxw-bg-merlins-beard-2">
+  Hello World
+</h1>
+`}
                         </div>
                         <div>
-                          {`.uxw-bg-merlins-beard-2 {
-                          background-color: #E6E6E6
-                          }`}
+{`
+.uxw-bg-merlins-beard-2 {
+  background-color: #E6E6E6
+}
+`}
                         </div>
                       </UXWCodePanelHTMLCSS>
                     </div>
@@ -411,15 +435,18 @@ function UXWColors(props) {
                     <div className="m-2">
                       <UXWCodePanelHTMLCSS>
                         <div>
-                          {`<h1 class="uxw-bg-merlins-beard-3">
-                          Hello World
-                          </h1>
-                          `}
+{`
+<h1 class="uxw-bg-merlins-beard-3">
+  Hello World
+</h1>
+`}
                         </div>
                         <div>
-                          {`.uxw-bg-merlins-beard-3 {
-                          background-color: #C9CACB
-                          }`}
+{`
+.uxw-bg-merlins-beard-3 {
+  background-color: #C9CACB
+}
+`}
                         </div>
                       </UXWCodePanelHTMLCSS>
                     </div>
@@ -445,26 +472,29 @@ function UXWColors(props) {
                     <div className="m-2">
                       <UXWCodePanelHTMLCSS>
                         <div>
-                          {`<h1 class="uxw-bg-merlins-beard-4">
-                          Hello World
-                          </h1>
-                          `}
+{`
+<h1 class="uxw-bg-merlins-beard-4">
+  Hello World
+</h1>
+`}
                         </div>
                         <div>
-                          {`.uxw-bg-merlins-beard-4 {
-                          background-color: #747887
-                          }`}
+{`
+.uxw-bg-merlins-beard-4 {
+  background-color: #747887
+}
+`}
                         </div>
                       </UXWCodePanelHTMLCSS>
                     </div>
 
                   </div>
 
-                  
+
 
                 </div>
 
-                
+
               </div>
 
             </div>
@@ -478,16 +508,16 @@ function UXWColors(props) {
 
       <UXWSubsection anchor="colors--secondary" title="Secondary and Accent Colors">
         <span className="pb-b"></span>
-          
+
       <div className="flex flex-row">
-        
+
         <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 my-8">
           <p className="italic">
             The foundation colors are balanced by the livelier colors <span className="font-bold">Steel,
             Mana, Jinx,</span> and <span className="font-bold">Elixir</span>. We break these into two (<span className="italic">categories</span>).
           </p>
         </div>
-        
+
       </div>
 
         <div className="flex flex-auto w-full bg-transparent justify-center">
@@ -499,13 +529,13 @@ function UXWColors(props) {
         </div>
 
 
-        
+
         <div className="flex flex-col flex-wrap flex-grow">
 
           <p className="font-bold font-2xl pb-4">
             Steel (<span className="font-normal italic">secondary</span>)
           </p>
-       
+
 
        <div className="flex flex-row pb-10">
 
@@ -532,15 +562,18 @@ function UXWColors(props) {
 
           <UXWCodePanelHTMLCSS>
               <div>
-                {`<h1 class="uxw-bg-steel-1">
-                Hello World
-                </h1>
-                `}
+{`
+<h1 class="uxw-bg-steel-1">
+  Hello World
+</h1>
+`}
               </div>
               <div>
-                {`.uxw-bg-steel-1 {
-                background-color: #E2E6FB
-                }`}
+{`
+.uxw-bg-steel-1 {
+  background-color: #E2E6FB
+}
+`}
               </div>
           </UXWCodePanelHTMLCSS>
 
@@ -553,7 +586,7 @@ function UXWColors(props) {
             <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
 
             <div className="flex flex-row mx-4 mt-4">
-            
+
               <div className="flex flex-none w-1/2 items-center justify-center">
 
                 <div className="box h-20 w-20 rounded-md uxw-bg-steel-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
@@ -573,15 +606,18 @@ function UXWColors(props) {
 
                 <UXWCodePanelHTMLCSS>
                   <div>
-                    {`<h1 class="uxw-bg-steel-2">
-                    Hello World
-                    </h1>
-                    `}
+{`
+<h1 class="uxw-bg-steel-2">
+  Hello World
+</h1>
+`}
                   </div>
                   <div>
-                   {`.uxw-bg-steel-2 {
-                    background-color: #F6F9FD
-                   }`}
+{`
+.uxw-bg-steel-2 {
+  background-color: #F6F9FD
+}
+`}
                   </div>
                 </UXWCodePanelHTMLCSS>
 
@@ -610,15 +646,18 @@ function UXWColors(props) {
 
                 <UXWCodePanelHTMLCSS>
                   <div>
-                    {`<h1 class="uxw-bg-steel-3">
-                    Hello World
-                    </h1>
-                    `}
+{`
+<h1 class="uxw-bg-steel-3">
+  Hello World
+</h1>
+`}
                   </div>
                   <div>
-                   {`.uxw-bg-steel-3 {
-                   background-color: #CDD5F2
-                   }`}
+{`
+.uxw-bg-steel-3 {
+  background-color: #CDD5F2
+}
+`}
                   </div>
                 </UXWCodePanelHTMLCSS>
 
@@ -634,7 +673,7 @@ function UXWColors(props) {
 
 
         <div className="flex flex-col flex-wrap flex-grow">
-       
+
           <p className="font-bold font-2xl pb-4">
             Mana (<span className="font-normal italic">secondary</span>)
           </p>
@@ -665,15 +704,18 @@ function UXWColors(props) {
               <div className="w-2/3">
                 <UXWCodePanelHTMLCSS>
                   <div>
-                    {`<h1 class="uxw-bg-mana-1">
-                    Hello World
-                    </h1>
-                    `}
+{`
+<h1 class="uxw-bg-mana-1">
+  Hello World
+</h1>
+`}
                   </div>
                   <div>
-                    {`.uxw-bg-mana-1 {
-                    background-color: #52B9D3
-                    }`}
+{`
+.uxw-bg-mana-1 {
+  background-color: #52B9D3
+}
+`}
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
@@ -709,15 +751,18 @@ function UXWColors(props) {
                   <div className="m-2">
                       <UXWCodePanelHTMLCSS>
                         <div>
-                          {`<h1 class="uxw-bg-mana-2">
-                          Hello World
-                          </h1>
-                          `}
+{`
+<h1 class="uxw-bg-mana-2">
+  Hello World
+</h1>
+`}
                         </div>
                         <div>
-                          {`.uxw-bg-mana-2 {
-                          background-color: #68DAF9
-                          }`}
+{`
+.uxw-bg-mana-2 {
+  background-color: #68DAF9
+}
+`}
                         </div>
                       </UXWCodePanelHTMLCSS>
                   </div>
@@ -745,15 +790,18 @@ function UXWColors(props) {
                   <div className="m-2">
                       <UXWCodePanelHTMLCSS>
                         <div>
-                          {`<h1 class="uxw-bg-mana-3">
-                          Hello World
-                          </h1>
-                          `}
+{`
+<h1 class="uxw-bg-mana-3">
+  Hello World
+</h1>
+`}
                         </div>
                         <div>
-                          {`.uxw-bg-mana-3 {
-                          background-color: #4999AE
-                          }`}
+{`
+.uxw-bg-mana-3 {
+  background-color: #4999AE
+}
+`}
                         </div>
                       </UXWCodePanelHTMLCSS>
                     </div>
@@ -814,15 +862,18 @@ function UXWColors(props) {
               <div className="w-2/3">
                 <UXWCodePanelHTMLCSS>
                   <div>
-                    {`<h1 class="uxw-bg-jinx-1">
-                    Hello World
-                    </h1>
-                    `}
+{`
+<h1 class="uxw-bg-jinx-1">
+  Hello World
+</h1>
+`}
                   </div>
                   <div>
-                    {`.uxw-bg-jinx-1 {
-                    background-color: #ED6F85
-                    }`}
+{`
+.uxw-bg-jinx-1 {
+  background-color: #ED6F85
+}
+`}
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
@@ -855,15 +906,18 @@ function UXWColors(props) {
 
                   <UXWCodePanelHTMLCSS>
                     <div>
-                     {`<h1 class="uxw-bg-jinx-2">
-                      Hello World
-                     </h1>
-                    `}
+{`
+<h1 class="uxw-bg-jinx-2">
+  Hello World
+</h1>
+`}
                    </div>
                    <div>
-                    {`.uxw-bg-jinx-2 {
-                    background-color: #F4ACBA
-                    }`}
+{`
+.uxw-bg-jinx-2 {
+  background-color: #F4ACBA
+}
+`}
                    </div>
                   </UXWCodePanelHTMLCSS>
 
@@ -889,21 +943,24 @@ function UXWColors(props) {
                  </div>
 
                  <div className="m-2">
-                  
+
                     <UXWCodePanelHTMLCSS>
                       <div>
-                        {`<h1 class="uxw-bg-jinx-3">
-                        Hello World
-                        </h1>
-                        `}
+{`
+<h1 class="uxw-bg-jinx-3">
+  Hello World
+</h1>
+`}
                       </div>
                       <div>
-                        {`.uxw-bg-jinx-3 {
-                       background-color: #D9556B
-                       }`}
+{`
+.uxw-bg-jinx-3 {
+  background-color: #D9556B
+}
+`}
                       </div>
-                    </UXWCodePanelHTMLCSS>        
-                 
+                    </UXWCodePanelHTMLCSS>
+
                   </div>
 
 
@@ -946,15 +1003,18 @@ function UXWColors(props) {
               <div className="w-2/3">
                 <UXWCodePanelHTMLCSS>
                   <div>
-                    {`<h1 class="uxw-bg-elixir-1">
-                    Hello World
-                    </h1>
-                    `}
+{`
+<h1 class="uxw-bg-elixir-1">
+  Hello World
+</h1>
+`}
                   </div>
                   <div>
-                   {`.uxw-bg-elixir-1 {
-                    background-color: #E6B161
-                    }`}
+{`
+.uxw-bg-elixir-1 {
+  background-color: #E6B161
+}
+`}
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
@@ -988,15 +1048,18 @@ function UXWColors(props) {
                 <div className="m-2">
                   <UXWCodePanelHTMLCSS>
                     <div>
-                     {`<h1 class="uxw-bg-elixir-2">
-                     Hello World
-                     </h1>
-                     `}
+{`
+<h1 class="uxw-bg-elixir-2">
+  Hello World
+</h1>
+`}
                    </div>
                    <div>
-                     {`.uxw-bg-elixir-2 {
-                    background-color: #F8D399
-                    }`}
+{`
+.uxw-bg-elixir-2 {
+  background-color: #F8D399
+}
+`}
                    </div>
                  </UXWCodePanelHTMLCSS>
                </div>
@@ -1023,15 +1086,18 @@ function UXWColors(props) {
                 <div className="m-2">
                 <UXWCodePanelHTMLCSS>
                   <div>
-                    {`<h1 class="uxw-bg-elixir-3">
-                    Hello World
-                    </h1>
-                    `}
+{`
+<h1 class="uxw-bg-elixir-3">
+  Hello World
+</h1>
+`}
                   </div>
                   <div>
-                   {`.uxw-bg-elixir-3 {
-                    background-color: #CF9748
-                    }`}
+{`
+.uxw-bg-elixir-3 {
+  background-color: #CF9748
+}
+`}
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>

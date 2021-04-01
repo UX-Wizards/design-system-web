@@ -11,15 +11,17 @@ function UXWIntroduction(props) {
         <div className="flex-grow"></div>
         <UXWCodePanelHTMLCSS>
           <div>
-{`<h1 class="uxw-h1">
-    Hello World
+{`
+<h1 class="uxw-h1">
+  Hello World
 </h1>
 `}
           </div>
           <div>
-{`.uxw-code {
-    padding: 4;
-    color: #ff0000;
+{`
+.uxw-code {
+  padding: 4;
+  color: #ff0000;
 }`}
           </div>
         </UXWCodePanelHTMLCSS>
@@ -28,8 +30,8 @@ function UXWIntroduction(props) {
         <p className="pb-4">
           We include two CSS stylesheets depending on how opinionated you want the CSS to be. Use <span className="uxw-code">uxwcode.css</span> for utility style usage.
           If you want UI elements to be automatically styled for you, we've included <span className="uxw-code">uxw.css</span> for you as well.
-          You must always include <span className="uxw-code">uxwcore.css</span> because <span className="uxw-code">uxw.css</span> is dependent on it. To include both
-          in your site, see example below.
+          You must always include <span className="uxw-code">uxwcore.css</span> because <span className="uxw-code">uxw.css</span> is dependent on it. See below
+          for a full example.
         </p>
         <UXWCodePanelSingle lang="html">
 {`<link href="uxwcore.css" rel="stylesheet">

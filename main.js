@@ -1,5 +1,5 @@
 {
-  const { AppBar, Drawer, Tabs, Tab, Toolbar } = window['MaterialUI'];
+  const { AppBar, ClickAwayListener, Drawer, Tabs, Tab, Toolbar, Tooltip } = window['MaterialUI'];
   const { Box, Fab } = window['MaterialUI'];
   const { List, ListItem, ListItemText } = window['MaterialUI'];
   const { makeStyles } = window['MaterialUI'];
@@ -16,7 +16,7 @@
   const { configureStore } = window["RTK"]
   const { Provider, useSelector } = window["ReactRedux"]
 
-  const { useEffect } = window['React'];
+  const { useEffect, useRef, useState } = window['React'];
 
   const fabCopy = {
     position: "absolute",
@@ -32,6 +32,7 @@
       fontFamily: "Overpass",
     },
     codesnippettab: {
+      minWidth: "50%",
       backgroundColor: "#152145",
       fontFamily: "Overpass",
       "&:focus": {
@@ -45,6 +46,9 @@
     navitemselected: {
       color: "#152145",
       fontWeight: 800,
+    },
+    fromtop: {
+      marginTop: "33px",
     }
   })
 
@@ -54,6 +58,12 @@
     },
     paper: {
       width: "28ch",
+    }
+  })
+
+  const useStylesPanelSelect = makeStyles({
+    colorPrimary: {
+      backgroundColor: "#5267A7",
     }
   })
 
@@ -119,7 +129,7 @@
       component: <UXWWhoWeAre />,
     },
     {
-      heading: "How We Sound (Laura)",
+      heading: "How We Sound",
       subheadings: [
         {
           subtitle: "Voice",
@@ -134,7 +144,7 @@
       component: <UXWHowWeSound />,
     },
     {
-      heading: "Logos and Icons (Seiko)",
+      heading: "Logos and Icons",
       subheadings: [
         {
           subtitle: "Logos",
@@ -157,40 +167,38 @@
       component: <UXWLogosAndIcons />,
     },
     {
-      heading: "Colors (Max)",
+      heading: "Colors",
       subheadings: [
+        {
+          subtitle: "Our Thinking",
+          anchor: "colors--thinking",
+        },
 
-{
-  subtitle: "Our Thinking",
-  anchor: "colors--thinking",
-},
+        {
+          subtitle: "Using Our Palette",
+          anchor: "colors--palette",
+        },
 
-{
-  subtitle: "Using Our Palette",
-  anchor: "colors--palette",
-},
+        {
+          subtitle: "Primary Colors",
+          anchor: "colors--primary",
+        },
 
-{
-  subtitle: "Primary Colors",
-  anchor: "colors--primary",
-},
+        {
+          subtitle: "Secondary Colors",
+          anchor: "colors--secondary",
+        },
 
-{
-  subtitle: "Secondary Colors",
-  anchor: "colors--secondary",
-},
-
-{
-  subtitle: "Accent Colors",
-  anchor: "colors--accent",
-},
-
+        {
+          subtitle: "Accent Colors",
+          anchor: "colors--accent",
+        },
       ],
       route: "/colors",
       component: <UXWColors />,
     },
     {
-      heading: "Typography (Sidney)",
+      heading: "Typography",
       subheadings: [
         {
           subtitle: "Font",
@@ -213,13 +221,13 @@
       component: <UXWTypography />,
     },
     {
-      heading: "Design Assets (Javi)",
+      heading: "Design Assets",
       subheadings: [],
       route: "/designassets",
       component: <UXWDesignAssets />,
     },
     {
-      heading: "Contributors (Dhruv)",
+      heading: "Contributors",
       subheadings: [],
       route: "/contributors",
       component: <UXWContributors />,
@@ -227,18 +235,17 @@
   ];
 
   function TabPanel(props) {
-    const { children, value, index, ...other } = props;
+    const { children, value, index, height, ...other } = props;
 
     return (
       <div
         role="tabpanel"
-        hidden={value !== index}
         id={`simple-tabpanel-${index}`}
         aria-labelledby={`simple-tab-${index}`}
         {...other}
       >
         {value === index && (
-          <Box className="bg-gray-100" style={{fontFamily: "monospace"}} p={3} dangerouslySetInnerHTML={{__html: children}} />
+          <Box className="bg-gray-100" px={3} py={1} style={{minHeight: `${height * 4}ex`}} dangerouslySetInnerHTML={{__html: children}} />
         )}
       </div>
     );
@@ -246,6 +253,8 @@
 
   function UXWCodePanelSingle(props) {
     const snippet = props.children
+    const [open, setOpen] = useState(false);
+
     let finalSnippet = ""
 
     let prismSnippet = ""
@@ -260,24 +269,51 @@
 
     const onCopyClick = () => {
       navigator.clipboard.writeText(snippet)
+      setOpen(true)
     }
 
     return (
       <div className="w-128 relative">
         <Box className="bg-gray-100" style={{fontFamily: "monospace"}} p={3} dangerouslySetInnerHTML={{__html: finalSnippet}} />
-        <Fab style={fabCopy} size="small" onClick={onCopyClick}>
-          <i className="bi bi-clipboard"></i>
-        </Fab>
+        <ClickAwayListener onClickAway={() => setOpen(false)}>
+          <Tooltip
+            PopperProps={{
+              disablePortal: true,
+            }}
+            onClose={() => setOpen(false)}
+            open={open}
+            disableFocusListener
+            disableHoverListener
+            disableTouchListener
+            title="Copied!"
+          >
+            <Fab style={fabCopy} size="small" onClick={onCopyClick}>
+              <i className="bi bi-clipboard"></i>
+            </Fab>
+          </Tooltip>
+        </ClickAwayListener>
       </div>
     );
   }
 
   function UXWCodePanelHTMLCSS(props) {
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = useState(0);
+    const [open, setOpen] = useState(false);
+    const classesTopPanel = useStylesPanelSelect();
+    const classesMain = useStylesMain();
+
     const htmlSnippet = props.children[0].props.children
     const cssSnippet = props.children[1].props.children
 
-    const classesMain = useStylesMain();
+    let maxTextWidth = 0
+    let maxTextHeight = Math.max(htmlSnippet.split("\n").length, cssSnippet.split("\n").length)
+
+    for (let line of htmlSnippet.split("\n")) {
+      maxTextWidth = line.length > maxTextWidth ? line.length : maxTextWidth
+    }
+    for (let line of cssSnippet.split("\n")) {
+      maxTextWidth = line.length > maxTextWidth ? line.length : maxTextWidth
+    }
 
     const prismHtmlSnippet = Prism.highlight(htmlSnippet, Prism.languages.markup, 'markup');
     let finalHtmlSnippet = ""
@@ -301,25 +337,42 @@
       } else if (value == 1) {
         navigator.clipboard.writeText(cssSnippet)
       }
+      setOpen(true)
     }
 
     return (
-      <div className="w-128 relative">
-        <AppBar position="static">
-          <Tabs value={value} onChange={handleChange} TabIndicatorProps={{style: {backgroundColor: "#E6B161"}}}>
+      <div className="relative">
+        <AppBar position="static" classes={{colorPrimary: classesTopPanel.colorPrimary}}>
+          <Tabs value={value} onChange={handleChange} TabIndicatorProps={{style: {backgroundColor: "#E6B161", minHeight: "6px"}}}>
             <Tab label="HTML" className={classesMain.codesnippettab} />
             <Tab label="CSS" className={classesMain.codesnippettab} />
           </Tabs>
         </AppBar>
-        <TabPanel value={value} index={0}>
-          {finalHtmlSnippet}
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          {finalCssSnippet}
-        </TabPanel>
-        <Fab style={fabCopy} size="small" onClick={onCopyClick}>
-          <i className="bi bi-clipboard"></i>
-        </Fab>
+          <div style={{fontFamily: "monospace", minWidth: `${maxTextWidth + 10}ch`}}>
+            <TabPanel value={value} index={0} height={maxTextHeight} >
+              {finalHtmlSnippet}
+            </TabPanel>
+            <TabPanel value={value} index={1} height={maxTextHeight} >
+              {finalCssSnippet}
+            </TabPanel>
+          </div>
+        <ClickAwayListener onClickAway={() => setOpen(false)}>
+          <Tooltip
+            PopperProps={{
+              disablePortal: true,
+            }}
+            onClose={() => setOpen(false)}
+            open={open}
+            disableFocusListener
+            disableHoverListener
+            disableTouchListener
+            title="Copied!"
+          >
+            <Fab style={fabCopy} size="small" onClick={onCopyClick}>
+              <i className="bi bi-clipboard"></i>
+            </Fab>
+          </Tooltip>
+        </ClickAwayListener>
       </div>
     );
   }
@@ -334,12 +387,14 @@
       } else {
         reduxStore.dispatch(removeNavAction(anchor))
       }
-    })
+    }, [isInView])
 
     return (
       <React.Fragment>
-        <h2 ref={ref} className="uxw-text-display-3 py-4" id={anchor}>{title}</h2>
-        {children}
+        <div ref={ref}>
+          <h2 className="uxw-text-display-3 py-4" id={anchor}>{title}</h2>
+          {children}
+        </div>
       </React.Fragment>
     )
   }
@@ -357,14 +412,14 @@
       </div>
     );
   }
-  
+
 function ScrollToTop() {
     const { pathname } = useLocation();
-  
+
     useEffect(() => {
       window.scrollTo({top:0,left:0, behavior: "smooth"});
     }, [pathname]);
-  
+
     return null;
   }
 
@@ -381,26 +436,26 @@ function ScrollToTop() {
           <AppBar position="fixed" className={classesMain.topappbar}>
             <Toolbar>
               <div className="flex flex-row flex-shrink-0 items-center">
-                <div className="text-lg">Design System</div>
-                <img className="pl-4 w-16 h-12" src="logo.png" />
+                <img className="w-12 h-12" src="logo.png" />
+                <div className="pl-4 text-lg">Design System</div>
               </div>
             </Toolbar>
           </AppBar>
           <Drawer variant="permanent" classes={{root: classesDrawer.root, paper: classesDrawer.paper}} >
-            <Toolbar />
+            <Toolbar className={classesMain.fromtop}/> {/* Spacer */}
             <nav>
               <List>
                 {dswContent.map(({ heading, subheadings, route }, index) => (
                   <React.Fragment key={`navlink-fragment-${index}`}>
                     <RouterLink to={route} >
                       <ListItem button key={`navlink-${index}`}>
-                        <ListItemText disableTypography primary={heading} className={location.pathname === route ? classesMain.navitemselected : classesMain.navitem} />
+                        <ListItemText disableTypography primary={heading} className={`pl-4 ${location.pathname === route ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </RouterLink>
                     {subheadings.map(({subtitle, anchor}, subindex) => (location.pathname === route &&
                     <div key={`navlink-sub-${index}-${subindex}`} onClick={() => document.getElementById(anchor).scrollIntoView({behavior: 'smooth', block: 'center'})}>
                       <ListItem button>
-                        <ListItemText disableTypography primary={subtitle} className={`pl-8 ${activeSubsections.findIndex((element) => element === anchor) !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
+                        <ListItemText disableTypography primary={subtitle} className={`pl-12 ${activeSubsections.findIndex((element) => element === anchor) !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
                     ))}
@@ -411,7 +466,7 @@ function ScrollToTop() {
           </Drawer>
           <div className="flex">
             <main className="flex-grow ml-80 py-4 pr-8">
-              <Toolbar /> {/* Spacer */}
+              <Toolbar className={classesMain.fromtop}/> {/* Spacer */}
 
               <Switch>
                 <Route exact path="/">
