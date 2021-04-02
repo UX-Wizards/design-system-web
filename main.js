@@ -338,7 +338,7 @@
 
     return (
       <React.Fragment>
-        <h2 ref={ref} className="text-xl py-4" id={anchor}>{title}</h2>
+        <h2 ref={ref} className="uxw-text-display-3 py-4" id={anchor}>{title}</h2>
         {children}
       </React.Fragment>
     )
@@ -420,8 +420,8 @@ function ScrollToTop() {
                 {dswContent.map(({ route, component, heading }, index) => {
                   return (
                     <Route key={`route-${index}`} path={route}>
-                      <div className="flex-col flex-shrink-0 pb-8" style={{fontFamily: "Overpass"}} key={`section-${index}`}>
-                        <h1 className="pb-4">{heading}</h1>
+                      <div className="flex-col flex-shrink-0 pb-8" style={{fontFamily: "Overpass", color: "#152145"}} key={`section-${index}`}>
+                        <h1 className="pb-4 uxw-text-display-2">{heading}</h1>
                         {component}
                         <NextSectionLink index={index}/>
                       </div>
