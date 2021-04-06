@@ -138,6 +138,10 @@
         {
           subtitle: "Values",
           anchor: "about--values"
+        },
+        {
+          subtitle: "Contributors",
+          anchor: "about--wizards"
         }
       ],
       route: "/about",
@@ -240,12 +244,6 @@
       subheadings: [],
       route: "/brandguide",
       component: <UXWBrandGuide />,
-    },
-    {
-      heading: "Contributors",
-      subheadings: [],
-      route: "/contributors",
-      component: <UXWContributors />,
     },
   ];
 

@@ -1,3 +1,92 @@
+const data = [ 
+  {
+    name: 'Keri',
+    role: 'Co-Organizer of UX Wizards',
+    image: '/assets/keri.jpg',
+    description: 'Organizer of the UX Wizards!',
+    link: 'https://www.linkedin.com/in/kerikeri/'
+  },
+  {
+    name: 'Laura',
+    role: 'Co-Organizer of UX Wizards',
+    image: '/assets/laura.jpg',
+    description: 'Laura built the Who We Are Page!',
+    link: 'https://www.linkedin.com/in/lewilliams89/'
+  },
+  {
+    name: 'Seiko',
+    role: 'Product Designer',
+    image: '/assets/seiko.jpg',
+    description: 'Seiko built the Logos and Icons Page!',
+    link: 'https://www.linkedin.com/in/seikoigi/'
+  },
+  {
+    name: 'Kaisen',
+    role: 'Software',
+    image: '/assets/kaisen.jpg',
+    description: 'Kaisen kept us on track.',
+    link: 'https://www.linkedin.com/in/kaisen-lin-02bb0864/'
+  },
+  {
+    name: 'Javi',
+    role: 'Frontend Developer',
+    image: '/assets/javi.jpg',
+    description: 'Javi built the Design Assets page!',
+    link: 'https://www.linkedin.com/in/javigme/'
+  },
+  {
+    name: 'Max',
+    role: 'Product Designer',
+    image: '/assets/max.jpg',
+    description: 'My job is to ask why.',
+    link: 'http://maxblumcreating.com'
+  },
+  {
+    name: 'Sidney',
+    role: 'Product Designer',
+    image: '/assets/sidney.jpg',
+    description: 'Sidney built the Typography page!',
+    link: 'https://www.linkedin.com/in/sidneyrhoads/'
+  },
+  {
+    name: 'Dhruv',
+    role: 'Software',
+    image: '/assets/dhruv.jpg',
+    description: 'Dhruv worked on this page!',
+    link: 'https://www.linkedin.com/in/dhruv-madhok-9290a2a3/'
+  },
+]
+
+const titleStyle = {
+  color: "grey"
+}
+
+const columnStyle = {
+  width: "33.3%",
+  marginBottom: "16px",
+  padding: "0 8px"
+}
+
+const cardStyle = {
+  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+  fontSize: "16px",
+  height: "480px",
+  width: "340px",
+  margin: "8px",
+  paddingLeft: "20px",
+  paddingRight: "20px",
+  paddingTop: "20px",
+  paddingBottom: "20px"
+}
+
+const paddingStyle = {
+  paddingTop: "6px"
+}
+
+const linkStyle = {
+  color: "white !important"
+}
+
 function UXWWhoWeAre(props) {
   return (
     <div className="container">
@@ -35,7 +124,7 @@ function UXWWhoWeAre(props) {
             </div>
             <div className="flex flex-row px-6 pb-4 justify-left bg-gray-100 rounded-b-lg">
               <p>
-                And occasionally nerdy. 🤓 We’re unpretentious, playful, and love a good joke or pun.
+                And occasionally nerdy 🤓. We’re unpretentious, playful, and love a good joke or pun.
               </p>
             </div>
           </div>
@@ -185,6 +274,22 @@ function UXWWhoWeAre(props) {
           </div>
         </div>
 
+      </UXWSubsection>
+      <UXWSubsection anchor="about--wizards" title="Contributors">
+        <div className="flex flex-wrap">
+          {data.map(({image, name, role, description, link}) => (
+          <div className="card" style={cardStyle}>
+            <img src={image} alt={name} style={{width: '300px', height: '300px'}} />
+            <div className="container">
+            <h2 style={paddingStyle}>{name}</h2>
+            <p className="title" style={titleStyle}>{role}</p>
+            <p>{description}</p>
+            <br></br>
+            <a href={link} className="text-white py-4 px-12 from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md uppercase tracking-widest font-light hover:shadow-2xl transition duration-500 ease-in-out hover:bg-opacity-40"><span style ={{color: "#ffffff"}}>Contact</span></a>
+          </div>
+        </div>
+        ))}
+      </div>
       </UXWSubsection>
     </div>
   )
