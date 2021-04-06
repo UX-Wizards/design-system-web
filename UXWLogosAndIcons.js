@@ -11,7 +11,7 @@ function UXWLogosAndIcons(props) {
           </UXWSubsection>
           <UXWSubsection anchor="snav-clearance" title="Clearance">
             <p>To ensure that logos are clearly visible, surround with clear space that is free of type, graphics, and other elements to avoid visual clutter.</p>
-            <img src="assets/clearance.png" alt="" />
+            <img className="w-9/12" src="assets/clearance.png" alt="" />
           </UXWSubsection>
           <UXWSubsection anchor="snav-icongraphy" title="Icongraphy Style">
             <p>Icon designs are intended to be recognized and communicate immediately. Our main icons are outlined style which use a clear stroke and the Magician’s Cloak navy color. Icon + light purple circle background is a variation. This background pops and draws extra attention to the icons. </p><br />
