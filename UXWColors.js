@@ -55,7 +55,7 @@ function UXWColors(props) {
          </p>
 
 
-          <div className="flex flex-row pb-16">
+          <div className="flex flex-row pb-12">
 
             <div className="flex flex-col w-1/2 ">
 
@@ -310,20 +310,19 @@ function UXWColors(props) {
             </p>
           
 
-            <div className="flex flex-row pb-10">
+            <div className="flex flex-row">
 
               <div className="flex flex-col w-1/2">
                           
                 <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
 
-                <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
-
+                <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3 items-center justify-center">
                   <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-merlins-beard-1 shadow-lg border m-4 z-1">
                     <p className="z-2 text-left pl-4 pt-2"><span className="text-black font-bold">A </span>PASS</p>
                     <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                   </div>
 
-                  <p className="text-left px-4 pt-6pb-4">
+                  <p className="text-left px-4 pt-6 pb-4">
                     <span className="font-bold">HEX:</span> <span className="font-normal">FFFFFF</span><br />
                     <span className="font-bold">RGB:</span> <span className="font-normal">255, 255, 255</span><br />
                     <span className="font-bold">CMYK:</span> <span className="font-normal">0, 0, 0, 0</span>
@@ -476,23 +475,25 @@ function UXWColors(props) {
 
       <hr className="pb-10"></hr>
 
-      <UXWSubsection anchor="colors--secondary" title="Secondary and Accent Colors">
-        <span className="pb-b"></span>
-          
-      <div className="flex flex-row">
+      <div className="flex flex-row mb-4">
         
         <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 my-8">
           <p className="italic">
             The foundation colors are balanced by the livelier colors <span className="font-bold">Steel,
-            Mana, Jinx,</span> and <span className="font-bold">Elixir</span>. We break these into two (<span className="italic">categories</span>).
+            Mana, Jinx,</span> and <span className="font-bold">Elixir</span>. We break these into two categories.
           </p>
         </div>
         
       </div>
 
-        <div className="flex flex-auto w-full bg-transparent justify-center">
+      <UXWSubsection anchor="colors--secondary" title="Secondary Colors">
+        <span className="pb-b"></span>
+          
+      
 
-        <p className="pb-16">Our (<span className="italic">secondary</span>) colors are the supporting tones
+        <div className="flex flex-auto w-full bg-transparent">
+
+        <p className="pb-12">Our secondary colors are the supporting tones
           of <span className="font-bold">Steel</span> and <span className="font-bold">Mana</span>. Use them to help build environments within your UX
           Wizards content.
         </p>
@@ -503,7 +504,7 @@ function UXWColors(props) {
         <div className="flex flex-col flex-wrap flex-grow">
 
           <p className="font-bold font-2xl pb-4">
-            Steel (<span className="font-normal italic">secondary</span>)
+            Steel (<span className="font-normal">secondary</span>)
           </p>
        
 
@@ -513,8 +514,7 @@ function UXWColors(props) {
 
           <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
 
-          <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
-
+          <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3 items-center justify-center">
             <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-steel-1 shadow-xl m-4 z-1">
               <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>PASS</p>
               <p className="text-left text-black pl-4"><span className="text-white font-bold">A </span>FAIL</p>
@@ -636,7 +636,7 @@ function UXWColors(props) {
         <div className="flex flex-col flex-wrap flex-grow">
        
           <p className="font-bold font-2xl pb-4">
-            Mana (<span className="font-normal italic">secondary</span>)
+            Mana (<span className="font-normal">secondary</span>)
           </p>
 
           <div className="flex flex-row pb-10">
@@ -647,7 +647,7 @@ function UXWColors(props) {
               <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
 
 
-              <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
+              <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3 items-center justify-center">
 
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-mana-1 shadow-2xl m-4">
                   <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>FAIL</p>
@@ -775,13 +775,13 @@ function UXWColors(props) {
 
 <UXWSubsection anchor="colors--accent" title="Accent Colors">
 
-        <div className="flex w-full bg-transparent justify-center">
-        <p className="pb-12">Our brighter (<span className="italic">accent</span>) colors should be used with
+        <div className="flex w-full bg-transparent">
+        <p className="pb-12">Our brighter accent colors should be used with
           restraint and finesse. We want our designs to stand out,
           but avoid being tacky and distasteful. Use <span className="font-bold">Jinx</span> and <span className="font-bold">Elixir</span> to specifically
           draw attention to things on purpose.
         </p>
-        </div>
+        </div>  
 
 
         <div className="flex flex-col flex-wrap flex-grow">
@@ -796,8 +796,7 @@ function UXWColors(props) {
 
               <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
 
-              <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
-
+              <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3 items-center justify-center">
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-jinx-1 shadow-2xl m-4">
                   <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
                   <p className="text-left text-white pl-4"><span className="font-bold">A </span>PASS</p>
@@ -927,7 +926,7 @@ function UXWColors(props) {
 
               <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
 
-              <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
+              <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3 items-center justify-center">
 
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-elixir-1 shadow-2xl m-4">
                   <p className="text-left text-black pl-4 pt-2"><span className="font-bold">A </span>PASS</p>
