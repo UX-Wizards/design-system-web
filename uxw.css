@@ -4,16 +4,26 @@
 a {
   color: var(--uxw-color-acid-1);
   font-weight: bold;
+  text-decoration: none;
 }
 
 /* Buttons */
 
 /* Typography */
 
+body {
+  font-family: var(--font-primary);
+  color: var(--uxw-color-magicians-cloak-1);
+}
+
 h1 {
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
+}
+
+p {
+  font-size: 1em;
 }
 
 /* Logos and Icons */
