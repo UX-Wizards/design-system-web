@@ -28,14 +28,33 @@ function UXWIntroduction(props) {
       </div>
       <UXWSubsection anchor="introduction--installation-and-usage" title="Installation and Usage">
         <p className="pb-4">
-          We include two CSS stylesheets depending on how opinionated you want the CSS to be. Use <span className="uxw-code">uxwcode.css</span> for utility style usage.
+          We include two CSS stylesheets depending on how opinionated you want the CSS to be. Use <span className="uxw-code">uxwcore.css</span> for utility style usage.
           If you want UI elements to be automatically styled for you, we've included <span className="uxw-code">uxw.css</span> for you as well.
           You must always include <span className="uxw-code">uxwcore.css</span> because <span className="uxw-code">uxw.css</span> is dependent on it. See below
           for a full example.
         </p>
         <UXWCodePanelSingle lang="html">
-{`<link href="uxwcore.css" rel="stylesheet">
-<link href="uxw.css" rel="stylesheet">`}
+{`
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://designsystem.uxwizards.org/uxwcore.css" rel="stylesheet">
+    <link href="https://designsystem.uxwizards.org/uxw.css" rel="stylesheet">
+  </head>
+  <body class="uxw-bg-merlins-beard-2">
+    <div style="display: flex; justify-content: center;">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <h1>Hello from UX Wizards!</h1>
+        <img width="200" height="200" src="https://designsystem.uxwizards.org/logo.png">
+        <p>Welcome to the sample page for the <a href="https://designsystem.uxwizards.org/">UX Wizards Design System</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+`}
         </UXWCodePanelSingle>
       </UXWSubsection>
     </div>

@@ -251,21 +251,41 @@
     );
   }
 
-  function UXWCodePanelSingle(props) {
-    const snippet = props.children
-    const [open, setOpen] = useState(false);
+  function processRawCodeBlock(snippet, lang) {
+    const spaceArray = []
+
+    for (let line of snippet.split("\n")) {
+      let spaces = line.match(/^\s+/)
+      spaceArray.push(spaces ? spaces[0].length : 0)
+    }
 
     let finalSnippet = ""
 
     let prismSnippet = ""
-    if (props.lang === "html") {
+    if (lang === "html") {
       prismSnippet = Prism.highlight(snippet, Prism.languages.markup, 'markup');
-    } else if (props.lang === "css") {
-      prismSnippet = Prism.highlight(cssSnippet, Prism.languages.css, 'css');
+    } else if (lang === "css") {
+      prismSnippet = Prism.highlight(snippet, Prism.languages.css, 'css');
     }
+
+    let i = 0
     for (let line of prismSnippet.split("\n")) {
-      finalSnippet = finalSnippet + line.replace(/^  /, "&nbsp;&nbsp;") + "<br/>"
+      let spaces = ""
+      for (let j = 0; j < spaceArray[i] - 1; j++) {
+        spaces = spaces + "&nbsp;"
+      }
+      finalSnippet = finalSnippet + spaces + line + "<br/>"
+      i = i + 1
     }
+
+    return finalSnippet
+  }
+
+  function UXWCodePanelSingle(props) {
+    const snippet = props.children
+    const [open, setOpen] = useState(false);
+
+    const finalSnippet = processRawCodeBlock(snippet, props.lang)
 
     const onCopyClick = () => {
       navigator.clipboard.writeText(snippet)
@@ -288,7 +308,7 @@
             title="Copied!"
           >
             <Fab style={fabCopy} size="small" onClick={onCopyClick}>
-              <i className="bi bi-clipboard"></i>
+              <i className="bi bi-clipboard" style={{color: "#6331FD"}}></i>
             </Fab>
           </Tooltip>
         </ClickAwayListener>
@@ -315,17 +335,8 @@
       maxTextWidth = line.length > maxTextWidth ? line.length : maxTextWidth
     }
 
-    const prismHtmlSnippet = Prism.highlight(htmlSnippet, Prism.languages.markup, 'markup');
-    let finalHtmlSnippet = ""
-    for (let line of prismHtmlSnippet.split("\n")) {
-      finalHtmlSnippet = finalHtmlSnippet + line.replace(/^  /, "&nbsp;&nbsp;") + "<br/>"
-    }
-
-    const prismCssSnippet = Prism.highlight(cssSnippet, Prism.languages.css, 'css');
-    let finalCssSnippet = ""
-    for (let line of prismCssSnippet.split("\n")) {
-      finalCssSnippet = finalCssSnippet + line.replace(/^  /, "&nbsp;&nbsp;") + "<br/>"
-    }
+    const finalHtmlSnippet = processRawCodeBlock(htmlSnippet, "html")
+    const finalCssSnippet = processRawCodeBlock(cssSnippet, "css")
 
     const handleChange = (event, newValue) => {
       setValue(newValue);
@@ -369,7 +380,7 @@
             title="Copied!"
           >
             <Fab style={fabCopy} size="small" onClick={onCopyClick}>
-              <i className="bi bi-clipboard"></i>
+              <i className="bi bi-clipboard" style={{color: "#6331FD"}}></i>
             </Fab>
           </Tooltip>
         </ClickAwayListener>
