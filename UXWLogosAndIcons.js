@@ -15,7 +15,7 @@ function UXWLogosAndIcons(props) {
           </UXWSubsection>
           <UXWSubsection anchor="snav-icongraphy" title="Icongraphy Style">
             <p>Icon designs are intended to be recognized and communicate immediately. Our main icons are outlined style which use a clear stroke and the Magician’s Cloak navy color. Icon + light purple circle background is a variation. This background pops and draws extra attention to the icons. </p><br />
-            <img className="my-16 w-4/5" src="assets/icongraphy.png" alt="" />
+            <img className="my-16 w-4/5" src="assets/icongraphy.svg" alt="" />
           </UXWSubsection>
           <UXWSubsection anchor="snav-library" title="Library">
             <p className="pb-16">Each download includes .png and svg formats. Also, it comes with other color options.</p>
@@ -65,7 +65,7 @@ function UXWLogosAndIcons(props) {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center bg-gray-100 rounded-b-lg">
-                  <img className="w-24 py-8" src="logo.png" alt="" />
+                  <img className="w-24 py-8" src="assets/logo-circle-main.svg" alt="" />
                 </div>
               </div>
               <div className="flex flex-col">
@@ -81,7 +81,7 @@ function UXWLogosAndIcons(props) {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center bg-gray-100 rounded-b-lg">
-                  <img className="w-24 py-8" src="assets/podcast.svg" alt="" />
+                  <img className="w-24 py-8" src="assets/podcast.png" alt="" />
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ function UXWLogosAndIcons(props) {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center bg-gray-100 rounded-b-lg">
-                  <img className="w-3/5 py-12" src="assets/icongraphy.png" alt="" />
+                  <img className="w-3/5 py-12" src="assets/icongraphy.svg" alt="" />
                 </div>
               </div>
             </div>
