@@ -35,9 +35,9 @@ function UXWColors(props) {
 
       <div className="flex flex-row">
 
-      <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 mt-4 mb-20">
+      <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 mt-4 mb-16">
 
-        <p className="italic">
+        <p>
           The flexible and neutral <span className="font-bold">Magician's Cloak</span>,
           <span className="font-bold"> Acid</span>, and <span className="font-bold">Merlin's Beard</span> lead the way, providing a well-balanced foundation.
         </p>
@@ -506,23 +506,25 @@ function UXWColors(props) {
 
       <hr className="pb-10"></hr>
 
-      <UXWSubsection anchor="colors--secondary" title="Secondary and Accent Colors">
+      <UXWSubsection anchor="colors--secondary" title="Supporting Colors">
         <span className="pb-b"></span>
 
       <div className="flex flex-row">
 
-        <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 my-8">
-          <p className="italic">
+        <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 mt-8 mb-12">
+          <p>
             The foundation colors are balanced by the livelier colors <span className="font-bold">Steel,
-            Mana, Jinx,</span> and <span className="font-bold">Elixir</span>. We break these into two (<span className="italic">categories</span>).
+            Mana, Jinx,</span> and <span className="font-bold">Elixir</span>. We break these into two categories.
           </p>
         </div>
 
       </div>
 
-        <div className="flex flex-auto w-full bg-transparent justify-center">
+      <p className="uxw-text-display-3 pb-8">Secondary Colors</p>
 
-        <p className="pb-16">Our (<span className="italic">secondary</span>) colors are the supporting tones
+        <div className="flex flex-auto w-full bg-transparent">
+
+        <p className="pb-16">Our secondary colors are the supporting tones
           of <span className="font-bold">Steel</span> and <span className="font-bold">Mana</span>. Use them to help build environments within your UX
           Wizards content.
         </p>
@@ -533,7 +535,7 @@ function UXWColors(props) {
         <div className="flex flex-col flex-wrap flex-grow">
 
           <p className="font-bold font-2xl pb-4">
-            Steel (<span className="font-normal italic">secondary</span>)
+            Steel <span className="font-normal">(secondary)</span>
           </p>
 
 
@@ -675,7 +677,7 @@ function UXWColors(props) {
         <div className="flex flex-col flex-wrap flex-grow">
 
           <p className="font-bold font-2xl pb-4">
-            Mana (<span className="font-normal italic">secondary</span>)
+            Mana <span className="font-normal">(secondary)</span>
           </p>
 
           <div className="flex flex-row pb-10">
@@ -823,8 +825,8 @@ function UXWColors(props) {
 
 <UXWSubsection anchor="colors--accent" title="Accent Colors">
 
-        <div className="flex w-full bg-transparent justify-center">
-        <p className="pb-12">Our brighter (<span className="italic">accent</span>) colors should be used with
+        <div className="flex w-full bg-transparent">
+        <p className="pb-12">Our brighter accent colors should be used with
           restraint and finesse. We want our designs to stand out,
           but avoid being tacky and distasteful. Use <span className="font-bold">Jinx</span> and <span className="font-bold">Elixir</span> to specifically
           draw attention to things on purpose.
@@ -835,7 +837,7 @@ function UXWColors(props) {
         <div className="flex flex-col flex-wrap flex-grow">
 
           <p className="font-bold font-2xl pb-4">
-            Jinx (<span className="font-normal italic">accent</span>)
+            Jinx <span className="font-normal">(accent)</span>
           </p>
 
           <div className="flex flex-row pb-10">
@@ -974,7 +976,7 @@ function UXWColors(props) {
         <div className="flex flex-col flex-wrap flex-grow">
 
           <p className="font-bold font-2xl pb-4">
-            Elixir (<span className="font-normal italic">accent</span>)
+            Elixir <span className="font-normal">(accent)</span>
           </p>
 
 
