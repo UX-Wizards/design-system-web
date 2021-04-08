@@ -221,10 +221,10 @@
       component: <UXWTypography />,
     },
     {
-      heading: "Design Assets",
+      heading: "Brand Guide",
       subheadings: [],
-      route: "/designassets",
-      component: <UXWDesignAssets />,
+      route: "/brandguide",
+      component: <UXWBrandGuide />,
     },
     {
       heading: "Contributors",
