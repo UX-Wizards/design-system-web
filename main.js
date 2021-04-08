@@ -159,7 +159,7 @@
           anchor: "snav-icongraphy",
         },
         {
-          subtitle: "Library",
+          subtitle: "Downloads",
           anchor: "snav-library",
         },
       ],
