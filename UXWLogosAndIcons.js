@@ -99,7 +99,7 @@ function UXWLogosAndIcons(props) {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center bg-gray-100 rounded-b-lg">
-                  <img className="w-3/5 py-12 icongraphy" src="assets/icongraphy.png" alt="" />
+                  <img className="w-3/5 my-12 h-3/5" src="assets/icongraphy.png" alt="" />
                 </div>
               </div>
             </div>
