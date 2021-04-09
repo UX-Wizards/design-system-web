@@ -22,7 +22,8 @@
     position: "absolute",
     bottom: "16px",
     right: "16px",
-    outline: "none"
+    outline: "none",
+    backgroundColor: "#E6E6E6",
   }
 
   const useStylesMain = makeStyles({
@@ -32,8 +33,22 @@
       fontFamily: "Overpass",
     },
     codesnippettab: {
+      opacity: 1,
       minWidth: "50%",
-      backgroundColor: "#152145",
+      color: "#152145",
+      fontWeight: 600,
+      backgroundColor: "#C9CACB",
+      fontFamily: "Overpass",
+      "&:focus": {
+        outline: "none",
+      }
+    },
+    codesnippettabselected: {
+      opacity: 1,
+      minWidth: "50%",
+      color: "#152145",
+      fontWeight: 600,
+      backgroundColor: "#E6E6E6",
       fontFamily: "Overpass",
       "&:focus": {
         outline: "none",
@@ -245,7 +260,7 @@
         {...other}
       >
         {value === index && (
-          <Box className="bg-gray-100" px={3} py={1} style={{minHeight: `${height * 4}ex`}} dangerouslySetInnerHTML={{__html: children}} />
+          <Box className="uxw-bg-steel-2" px={3} py={1} style={{minHeight: `${height * 4}ex`}} dangerouslySetInnerHTML={{__html: children}} />
         )}
       </div>
     );
@@ -294,7 +309,7 @@
 
     return (
       <div className="w-128 relative">
-        <Box className="bg-gray-100" style={{fontFamily: "monospace"}} p={3} dangerouslySetInnerHTML={{__html: finalSnippet}} />
+        <Box className="uxw-bg-steel-2" style={{fontFamily: "monospace"}} p={3} dangerouslySetInnerHTML={{__html: finalSnippet}} />
         <ClickAwayListener onClickAway={() => setOpen(false)}>
           <Tooltip
             PopperProps={{
@@ -354,9 +369,9 @@
     return (
       <div className="relative">
         <AppBar position="static" classes={{colorPrimary: classesTopPanel.colorPrimary}}>
-          <Tabs value={value} onChange={handleChange} TabIndicatorProps={{style: {backgroundColor: "#E6B161", minHeight: "6px"}}}>
-            <Tab label="HTML" className={classesMain.codesnippettab} />
-            <Tab label="CSS" className={classesMain.codesnippettab} />
+          <Tabs value={value} onChange={handleChange} TabIndicatorProps={{style: {backgroundColor: "#ED6F85", minHeight: "6px"}}}>
+            <Tab label="HTML" className={value === 0 ? classesMain.codesnippettabselected : classesMain.codesnippettab} />
+            <Tab label="CSS" className={value === 1 ? classesMain.codesnippettabselected : classesMain.codesnippettab} />
           </Tabs>
         </AppBar>
           <div style={{fontFamily: "monospace", minWidth: `${maxTextWidth + 10}ch`}}>
