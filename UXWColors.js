@@ -57,11 +57,12 @@ function UXWColors(props) {
 
           <div className="flex flex-row pb-16">
 
-            <div className="flex flex-col w-1/2 ">
+            <div className="flex flex-col w-1/3">
 
-              <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+              <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-              <div className="flex flex-row p-8 uxw-bg-steel-1 mt-4 w-2/3 items-center justify-center">
+              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8">
+              <div className="flex flex-row p-8 items-center justify-center">
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-magicians-cloak-1 shadow-2xl m-4 z-1">
                   <p className="z-2 text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
                   <p className="z-2 text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
@@ -74,7 +75,8 @@ function UXWColors(props) {
                 </p>
               </div>
 
-              <div className="w-2/3">
+              
+              <div className="mx-8 mb-4 shadow-lg">
                 <UXWCodePanelHTMLCSS>
                   <div>
 {`
@@ -92,15 +94,21 @@ function UXWColors(props) {
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
+              </div>
+              </div>
 
-            </div>
+            
 
 
-            <div className="flex flex-col w-1/2">
 
-              <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
 
-              <div className="flex flex-col">
+
+
+            <div className="flex flex-col w-2/3">
+
+              <div className="box w-full rounded-full uxw-bg-steel-3 text-black text-center h-8 pt-1">Alternate shades</div>
+
+              <div className="flex flex-col mt-7 ml-5 mr-4">
 
                 <div className="flex flex-row mx-4 mt-4">
 
@@ -197,11 +205,12 @@ function UXWColors(props) {
 
           <div className="flex flex-row pb-16">
 
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-1/3">
 
-              <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+              <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-              <div className="flex flex-row p-8 uxw-bg-steel-1 w-2/3 mt-4 items-center justify-center">
+              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8">
+              <div className="flex flex-row p-8 items-center justify-center">
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-acid-1 shadow-2xl m-4 z-1">
                   <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
                   <p className="text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
@@ -214,7 +223,7 @@ function UXWColors(props) {
                 </p>
               </div>
 
-              <div className="w-2/3">
+              <div className="mx-8 mb-4 shadow-lg">
                 <UXWCodePanelHTMLCSS>
                   <div>
 {`
@@ -232,15 +241,16 @@ function UXWColors(props) {
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
+              </div>
 
             </div>
 
 
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-2/3">
 
-              <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
+              <div className="box w-full rounded-full uxw-bg-steel-3 text-black text-center h-8 pt-1">Alternate shades</div>
 
-              <div className="flex flex-col">
+              <div className="flex flex-col mt-7 ml-5 mr-4">
 
               <div className="flex flex-row mx-4 mt-4">
 
@@ -330,13 +340,14 @@ function UXWColors(props) {
 
             <div className="flex flex-row pb-10">
 
-              <div className="flex flex-col w-1/2">
+              <div className="flex flex-col w-1/3">
 
-                <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+                <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-                <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
+                <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+                <div className="flex flex-row p-8 items-center justify-center">
 
-                  <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-merlins-beard-1 shadow-lg border m-4 z-1">
+                  <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-merlins-beard-1 shadow-lg border mt-4 ml-4 mr-8 z-1">
                     <p className="z-2 text-left pl-4 pt-2"><span className="text-black font-bold">A </span>PASS</p>
                     <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                   </div>
@@ -349,7 +360,7 @@ function UXWColors(props) {
 
                 </div>
 
-                <div className="w-2/3">
+                <div className="mx-8 mb-4 shadow-lg">
                 <UXWCodePanelHTMLCSS>
                   <div>
 {`
@@ -367,13 +378,14 @@ function UXWColors(props) {
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
+              </div>
 
               </div>
 
 
-              <div className="flex flex-col w-1/2">
+              <div className="flex flex-col w-2/3">
 
-                <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
+                <div className="box w-full rounded-full uxw-bg-steel-3 text-black text-center h-8 pt-1">Alternate shades</div>
 
                 <div className="flex flex-col">
 
@@ -506,8 +518,8 @@ function UXWColors(props) {
 
       <hr className="pb-10"></hr>
 
-      <UXWSubsection anchor="colors--secondary" title="Supporting Colors">
-        <span className="pb-b"></span>
+      <UXWSubsection anchor="colors--secondary" title="Supplementary Colors">
+    
 
       <div className="flex flex-row">
 
@@ -541,11 +553,12 @@ function UXWColors(props) {
 
        <div className="flex flex-row pb-10">
 
-         <div className="flex flex-col w-1/2">
+         <div className="flex flex-col w-1/3">
 
-          <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+          <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-          <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
+          <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+          <div className="flex flex-row p-8 items-center justify-center">
 
             <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-steel-1 shadow-xl m-4 z-1">
               <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>PASS</p>
@@ -560,7 +573,7 @@ function UXWColors(props) {
 
           </div>
 
-          <div className="w-2/3">
+          <div className="mx-8 mb-4 shadow-lg">
 
           <UXWCodePanelHTMLCSS>
               <div>
@@ -578,16 +591,17 @@ function UXWColors(props) {
 `}
               </div>
           </UXWCodePanelHTMLCSS>
-
+          </div>
           </div>
 
          </div>
 
-         <div className="flex flex-col w-1/2">
+         <div className="flex flex-col w-2/3">
 
-            <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
+            <div className="box w-full rounded-full uxw-bg-steel-3 text-black text-center h-8 pt-1">Alternate shades</div>
 
-            <div className="flex flex-row mx-4 mt-4">
+            <div className="flex flex-row mt-9 ml-5 mr-4">
+              
 
               <div className="flex flex-none w-1/2 items-center justify-center">
 
@@ -682,13 +696,13 @@ function UXWColors(props) {
 
           <div className="flex flex-row pb-10">
 
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-1/3">
 
 
-              <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+              <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-
-              <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
+              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+              <div className="flex flex-row p-8 items-center justify-center">
 
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-mana-1 shadow-2xl m-4">
                   <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>FAIL</p>
@@ -703,7 +717,7 @@ function UXWColors(props) {
 
               </div>
 
-              <div className="w-2/3">
+              <div className="mx-8 mb-4 shadow-lg">
                 <UXWCodePanelHTMLCSS>
                   <div>
 {`
@@ -721,17 +735,18 @@ function UXWColors(props) {
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
+              </div>
 
 
             </div>
 
 
 
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-2/3">
 
-              <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
+              <div className="box w-full rounded-full uxw-bg-steel-3 text-black text-center h-8 pt-1">Alternate shades</div>
 
-              <div className="flex flex-col pb-12">
+              <div className="flex flex-col mt-9 ml-5 mr-4">
 
                 <div className="flex flex-row mx-4 mt-4">
 
@@ -821,7 +836,7 @@ function UXWColors(props) {
         </div>
 </UXWSubsection>
 
-        <hr className="py-8"></hr>
+        <hr className="pt-4 pb-8"></hr>
 
 <UXWSubsection anchor="colors--accent" title="Accent Colors">
 
@@ -842,11 +857,12 @@ function UXWColors(props) {
 
           <div className="flex flex-row pb-10">
 
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-1/3">
 
-              <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+              <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-              <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
+              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+              <div className="flex flex-row p-8 items-center justify-center">
 
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-jinx-1 shadow-2xl m-4">
                   <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
@@ -861,7 +877,7 @@ function UXWColors(props) {
 
               </div>
 
-              <div className="w-2/3">
+              <div className="mx-8 mb-8 shadow-lg">
                 <UXWCodePanelHTMLCSS>
                   <div>
 {`
@@ -879,15 +895,16 @@ function UXWColors(props) {
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
+              </div>
 
             </div>
 
 
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-2/3">
 
-              <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
+              <div className="box w-full rounded-full uxw-bg-steel-3 text-black text-center h-8 pt-1">Alternate shades</div>
 
-              <div className="flex flex-row mx-4 mt-4">
+              <div className="flex flex-row mt-9 ml-5 mr-4">
 
                 <div className="flex flex-none w-1/2 items-center justify-center">
 
@@ -975,18 +992,18 @@ function UXWColors(props) {
 
         <div className="flex flex-col flex-wrap flex-grow">
 
-          <p className="font-bold font-2xl pb-4">
-            Elixir <span className="font-normal">(accent)</span>
+          <p className="font-bold font-2xl pb-4">Elixir <span className="font-normal">(accent)</span>
           </p>
 
 
           <div className="flex flex-row pb-10">
 
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-1/3">
 
-              <div className="box w-2/3 rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1">Base color</div>
+              <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-              <div className="flex flex-row p-8 mt-4 uxw-bg-steel-1 w-2/3">
+              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+              <div className="flex flex-row p-8 items-center justify-center">
 
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-elixir-1 shadow-2xl m-4">
                   <p className="text-left text-black pl-4 pt-2"><span className="font-bold">A </span>PASS</p>
@@ -1002,7 +1019,7 @@ function UXWColors(props) {
               </div>
 
 
-              <div className="w-2/3">
+              <div className="mx-8 mb-8 shadow-lg">
                 <UXWCodePanelHTMLCSS>
                   <div>
 {`
@@ -1020,17 +1037,18 @@ function UXWColors(props) {
                   </div>
                 </UXWCodePanelHTMLCSS>
               </div>
+              </div>
 
             </div>
 
 
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-2/3">
 
-              <div className="box w-full rounded-full uxw-bg-magicians-cloak-2 text-white text-center h-8 pt-1">Alternate shades</div>
+              <div className="box w-full rounded-full uxw-bg-steel-3 text-black text-center h-8 pt-1">Alternate shades</div>
 
               <div className="flex flex-col">
 
-              <div className="flex flex-row mx-4 mt-4">
+              <div className="flex flex-row mt-9 ml-5 mr-4">
 
                 <div className="flex flex-none w-1/2 items-center justify-center">
 
