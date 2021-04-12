@@ -2,26 +2,32 @@ function UXWIntroduction(props) {
   return (
     <div className="container">
       <div className="flex flex-row">
-        <p className="md:w-4/5 pr-8 max-w-prose">
-          Welcome to the UX Wizards Design System! We created this so we could build out future websites faster based on our brand and style guide.
-          It is not a Javascript component library, but rather a CSS framework with prebuilt UI elements.
-          As you look through our design system, you'll find usable code snippets (as shown in the panel on the right) with relevant HTML and/or CSS.
-          If you run into any issues, feel free to file them in our <a href="https://github.com/UX-Wizards/design-system-web" target="_blank">Github project</a>.
-        </p>
+        <div className="flex flex-col">
+          <p className="pb-4 max-w-prose">
+            Welcome to the UX Wizards Design System! We created this so we could build out future websites faster based on our brand and style guide.
+            It is not a Javascript component library, but rather a CSS framework with prebuilt UI elements.
+            As you look through our design system, you'll find usable code snippets (as shown in the panel on the right) with relevant HTML and/or CSS.
+          </p>
+          <p className="max-w-prose">
+            If you have any questions or feedback, feel free to create an issue on our <a href="https://github.com/UX-Wizards/design-system-web" target="_blank">Github project</a>.
+            If you need help creating an issue, please refer to the <a href="https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue">Github documentation</a>
+          </p>
+        </div>
         <div className="flex-grow"></div>
-        <UXWCodePanelHTMLCSS>
+        <UXWCodePanelHTMLCSS noWrap>
           <div>
 {`
-<h1 class="uxw-h1">
-  Hello World
+<h1 class="uxw-text-heading">
+  Hello Wizards!
 </h1>
 `}
           </div>
           <div>
 {`
-.uxw-code {
-  padding: 4;
-  color: #ff0000;
+.uxw-text-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
 }`}
           </div>
         </UXWCodePanelHTMLCSS>

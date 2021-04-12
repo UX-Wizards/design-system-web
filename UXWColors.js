@@ -75,7 +75,7 @@ function UXWColors(props) {
                 </p>
               </div>
 
-              
+
               <div className="mx-8 mb-4 shadow-lg">
                 <UXWCodePanelHTMLCSS>
                   <div>
@@ -97,7 +97,7 @@ function UXWColors(props) {
               </div>
               </div>
 
-            
+
 
 
 
@@ -126,7 +126,7 @@ function UXWColors(props) {
                   </div>
 
                   <div className="m-2">
-                    <UXWCodePanelHTMLCSS>
+                    <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-magicians-cloak-2">
@@ -162,7 +162,7 @@ function UXWColors(props) {
                   </div>
 
                   <div className="m-2">
-                    <UXWCodePanelHTMLCSS>
+                    <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-magicians-cloak-3">
@@ -268,7 +268,7 @@ function UXWColors(props) {
                 </div>
 
                 <div className="m-2">
-                    <UXWCodePanelHTMLCSS>
+                    <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-acid-2">
@@ -306,7 +306,7 @@ function UXWColors(props) {
                 </div>
 
                 <div className="m-2">
-                    <UXWCodePanelHTMLCSS>
+                    <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-acid-3">
@@ -407,7 +407,7 @@ function UXWColors(props) {
                     </div>
 
                     <div className="m-2">
-                      <UXWCodePanelHTMLCSS>
+                      <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-merlins-beard-2">
@@ -445,7 +445,7 @@ function UXWColors(props) {
                     </div>
 
                     <div className="m-2">
-                      <UXWCodePanelHTMLCSS>
+                      <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-merlins-beard-3">
@@ -482,7 +482,7 @@ function UXWColors(props) {
                     </div>
 
                     <div className="m-2">
-                      <UXWCodePanelHTMLCSS>
+                      <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-merlins-beard-4">
@@ -519,7 +519,7 @@ function UXWColors(props) {
       <hr className="pb-10"></hr>
 
       <UXWSubsection anchor="colors--secondary" title="Supplementary Colors">
-    
+
 
       <div className="flex flex-row">
 
@@ -599,7 +599,7 @@ function UXWColors(props) {
             <div className="box w-full rounded-full uxw-bg-steel-3 text-black text-center h-8 pt-1">Alternate shades</div>
 
             <div className="flex flex-row mt-9 ml-5 mr-4">
-              
+
 
               <div className="flex flex-none w-1/2 items-center justify-center">
 
@@ -618,7 +618,7 @@ function UXWColors(props) {
 
               <div className="m-2">
 
-                <UXWCodePanelHTMLCSS>
+                <UXWCodePanelHTMLCSS noWrap>
                   <div>
 {`
 <h1 class="uxw-bg-steel-2">
@@ -658,7 +658,7 @@ function UXWColors(props) {
 
               <div className="m-2">
 
-                <UXWCodePanelHTMLCSS>
+                <UXWCodePanelHTMLCSS noWrap>
                   <div>
 {`
 <h1 class="uxw-bg-steel-3">
@@ -764,7 +764,7 @@ function UXWColors(props) {
                   </div>
 
                   <div className="m-2">
-                      <UXWCodePanelHTMLCSS>
+                      <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-mana-2">
@@ -803,7 +803,7 @@ function UXWColors(props) {
                   </div>
 
                   <div className="m-2">
-                      <UXWCodePanelHTMLCSS>
+                      <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-mana-3">
@@ -921,7 +921,7 @@ function UXWColors(props) {
 
                 <div className="m-2">
 
-                  <UXWCodePanelHTMLCSS>
+                  <UXWCodePanelHTMLCSS noWrap>
                     <div>
 {`
 <h1 class="uxw-bg-jinx-2">
@@ -961,7 +961,7 @@ function UXWColors(props) {
 
                  <div className="m-2">
 
-                    <UXWCodePanelHTMLCSS>
+                    <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-jinx-3">
@@ -1064,7 +1064,7 @@ function UXWColors(props) {
                  </div>
 
                 <div className="m-2">
-                  <UXWCodePanelHTMLCSS>
+                  <UXWCodePanelHTMLCSS noWrap>
                     <div>
 {`
 <h1 class="uxw-bg-elixir-2">
@@ -1102,7 +1102,7 @@ function UXWColors(props) {
                 </div>
 
                 <div className="m-2">
-                <UXWCodePanelHTMLCSS>
+                <UXWCodePanelHTMLCSS noWrap>
                   <div>
 {`
 <h1 class="uxw-bg-elixir-3">
