@@ -2,7 +2,7 @@ function UXWIntroduction(props) {
   return (
     <div className="container">
       <div className="flex flex-row">
-        <p className="md:w-4/5 pr-8">
+        <p className="md:w-4/5 pr-8 max-w-prose">
           Welcome to the UX Wizards Design System! We created this so we could build out future websites faster based on our brand and style guide.
           It is not a Javascript component library, but rather a CSS framework with prebuilt UI elements.
           As you look through our design system, you'll find usable code snippets (as shown in the panel on the right) with relevant HTML and/or CSS.
@@ -27,7 +27,7 @@ function UXWIntroduction(props) {
         </UXWCodePanelHTMLCSS>
       </div>
       <UXWSubsection anchor="introduction--installation-and-usage" title="Installation and Usage">
-        <p className="pb-4">
+        <p className="pb-4 max-w-prose">
           We include two CSS stylesheets depending on how opinionated you want the CSS to be. Use <span className="uxw-code">uxwcore.css</span> for utility style usage.
           If you want UI elements to be automatically styled for you, we've included <span className="uxw-code">uxw.css</span> for you as well.
           You must always include <span className="uxw-code">uxwcore.css</span> because <span className="uxw-code">uxw.css</span> is dependent on it. See below

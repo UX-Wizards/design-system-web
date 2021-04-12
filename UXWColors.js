@@ -8,7 +8,7 @@ function UXWColors(props) {
       <UXWSubsection anchor="colors--thinking" title="Our Thinking">
         <span className="pb-12"></span>
 
-        <p className="pb-12">
+        <p className="pb-12 max-w-prose">
           Our palette consists of neutral, pleasing tones balanced by vivid
           and eccentric colors. This color palette has been carefully chosen
           to provide versatility and function while still providing boundless
@@ -20,7 +20,7 @@ function UXWColors(props) {
 
 
 
-        <p className="pb-12">
+        <p className="pb-12 max-w-prose">
           Though our palette is established, we encourage experimentation
           through blending modes and gradients. Start with the base color in
           the left column, and supplement your designs with the alternate shades
@@ -532,11 +532,17 @@ function UXWColors(props) {
 
       </div>
 
+<<<<<<< HEAD
       <p className="uxw-text-display-3 pb-8">Secondary Colors</p>
 
         <div className="flex flex-auto w-full bg-transparent">
 
         <p className="pb-16">Our secondary colors are the supporting tones
+=======
+        <div className="flex flex-auto w-full bg-transparent">
+
+        <p className="pb-16 max-w-prose">Our (<span className="italic">secondary</span>) colors are the supporting tones
+>>>>>>> 35d4039 (Add max-w-prose to sections)
           of <span className="font-bold">Steel</span> and <span className="font-bold">Mana</span>. Use them to help build environments within your UX
           Wizards content.
         </p>
@@ -840,8 +846,13 @@ function UXWColors(props) {
 
 <UXWSubsection anchor="colors--accent" title="Accent Colors">
 
+<<<<<<< HEAD
         <div className="flex w-full bg-transparent">
         <p className="pb-12">Our brighter accent colors should be used with
+=======
+        <div className="max-w-prose bg-transparent">
+        <p className="pb-12">Our brighter (<span className="italic">accent</span>) colors should be used with
+>>>>>>> 35d4039 (Add max-w-prose to sections)
           restraint and finesse. We want our designs to stand out,
           but avoid being tacky and distasteful. Use <span className="font-bold">Jinx</span> and <span className="font-bold">Elixir</span> to specifically
           draw attention to things on purpose.
