@@ -13,7 +13,6 @@ function UXWWhoWeAre(props) {
         </p>
       </UXWSubsection>
       <UXWSubsection anchor="about--mission" title="Our Mission">
-        <blockquote>
           <p className="italic leading-relaxed mx-4 text-lg max-w-xl">
             Our mission is a compass to guide our decisions made in the name of the community. It ensures that every event we hold, every project we start, and every piece of content we create is working toward the same goal in order to best serve our fellow Wizards.
           </p>
