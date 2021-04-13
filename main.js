@@ -366,6 +366,14 @@
       setOpen(true)
     }
 
+    const codeStyle = {
+      fontFamily: "monospace",
+    }
+
+    if (props.noWrap) {
+      codeStyle.minWidth = `${maxTextWidth + 10}ch`
+    }
+
     return (
       <div className="relative">
         <AppBar position="static" classes={{colorPrimary: classesTopPanel.colorPrimary}}>
@@ -374,7 +382,7 @@
             <Tab label="CSS" className={value === 1 ? classesMain.codesnippettabselected : classesMain.codesnippettab} />
           </Tabs>
         </AppBar>
-          <div style={{fontFamily: "monospace", minWidth: `${maxTextWidth + 10}ch`}}>
+          <div style={codeStyle}>
             <TabPanel value={value} index={0} height={maxTextHeight} >
               {finalHtmlSnippet}
             </TabPanel>
