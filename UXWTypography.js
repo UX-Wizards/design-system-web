@@ -103,9 +103,9 @@ function UXWTypography(props) {
           ↳ Color contrast guidelines
         </p>
       </UXWSubsection>
-      <UXWSubsection anchor="typography--usage" title="Usage">
+      {/*<UXWSubsection anchor="typography--usage" title="Usage">
         <p className="max-w-prose">Example</p>
-        {/* <div class="grid grid-cols-2">
+          <div class="grid grid-cols-2">
             <div>
               <div className="h-16 px-4 py-2 uppercase text-xs" style={{fontFamily: "Overpass"}}>
                 H1
@@ -115,28 +115,28 @@ function UXWTypography(props) {
               </div>
               <div className="h-16 px-4 py-2 uppercase text-xs" style={{fontFamily: "Overpass"}}>
                 paragraph
-              </div>  
+              </div>
             </div>
             <div>
               <div className="h-16 font-extrabold" style={{fontFamily: "Overpass", fontSize: "3.375em"}}>
                 Design Meets Magic
               </div>
-              
+
               <div className="h-16 p-2 font-bold" style={{fontFamily: "Overpass", fontSize: "1.75em", lineHeight: 1}}>
                 The UX Wizards are here.
               </div>
-              
+
               <div className="h-16 p-2" style={{fontFamily: "Overpass"}}>We’re looking for designers of all levels to com on board. Ready to work your wizardry?
               </div>
-            </div> 
-        </div>*/}
-      </UXWSubsection>
+            </div>
+        </div>
+      </UXWSubsection>*/}
     </div>
   );
 }
 
   function SimpleCard() {
-  
+
     return (
       <Card>
         <CardContent>
@@ -145,7 +145,7 @@ function UXWTypography(props) {
           <div className="p-2" style={{fontFamily: "Overpass"}}>We’re looking for designers of all levels to com on board. Ready to work your wizardry?</div>
         </CardContent>
         <CardActions>
-          <div className="p-2">          
+          <div className="p-2">
           <Button size="small">Join our team</Button>
           </div>
         </CardActions>

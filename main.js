@@ -231,10 +231,6 @@
           subtitle: "Guidelines",
           anchor: "typography--guidelines",
         },
-        {
-          subtitle: "Usage",
-          anchor: "typography--usage",
-        },
       ],
       route: "/typography",
       component: <UXWTypography />,
