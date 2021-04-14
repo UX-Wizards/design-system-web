@@ -147,6 +147,7 @@
       route: "/about",
       component: <UXWWhoWeAre />,
     },
+    /*
     {
       heading: "How We Sound",
       subheadings: [
@@ -162,6 +163,7 @@
       route: "/voice",
       component: <UXWHowWeSound />,
     },
+    */
     {
       heading: "Logos and Icons",
       subheadings: [
