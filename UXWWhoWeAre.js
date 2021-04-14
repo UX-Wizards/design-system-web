@@ -1,4 +1,4 @@
-const data = [ 
+const data = [
   {
     name: 'Keri',
     role: 'Co-Organizer of UX Wizards',
@@ -22,7 +22,7 @@ const data = [
   },
   {
     name: 'Kaisen',
-    role: 'Software',
+    role: 'UX Enthusiast',
     image: '/assets/kaisen.jpg',
     description: 'Kaisen kept us on track.',
     link: 'https://www.linkedin.com/in/kaisen-lin-02bb0864/'
