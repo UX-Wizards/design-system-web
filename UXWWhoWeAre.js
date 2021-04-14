@@ -38,8 +38,8 @@ const data = [
     name: 'Max',
     role: 'Product Designer',
     image: '/assets/max.jpg',
-    description: 'My job is to ask why.',
-    link: 'http://maxblumcreating.com'
+    description: 'Max built the Colors page!',
+    link: 'https://linkedin.com/in/maxux'
   },
   {
     name: 'Sidney',
