@@ -61,7 +61,7 @@ function UXWColors(props) {
 
               <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8">
+              <div className="flex flex-col uxw-bg-steel-1 rounded-lg shadow-inner pb-4 mt-4 ml-4 mr-8">
               <div className="flex flex-row p-8 items-center justify-center">
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-magicians-cloak-1 shadow-2xl m-4 z-1">
                   <p className="z-2 text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
@@ -81,7 +81,7 @@ function UXWColors(props) {
                   <div>
 {`
 <h1 class="uxw-bg-magicians-cloak-1">
-  Hello World
+  Your potion is complete.
 </h1>
 `}
                   </div>
@@ -125,12 +125,12 @@ function UXWColors(props) {
                     </p>
                   </div>
 
-                  <div className="m-2">
+                  <div className="shadow-md m-2">
                     <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-magicians-cloak-2">
-  Hello World
+  Your potion is complete.
 </h1>
 `}
                       </div>
@@ -161,12 +161,12 @@ function UXWColors(props) {
                     </p>
                   </div>
 
-                  <div className="m-2">
+                  <div className="shadow-md m-2">
                     <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-magicians-cloak-3">
-  Hello World
+  Your potion is complete.
 </h1>
 `}
                       </div>
@@ -209,7 +209,7 @@ function UXWColors(props) {
 
               <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8">
+              <div className="flex flex-col uxw-bg-steel-1 rounded-lg shadow-inner pb-4 mt-4 ml-4 mr-8">
               <div className="flex flex-row p-8 items-center justify-center">
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-acid-1 shadow-2xl m-4 z-1">
                   <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
@@ -228,7 +228,7 @@ function UXWColors(props) {
                   <div>
 {`
 <h1 class="uxw-bg-acid-1">
-  Hello World
+  The portal is open!
 </h1>
 `}
                   </div>
@@ -267,12 +267,12 @@ function UXWColors(props) {
                   </p>
                 </div>
 
-                <div className="m-2">
+                <div className="shadow-md m-2">
                     <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-acid-2">
-  Hello World
+  The portal is open!
 </h1>
 `}
                       </div>
@@ -305,12 +305,12 @@ function UXWColors(props) {
 
                 </div>
 
-                <div className="m-2">
+                <div className="shadow-md m-2">
                     <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-acid-3">
-  Hello World
+  The portal is open!
 </h1>
 `}
                       </div>
@@ -344,7 +344,7 @@ function UXWColors(props) {
 
                 <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-                <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+                <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
                 <div className="flex flex-row p-8 items-center justify-center">
 
                   <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-merlins-beard-1 shadow-lg border mt-4 ml-4 mr-8 z-1">
@@ -365,7 +365,7 @@ function UXWColors(props) {
                   <div>
 {`
 <h1 class="uxw-bg-merlins-beard-1">
-  Hello World
+  Carve the runes carefully...
 </h1>
 `}
                   </div>
@@ -406,12 +406,12 @@ function UXWColors(props) {
 
                     </div>
 
-                    <div className="m-2">
+                    <div className="shadow-md m-2">
                       <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-merlins-beard-2">
-  Hello World
+  Carve the runes carefully...
 </h1>
 `}
                         </div>
@@ -444,12 +444,12 @@ function UXWColors(props) {
 
                     </div>
 
-                    <div className="m-2">
+                    <div className="shadow-md m-2">
                       <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-merlins-beard-3">
-  Hello World
+  Carve the runes carefully...
 </h1>
 `}
                         </div>
@@ -481,12 +481,12 @@ function UXWColors(props) {
                     </p>
                     </div>
 
-                    <div className="m-2">
+                    <div className="shadow-md m-2">
                       <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-merlins-beard-4">
-  Hello World
+  Carve the runes carefully...
 </h1>
 `}
                         </div>
@@ -555,9 +555,8 @@ function UXWColors(props) {
 
           <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-          <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+          <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
           <div className="flex flex-row p-8 items-center justify-center">
-
             <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-steel-1 shadow-xl m-4 z-1">
               <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>PASS</p>
               <p className="text-left text-black pl-4"><span className="text-white font-bold">A </span>FAIL</p>
@@ -577,7 +576,7 @@ function UXWColors(props) {
               <div>
 {`
 <h1 class="uxw-bg-steel-1">
-  Hello World
+  As always, the mystics remain
 </h1>
 `}
               </div>
@@ -616,13 +615,13 @@ function UXWColors(props) {
 
               </div>
 
-              <div className="m-2">
+              <div className="shadow-md m-2">
 
                 <UXWCodePanelHTMLCSS noWrap>
                   <div>
 {`
 <h1 class="uxw-bg-steel-2">
-  Hello World
+  As always, the mystics remain
 </h1>
 `}
                   </div>
@@ -656,13 +655,13 @@ function UXWColors(props) {
 
               </div>
 
-              <div className="m-2">
+              <div className="shadow-md m-2">
 
                 <UXWCodePanelHTMLCSS noWrap>
                   <div>
 {`
 <h1 class="uxw-bg-steel-3">
-  Hello World
+  As always, the mystics remain
 </h1>
 `}
                   </div>
@@ -699,9 +698,8 @@ function UXWColors(props) {
 
               <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+              <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
               <div className="flex flex-row p-8 items-center justify-center">
-
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-mana-1 shadow-2xl m-4">
                   <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>FAIL</p>
                   <p className="text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
@@ -720,7 +718,7 @@ function UXWColors(props) {
                   <div>
 {`
 <h1 class="uxw-bg-mana-1">
-  Hello World
+  Remember the sigil
 </h1>
 `}
                   </div>
@@ -763,12 +761,12 @@ function UXWColors(props) {
 
                   </div>
 
-                  <div className="m-2">
+                  <div className="shadow-md m-2">
                       <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-mana-2">
-  Hello World
+  Remember the sigil
 </h1>
 `}
                         </div>
@@ -802,12 +800,12 @@ function UXWColors(props) {
 
                   </div>
 
-                  <div className="m-2">
+                  <div className="shadow-md m-2">
                       <UXWCodePanelHTMLCSS noWrap>
                         <div>
 {`
 <h1 class="uxw-bg-mana-3">
-  Hello World
+  Remember the sigil
 </h1>
 `}
                         </div>
@@ -859,9 +857,8 @@ function UXWColors(props) {
 
               <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+              <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
               <div className="flex flex-row p-8 items-center justify-center">
-
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-jinx-1 shadow-2xl m-4">
                   <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
                   <p className="text-left text-white pl-4"><span className="font-bold">A </span>PASS</p>
@@ -880,7 +877,7 @@ function UXWColors(props) {
                   <div>
 {`
 <h1 class="uxw-bg-jinx-1">
-  Hello World
+  The moon, the stars, the heavens
 </h1>
 `}
                   </div>
@@ -919,13 +916,13 @@ function UXWColors(props) {
 
                 </div>
 
-                <div className="m-2">
+                <div className="shadow-md m-2">
 
                   <UXWCodePanelHTMLCSS noWrap>
                     <div>
 {`
 <h1 class="uxw-bg-jinx-2">
-  Hello World
+  The moon, the stars, the heavens
 </h1>
 `}
                    </div>
@@ -959,13 +956,13 @@ function UXWColors(props) {
 
                  </div>
 
-                 <div className="m-2">
+                 <div className="shadow-md m-2">
 
                     <UXWCodePanelHTMLCSS noWrap>
                       <div>
 {`
 <h1 class="uxw-bg-jinx-3">
-  Hello World
+  The moon, the stars, the heavens
 </h1>
 `}
                       </div>
@@ -1000,9 +997,8 @@ function UXWColors(props) {
 
               <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
 
-              <div className="flex flex-col uxw-bg-steel-1 shadow-inner pb-4 mt-4 ml-4 mr-8 mt-4">
+              <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
               <div className="flex flex-row p-8 items-center justify-center">
-
                 <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-elixir-1 shadow-2xl m-4">
                   <p className="text-left text-black pl-4 pt-2"><span className="font-bold">A </span>PASS</p>
                   <p className="text-left text-black pl-4"><span className="text-white font-bold">A </span>FAIL</p>
@@ -1022,7 +1018,7 @@ function UXWColors(props) {
                   <div>
 {`
 <h1 class="uxw-bg-elixir-1">
-  Hello World
+  Be fleet, my familiar!
 </h1>
 `}
                   </div>
@@ -1063,12 +1059,12 @@ function UXWColors(props) {
 
                  </div>
 
-                <div className="m-2">
+                <div className="shadow-md m-2">
                   <UXWCodePanelHTMLCSS noWrap>
                     <div>
 {`
 <h1 class="uxw-bg-elixir-2">
-  Hello World
+  Be fleet, my familiar!
 </h1>
 `}
                    </div>
@@ -1101,12 +1097,12 @@ function UXWColors(props) {
 
                 </div>
 
-                <div className="m-2">
+                <div className="shadow-md  m-2">
                 <UXWCodePanelHTMLCSS noWrap>
                   <div>
 {`
 <h1 class="uxw-bg-elixir-3">
-  Hello World
+  Be fleet, my familiar!
 </h1>
 `}
                   </div>
