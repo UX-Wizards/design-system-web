@@ -63,7 +63,7 @@ function UXWColors(props) {
 
               <div className="flex flex-col uxw-bg-steel-1 rounded-lg shadow-inner pb-4 mt-4 ml-4 mr-8">
               <div className="flex flex-row p-8 items-center justify-center">
-                <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-magicians-cloak-1 shadow-2xl m-4 z-1">
+                <div className="box h-32 w-32 rounded-lg border-2 border-gray-300 uxw-bg-magicians-cloak-1 shadow-xl m-4 z-1">
                   <p className="z-2 text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
                   <p className="z-2 text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
                 </div>
@@ -113,7 +113,7 @@ function UXWColors(props) {
                 <div className="flex flex-row mx-4 mt-4">
 
                   <div className="flex flex-none w-1/2 items-center justify-center">
-                    <div className="box h-20 w-20 rounded-md uxw-bg-magicians-cloak-2 shadow-lg shadow-inner m-4">
+                    <div className="box h-20 w-20 rounded-md uxw-bg-magicians-cloak-2 border-2 border-gray-300 m-4">
                       <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                       <p className="z-2 text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
                     </div>
@@ -149,7 +149,7 @@ function UXWColors(props) {
                 <div className="flex flex-row mx-4 mb-4">
 
                   <div className="flex flex-none w-1/2 items-center justify-center">
-                    <div className="box h-20 w-20 rounded-md uxw-bg-magicians-cloak-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                    <div className="box h-20 w-20 rounded-md uxw-bg-magicians-cloak-3 border-2 border-gray-300 m-4">
                       <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                       <p className="z-2 text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
                     </div>
@@ -211,7 +211,7 @@ function UXWColors(props) {
 
               <div className="flex flex-col uxw-bg-steel-1 rounded-lg shadow-inner pb-4 mt-4 ml-4 mr-8">
               <div className="flex flex-row p-8 items-center justify-center">
-                <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-acid-1 shadow-2xl m-4 z-1">
+                <div className="box h-32 w-32 rounded-lg border-2 border-gray-300 uxw-bg-acid-1 shadow-xl m-4 z-1">
                   <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
                   <p className="text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
                 </div>
@@ -255,7 +255,7 @@ function UXWColors(props) {
               <div className="flex flex-row mx-4 mt-4">
 
                 <div className="flex flex-none w-1/2 items-center justify-center">
-                 <div className="box h-20 w-20 rounded-md uxw-bg-acid-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4 z-1">
+                 <div className="box h-20 w-20 rounded-md uxw-bg-acid-2 border-2 border-gray-300 m-4 z-1">
                     <p className="z-2 text-left text-black pl-2 pt-1"><span className="text-black font-bold">A </span>PASS</p>
                     <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                  </div>
@@ -292,7 +292,7 @@ function UXWColors(props) {
 
                 <div className="flex flex-none w-1/2 items-center justify-center">
 
-                 <div className="box h-20 w-20 rounded-md uxw-bg-acid-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4 z-1">
+                 <div className="box h-20 w-20 rounded-md uxw-bg-acid-3 border-2 border-gray-300 m-4 z-1">
                     <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                     <p className="z-2 text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
                  </div>
@@ -347,7 +347,7 @@ function UXWColors(props) {
                 <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
                 <div className="flex flex-row p-8 items-center justify-center">
 
-                  <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-merlins-beard-1 shadow-lg border mt-4 ml-4 mr-8 z-1">
+                  <div className="box h-32 w-32 rounded-lg uxw-bg-merlins-beard-1 shadow-lg border-2 border-gray-300 mt-4 ml-4 mr-8 z-1">
                     <p className="z-2 text-left pl-4 pt-2"><span className="text-black font-bold">A </span>PASS</p>
                     <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                   </div>
@@ -393,7 +393,7 @@ function UXWColors(props) {
 
                     <div className="flex flex-none w-1/2 items-center justify-center">
 
-                      <div className="box h-20 w-20 rounded-md uxw-bg-merlins-beard-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4 z-1">
+                      <div className="box h-20 w-20 rounded-md uxw-bg-merlins-beard-2 border-2 border-gray-300 m-4 z-1">
                        <p className="z-2 text-left pl-2 pt-1"><span className="text-black font-bold">A </span>PASS</p>
                        <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                       </div>
@@ -431,7 +431,7 @@ function UXWColors(props) {
 
                     <div className="flex flex-none w-1/2 items-center justify-center">
 
-                      <div className="box h-20 w-20 rounded-md uxw-bg-merlins-beard-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                      <div className="box h-20 w-20 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 m-4">
                         <p className="z-2 text-left pl-2 pt-1"><span className="text-black font-bold">A </span>PASS</p>
                         <p className="z-2 text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                       </div>
@@ -469,7 +469,7 @@ function UXWColors(props) {
 
                     <div className="flex flex-none w-1/2 items-center justify-center">
 
-                    <div className="box h-20 w-20 rounded-md uxw-bg-merlins-beard-4 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                    <div className="box h-20 w-20 rounded-md uxw-bg-merlins-beard-4 border-2 border-gray-300 m-4">
                       <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                       <p className="z-2 text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
                     </div>
@@ -559,7 +559,7 @@ function UXWColors(props) {
 
           <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
           <div className="flex flex-row p-8 items-center justify-center">
-            <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-steel-1 shadow-xl m-4 z-1">
+            <div className="box h-32 w-32 rounded-lg border-2 border-gray-400 uxw-bg-steel-1 shadow-xl m-4 z-1">
               <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>PASS</p>
               <p className="text-left text-black pl-4"><span className="text-white font-bold">A </span>FAIL</p>
             </div>
@@ -604,7 +604,7 @@ function UXWColors(props) {
 
               <div className="flex flex-none w-1/2 items-center justify-center">
 
-                <div className="box h-20 w-20 rounded-md uxw-bg-steel-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                <div className="box h-20 w-20 rounded-md uxw-bg-steel-2 border-2 border-gray-300 m-4">
                   <p className="text-left text-black pl-2 pt-4"><span className=" font-bold">A </span>PASS</p>
                   <p className="text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                 </div>
@@ -644,7 +644,7 @@ function UXWColors(props) {
 
               <div className="flex flex-none w-1/2 items-center justify-center">
 
-                <div className="box h-20 w-20 rounded-md uxw-bg-steel-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                <div className="box h-20 w-20 rounded-md uxw-bg-steel-3 border-2 border-gray-300 m-4">
                   <p className="text-left text-black pl-2 pt-1"><span className=" font-bold">A </span>PASS</p>
                   <p className="text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                </div>
@@ -702,7 +702,7 @@ function UXWColors(props) {
 
               <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
               <div className="flex flex-row p-8 items-center justify-center">
-                <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-mana-1 shadow-2xl m-4">
+                <div className="box h-32 w-32 rounded-lg border-2 border-gray-300 uxw-bg-mana-1 shadow-xl m-4">
                   <p className="text-left text-black pl-4 pt-2"><span className=" font-bold">A </span>FAIL</p>
                   <p className="text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
                 </div>
@@ -750,7 +750,7 @@ function UXWColors(props) {
 
                   <div className="flex flex-none w-1/2 items-center justify-center">
 
-                    <div className="box h-20 w-20 rounded-md uxw-bg-mana-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                    <div className="box h-20 w-20 rounded-md uxw-bg-mana-2 border-2 border-gray-300 m-4">
                       <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                       <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
                     </div>
@@ -758,7 +758,7 @@ function UXWColors(props) {
                     <p className="text-left col-span-2 pt-4 pb-4">
                       <span className="font-bold">HEX:</span> <span className="font-normal">24DDFD</span><br />
                       <span className="font-bold">RGB:</span> <span className="font-normal">36, 221, 253</span><br />
-                      <span className="font-bold">CMYK:</span> <span className="font-normal">57, 0, 5, 0</span>
+                      <span className="font-bold">CMYK:</span> <span className="font-normal">57, 00, 05, 00</span>
                   </p>
 
                   </div>
@@ -789,7 +789,7 @@ function UXWColors(props) {
 
                   <div className="flex flex-none w-1/2 items-center justify-center">
 
-                    <div className="box h-20 w-20 rounded-md uxw-bg-mana-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                    <div className="box h-20 w-20 rounded-md uxw-bg-mana-3 border-2 border-gray-300 m-4">
                       <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                       <p className="text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
                     </div>
@@ -797,7 +797,7 @@ function UXWColors(props) {
                     <p className="text-left col-span-2 pt-4 pb-4">
                       <span className="font-bold">HEX:</span> <span className="font-normal">1F9BB1</span><br />
                       <span className="font-bold">RGB:</span> <span className="font-normal">31, 155, 177</span><br />
-                      <span className="font-bold">CMYK:</span> <span className="font-normal">78, 22, 26, 0</span>
+                      <span className="font-bold">CMYK:</span> <span className="font-normal">78, 22, 26, 00</span>
                    </p>
 
                   </div>
@@ -861,7 +861,7 @@ function UXWColors(props) {
 
               <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
               <div className="flex flex-row p-8 items-center justify-center">
-                <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-jinx-1 shadow-2xl m-4">
+                <div className="box h-32 w-32 rounded-lg rborder-2 border-gray-300 uxw-bg-jinx-1 shadow-xl m-4">
                   <p className="text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
                   <p className="text-left text-white pl-4"><span className="font-bold">A </span>PASS</p>
                 </div>
@@ -905,7 +905,7 @@ function UXWColors(props) {
 
                 <div className="flex flex-none w-1/2 items-center justify-center">
 
-                  <div className="box h-20 w-20 rounded-md uxw-bg-jinx-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                  <div className="box h-20 w-20 rounded-md uxw-bg-jinx-2 border-2 border-gray-300 m-4">
                     <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                     <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
                   </div>
@@ -913,7 +913,7 @@ function UXWColors(props) {
                   <p className="text-left col-span-2 pt-4 pb-4">
                     <span className="font-bold">HEX:</span> <span className="font-normal">FFA8BA</span><br />
                     <span className="font-bold">RGB:</span> <span className="font-normal">255, 168, 186</span><br />
-                    <span className="font-bold">CMYK:</span> <span className="font-normal">0, 43, 9, 0</span>
+                    <span className="font-bold">CMYK:</span> <span className="font-normal">00, 43, 09, 00</span>
                   </p>
 
                 </div>
@@ -945,7 +945,7 @@ function UXWColors(props) {
 
                  <div className="flex flex-none w-1/2 items-center justify-center">
 
-                  <div className="box h-20 w-20 rounded-md uxw-bg-jinx-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                  <div className="box h-20 w-20 rounded-md uxw-bg-jinx-3 border-2 border-gray-300 m-4">
                     <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                     <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
                   </div>
@@ -953,7 +953,7 @@ function UXWColors(props) {
                   <p className="text-left col-span-2 pt-4 pb-4">
                     <span className="font-bold">HEX:</span> <span className="font-normal">EA4869</span><br />
                     <span className="font-bold">RGB:</span> <span className="font-normal">234, 72, 105</span><br />
-                    <span className="font-bold">CMYK:</span> <span className="font-normal">02, 87, 44, 0</span>
+                    <span className="font-bold">CMYK:</span> <span className="font-normal">02, 87, 44, 00</span>
                   </p>
 
                  </div>
@@ -1001,7 +1001,7 @@ function UXWColors(props) {
 
               <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg pb-4 mt-4 ml-4 mr-8 mt-4">
               <div className="flex flex-row p-8 items-center justify-center">
-                <div className="box h-32 w-32 rounded-lg ring-2 ring-gray-200 ring-offset-4 uxw-bg-elixir-1 shadow-2xl m-4">
+                <div className="box h-32 w-32 rounded-lg border-2 border-gray-300 uxw-bg-elixir-1 shadow-xl m-4">
                   <p className="text-left text-black pl-4 pt-2"><span className="font-bold">A </span>PASS</p>
                   <p className="text-left text-black pl-4"><span className="text-white font-bold">A </span>FAIL</p>
                 </div>
@@ -1048,7 +1048,7 @@ function UXWColors(props) {
 
                 <div className="flex flex-none w-1/2 items-center justify-center">
 
-                  <div className="box h-20 w-20 rounded-md uxw-bg-elixir-2 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                  <div className="box h-20 w-20 rounded-md uxw-bg-elixir-2 border-2 border-gray-300 m-4">
                     <p className="text-left text-black pl-2 pt-1"><span className=" font-bold">A </span>PASS</p>
                     <p className="text-left text-black pl-2"><span className="text-white font-bold">A </span>FAIL</p>
                   </div>
@@ -1086,7 +1086,7 @@ function UXWColors(props) {
 
               <div className="flex flex-none w-1/2 items-center justify-center">
 
-                <div className="box h-20 w-20 rounded-md uxw-bg-elixir-3 ring ring-white ring-offset-2 shadow-lg shadow-inner m-4">
+                <div className="box h-20 w-20 rounded-md uxw-bg-elixir-3 border-2 border-gray-300 m-4">
                   <p className="text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                   <p className="text-left text-white pl-2"><span className="font-bold">A </span>PASS</p>
                 </div>
