@@ -71,7 +71,7 @@ function UXWColors(props) {
                 <p className="text-left px-4 pt-6 col-span-2 pb-4">
                   <span className="font-bold">HEX:</span> <span className="font-normal">152145</span><br />
                   <span className="font-bold">RGB:</span> <span className="font-normal">21, 33, 69</span><br />
-                  <span className="font-bold">CMYK:</span> <span className="font-normal">19, 14, 0, 79</span>
+                  <span className="font-bold">CMYK:</span> <span className="font-normal">99, 90, 42, 46</span>
                 </p>
               </div>
 
@@ -113,15 +113,15 @@ function UXWColors(props) {
                 <div className="flex flex-row mx-4 mt-4">
 
                   <div className="flex flex-none w-1/2 items-center justify-center">
-                    <div className="box h-20 w-20 rounded-md uxw-bg-magicians-cloak-2 ring ring-gray-200 ring-offset-2 shadow-lg shadow-inner m-4">
+                    <div className="box h-20 w-20 rounded-md uxw-bg-magicians-cloak-2 shadow-lg shadow-inner m-4">
                       <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
                       <p className="z-2 text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
                     </div>
 
                     <p className="text-left p-4">
-                      <span className="font-bold">HEX:</span> <span className="font-normal">5267A7</span><br />
-                      <span className="font-bold">RGB:</span> <span className="font-normal">82, 103, 167</span><br />
-                      <span className="font-bold">CMYK:</span> <span className="font-normal">76, 63, 6, 0</span>
+                      <span className="font-bold">HEX:</span> <span className="font-normal">4F66AD</span><br />
+                      <span className="font-bold">RGB:</span> <span className="font-normal">79, 102, 173</span><br />
+                      <span className="font-bold">CMYK:</span> <span className="font-normal">77, 64, 01, 00</span>
                     </p>
                   </div>
 
@@ -155,9 +155,9 @@ function UXWColors(props) {
                     </div>
 
                     <p className="text-left p-4 col-span-2">
-                      <span className="font-bold">HEX:</span> <span className="font-normal">2E3E6E</span><br />
-                      <span className="font-bold">RGB:</span> <span className="font-normal">46, 62, 110</span><br />
-                      <span className="font-bold">CMYK:</span> <span className="font-normal">93, 83, 30, 17</span>
+                      <span className="font-bold">HEX:</span> <span className="font-normal">2B3D72</span><br />
+                      <span className="font-bold">RGB:</span> <span className="font-normal">46, 61, 114</span><br />
+                      <span className="font-bold">CMYK:</span> <span className="font-normal">96, 86, 27, 14</span>
                     </p>
                   </div>
 
@@ -219,7 +219,7 @@ function UXWColors(props) {
                 <p className="text-left px-4 pt-6 col-span-2 pb-4">
                   <span className="font-bold">HEX:</span> <span className="font-normal">6331FD</span><br />
                   <span className="font-bold">RGB:</span> <span className="font-normal">99, 49, 253</span><br />
-                  <span className="font-bold">CMYK:</span> <span className="font-normal">60, 80, 0, 1</span>
+                  <span className="font-bold">CMYK:</span> <span className="font-normal">74, 76, 0, 0</span>
                 </p>
               </div>
 
@@ -261,9 +261,9 @@ function UXWColors(props) {
                  </div>
 
                   <p className="text-left p-4">
-                    <span className="font-bold">HEX:</span> <span className="font-normal">D5CCFB</span><br />
-                    <span className="font-bold">RGB:</span> <span className="font-normal">213, 204, 251</span><br />
-                    <span className="font-bold">CMYK:</span> <span className="font-normal">14, 18, 0, 0</span>
+                    <span className="font-bold">HEX:</span> <span className="font-normal">D8CBFF</span><br />
+                    <span className="font-bold">RGB:</span> <span className="font-normal">216, 203, 255</span><br />
+                    <span className="font-bold">CMYK:</span> <span className="font-normal">14, 19, 0, 0</span>
                   </p>
                 </div>
 
@@ -298,9 +298,9 @@ function UXWColors(props) {
                  </div>
 
                   <p className="text-left p-4 col-span-2">
-                    <span className="font-bold">HEX:</span> <span className="font-normal">3822AC</span><br />
-                    <span className="font-bold">RGB:</span> <span className="font-normal">56, 34, 172</span><br />
-                    <span className="font-bold">CMYK:</span> <span className="font-normal">90, 92, 0, 0</span>
+                    <span className="font-bold">HEX:</span> <span className="font-normal">3F18B4</span><br />
+                    <span className="font-bold">RGB:</span> <span className="font-normal">63, 24, 180</span><br />
+                    <span className="font-bold">CMYK:</span> <span className="font-normal">87, 91, 0, 0</span>
                   </p>
 
                 </div>
@@ -475,8 +475,8 @@ function UXWColors(props) {
                     </div>
 
                     <p className="text-left col-span-2 pt-4 pb-4">
-                      <span className="font-bold">HEX:</span> <span className="font-normal">747887</span><br />
-                      <span className="font-bold">RGB:</span> <span className="font-normal">116, 120, 135</span><br />
+                      <span className="font-bold">HEX:</span> <span className="font-normal">737887</span><br />
+                      <span className="font-bold">RGB:</span> <span className="font-normal">115, 120, 135</span><br />
                       <span className="font-bold">CMYK:</span> <span className="font-normal">58, 48, 36, 7</span>
                     </p>
                     </div>
@@ -518,9 +518,6 @@ function UXWColors(props) {
 
       <hr className="pb-10"></hr>
 
-      <UXWSubsection anchor="colors--secondary" title="Supplementary Colors">
-
-
       <div className="flex flex-row">
 
         <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 mt-8 mb-12">
@@ -532,9 +529,14 @@ function UXWColors(props) {
 
       </div>
 
+      <UXWSubsection anchor="colors--secondary" title="Secondary Colors">
+
+
+  
+
         <div className="flex flex-auto w-full bg-transparent">
 
-        <p className="pb-16 max-w-prose">Our (<span className="italic">secondary</span>) colors are the supporting tones
+        <p className="pb-16 max-w-prose">Our secondary colors are the supporting tones
           of <span className="font-bold">Steel</span> and <span className="font-bold">Mana</span>. Use them to help build environments within your UX
           Wizards content.
         </p>
@@ -545,7 +547,7 @@ function UXWColors(props) {
         <div className="flex flex-col flex-wrap flex-grow">
 
           <p className="font-bold font-2xl pb-4">
-            Steel <span className="font-normal">(secondary)</span>
+            Steel 
           </p>
 
 
@@ -563,9 +565,9 @@ function UXWColors(props) {
             </div>
 
             <p className="text-left px-4 pt-6 col-span-2 pb-4">
-              <span className="font-bold">HEX:</span> <span className="font-normal">E2E6FB</span><br />
-              <span className="font-bold">RGB:</span> <span className="font-normal">226, 230, 251</span><br />
-              <span className="font-bold">CMYK:</span> <span className="font-normal">9, 7, 0, 0</span>
+              <span className="font-bold">HEX:</span> <span className="font-normal">E0E6FD</span><br />
+              <span className="font-bold">RGB:</span> <span className="font-normal">224, 230, 253</span><br />
+              <span className="font-bold">CMYK:</span> <span className="font-normal">10, 7, 0, 0</span>
             </p>
 
           </div>
@@ -608,8 +610,8 @@ function UXWColors(props) {
                 </div>
 
                 <p className="text-left col-span-2 pt-4 pb-4">
-                  <span className="font-bold">HEX:</span> <span className="font-normal">F6F9FD</span><br />
-                  <span className="font-bold">RGB:</span> <span className="font-normal">246, 249, 235</span><br />
+                  <span className="font-bold">HEX:</span> <span className="font-normal">F7F9FF</span><br />
+                  <span className="font-bold">RGB:</span> <span className="font-normal">247, 249, 255</span><br />
                   <span className="font-bold">CMYK:</span> <span className="font-normal">2, 1, 0, 0</span>
                 </p>
 
@@ -648,8 +650,8 @@ function UXWColors(props) {
                </div>
 
                 <p className="text-left col-span-2 pt-4 pb-4">
-                  <span className="font-bold">HEX:</span> <span className="font-normal">CDD5F2</span><br />
-                  <span className="font-bold">RGB:</span> <span className="font-normal">205, 213, 242</span><br />
+                  <span className="font-bold">HEX:</span> <span className="font-normal">CCD5F5</span><br />
+                  <span className="font-bold">RGB:</span> <span className="font-normal">204, 213, 245</span><br />
                   <span className="font-bold">CMYK:</span> <span className="font-normal">17, 12, 0, 0</span>
                 </p>
 
@@ -688,7 +690,7 @@ function UXWColors(props) {
         <div className="flex flex-col flex-wrap flex-grow">
 
           <p className="font-bold font-2xl pb-4">
-            Mana <span className="font-normal">(secondary)</span>
+            Mana 
           </p>
 
           <div className="flex flex-row pb-10">
@@ -706,9 +708,9 @@ function UXWColors(props) {
                 </div>
 
                 <p className="text-left col-span-2 pt-4 pb-4">
-                  <span className="font-bold">HEX:</span> <span className="font-normal">52B9D3</span><br />
-                  <span className="font-bold">RGB:</span> <span className="font-normal">82, 185, 211</span><br />
-                  <span className="font-bold">CMYK:</span> <span className="font-normal">62, 7, 13, 0</span>
+                  <span className="font-bold">HEX:</span> <span className="font-normal">00BBD6</span><br />
+                  <span className="font-bold">RGB:</span> <span className="font-normal">00, 187, 214</span><br />
+                  <span className="font-bold">CMYK:</span> <span className="font-normal">71, 1, 14, 0</span>
                 </p>
 
               </div>
@@ -754,9 +756,9 @@ function UXWColors(props) {
                     </div>
 
                     <p className="text-left col-span-2 pt-4 pb-4">
-                      <span className="font-bold">HEX:</span> <span className="font-normal">68DAF9</span><br />
-                      <span className="font-bold">RGB:</span> <span className="font-normal">104, 120, 135</span><br />
-                      <span className="font-bold">CMYK:</span> <span className="font-normal">49, 0, 3, 0</span>
+                      <span className="font-bold">HEX:</span> <span className="font-normal">24DDFD</span><br />
+                      <span className="font-bold">RGB:</span> <span className="font-normal">36, 221, 253</span><br />
+                      <span className="font-bold">CMYK:</span> <span className="font-normal">57, 0, 5, 0</span>
                   </p>
 
                   </div>
@@ -793,9 +795,9 @@ function UXWColors(props) {
                     </div>
 
                     <p className="text-left col-span-2 pt-4 pb-4">
-                      <span className="font-bold">HEX:</span> <span className="font-normal">4999AE</span><br />
-                      <span className="font-bold">RGB:</span> <span className="font-normal">73, 153, 174</span><br />
-                      <span className="font-bold">CMYK:</span> <span className="font-normal">71, 26, 26, 1</span>
+                      <span className="font-bold">HEX:</span> <span className="font-normal">1F9BB1</span><br />
+                      <span className="font-bold">RGB:</span> <span className="font-normal">31, 155, 177</span><br />
+                      <span className="font-bold">CMYK:</span> <span className="font-normal">78, 22, 26, 0</span>
                    </p>
 
                   </div>
@@ -837,7 +839,7 @@ function UXWColors(props) {
 <UXWSubsection anchor="colors--accent" title="Accent Colors">
 
         <div className="max-w-prose bg-transparent">
-        <p className="pb-12">Our brighter (<span className="italic">accent</span>) colors should be used with
+        <p className="pb-12">Our brighter accent colors should be used with
           restraint and finesse. We want our designs to stand out,
           but avoid being tacky and distasteful. Use <span className="font-bold">Jinx</span> and <span className="font-bold">Elixir</span> to specifically
           draw attention to things on purpose.
@@ -848,7 +850,7 @@ function UXWColors(props) {
         <div className="flex flex-col flex-wrap flex-grow">
 
           <p className="font-bold font-2xl pb-4">
-            Jinx <span className="font-normal">(accent)</span>
+            Jinx 
           </p>
 
           <div className="flex flex-row pb-10">
@@ -865,9 +867,9 @@ function UXWColors(props) {
                 </div>
 
                 <p className="text-left col-span-2 pt-4 pb-4">
-                  <span className="font-bold">HEX:</span> <span className="font-normal">ED6F85</span><br />
-                  <span className="font-bold">RGB:</span> <span className="font-normal">237, 111, 133</span><br />
-                  <span className="font-bold">CMYK:</span> <span className="font-normal">2, 71, 30, 0</span>
+                  <span className="font-bold">HEX:</span> <span className="font-normal">FF6584</span><br />
+                  <span className="font-bold">RGB:</span> <span className="font-normal">255, 101, 132</span><br />
+                  <span className="font-bold">CMYK:</span> <span className="font-normal">0, 76, 27, 0</span>
                 </p>
 
               </div>
@@ -909,9 +911,9 @@ function UXWColors(props) {
                   </div>
 
                   <p className="text-left col-span-2 pt-4 pb-4">
-                    <span className="font-bold">HEX:</span> <span className="font-normal">F4ACBA</span><br />
-                    <span className="font-bold">RGB:</span> <span className="font-normal">244, 172, 186</span><br />
-                    <span className="font-bold">CMYK:</span> <span className="font-normal">1, 40, 12, 0</span>
+                    <span className="font-bold">HEX:</span> <span className="font-normal">FFA8BA</span><br />
+                    <span className="font-bold">RGB:</span> <span className="font-normal">255, 168, 186</span><br />
+                    <span className="font-bold">CMYK:</span> <span className="font-normal">0, 43, 9, 0</span>
                   </p>
 
                 </div>
@@ -949,9 +951,9 @@ function UXWColors(props) {
                   </div>
 
                   <p className="text-left col-span-2 pt-4 pb-4">
-                    <span className="font-bold">HEX:</span> <span className="font-normal">D9556B</span><br />
-                    <span className="font-bold">RGB:</span> <span className="font-normal">217, 85, 107</span><br />
-                    <span className="font-bold">CMYK:</span> <span className="font-normal">11, 81, 46, 1</span>
+                    <span className="font-bold">HEX:</span> <span className="font-normal">EA4869</span><br />
+                    <span className="font-bold">RGB:</span> <span className="font-normal">234, 72, 105</span><br />
+                    <span className="font-bold">CMYK:</span> <span className="font-normal">02, 87, 44, 0</span>
                   </p>
 
                  </div>
@@ -987,7 +989,7 @@ function UXWColors(props) {
 
         <div className="flex flex-col flex-wrap flex-grow">
 
-          <p className="font-bold font-2xl pb-4">Elixir <span className="font-normal">(accent)</span>
+          <p className="font-bold font-2xl pb-4">Elixir 
           </p>
 
 
@@ -1005,9 +1007,9 @@ function UXWColors(props) {
                 </div>
 
                 <p className="text-left px-4 pt-6 pb-4">
-                  <span className="font-bold">HEX:</span> <span className="font-normal">E6B161</span><br />
-                  <span className="font-bold">RGB:</span> <span className="font-normal">230, 177, 97</span><br />
-                  <span className="font-bold">CMYK:</span> <span className="font-normal">10, 31, 72, 0</span>
+                  <span className="font-bold">HEX:</span> <span className="font-normal">F0B052</span><br />
+                  <span className="font-bold">RGB:</span> <span className="font-normal">240, 176, 82</span><br />
+                  <span className="font-bold">CMYK:</span> <span className="font-normal">05, 33, 78, 0</span>
                 </p>
 
               </div>
@@ -1052,9 +1054,9 @@ function UXWColors(props) {
                   </div>
 
                  <p className="text-left pt-4 pb-4">
-                   <span className="font-bold">HEX:</span> <span className="font-normal">F8D399</span><br />
-                   <span className="font-bold">RGB:</span> <span className="font-normal">248, 211, 153</span><br />
-                   <span className="font-bold">CMYK:</span> <span className="font-normal">2, 17, 44, 0</span>
+                   <span className="font-bold">HEX:</span> <span className="font-normal">FFD190</span><br />
+                   <span className="font-bold">RGB:</span> <span className="font-normal">255, 209, 144</span><br />
+                   <span className="font-bold">CMYK:</span> <span className="font-normal">0, 19, 48, 0</span>
                   </p>
 
                  </div>
@@ -1090,9 +1092,9 @@ function UXWColors(props) {
                 </div>
 
                 <p className="text-left col-span-2 pt-4 pb-4">
-                  <span className="font-bold">HEX:</span> <span className="font-normal">CF9748</span><br />
-                  <span className="font-bold">RGB:</span> <span className="font-normal">207, 151, 72</span><br />
-                  <span className="font-bold">CMYK:</span> <span className="font-normal">19, 42, 84, 1</span>
+                  <span className="font-bold">HEX:</span> <span className="font-normal">D99432</span><br />
+                  <span className="font-bold">RGB:</span> <span className="font-normal">217, 148, 50</span><br />
+                  <span className="font-bold">CMYK:</span> <span className="font-normal">14, 45, 96, 1</span>
                 </p>
 
                 </div>
