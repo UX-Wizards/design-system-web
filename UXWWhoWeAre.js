@@ -3,21 +3,21 @@ const data = [
     name: 'Keri',
     role: 'Co-Organizer of UX Wizards',
     image: '/assets/keri.jpg',
-    description: 'Organizer of the UX Wizards!',
+    description: 'Organizer of the UX Wizards.',
     link: 'https://www.linkedin.com/in/kerikeri/'
   },
   {
     name: 'Laura',
     role: 'Co-Organizer of UX Wizards',
     image: '/assets/laura.jpg',
-    description: 'Laura built the Who We Are Page!',
+    description: 'Laura built the Who We Are Page.',
     link: 'https://www.linkedin.com/in/lewilliams89/'
   },
   {
     name: 'Seiko',
     role: 'Product Designer',
     image: '/assets/seiko.jpg',
-    description: 'Seiko built the Logos and Icons Page!',
+    description: 'Seiko built the Logos and Icons Page.',
     link: 'https://www.linkedin.com/in/seikoigi/'
   },
   {
@@ -31,30 +31,45 @@ const data = [
     name: 'Javi',
     role: 'Frontend Developer',
     image: '/assets/javi.jpg',
-    description: 'Javi built the Design Assets page!',
+    description: 'Javi built the Design Assets page.',
     link: 'https://www.linkedin.com/in/javigme/'
   },
   {
     name: 'Max',
     role: 'Product Designer',
     image: '/assets/max.jpg',
-    description: 'Max built the Colors page!',
+    description: 'Max built the Colors page.',
     link: 'https://linkedin.com/in/maxux'
   },
   {
     name: 'Sidney',
     role: 'Product Designer',
     image: '/assets/sidney.jpg',
-    description: 'Sidney built the Typography page!',
+    description: 'Sidney built the Typography page.',
     link: 'https://www.linkedin.com/in/sidneyrhoads/'
   },
   {
     name: 'Dhruv',
     role: 'Software',
     image: '/assets/dhruv.jpg',
-    description: 'Dhruv worked on this page!',
+    description: 'Dhruv worked on this page.',
     link: 'https://www.linkedin.com/in/dhruv-madhok-9290a2a3/'
   },
+  {
+    name: 'Chaela',
+    role: 'Product Designer',
+    image: '/assets/chaela.png',
+    description: 'Chaela worked on the Colors page.',
+    link: 'https://www.linkedin.com/in/chaelacristobal/'
+  },
+  {
+    name: 'Bi',
+    role: 'Product Designer',
+    image: '/assets/bi.png',
+    description: '',
+    link: 'https://www.linkedin.com/in/dungtnguyen/'
+  },
+
 ]
 
 const titleStyle = {
