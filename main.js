@@ -172,17 +172,30 @@
           anchor: "snav-logos",
         },
         {
+          subtitle: "Primary Logoance",
+          anchor: "snav-primary-logo",
+        },
+        {
+          subtitle: "Monotone Logos",
+          anchor: "snav-monotone-logo",
+        },
+        {
+          subtitle: "Word Mark",
+          anchor: "snav-word-mark",
+        },
+        {
           subtitle: "Clearance",
           anchor: "snav-clearance",
         },
         {
-          subtitle: "Icongraphy Style",
+          subtitle: "Icon Style",
           anchor: "snav-icongraphy",
         },
         {
           subtitle: "Downloads",
           anchor: "snav-library",
         },
+      
       ],
       route: "/logos",
       component: <UXWLogosAndIcons />,

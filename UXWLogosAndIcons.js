@@ -7,18 +7,18 @@ function UXWLogosAndIcons(props) {
             <p className="max-w-prose">Our primary logo combines our brand mark, wizard hat, and the UX WIZARDS text. Wherever possible, we aim to use the primary logo in full-color.</p><br />
             <p className="max-w-prose">The circle logo variations are to be used as social media icons and graphics. Word Mark is often incoorporate with graphic and for the banners. </p><br />
           </UXWSubsection>
-          <UXWSubsection anchor="snav-clearance" title="Primary Logo">
+          <UXWSubsection anchor="snav-primary-logo" title="Primary Logo">
             <p className="max-w-prose">The main logo should be used in this form whenever possible. The inverted version features a greater legibility on dark or busy backgrounds.</p>
             <img src="assets/primary_logo.png" alt="" className="w-2/4"/>
           </UXWSubsection>
-          <UXWSubsection anchor="snav-icongraphy" title="Monotone Logos">
+          <UXWSubsection anchor="snav-monotone-logo" title="Monotone Logos">
             <p className="max-w-prose">When our primary or full-color logos aren’t an option, use the monotone logo that provides the most contrast. </p><br />
             <img className="w-2/4" src="assets/monotone_logo.png" alt="" className="w-2/4" />
           </UXWSubsection>
-          <UXWSubsection anchor="snav-icongraphy" title="Word Mark">
+          <UXWSubsection anchor="snav-word-mark" title="Word Mark">
             <img className="w-3/4" src="assets/word_mark.png" alt="" />
           </UXWSubsection>
-          <UXWSubsection anchor="snav-icongraphy" title="Clearance">
+          <UXWSubsection anchor="snav-clearance" title="Clearance">
             <img className="w-3/4" src="assets/clearance.png" alt="" />
           </UXWSubsection>
           <UXWSubsection anchor="snav-icongraphy" title="Icon Style">
@@ -34,13 +34,16 @@ function UXWLogosAndIcons(props) {
             <div className="grid grid-cols-2 gap-8">
               <div className="flex flex-col">
                 <div className="flex flex-row bg-gray-200 rounded-t-lg">
-                  <div className="text-base py-2 pl-6">
+                  <div className="text-base py-4 pl-6">
                   Primary Logo
                   </div>
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
-                    <a href="assets/library/horizontal.zip" download>
-                      <i className="bi bi-download text-xl"></i>
+                    <a href="assets/library/primary-logo.zip" download>
+                      <button class="from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md text-white font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                      <i className="bi bi-download text-lg pr-4"></i>
+                      <span>Download</span>
+                    </button>
                     </a>
                   </div>
                 </div>
@@ -50,13 +53,19 @@ function UXWLogosAndIcons(props) {
               </div>
               <div className="flex flex-col">
                 <div className="flex flex-row bg-gray-200 rounded-t-lg">
-                  <div className="text-base py-2 pl-6">
+                  <div className="text-base py-4 pl-6">
                   Circle Logo
                   </div>
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
-                    <a href="assets/library/square.zip" download>
+                    {/* <a href="assets/library/square.zip" download>
                       <i className="bi bi-download text-xl"></i>
+                    </a> */}
+                    <a href="assets/library/circle-logo.zip" download>
+                      <button class="from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md text-white font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                      <i className="bi bi-download text-lg pr-4"></i>
+                      <span>Download</span>
+                    </button>
                     </a>
                   </div>
                 </div>
@@ -66,13 +75,19 @@ function UXWLogosAndIcons(props) {
               </div>
               <div className="flex flex-col">
                 <div className="flex flex-row bg-gray-200 rounded-t-lg">
-                  <div className="text-base py-2 pl-6">
+                  <div className="text-base py-4 pl-6">
                   Word Mark
                   </div>
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
-                    <a href="assets/library/circle.zip" download>
+                    {/* <a href="assets/library/wordmark.zip" download>
                       <i className="bi bi-download text-xl"></i>
+                    </a> */}
+                    <a href="assets/library/wordmark.zip" download>
+                      <button class=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                      <i className="bi bi-download text-lg pr-4"></i>
+                      <span>Download</span>
+                    </button>
                     </a>
                   </div>
                 </div>
@@ -100,13 +115,19 @@ function UXWLogosAndIcons(props) {
             <div className="grid grid-cols-1 my-8">
               <div className="flex flex-col">
                 <div className="flex flex-row bg-gray-200 rounded-t-lg">
-                  <div className="text-base py-2 pl-6">
+                  <div className="text-base py-4 pl-6">
                     Icongraphy
                   </div>
                   <div className="flex-grow"></div>
                   <div className="py-2 pr-4">
-                    <a href="assets/library/icongraphy.zip" download>
+                    {/* <a href="assets/library/icongraphy.zip" download>
                       <i className="bi bi-download text-xl"></i>
+                    </a> */}
+                    <a href="assets/library/icongraphy.zip" download>
+                      <button class="border border-gray-500 rounded-md text-gray-500 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                      <i className="bi bi-download text-lg pr-4"></i>
+                      <span>Download</span>
+                    </button>
                     </a>
                   </div>
                 </div>
