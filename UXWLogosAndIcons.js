@@ -24,11 +24,9 @@ function UXWLogosAndIcons(props) {
           <UXWSubsection anchor="snav-icongraphy" title="Icon Style">
           <p className="max-w-prose">Icon designs are intended to be recognized and communicate immediately. </p><br />
           <p className="max-w-prose">Our main icons are outlined style which use a clear stroke and the Magician’s Cloak navy color. </p><br />
-          <p className="max-w-prose">Icon + light purple circle background is a variation. This background pops and draws extra attention to the icons. </p><br />
-          {/* <p className="max-w-prose">Icon designs are intended to be recognized and communicate immediately. Our main icons are outlined style which use a clear stroke and the Magician’s Cloak navy color. Icon + light purple circle background is a variation. This background pops and draws extra attention to the icons. </p><br /> */}
+          <p className="max-w-prose">Icon + light purple circle background is a variation. This background pops and draws extra attention to the icons. </p><br/>
             <img className="w-3/4" src="assets/icon_style.png" alt="" />
           </UXWSubsection>
-          
           <UXWSubsection anchor="snav-library" title="Downloads">
             <p className="pb-16 max-w-prose">Each download includes .png and .svg formats. Also, it comes with other color options.</p>
             <div className="grid grid-cols-2 gap-8">
@@ -40,7 +38,7 @@ function UXWLogosAndIcons(props) {
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
                     <a href="assets/library/primary-logo.zip" download>
-                      <button class="from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md text-white font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                    <button class=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
                       <i className="bi bi-download text-lg pr-4"></i>
                       <span>Download</span>
                     </button>
@@ -58,11 +56,8 @@ function UXWLogosAndIcons(props) {
                   </div>
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
-                    {/* <a href="assets/library/square.zip" download>
-                      <i className="bi bi-download text-xl"></i>
-                    </a> */}
                     <a href="assets/library/circle-logo.zip" download>
-                      <button class="from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md text-white font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                    <button class=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
                       <i className="bi bi-download text-lg pr-4"></i>
                       <span>Download</span>
                     </button>
@@ -80,14 +75,11 @@ function UXWLogosAndIcons(props) {
                   </div>
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
-                    {/* <a href="assets/library/wordmark.zip" download>
-                      <i className="bi bi-download text-xl"></i>
-                    </a> */}
                     <a href="assets/library/wordmark.zip" download>
                       <button class=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
-                      <i className="bi bi-download text-lg pr-4"></i>
-                      <span>Download</span>
-                    </button>
+                        <i className="bi bi-download text-lg pr-4"></i>
+                        <span>Download</span>
+                      </button>
                     </a>
                   </div>
                 </div>
@@ -95,22 +87,6 @@ function UXWLogosAndIcons(props) {
                   <img className="py-16" src="assets/logo-wordmark.svg" alt="" />
                 </div>
               </div>
-              {/* <div className="flex flex-col">
-                <div className="flex flex-row bg-gray-200 rounded-t-lg">
-                  <div className="text-base py-2 pl-6">
-                    Podcast Logo
-                  </div>
-                  <div className="flex-grow "></div>
-                  <div className="py-2 pr-4">
-                    <a href="assets/library/podcast.zip" download>
-                      <i className="bi bi-download text-xl"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="flex flex-row justify-center bg-gray-100 rounded-b-lg">
-                  <img className="py-8" src="assets/podcast.png" alt="" />
-                </div>
-              </div> */}
             </div>
             <div className="grid grid-cols-1 my-8">
               <div className="flex flex-col">
@@ -120,14 +96,11 @@ function UXWLogosAndIcons(props) {
                   </div>
                   <div className="flex-grow"></div>
                   <div className="py-2 pr-4">
-                    {/* <a href="assets/library/icongraphy.zip" download>
-                      <i className="bi bi-download text-xl"></i>
-                    </a> */}
                     <a href="assets/library/icongraphy.zip" download>
-                      <button class="border border-gray-500 rounded-md text-gray-500 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
-                      <i className="bi bi-download text-lg pr-4"></i>
-                      <span>Download</span>
-                    </button>
+                      <button class=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                        <i className="bi bi-download text-lg pr-4"></i>
+                        <span>Download</span>
+                      </button>
                     </a>
                   </div>
                 </div>
