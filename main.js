@@ -172,7 +172,7 @@
           anchor: "snav-logos",
         },
         {
-          subtitle: "Primary Logoance",
+          subtitle: "Primary Logo",
           anchor: "snav-primary-logo",
         },
         {
