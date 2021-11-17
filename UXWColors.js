@@ -45,9 +45,6 @@ function UXWColors(props) {
 
 
 
-         
-
-
           <div className="flex flex-row pb-16">
 
             <div className="flex flex-col w-1/3">
@@ -55,7 +52,9 @@ function UXWColors(props) {
               <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Magician's Cloak</div>
 
               <div className="flex flex-col uxw-bg-steel-1 rounded-lg shadow-inner pb-4 mt-4 ml-4 mr-8">
+
                   <div className="flex flex-col p-8 items-center justify-start">
+
                    <div className="box h-32 w-64 rounded-lg border-2 border-gray-300 uxw-bg-magicians-cloak-1 shadow-xl m-4 z-1">
                      <p className="z-2 text-left text-white pl-8 pt-8"><span className="text-black font-bold">A </span>FAIL</p>
                      <p className="z-2 text-left text-white pl-8"><span className="text-white font-bold">A </span>PASS</p>
@@ -65,58 +64,52 @@ function UXWColors(props) {
                      <span className="font-bold">Global Token:</span> <br /><span className="font-normal">uxwcolor-magicianscloak-1</span><br /><br />
                      <span className="font-bold">HEX:</span> <span className="font-normal"># 152145</span>
                     </p>
+
                  </div>
-
-
               
               </div>
               </div>
-
-
-
-
-
-
 
 
             <div className="flex flex-col w-2/3">
-
-              
-
               
 
               <div className="flex flex-row pt-10 pb-4 mt-4 ml-4 mr-8">
-                <div className="flex flex-col mt-7 ml-5 mr-4">
-
+          
+                <div className="flex flex-col mt-6 ml-5 mr-4">
 
                   <div className="flex flex-col items-center justify-left pl-16">
+
                     <div className="box h-32 w-64 rounded-md uxw-bg-magicians-cloak-2 border-2 border-gray-300 m-4">
                       <p className="z-2 text-left text-white pl-8 pt-8"><span className="text-black font-bold">A </span>FAIL</p>
                       <p className="z-2 text-left text-white pl-8"><span className="text-white font-bold">A </span>PASS</p>
                     </div>
 
-                    <p className="text-left -ml-12 p-4">
+                    <p className="text-left mt-1 -ml-12 p-4">
                       <span className="font-bold">Global Token:</span> <br /><span className="font-normal">uxwcolor-magicianscloak-2</span><br /><br />
                       <span className="font-bold">HEX:</span> <span className="font-normal"># 4F66AD</span>
                     </p>
+
                   </div>
 
                   
 
                 </div>
 
-                <div className="flex flex-col mt-7 ml-5 mr-4">
+                <div className="flex flex-col mt-6 ml-5 mr-4">
 
                   <div className="flex flex-col items-center justify-left pl-16">
+
                     <div className="box h-32 w-64 rounded-md uxw-bg-magicians-cloak-3 border-2 border-gray-300 m-4">
                       <p className="z-2 text-left text-white pl-8 pt-8"><span className="text-black font-bold">A </span>FAIL</p>
                       <p className="z-2 text-left text-white pl-8"><span className="text-white font-bold">A </span>PASS</p>
                     </div>
 
-                    <p className="text-left p-4 -ml-12">
+                    <p className="text-left p-4 mt-1 -ml-12">
                       <span className="font-bold">Global Token:</span> <br /><span className="font-normal">uxwcolor-magicianscloak-3</span><br /><br />
                       <span className="font-bold">HEX:</span> <span className="font-normal"># 2B3D72</span>
                     </p>
+                    
                   </div>
                   
 
