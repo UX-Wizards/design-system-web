@@ -23,13 +23,18 @@ function UXWColors(props) {
 
       <UXWSubsection anchor="colors--primary" title="Primary Colors">
 
+      <p className="my-4">
+          The flexible and neutral <span className="font-bold">Magician's Cloak</span>,
+          <span className="font-bold"> Acid</span>, and <span className="font-bold">Merlin's Beard</span> lead the way. They're most often used as foundational elements of your UX Wizards designs.
+        </p>
+
+
       <div className="flex flex-row">
 
       <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 mt-4 mb-16">
 
         <p>
-          The flexible and neutral <span className="font-bold">Magician's Cloak</span>,
-          <span className="font-bold"> Acid</span>, and <span className="font-bold">Merlin's Beard</span> lead the way. They're most often used as foundational elements of your UX Wizards designs.
+          Remember to start with the highlighted box on the left, and then supplement with the other colors in the row.
         </p>
 
       </div>
@@ -40,51 +45,30 @@ function UXWColors(props) {
 
 
 
-          <p className="font-bold font-2xl pb-4">
-            Magician's Cloak
-         </p>
+         
 
 
           <div className="flex flex-row pb-16">
 
             <div className="flex flex-col w-1/3">
 
-              <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Base color</div>
+              <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">Magician's Cloak</div>
 
               <div className="flex flex-col uxw-bg-steel-1 rounded-lg shadow-inner pb-4 mt-4 ml-4 mr-8">
-              <div className="flex flex-row p-8 items-center justify-center">
-                <div className="box h-32 w-32 rounded-lg border-2 border-gray-300 uxw-bg-magicians-cloak-1 shadow-xl m-4 z-1">
-                  <p className="z-2 text-left text-white pl-4 pt-2"><span className="text-black font-bold">A </span>FAIL</p>
-                  <p className="z-2 text-left text-white pl-4"><span className="text-white font-bold">A </span>PASS</p>
-                </div>
+                  <div className="flex flex-col p-8 items-center justify-start">
+                   <div className="box h-32 w-64 rounded-lg border-2 border-gray-300 uxw-bg-magicians-cloak-1 shadow-xl m-4 z-1">
+                     <p className="z-2 text-left text-white pl-8 pt-8"><span className="text-black font-bold">A </span>FAIL</p>
+                     <p className="z-2 text-left text-white pl-8"><span className="text-white font-bold">A </span>PASS</p>
+                   </div>
 
-                <p className="text-left p-4 pt-6 col-span-2 pb-4">
-                  <span className="font-bold">Global Token:</span> <br /><span className="font-normal">uxwcolor-magicianscloak-1</span><br /><br />
-                  <span className="font-bold">HEX:</span> <span className="font-normal"># 152145</span><br />
-                  <span className="font-bold">RGB:</span> <span className="font-normal">21, 33, 69</span><br />
-                  <span className="font-bold">CMYK:</span> <span className="font-normal">99, 90, 42, 46</span>
-                </p>
-              </div>
+                   <p className="justify-start text-left -ml-12 pt-6 pb-4">
+                     <span className="font-bold">Global Token:</span> <br /><span className="font-normal">uxwcolor-magicianscloak-1</span><br /><br />
+                     <span className="font-bold">HEX:</span> <span className="font-normal"># 152145</span>
+                    </p>
+                 </div>
 
 
-              <div className="mx-8 mb-4 shadow-lg">
-                <UXWCodePanelHTMLCSS>
-                  <div>
-{`
-<h1 class="uxw-bg-magicians-cloak-1">
-  Your potion is complete.
-</h1>
-`}
-                  </div>
-                  <div>
-{`
-.uxw-bg-magicians-cloak-1 {
-  background-color: #145152
-}
-`}
-                  </div>
-                </UXWCodePanelHTMLCSS>
-              </div>
+              
               </div>
               </div>
 
@@ -97,81 +81,46 @@ function UXWColors(props) {
 
             <div className="flex flex-col w-2/3">
 
-              <div className="box w-full rounded-full uxw-bg-steel-3 text-black text-center h-8 pt-1">Alternate shades</div>
+              
 
-              <div className="flex flex-col">
+              
 
-                <div className="flex flex-row mt-7 ml-5 mr-4">
+              <div className="flex flex-row pt-10 pb-4 mt-4 ml-4 mr-8">
+                <div className="flex flex-col mt-7 ml-5 mr-4">
 
-                  <div className="flex flex-none w-1/2 items-center justify-left pl-16">
-                    <div className="box h-32 w-32 rounded-md uxw-bg-magicians-cloak-2 border-2 border-gray-300 m-4">
-                      <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
-                      <p className="z-2 text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
+
+                  <div className="flex flex-col items-center justify-left pl-16">
+                    <div className="box h-32 w-64 rounded-md uxw-bg-magicians-cloak-2 border-2 border-gray-300 m-4">
+                      <p className="z-2 text-left text-white pl-8 pt-8"><span className="text-black font-bold">A </span>FAIL</p>
+                      <p className="z-2 text-left text-white pl-8"><span className="text-white font-bold">A </span>PASS</p>
                     </div>
 
-                    <p className="text-left p-4">
+                    <p className="text-left -ml-12 p-4">
                       <span className="font-bold">Global Token:</span> <br /><span className="font-normal">uxwcolor-magicianscloak-2</span><br /><br />
-                      <span className="font-bold">HEX:</span> <span className="font-normal"># 4F66AD</span><br />
-                      <span className="font-bold">RGB:</span> <span className="font-normal">79, 102, 173</span><br />
-                      <span className="font-bold">CMYK:</span> <span className="font-normal">77, 64, 01, 00</span>
+                      <span className="font-bold">HEX:</span> <span className="font-normal"># 4F66AD</span>
                     </p>
                   </div>
 
-                  <div className="shadow-md m-2">
-                    <UXWCodePanelHTMLCSS noWrap>
-                      <div>
-{`
-<h1 class="uxw-bg-magicians-cloak-2">
-  Your potion is complete.
-</h1>
-`}
-                      </div>
-                      <div>
-{`
-.uxw-bg-magicians-cloak-2 {
-  background-color: #5267A7
-}
-`}
-                      </div>
-                    </UXWCodePanelHTMLCSS>
-                  </div>
+                  
 
                 </div>
 
-                <div className="flex flex-row mt-7 ml-5 mr-4">
+                <div className="flex flex-col mt-7 ml-5 mr-4">
 
-                  <div className="flex flex-none w-1/2 items-center justify-left pl-16">
-                    <div className="box h-32 w-32 rounded-md uxw-bg-magicians-cloak-3 border-2 border-gray-300 m-4">
-                      <p className="z-2 text-left text-white pl-2 pt-1"><span className="text-black font-bold">A </span>FAIL</p>
-                      <p className="z-2 text-left text-white pl-2"><span className="text-white font-bold">A </span>PASS</p>
+                  <div className="flex flex-col items-center justify-left pl-16">
+                    <div className="box h-32 w-64 rounded-md uxw-bg-magicians-cloak-3 border-2 border-gray-300 m-4">
+                      <p className="z-2 text-left text-white pl-8 pt-8"><span className="text-black font-bold">A </span>FAIL</p>
+                      <p className="z-2 text-left text-white pl-8"><span className="text-white font-bold">A </span>PASS</p>
                     </div>
 
-                    <p className="text-left p-4 col-span-2">
+                    <p className="text-left p-4 -ml-12">
                       <span className="font-bold">Global Token:</span> <br /><span className="font-normal">uxwcolor-magicianscloak-3</span><br /><br />
-                      <span className="font-bold">HEX:</span> <span className="font-normal"># 2B3D72</span><br />
-                      <span className="font-bold">RGB:</span> <span className="font-normal">46, 61, 114</span><br />
-                      <span className="font-bold">CMYK:</span> <span className="font-normal">96, 86, 27, 14</span>
+                      <span className="font-bold">HEX:</span> <span className="font-normal"># 2B3D72</span>
                     </p>
                   </div>
+                  
 
-                  <div className="shadow-md m-2">
-                    <UXWCodePanelHTMLCSS noWrap>
-                      <div>
-{`
-<h1 class="uxw-bg-magicians-cloak-3">
-  Your potion is complete.
-</h1>
-`}
-                      </div>
-                      <div>
-{`
-.uxw-bg-magicians-cloak-3 {
-  background-color: #2E3E6E
-}
-`}
-                      </div>
-                    </UXWCodePanelHTMLCSS>
-                  </div>
+                  
 
                 </div>
 
