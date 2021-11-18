@@ -1,7 +1,4 @@
 
-
-const { Card, CardActions, CardContent, Button} = window['MaterialUI'];
-
 function UXWTypography(props) {
   return (
     <div className="container">
@@ -103,8 +100,6 @@ function UXWTypography(props) {
             </tr>
           </tbody>
         </table>
-
-
         
       </UXWSubsection>
 
@@ -140,16 +135,11 @@ function UXWTypography(props) {
             <a className="m-2 w-56 text-center text-white py-4 px-4 from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md uppercase tracking-widest font-light hover:shadow-2xl transition duration-500 ease-in-out hover:bg-opacity-40">JOIN OUR TEAM</a>
 
           </div>
-          </div>
 
-          
-
-
-          
-          
 
       </UXWSubsection>
     </div>
+
 
 
   );
@@ -157,24 +147,6 @@ function UXWTypography(props) {
  
       
 
-
-  function SimpleCard() {
-
-    return (
-      <Card>
-        <CardContent>
-          <div className="p-2 font-extrabold" style={{fontFamily: "Overpass", fontSize: "3.375em"}}>Design Meets Magic</div>
-          <div className="p-2 font-bold" style={{fontFamily: "Overpass", fontSize: "1.75em", lineHeight: 1}}>The UX Wizards are here.</div>
-          <div className="p-2" style={{fontFamily: "Overpass"}}>We’re looking for designers of all levels to com on board. Ready to work your wizardry?</div>
-        </CardContent>
-        <CardActions>
-          <div className="p-2">
-          <Button size="small">Join our team</Button>
-          </div>
-        </CardActions>
-      </Card>
-    );
-  }
 
   
 
