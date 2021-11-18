@@ -233,6 +233,10 @@
           subtitle: "Guidelines",
           anchor: "typography--guidelines",
         },
+        {
+          subtitle: "Usage",
+          anchor: "typography--usage",
+        }
       ],
       route: "/typography",
       component: <UXWTypography />,
@@ -244,6 +248,7 @@
       component: <UXWBrandGuide />,
     },
   ];
+
 
   function TabPanel(props) {
     const { children, value, index, height, ...other } = props;
