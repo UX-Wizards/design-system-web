@@ -135,6 +135,7 @@ function UXWTypography(props) {
             <a className="m-2 w-56 text-center text-white py-4 px-4 from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md uppercase tracking-widest font-light hover:shadow-2xl transition duration-500 ease-in-out hover:bg-opacity-40">JOIN OUR TEAM</a>
 
           </div>
+        </div>
 
 
       </UXWSubsection>
