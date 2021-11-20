@@ -439,7 +439,7 @@
 
     return (
       <React.Fragment>
-        <div ref={ref}>
+        <div ref={ref} className="mb-8">
           <h2 className="uxw-text-display-3 py-4" id={anchor}>{title}</h2>
           {children}
         </div>
