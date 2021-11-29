@@ -255,6 +255,12 @@
       component: <UXWTypography />,
     },
     {
+      heading: "Component",
+      subheadings: [],
+      route: "/component",
+      component: <UXWComponent />,
+    },
+    {
       heading: "Brand Guide",
       subheadings: [],
       route: "/brandguide",
