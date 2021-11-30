@@ -9,7 +9,7 @@ function UXWColors(props) {
       </p>
 
       <UXWSubsection anchor="colors--palette" title="Our Palette">
-        <p className="pb-12 max-w-prose">
+        <p className="pb-8 mt-4 max-w-prose">
           Our palette consists of neutral, pleasing tones balanced by vivid and
           eccentric colors. This color palette has been carefully chosen to
           provide versatility and function while still providing boundless room
@@ -320,7 +320,7 @@ function UXWColors(props) {
 
       <UXWSubsection anchor="colors--secondary" title="Secondary Colors">
         <div className="flex flex-auto w-full bg-transparent">
-          <p className="pb-16 max-w-prose">
+          <p className="pb-16 mt-4 max-w-prose">
             Use <span className="font-bold">Steel</span> and{" "}
             <span className="font-bold">Mana</span> as supporting tones to help
             build environments in your UXW content.
@@ -500,7 +500,7 @@ function UXWColors(props) {
 
       <UXWSubsection anchor="colors--accent" title="Accent Colors">
         <div className="max-w-prose bg-transparent">
-          <p className="pb-12">
+          <p className="pb-12 mt-4">
             <span className="font-bold">Jinx</span> and{" "}
             <span className="font-bold">Elixir</span> should be used with
             restraint and finesse. Think of these colors as ways to draw
@@ -681,6 +681,63 @@ function UXWColors(props) {
           </div>
         </div>
       </UXWSubsection>
+
+      <hr className="pt-4 pb-8"></hr>
+
+      <UXWSubsection anchor="colors--usage" title="Use Guidelines">
+
+      <div className="flex flex-col uxw-bg-steel-2 border-black rounded-md shadow-inner italic py-4 px-2 mt-8 mb-16">
+          
+        <p className="text-center">
+            "[Constraints] provide the guardrails that keep your team grounded and aligned. Creativity thrives in constraints."</p>
+          <br />
+          <p className="text-center pl-96">Gothelf and Sieden, <span className="underline">Lean UX</span></p>
+        
+      </div>
+
+      <div className="max-w-prose bg-transparent">
+
+        <p className="pb-8 mt-4">
+        Use these color guidelines to ground the interactive elements on our UX Wizards branded webpages in a consistent look and feel. With these basic guardrails in place, there is lots of room for creative exploration!
+        </p>
+
+        <p className="pb-12">These guidelines are intended to streamline choices when building UX Wizards webpage elements. For graphics, you are encouraged to use UX Wizards colors according to your eye and the general guidelines provided in the preceeding sections.
+        </p>
+
+      </div>
+
+      </UXWSubsection>
+
+      <UXWSubsection anchor="guidelines--accessibility" title="Accessibility">
+
+      <div className="max-w-prose bg-transparent">
+
+        <p className="pb-12 mt-4">It’s important that users can see the content in our UX Wizards pages. Ideally, your color contrast ratio should be at least 7.2:1. At a minimum, aim for 6:1. You can always use the <a href="https://webaim.org/resources/contrastchecker/" title="Go to the contrast checker">WebAIM contrast checker</a> to check the contrast ratios in your designs.
+        </p>
+
+      </div>
+
+      
+      </UXWSubsection>
+
+      <UXWSubsection anchor="guidelines--inaction" title="Use Guidelines in Action">
+
+<div className="mt-4">
+  <img src="assets/guidelines-inaction.svg" alt="A sample UX Wizards web page" ></img>
+  </div>
+
+
+      </UXWSubsection>
+       
+
+      
+
     </div>
+    
+
+      
+    
+
+
   );
 }
