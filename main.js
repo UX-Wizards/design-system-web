@@ -180,7 +180,7 @@
           anchor: "snav-logos",
         },
         {
-          subtitle: "Primary Logoance",
+          subtitle: "Primary Logo",
           anchor: "snav-primary-logo",
         },
         {
@@ -254,6 +254,10 @@
           subtitle: "Guidelines",
           anchor: "typography--guidelines",
         },
+        {
+          subtitle: "Usage",
+          anchor: "typography--usage",
+        }
       ],
       route: "/typography",
       component: <UXWTypography />,
@@ -265,6 +269,7 @@
       component: <UXWBrandGuide />,
     },
   ];
+
 
   function TabPanel(props) {
     const { children, value, index, height, ...other } = props;
@@ -442,7 +447,7 @@
 
     return (
       <React.Fragment>
-        <div ref={ref}>
+        <div ref={ref} className="mb-8">
           <h2 className="uxw-text-display-3 py-4" id={anchor}>{title}</h2>
           {children}
         </div>
