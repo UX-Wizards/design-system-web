@@ -256,10 +256,21 @@
     },
     {
       heading: "Component",
-      subheadings: [],
+      subheadings: [
+        {
+          subtitle: "Getting Started",
+          anchor: "getting-started",
+        },
+      ],
       route: "/component",
       component: <UXWComponent />,
     },
+    // {
+    //   heading: "Button",
+    //   subheadings: [],
+    //   route: "/button",
+    //   component: <UXWButton />,
+    // },
     {
       heading: "Brand Guide",
       subheadings: [],
