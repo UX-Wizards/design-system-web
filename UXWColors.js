@@ -479,7 +479,7 @@ function UXWColors(props) {
                       <span className="font-normal">mana-3</span>
                       <br />
                       <span className="font-bold">HEX:</span>{" "}
-                      <span className="font-normal"># 1F9BB1</span>
+                      <span className="font-normal"># 299BB0</span>
                     </p>
                   </div>
                 </div>
@@ -712,7 +712,7 @@ function UXWColors(props) {
 
       <div className="max-w-prose bg-transparent">
 
-        <p className="pb-12 mt-4">It’s important that users can see the content in our UX Wizards pages. Ideally, your color contrast ratio should be at least 7.2:1. At a minimum, aim for 6:1. You can always use the <a href="https://webaim.org/resources/contrastchecker/" title="Go to the contrast checker">WebAIM contrast checker</a> to check the contrast ratios in your designs.
+        <p className="pb-12 mt-4">It’s important that users can see the content in our UX Wizards pages. Ideally, your color contrast ratio should be at least 7.2:1. At a minimum, aim for 6:1. You can always use the <a href="https://webaim.org/resources/contrastchecker/" title="Go to WebAIM's contrast checker">WebAIM contrast checker</a> to check the contrast ratios in your designs.
         </p>
 
       </div>
@@ -722,12 +722,219 @@ function UXWColors(props) {
 
       <UXWSubsection anchor="guidelines--inaction" title="Use Guidelines in Action">
 
-<div className="mt-4">
+<div className="mt-4 pb-16">
   <img src="assets/guidelines-inaction.svg" alt="A sample UX Wizards web page" ></img>
   </div>
 
 
       </UXWSubsection>
+
+      <UXWSubsection anchor="guidelines--text" title="Text">
+
+      <div className="max-w-prose bg-transparent">
+      <p className="pb-12 mt-4">
+      Text is a way to communicate information to visitors. We always want to make sure that text is visible, legible, and clear. Please also refer to the <a href="https://designsystem.uxwizards.org/#/typography" title="Go to UXW Typography">Typography</a> and <a href="https://designsystem.uxwizards.org/#/about" title="Go to UXW Who We Are">Who We Are</a> sections for more guidance.
+      </p>
+      </div>
+
+
+      <div className="flex flex-row mb-16">
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Main text</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-magicians-cloak-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">magicianscloak-1<br />
+          HEX: # 152145</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Link text</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">acid-1<br />
+          HEX: # 6331FD</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Hovered link</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-acid-3 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">acid-3<br />
+          HEX: # 3F18B4</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Visited link</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-mana-3 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">mana-3<br />
+          HEX: # 299BB0</p>
+        </div>
+
+        </div>
+
+        <div className="flex flex-row">
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Button text</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">merlinsbeard-1<br />
+          HEX: # FFFFFF</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Disabled button text</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-4 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">merlinsbeard-4<br />
+          HEX: # 737887</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start pb-16">
+          <p className="font-bold mb-4">Banner text</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">merlinsbeard-1<br />
+          HEX: # FFFFFF</p>
+        </div>
+         
+      
+
+      </div>
+        </UXWSubsection>
+
+        <UXWSubsection anchor="guidelines--buttons" title="Buttons">
+
+<div className="mt-4 max-w-prose bg-transparent">
+<p className="pb-12 mt-4">Buttons communicate action potential. There are three states for buttons: standard, hovered, and disabled.</p>
+
+</div>
+
+<div className="flex flex-row mb-16">
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Button</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">acid-1<br />
+          HEX: # 6331FD</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Hovered button</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-acid-3 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">acid-3<br />
+          HEX: # 3F18B4</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Disabled button</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">merlinsbeard-3<br />
+          HEX: # C9CACB</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Button text</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">merlinsbeard-1<br />
+          HEX: # FFFFFF</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <p className="font-bold mb-4">Disabled button text</p>
+          <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-4 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">merlinsbeard-4<br />
+          HEX: # 737887</p>
+        </div>
+
+        
+  </div>
+  </UXWSubsection>
+
+  <UXWSubsection anchor="guidelines--backgrounds" title="Backgrounds">
+
+<div className="mt-4 max-w-prose bg-transparent">
+<p className="pb-12 mt-4">These colors provide the airy, magical background that UX Wizards content floats on. Use them to create spaces, areas, and gradients that delight visitors and communicate grouping for different elements.
+</p>
+</div>
+
+<div className="flex flex-row mb-16">
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">merlinsbeard-1<br />
+          HEX: # FFFFFF</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <div className="box h-16 w-32 rounded-md uxw-bg-steel-2 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">steel-2<br />
+          HEX: # F7F9FF</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <div className="box h-16 w-32 rounded-md uxw-bg-steel-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">steel-1<br />
+          HEX: # E0E6FD</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <div className="box h-16 w-32 rounded-md uxw-bg-acid-2 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">acid-2<br />
+          HEX: # D8CBFF</p>
+        </div>
+
+  </div>
+
+  <div className="mt-4 max-w-prose bg-transparent">
+<p className="pb-12 mt-4">If you choose to use a top banner, like the one on the UX Wizards Design system, use Magician’s Cloak for the background.
+</p>
+</div>
+
+<div className="flex flex-col w-1/6 justify-start mb-16">
+          <div className="box h-16 w-32 rounded-md uxw-bg-magicians-cloak-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">magicianscloak-1<br />
+          HEX: # 152145</p>
+        </div>
+
+  </UXWSubsection>
+
+  <UXWSubsection anchor="guidelines--borders" title="Borders and lines">
+
+<div className="mt-4 max-w-prose bg-transparent">
+<p className="pb-12 mt-4">When an element needs to be outlined to be seen, or for dividers and spacers on lists, UX Wizards sites use a singular color to maintain consistency.
+</p>
+</div>
+
+<div className="flex flex-col w-1/6 justify-start mb-16">
+          <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">merlinsbeard-3<br />
+          HEX: # C9CACB</p>
+        </div>
+
+</UXWSubsection>
+
+<UXWSubsection anchor="guidelines--accents" title="Accents">
+
+<div className="mt-4 max-w-prose bg-transparent">
+<p className="pb-12 mt-4">Use these colors to draw attention to highlighted elements on the page, such as selected tabs. 
+</p>
+</div>
+
+<div className="flex flex-row mb-16">
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <div className="box h-16 w-32 rounded-md uxw-bg-jinx-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">jinx-1<br />
+          HEX: # FF6584</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <div className="box h-16 w-32 rounded-md uxw-bg-elixir-1 border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">elixir-1<br />
+          HEX: # F0B052</p>
+        </div>
+
+        </div>
+
+
+
+</UXWSubsection>
        
 
       
