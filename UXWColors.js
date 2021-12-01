@@ -28,7 +28,7 @@ function UXWColors(props) {
       <hr className="pt-8"></hr>
 
       <UXWSubsection anchor="colors--primary" title="Primary Colors">
-        <p className="my-4">
+        <p className="max-w-prose my-4">
           The flexible and neutral{" "}
           <span className="font-bold">Magician's Cloak</span>,
           <span className="font-bold"> Acid</span>, and{" "}
@@ -38,7 +38,7 @@ function UXWColors(props) {
         </p>
 
         <div className="flex flex-row">
-          <div className="flex flex-auto w-2/3 uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center py-4 px-2 mt-4 mb-16">
+          <div className="flex flex-auto max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center italic py-6 px-12 mt-4 mb-16">
             <p>
               Remember to start with the highlighted box on the left, and then
               supplement with the other colors in the row.
@@ -686,12 +686,14 @@ function UXWColors(props) {
 
       <UXWSubsection anchor="colors--usage" title="Use Guidelines">
 
-      <div className="flex flex-col uxw-bg-steel-2 border-black rounded-md shadow-inner italic py-4 px-2 mt-8 mb-16">
+        <p className="mt-8 pb-4">Text | Buttons | Backgrounds | Borders and lines | Accents | Error and success</p>
+
+      <div className="flex flex-col max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner italic py-6 px-12 mt-8 mb-16">
           
-        <p className="text-center">
+        <p className="text-left">
             "[Constraints] provide the guardrails that keep your team grounded and aligned. Creativity thrives in constraints."</p>
           <br />
-          <p className="text-center pl-96">Gothelf and Sieden, <span className="underline">Lean UX</span></p>
+          <p className="text-right">Gothelf and Sieden, <span className="underline">Lean UX</span></p>
         
       </div>
 
@@ -706,7 +708,7 @@ function UXWColors(props) {
 
       </div>
 
-      </UXWSubsection>
+      
 
       <UXWSubsection anchor="guidelines--accessibility" title="Accessibility">
 
@@ -731,6 +733,7 @@ function UXWColors(props) {
 
       <UXWSubsection anchor="guidelines--text" title="Text">
 
+<a name="text"></a>
       <div className="max-w-prose bg-transparent">
       <p className="pb-12 mt-4">
       Text is a way to communicate information to visitors. We always want to make sure that text is visible, legible, and clear. Please also refer to the <a href="https://designsystem.uxwizards.org/#/typography" title="Go to UXW Typography">Typography</a> and <a href="https://designsystem.uxwizards.org/#/about" title="Go to UXW Who We Are">Who We Are</a> sections for more guidance.
@@ -762,7 +765,7 @@ function UXWColors(props) {
         </div>
 
         <div className="flex flex-col w-1/6 justify-start">
-          <p className="font-bold mb-4">Visited link</p>
+          <p className="font-bold mb-4">Active link (on click)</p>
           <div className="box h-16 w-32 rounded-md uxw-bg-mana-3 border-2 border-gray-300 mb-4"></div>
           <p className="text-left">mana-3<br />
           HEX: # 299BB0</p>
@@ -937,7 +940,53 @@ function UXWColors(props) {
 </UXWSubsection>
        
 
-      
+<UXWSubsection anchor="guidelines--semantics" title="Success and error">
+
+<div className="mt-4 max-w-prose bg-transparent">
+<p className="pb-12 mt-4">These colors communicate success and error states, and are likely to be found in form fields. 
+</p>
+</div>
+
+<div className="flex flex-row mb-16">
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <div className="box h-16 w-32 rounded-md uxw-bg-success border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">success-green<br />
+          HEX: # 1CCB6C</p>
+        </div>
+
+        <div className="flex flex-col w-1/6 justify-start">
+          <div className="box h-16 w-32 rounded-md uxw-bg-error border-2 border-gray-300 mb-4"></div>
+          <p className="text-left">error-red<br />
+          HEX: # EA3434</p>
+        </div>
+
+        </div>
+
+</UXWSubsection>
+
+<UXWSubsection anchor="colors--dodont" title="Do and Don'ts">
+
+      <div className="flex flex-col max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner italic py-6 px-12 mt-8 mb-16">
+          
+        <p className="italic">
+        Remember to aim for 7.2:1 as your standard for accessible color combinations. To test your colors, visit <a href="https://webaim.org/resources/contrastchecker/" title="Go to WebAIM's contrast checker">WebAIM</a>.
+            </p>
+          
+        
+      </div>
+
+      <div className="max-w-prose bg-transparent">
+
+        <p className="pb-8 mt-4">
+        Use these color guidelines to ground the interactive elements on our UX Wizards branded webpages in a consistent look and feel. With these basic guardrails in place, there is lots of room for creative exploration!
+        </p>
+
+        </div>
+
+      </UXWSubsection>
+
+      </UXWSubsection>
 
     </div>
     

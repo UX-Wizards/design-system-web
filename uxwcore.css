@@ -22,7 +22,7 @@
 
   --mana-1: #00BBD6;
   --mana-2: #24DDFD;
-  --mana-3: #1F9BB1;
+  --mana-3: #299BB0;
 
   --jinx-1: #FF6584;
   --jinx-2: #FFA8BA;
@@ -31,6 +31,10 @@
   --elixir-1: #F0B052;
   --elixir-2: #FFD190;
   --elixir-3: #D99432;
+
+  --error-red: #EA3434;
+  --success-green: #1CCB6C;
+
 
   /* Typography */
   --font-primary: "Overpass", sans-serif;
@@ -237,6 +241,16 @@
 
 .uxw-bg-elixir-3 {
   background-color: var(--elixir-3)
+}
+
+
+
+.uxw-bg-error {
+  background-color: var(--error-red)
+}
+
+.uxw-bg-success {
+  background-color: var(--success-green)
 }
 
 /* Typography */
