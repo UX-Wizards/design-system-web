@@ -147,10 +147,14 @@
       route: "/about",
       component: <UXWWhoWeAre />,
     },
-    /*
+    
     {
       heading: "How We Sound",
       subheadings: [
+        {
+          subtitle: "Reference",
+          anchor: "voice--ref",
+        },
         {
           subtitle: "Voice",
           anchor: "voice--voice",
@@ -158,12 +162,16 @@
         {
           subtitle: "Tone",
           anchor: "voice--tone"
-        }
+        },
+        {
+          subtitle: "Styling Tips",
+          anchor: "voice--styling"
+        },
       ],
       route: "/voice",
       component: <UXWHowWeSound />,
     },
-    */
+    
     {
       heading: "Logos and Icons",
       subheadings: [
