@@ -5,6 +5,7 @@ a {
   color: var(--acid-1);
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:visited {
@@ -19,8 +20,8 @@ a:hover {
   text-decoration: none;
 }
 
-a:active {
-  color: var(--mana-3);
+a:hover {
+  color: var(--acid-3);
   font-weight: bold;
   text-decoration: none;
 }
@@ -47,6 +48,10 @@ p {
 /* Logos and Icons */
 
 /* Colors */
+
+.booty {
+  color: var(--elixir-2);
+}
 
 .error{
 
