@@ -255,11 +255,11 @@
 
             {
               subtitle: "Error and success",
-              anchor: "guidelines--errorsuccess",
+              anchor: "guidelines--semantics",
             },
 
             {
-              subtitle: "Dos and Don'ts",
+              subtitle: "Do / Don'ts",
               anchor: "guidelines--dodont",
             },
 
