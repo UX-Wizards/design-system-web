@@ -686,7 +686,11 @@ function UXWColors(props) {
 
       <UXWSubsection anchor="colors--usage" title="Use Guidelines">
 
-        <p className="mt-8 pb-4">Text | Buttons | Backgrounds | Borders and lines | Accents | Error and success</p>
+        
+
+        <p className="mt-8 pb-4">
+        <a onClick={() => document.getElementById("guidelines--text").scrollIntoView({behavior: 'smooth', block: 'center'})}>Text</a> | <a onClick={() => document.getElementById("guidelines--buttons").scrollIntoView({behavior: 'smooth', block: 'center'})}>Buttons</a> | <a onClick={() => document.getElementById("guidelines--backgrounds").scrollIntoView({behavior: 'smooth', block: 'center'})}>Backgrounds</a> | <a onClick={() => document.getElementById("guidelines--borders").scrollIntoView({behavior: 'smooth', block: 'center'})}>Borders and lines</a> | <a onClick={() => document.getElementById("guidelines--accents").scrollIntoView({behavior: 'smooth', block: 'center'})}>Accents</a> | <a onClick={() => document.getElementById("guidelines--semantics").scrollIntoView({behavior: 'smooth', block: 'center'})}>Error and success</a>
+        </p>
 
       <div className="flex flex-col max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner italic py-6 px-12 mt-8 mb-16">
           
@@ -914,7 +918,7 @@ function UXWColors(props) {
 
 <UXWSubsection anchor="guidelines--accents" title="Accents">
 
-<div className="mt-4 max-w-prose bg-transparent">
+<div className="mt-4 max-w-prose bg-transparent pr-12">
 <p className="pb-12 mt-4">Use these colors to draw attention to highlighted elements on the page, such as selected tabs. 
 </p>
 </div>
@@ -978,11 +982,108 @@ function UXWColors(props) {
 
       <div className="max-w-prose bg-transparent">
 
-        <p className="pb-8 mt-4">
+        <p className="pb-16 mt-4">
         Use these color guidelines to ground the interactive elements on our UX Wizards branded webpages in a consistent look and feel. With these basic guardrails in place, there is lots of room for creative exploration!
         </p>
 
         </div>
+
+        
+
+        <div className="flex flex-row mb-16">
+
+        <div className="flex flex-col w-1/4 items-center">
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 ring-offset-8 ring-4 ring-red-500 mb-4">
+            <p className="text-magicianscloak-1 text-center font-bold">Button</p>
+          </div>
+          <p className="text-center mt-2"><span className="font-extrabold">Don't</span> use any other colors for button text</p>
+        </div>
+
+        <div className="flex flex-col w-1/4 items-center">
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 ring-offset-8 ring-4 ring-green-500 mb-4">
+            <p className="text-white text-center font-bold">Button</p>
+          </div>
+          <p className="text-center mt-2"><span className="font-extrabold">Do</span> use white text on buttons</p>
+        </div>
+
+        </div>
+
+        <div className="flex flex-row mb-20">
+
+<div className="flex flex-col w-1/4 items-center">
+  <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-jinx-1 border-2 border-gray-300 relative ring-offset-8 ring-4 ring-red-500 mb-4">
+    <div className="box w-12 h-4 z-2 uxw-bg-steel-2 rounded-md absolute bottom-2 right-2"></div>
+  </div>
+  <p className="text-left mt-2"><span className="font-extrabold">Don't</span> use an accent as a background color</p>
+</div>
+
+<div className="flex flex-col w-1/4 items-center">
+  <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-steel-2 border-2 border-gray-300 relative ring-offset-8 ring-4 ring-green-500 mb-4">
+    <div className="box w-12 h-4 z-2 uxw-bg-jinx-1 rounded-md absolute bottom-2 right-2"></div>
+  </div>
+  <p className="text-left mt-2"><span className="font-extrabold">Do</span> use an accent as a highlight</p>
+</div>
+
+</div>
+
+        <div className="flex flex-row mb-20">
+
+        <div className="flex flex-col w-1/4 items-center">
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 ring-offset-8 ring-4 ring-red-500 mb-4">
+            <p className="text-center font-bold text-white">Join <span className="booty">us!</span></p>
+          </div>
+          <p className="text-center mt-2"><span className="font-extrabold">Don't</span> combine text colors on buttons</p>
+        </div>
+
+        <div className="flex flex-col w-1/4 items-center">
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 ring-offset-8 ring-4 ring-green-500 mb-4">
+            <p className="text-gray-700 text-center font-bold">Button</p>
+          </div>
+          <p className="text-center mt-2"><span className="font-extrabold">Do</span> use greys for disabled states</p>
+        </div>
+
+        <div className="flex flex-col w-1/4 items-center -ml-14">
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-steel-2 border-2 border-gray-300 ring-offset-8 ring-4 ring-green-500 mb-4">
+            <p className="text-magicianscloak-1 text-center font-bold">UX Wizards</p>
+          </div>
+          <p className="text-center mt-2"><span className="font-extrabold">Do</span> make sure there is enough contrast for text</p>
+        </div>
+
+        </div>
+
+
+
+        <div className="flex flex-row mb-16">
+
+<div className="flex flex-col w-1/4 items-center">
+ <div className="box h-16 w-32 pt-4 z-1 rounded-sm uxw-bg-mana-3 border-2 border-gray-300 relative ring-offset-8 ring-4 ring-red-500 mb-4">
+ </div>
+ <p className="text-center mt-2"><span className="font-extrabold">Don't</span> improvise with other background colors
+ </p>
+</div>
+
+<div className="flex flex-col w-1/2 items-center ml-8">
+
+ <div className="flex flex-row mb-4 rounded-md ring-offset-8 ring-4 ring-green-500 mr-16">
+   <div className="box h-16 w-32 mr-8 pt-4 rounded-md uxw-bg-steel-2 border-2 border-gray-300"></div>
+   <div className="box h-16 w-32 mr-8 pt-4 rounded-md uxw-bg-steel-1 border-2 border-gray-300"></div>
+   <div className="box h-16 w-32 mr-8 pt-4 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300"></div>
+   <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-2 border-2 border-gray-300"></div>
+ </div>
+
+ <p className="text-center mt-2 pr-16"><span className="font-extrabold">Do</span> use background colors as a base</p>
+
+</div>
+
+
+</div>
+
+        
+
+
+       
+
+        
 
       </UXWSubsection>
 
