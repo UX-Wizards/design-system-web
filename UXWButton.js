@@ -10,10 +10,10 @@ function UXWButton(props) {
         <div className="flex-grow"></div>
       </div>
       <UXWSubsection anchor="#" title="Primary">
-        <div className="flex max-w-prose"><p className="max-w-prose">Use CSS class names on your HTML elements to apply the style. You don’t need to write CSS once you included <span className="uxw-code">uxwcore.css </span> and <span className="uxw-code">uxw.css</span> on your file.</p></div>
+        <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
-          1
+          <a className="text-white py-4 px-12 from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md uppercase tracking-widest font-light hover:shadow-2xl transition duration-500 ease-in-out hover:bg-opacity-40" href="assets/BrandGuide_Main_1.2.xd" download><span style={{color: "#ffffff"}}>Primary</span></a>
           </div>
           <div>
           <UXWCodePanelHTMLCSS noWrap>
@@ -35,7 +35,70 @@ Hello Wizards!
         </UXWCodePanelHTMLCSS>
           </div>
         </div>
-      </UXWSubsection>
+    <hr class="pb-10"></hr>
+    </UXWSubsection>
+    
+    <UXWSubsection anchor="#" title="Disabled">
+        <div className="flex max-w-prose"></div>
+        <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
+          <div>
+          <a className="py-4 px-12  rounded-md uppercase uxw-bg-merlins-beard-3 tracking-widest font-light" href="# " download><span style={{color: "#737887"}}>Disabled</span></a>
+          </div>
+          <div>
+          <UXWCodePanelHTMLCSS noWrap>
+          <div>
+{`
+<h1 class="uxw-text-heading">
+Hello Wizards!
+</h1>
+`}
+          </div>
+          <div>
+{`
+.uxw-text-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}`}
+          </div>
+        </UXWCodePanelHTMLCSS>
+          </div>
+        </div>
+    <hr class="pb-10"></hr>
+    </UXWSubsection>
+    <UXWSubsection anchor="#" title="Button with icon">
+        <div className="flex max-w-prose"></div>
+        <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
+          <div>
+          <a href="#" download>
+              <button className=" uxw-bg-merlins-beard-1 font-light uppercase tracking-widest  py-4 px-12 rounded inline-flex items-center">
+              <i className="bi bi-download text-lg pr-4"></i>
+              <span>Download</span>
+              </button>
+          </a>
+          </div>
+          <div>
+          <UXWCodePanelHTMLCSS noWrap>
+          <div>
+{`
+<h1 class="uxw-text-heading">
+Hello Wizards!
+</h1>
+`}
+          </div>
+          <div>
+{`
+.uxw-text-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}`}
+          </div>
+        </UXWCodePanelHTMLCSS>
+          </div>
+        </div>
+    <hr class="pb-10"></hr>
+    </UXWSubsection>
     </div>
   )
 }
