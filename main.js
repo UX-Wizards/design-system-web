@@ -273,12 +273,12 @@
       route: "/component",
       component: <UXWComponent />,
     },
-    // {
-    //   heading: "Button",
-    //   subheadings: [],
-    //   route: "/button",
-    //   component: <UXWButton />,
-    // },
+    {
+      heading: "Button",
+      subheadings: [],
+      route: "/button",
+      component: <UXWButton />,
+    },
     {
       heading: "Brand Guide",
       subheadings: [],
@@ -534,6 +534,7 @@ function ScrollToTop() {
                     ))}
                   </React.Fragment>
                 ))}
+                {/* add my code here */}
               </List>
             </nav>
           </Drawer>
