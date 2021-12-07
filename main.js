@@ -262,12 +262,6 @@
       route: "/typography",
       component: <UXWTypography />,
     },
-    {
-      heading: "Brand Guide",
-      subheadings: [],
-      route: "/brandguide",
-      component: <UXWBrandGuide />,
-    },
   ];
 
 
