@@ -689,7 +689,7 @@ function UXWColors(props) {
         
 
         <p className="mt-8 pb-4">
-        <a onClick={() => document.getElementById("guidelines--text").scrollIntoView({behavior: 'smooth', block: 'center'})}>Text</a> | <a onClick={() => document.getElementById("guidelines--buttons").scrollIntoView({behavior: 'smooth', block: 'center'})}>Buttons</a> | <a onClick={() => document.getElementById("guidelines--backgrounds").scrollIntoView({behavior: 'smooth', block: 'center'})}>Backgrounds</a> | <a onClick={() => document.getElementById("guidelines--borders").scrollIntoView({behavior: 'smooth', block: 'center'})}>Borders and lines</a> | <a onClick={() => document.getElementById("guidelines--accents").scrollIntoView({behavior: 'smooth', block: 'center'})}>Accents</a> | <a onClick={() => document.getElementById("guidelines--semantics").scrollIntoView({behavior: 'smooth', block: 'center'})}>Error and success</a>
+        <a onClick={() => document.getElementById("guidelines--text").scrollIntoView({behavior: 'smooth', block: 'center'})}>Text</a> | <a onClick={() => document.getElementById("guidelines--buttons").scrollIntoView({behavior: 'smooth', block: 'center'})}>Buttons</a> | <a onClick={() => document.getElementById("guidelines--backgrounds").scrollIntoView({behavior: 'smooth', block: 'center'})}>Backgrounds</a> | <a onClick={() => document.getElementById("guidelines--borders").scrollIntoView({behavior: 'smooth', block: 'center'})}>Borders and lines</a> | <a onClick={() => document.getElementById("guidelines--accents").scrollIntoView({behavior: 'smooth', block: 'center'})}>Accents</a> | <a onClick={() => document.getElementById("guidelines--semantics").scrollIntoView({behavior: 'smooth', block: 'center'})}>Error and success</a> | <a onClick={() => document.getElementById("colors--dodont").scrollIntoView({behavior: 'smooth', block: 'center'})}>Do/Don't</a>
         </p>
 
       <div className="flex flex-col max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner italic py-6 px-12 mt-8 mb-16">
@@ -815,10 +815,13 @@ function UXWColors(props) {
 <div className="flex flex-row mb-16">
 
         <div className="flex flex-col w-1/6 justify-start">
-          <p className="font-bold mb-4">Button</p>
-          <div className="box h-16 w-32 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4"></div>
-          <p className="text-left">acid-1<br />
-          HEX: # 6331FD</p>
+          <p className="font-bold mb-4">Button (gradient to r)</p>
+          <div className="box h-16 w-32 rounded-md from-indigo-600 to-indigo-900 bg-gradient-to-r border-2 border-gray-300 mb-4"></div>
+          <p className="text-left"><span className="font-bold">From: </span>acid-1<br />
+          HEX: # 6331FD<br /><br />
+          <span className="font-bold">To: </span>acid-3<br />
+          HEX: # 3F18B4
+          </p>
         </div>
 
         <div className="flex flex-col w-1/6 justify-start">
@@ -971,7 +974,7 @@ function UXWColors(props) {
 
 <UXWSubsection anchor="colors--dodont" title="Do and Don'ts">
 
-      <div className="flex flex-col max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner italic py-6 px-12 mt-8 mb-16">
+      <div className="flex flex-col max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner italic py-6 px-12 mt-8 mb-12">
           
         <p className="italic">
         Remember to aim for 7.2:1 as your standard for accessible color combinations. To test your colors, visit <a href="https://webaim.org/resources/contrastchecker/" title="Go to WebAIM's contrast checker">WebAIM</a>.
@@ -982,7 +985,7 @@ function UXWColors(props) {
 
       <div className="max-w-prose bg-transparent">
 
-        <p className="pb-16 mt-4">
+        <p className="pb-16">
         Use these color guidelines to ground the interactive elements on our UX Wizards branded webpages in a consistent look and feel. With these basic guardrails in place, there is lots of room for creative exploration!
         </p>
 
@@ -993,17 +996,23 @@ function UXWColors(props) {
         <div className="flex flex-row mb-16">
 
         <div className="flex flex-col w-1/4 items-center">
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 ring-offset-8 ring-4 ring-red-500 mb-4">
+        <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4">
             <p className="text-magicianscloak-1 text-center font-bold">Button</p>
           </div>
-          <p className="text-center mt-2"><span className="font-extrabold">Don't</span> use any other colors for button text</p>
+
+          <div className="flex-row">
+          <p className="text-magicianscloak-1"> use any other colors for button text</p>
         </div>
+        </div>
+        
 
         <div className="flex flex-col w-1/4 items-center">
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 ring-offset-8 ring-4 ring-green-500 mb-4">
+        <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4">
             <p className="text-white text-center font-bold">Button</p>
           </div>
-          <p className="text-center mt-2"><span className="font-extrabold">Do</span> use white text on buttons</p>
+          <p className="text-left -ml-20">use white text on buttons</p>
         </div>
 
         </div>
@@ -1011,17 +1020,19 @@ function UXWColors(props) {
         <div className="flex flex-row mb-20">
 
 <div className="flex flex-col w-1/4 items-center">
-  <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-jinx-1 border-2 border-gray-300 relative ring-offset-8 ring-4 ring-red-500 mb-4">
+<div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
+  <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-jinx-1 border-2 border-gray-300 relative mb-4">
     <div className="box w-12 h-4 z-2 uxw-bg-steel-2 rounded-md absolute bottom-2 right-2"></div>
   </div>
-  <p className="text-left mt-2"><span className="font-extrabold">Don't</span> use an accent as a background color</p>
+  <p className="text-left pl-2">use an accent as a background color</p>
 </div>
 
 <div className="flex flex-col w-1/4 items-center">
-  <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-steel-2 border-2 border-gray-300 relative ring-offset-8 ring-4 ring-green-500 mb-4">
+<div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+  <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-steel-2 border-2 border-gray-300 relative mb-4">
     <div className="box w-12 h-4 z-2 uxw-bg-jinx-1 rounded-md absolute bottom-2 right-2"></div>
   </div>
-  <p className="text-left mt-2"><span className="font-extrabold">Do</span> use an accent as a highlight</p>
+  <p className="text-left -ml-12 -pl-2">use an accent as a highlight</p>
 </div>
 
 </div>
@@ -1029,24 +1040,27 @@ function UXWColors(props) {
         <div className="flex flex-row mb-20">
 
         <div className="flex flex-col w-1/4 items-center">
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 ring-offset-8 ring-4 ring-red-500 mb-4">
+        <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4">
             <p className="text-center font-bold text-white">Join <span className="booty">us!</span></p>
           </div>
-          <p className="text-center mt-2"><span className="font-extrabold">Don't</span> combine text colors on buttons</p>
+          <p className="text-left -ml-8 mt-2">combine text colors on buttons</p>
         </div>
 
         <div className="flex flex-col w-1/4 items-center">
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 ring-offset-8 ring-4 ring-green-500 mb-4">
+        <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 mb-4">
             <p className="text-gray-700 text-center font-bold">Button</p>
           </div>
-          <p className="text-center mt-2"><span className="font-extrabold">Do</span> use greys for disabled states</p>
+          <p className="text-left -ml-10">use greys for disabled states</p>
         </div>
 
         <div className="flex flex-col w-1/4 items-center -ml-14">
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-steel-2 border-2 border-gray-300 ring-offset-8 ring-4 ring-green-500 mb-4">
+        <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-steel-2 border-2 border-gray-300 mb-4">
             <p className="text-magicianscloak-1 text-center font-bold">UX Wizards</p>
           </div>
-          <p className="text-center mt-2"><span className="font-extrabold">Do</span> make sure there is enough contrast for text</p>
+          <p className="text-left pl-12 ml-2">make sure there is enough contrast for text</p>
         </div>
 
         </div>
@@ -1056,22 +1070,26 @@ function UXWColors(props) {
         <div className="flex flex-row mb-16">
 
 <div className="flex flex-col w-1/4 items-center">
- <div className="box h-16 w-32 pt-4 z-1 rounded-sm uxw-bg-mana-3 border-2 border-gray-300 relative ring-offset-8 ring-4 ring-red-500 mb-4">
+<div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
+ <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-mana-3 border-2 border-gray-300 relative mb-4">
  </div>
- <p className="text-center mt-2"><span className="font-extrabold">Don't</span> improvise with other background colors
+ <p className="text-left ml-8">improvise with other background colors
  </p>
 </div>
 
-<div className="flex flex-col w-1/2 items-center ml-8">
+<div className="flex flex-col w-1/4 items-center">
+<div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
 
- <div className="flex flex-row mb-4 rounded-md ring-offset-8 ring-4 ring-green-500 mr-16">
-   <div className="box h-16 w-32 mr-8 pt-4 rounded-md uxw-bg-steel-2 border-2 border-gray-300"></div>
-   <div className="box h-16 w-32 mr-8 pt-4 rounded-md uxw-bg-steel-1 border-2 border-gray-300"></div>
-   <div className="box h-16 w-32 mr-8 pt-4 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300"></div>
-   <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-2 border-2 border-gray-300"></div>
+ <div className="flex flex-row mb-4 rounded-md mr-16">
+   <div className="box h-16 w-32 ml-28 mr-4 pt-4 rounded-md uxw-bg-steel-2 border-2 border-gray-300"></div>
+   <div className="flex-col">
+   <div className="box h-4 w-8 rounded-sm uxw-bg-steel-1 border-2 border-gray-300"></div>
+   <div className="box h-4 w-8 mt-2 rounded-sm uxw-bg-merlins-beard-1 border-2 border-gray-300"></div>
+   <div className="box h-4 w-8 mt-2 rounded-sm uxw-bg-acid-2 border-2 border-gray-300"></div>
+   </div>
  </div>
 
- <p className="text-center mt-2 pr-16"><span className="font-extrabold">Do</span> use background colors as a base</p>
+ <p className="text-left">use background colors as a base</p>
 
 </div>
 
