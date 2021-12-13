@@ -993,103 +993,130 @@ function UXWColors(props) {
 
         
 
-        <div className="flex flex-row mb-16">
+        <div className="flex flex-row mb-20">
 
-        <div className="flex flex-col w-1/4 items-center">
-        <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4">
-            <p className="text-magicianscloak-1 text-center font-bold">Button</p>
+        <div className="flex flex-col w-1/4 items-left">
+        
+          <div className="box h-24 w-2/3 pt-4 rounded-lg uxw-bg-acid-1 border-2 border-gray-300 mb-4">
+            <p className="text-magicianscloak-1 text-center pt-4 font-bold">Button</p>
           </div>
 
-          <div className="flex-row">
-          <p className="text-magicianscloak-1"> use any other colors for button text</p>
-        </div>
+          <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
+
+          <p className="text-magicianscloak-1">Use any other colors for button text</p>
+       
         </div>
         
 
-        <div className="flex flex-col w-1/4 items-center">
-        <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4">
-            <p className="text-white text-center font-bold">Button</p>
+        <div className="flex flex-col w-1/4 items-left">
+        
+          <div className="box h-24 w-2/3 pt-4 rounded-lg uxw-bg-acid-1 border-2 border-gray-300 mb-4">
+            <p className="text-white text-center pt-4 font-bold">Button</p>
           </div>
-          <p className="text-left -ml-20">use white text on buttons</p>
+
+          <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+
+          <p>Use white text on buttons</p>
         </div>
 
         </div>
 
         <div className="flex flex-row mb-20">
 
-<div className="flex flex-col w-1/4 items-center">
-<div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
-  <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-jinx-1 border-2 border-gray-300 relative mb-4">
-    <div className="box w-12 h-4 z-2 uxw-bg-steel-2 rounded-md absolute bottom-2 right-2"></div>
+<div className="flex flex-col w-1/4 items-left">
+
+  <div className="box h-24 w-2/3 pt-4 z-1 rounded-lg uxw-bg-jinx-1 border-2 border-gray-300 relative mb-4">
+    <div className="box w-24 h-10 z-2 uxw-bg-steel-2 rounded-md absolute bottom-3 right-3"></div>
   </div>
-  <p className="text-left pl-2">use an accent as a background color</p>
+
+  <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
+
+  <p className="text-left">Use an accent as a background color</p>
 </div>
 
-<div className="flex flex-col w-1/4 items-center">
-<div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
-  <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-steel-2 border-2 border-gray-300 relative mb-4">
-    <div className="box w-12 h-4 z-2 uxw-bg-jinx-1 rounded-md absolute bottom-2 right-2"></div>
+
+<div className="flex flex-col w-1/4 items-left">
+
+  <div className="box h-24 w-2/3 pt-4 z-1 rounded-lg uxw-bg-steel-2 border-2 border-gray-300 relative mb-4">
+    <div className="box w-24 h-10 z-2 uxw-bg-jinx-1 rounded-md absolute bottom-3 right-3"></div>
   </div>
-  <p className="text-left -ml-12 -pl-2">use an accent as a highlight</p>
+
+  <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+
+  <p>Use an accent as a highlight</p>
 </div>
 
 </div>
 
         <div className="flex flex-row mb-20">
 
-        <div className="flex flex-col w-1/4 items-center">
-        <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4">
-            <p className="text-center font-bold text-white">Join <span className="booty">us!</span></p>
+        <div className="flex flex-col w-1/4 items-left">
+        
+          <div className="box h-24 w-2/3 pt-4 rounded-lg uxw-bg-acid-1 border-2 border-gray-300 mb-4">
+            <p className="text-center pt-4 font-bold text-white">Join <span className="booty">us!</span></p>
           </div>
-          <p className="text-left -ml-8 mt-2">combine text colors on buttons</p>
+
+          <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
+
+          <p>Combine text colors on buttons</p>
         </div>
 
-        <div className="flex flex-col w-1/4 items-center">
-        <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 mb-4">
-            <p className="text-gray-700 text-center font-bold">Button</p>
+
+        <div className="flex flex-col w-1/4 items-left">
+        
+          <div className="box h-24 w-2/3 pt-4 rounded-lg uxw-bg-merlins-beard-3 border-2 border-gray-300 mb-4">
+            <p className="text-gray-700 text-center pt-4 font-bold">Button</p>
           </div>
-          <p className="text-left -ml-10">use greys for disabled states</p>
+
+          <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+
+          <p>Use greys for disabled states</p>
         </div>
 
-        <div className="flex flex-col w-1/4 items-center -ml-14">
-        <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
-          <div className="box h-16 w-32 pt-4 rounded-md uxw-bg-steel-2 border-2 border-gray-300 mb-4">
-            <p className="text-magicianscloak-1 text-center font-bold">UX Wizards</p>
+
+        <div className="flex flex-col w-1/4 items-left">
+        
+          <div className="box h-24 w-2/3 pt-4 rounded-lg uxw-bg-steel-2 border-2 border-gray-300 mb-4">
+            <p className="text-magicianscloak-1 text-center pt-4 font-bold">UX Wizards</p>
           </div>
-          <p className="text-left pl-12 ml-2">make sure there is enough contrast for text</p>
+
+          <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+
+          <p>Make sure there is enough contrast for text</p>
         </div>
 
         </div>
 
 
 
-        <div className="flex flex-row mb-16">
+        <div className="flex flex-row mb-20">
 
-<div className="flex flex-col w-1/4 items-center">
-<div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
- <div className="box h-16 w-32 pt-4 z-1 rounded-md uxw-bg-mana-3 border-2 border-gray-300 relative mb-4">
+<div className="flex flex-col w-1/4 items-left">
+
+ <div className="box h-24 w-2/3 pt-4 z-1 rounded-lg uxw-bg-mana-3 border-2 border-gray-300 relative mb-4">
  </div>
- <p className="text-left ml-8">improvise with other background colors
+
+ <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✗ Don't</div>
+
+ <p>Improvise with other background colors
  </p>
 </div>
 
-<div className="flex flex-col w-1/4 items-center">
-<div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+<div className="flex flex-col w-1/4 items-left">
 
- <div className="flex flex-row mb-4 rounded-md mr-16">
-   <div className="box h-16 w-32 ml-28 mr-4 pt-4 rounded-md uxw-bg-steel-2 border-2 border-gray-300"></div>
-   <div className="flex-col">
-   <div className="box h-4 w-8 rounded-sm uxw-bg-steel-1 border-2 border-gray-300"></div>
-   <div className="box h-4 w-8 mt-2 rounded-sm uxw-bg-merlins-beard-1 border-2 border-gray-300"></div>
-   <div className="box h-4 w-8 mt-2 rounded-sm uxw-bg-acid-2 border-2 border-gray-300"></div>
-   </div>
+
+<div className="box h-24 w-2/3 mb-4">
+ <div className="grid grid-cols-2 grid-rows-2 gap-2">
+   <div className="box h-11 w-full rounded-md uxw-bg-steel-2 border-2 border-gray-300"></div>
+   <div className="box h-11 w-full rounded-md uxw-bg-steel-1 border-2 border-gray-300"></div>
+   <div className="box h-11 w-full rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300"></div>
+   <div className="box h-11 w-full rounded-md uxw-bg-acid-2 border-2 border-gray-300"></div>
+ </div>
  </div>
 
- <p className="text-left">use background colors as a base</p>
+ <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">✓ Do</div>
+
+ <p>Use background colors as a base</p>
 
 </div>
 
