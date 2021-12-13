@@ -274,10 +274,22 @@
       component: <UXWComponent />,
     },
     {
+      heading: "Color Classes",
+      subheadings: [],
+      route: "/colorclass",
+      component: <UXWColorClass />,
+    },
+    {
       heading: "Button",
       subheadings: [],
       route: "/button",
       component: <UXWButton />,
+    },
+    {
+      heading: "Card",
+      subheadings: [],
+      route: "/card",
+      component: <UXWCard />,
     },
     {
       heading: "Brand Guide",

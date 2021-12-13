@@ -13,7 +13,7 @@ function UXWButton(props) {
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
-          <a className="text-white py-4 px-12 from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md uppercase tracking-widest font-light hover:shadow-2xl transition duration-500 ease-in-out hover:bg-opacity-40" href="assets/BrandGuide_Main_1.2.xd" download><span style={{color: "#ffffff"}}>Primary</span></a>
+          <a className="text-white py-4 px-12 from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md uppercase tracking-widest font-light hover:shadow-2xl transition duration-500 ease-in-out hover:bg-opacity-40" href="#"><span style={{color: "#ffffff"}}>Primary</span></a>
           </div>
           <div>
           <UXWCodePanelHTMLCSS noWrap>
@@ -42,7 +42,7 @@ Hello Wizards!
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
-          <a className="py-4 px-12  rounded-md uppercase uxw-bg-merlins-beard-3 tracking-widest font-light" href="# " download><span style={{color: "#737887"}}>Disabled</span></a>
+          <a className="py-4 px-12  rounded-md uppercase uxw-bg-merlins-beard-3 tracking-widest font-light" href="#"><span style={{color: "#737887"}}>Disabled</span></a>
           </div>
           <div>
           <UXWCodePanelHTMLCSS noWrap>
@@ -70,10 +70,10 @@ Hello Wizards!
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
-          <a href="#" download>
-              <button className=" uxw-bg-merlins-beard-1 font-light uppercase tracking-widest  py-4 px-12 rounded inline-flex items-center">
+          <a href="#">
+              <button className="uxw-bg-merlins-beard-1 font-light uppercase tracking-widest  py-4 px-12 rounded inline-flex items-center" style={{border:'1px solid #6331FD'}}>
               <i className="bi bi-download text-lg pr-4"></i>
-              <span>Download</span>
+              Download
               </button>
           </a>
           </div>
