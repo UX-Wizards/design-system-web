@@ -693,7 +693,7 @@ function UXWColors(props) {
                 .scrollIntoView({ behavior: "smooth", block: "center" })
             }
           >
-            Borders and lines
+            Borders and Lines
           </a>{" "}
           |{" "}
           <a
@@ -713,7 +713,7 @@ function UXWColors(props) {
                 .scrollIntoView({ behavior: "smooth", block: "center" })
             }
           >
-            Error and success
+            Error and Success
           </a>{" "}
           |{" "}
           <a
@@ -1013,7 +1013,7 @@ function UXWColors(props) {
           </div>
         </UXWSubsection>
 
-        <UXWSubsection anchor="guidelines--borders" title="Borders and lines">
+        <UXWSubsection anchor="guidelines--borders" title="Borders and Lines">
           <div className="mt-4 max-w-prose bg-transparent">
             <p className="pb-12 mt-4">
               When an element needs to be outlined to be seen, or for dividers
@@ -1061,7 +1061,7 @@ function UXWColors(props) {
           </div>
         </UXWSubsection>
 
-        <UXWSubsection anchor="guidelines--semantics" title="Error and success">
+        <UXWSubsection anchor="guidelines--semantics" title="Error and Success">
           <div className="mt-4 max-w-prose bg-transparent">
             <p className="pb-12 mt-4">
               These colors communicate success and error states, and are likely
