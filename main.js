@@ -147,10 +147,14 @@
       route: "/about",
       component: <UXWWhoWeAre />,
     },
-    /*
+    
     {
       heading: "How We Sound",
       subheadings: [
+        {
+          subtitle: "Reference",
+          anchor: "voice--ref",
+        },
         {
           subtitle: "Voice",
           anchor: "voice--voice",
@@ -158,18 +162,34 @@
         {
           subtitle: "Tone",
           anchor: "voice--tone"
-        }
+        },
+        {
+          subtitle: "Styling Tips",
+          anchor: "voice--styling"
+        },
       ],
       route: "/voice",
       component: <UXWHowWeSound />,
     },
-    */
+    
     {
       heading: "Logos and Icons",
       subheadings: [
         {
           subtitle: "Logos",
           anchor: "snav-logos",
+        },
+        {
+          subtitle: "Primary Logo",
+          anchor: "snav-primary-logo",
+        },
+        {
+          subtitle: "Monotone Logos",
+          anchor: "snav-monotone-logo",
+        },
+        {
+          subtitle: "Word Mark",
+          anchor: "snav-word-mark",
         },
         {
           subtitle: "Clearance",
@@ -285,6 +305,10 @@
           subtitle: "Guidelines",
           anchor: "typography--guidelines",
         },
+        {
+          subtitle: "Usage",
+          anchor: "typography--usage",
+        }
       ],
       route: "/typography",
       component: <UXWTypography />,
@@ -296,6 +320,7 @@
       component: <UXWBrandGuide />,
     },
   ];
+
 
   function TabPanel(props) {
     const { children, value, index, height, ...other } = props;
@@ -473,7 +498,7 @@
 
     return (
       <React.Fragment>
-        <div ref={ref}>
+        <div ref={ref} className="mb-8">
           <h2 className="uxw-text-display-3 py-4" id={anchor}>{title}</h2>
           {children}
         </div>

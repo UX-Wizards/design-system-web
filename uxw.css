@@ -45,6 +45,11 @@ p {
   font-size: 1em;
 }
 
+tr:nth-child(even) {
+ 
+  background-color: var(--uxw-color-merlins-beard-1);
+}
+
 /* Logos and Icons */
 
 /* Colors */
