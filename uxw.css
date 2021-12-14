@@ -53,6 +53,10 @@ p {
   color: var(--elixir-2);
 }
 
+.riches {
+  color: var(--acid-2);
+}
+
 .error{
 
   color: var(--error-red)
