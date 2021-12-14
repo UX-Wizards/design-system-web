@@ -12,30 +12,33 @@ function UXWColorClass(props) {
       <UXWSubsection anchor="#" title="Background Color">
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10 rounded-b-lg">
-          <div style={{ background: "#D8CBFF", position:"relative"}}>
-            <a className="" href="#"><span style={{ color: "#152145", margin:"0", position:"absolute", top:"50%", left:"50%", transform:"translate(-50%, -50%)" }}>As always, the mystics remain</span></a>
+          <div className="uxw-bg-acid-2" style={{position:"relative"}}>
+           <p style={{ color: "#152145", margin:"0", position:"absolute", top:"50%", left:"50%", transform:"translate(-50%, -50%)" }}>Hello Wizards!</p>
           </div>
           <div>
             <UXWCodePanelHTMLCSS noWrap>
               <div>
                 {`
-<h1 class="uxw-text-heading">
-Hello Wizards!
-</h1>
+<div class="uxw-bg-acid-2">
+  <p>Hello Wizards!</p>
+</div>
 `}
               </div>
               <div>
                 {`
-.uxw-text-heading {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.75rem;
+.uxw-bg-acid-2 {
+  background-color: var(--uxw-color-merlins-beard-3);
 }`}
               </div>
             </UXWCodePanelHTMLCSS>
           </div>
         </div>
-        <p className="py-10">To see more <a href="https://docs.google.com/spreadsheets/d/1BUleu0hiXhpPBktGeiHm-GSKYveO-F4JCU9KFHeGnJ4/edit?usp=sharing" target="_blank">CSS background classes</a></p>
+        <p className="py-10">
+        CSS Color variables is set in
+          <a href="https://github.com/UX-Wizards/design-system-web/blob/main/uxwcore.css" target="_blank">
+            uxwcore.css{"\n"}
+          </a>
+          To see more <a href="https://docs.google.com/spreadsheets/d/1BUleu0hiXhpPBktGeiHm-GSKYveO-F4JCU9KFHeGnJ4/edit?usp=sharing" target="_blank">CSS background classes</a></p>
         <hr ></hr>
       </UXWSubsection>
     </div>

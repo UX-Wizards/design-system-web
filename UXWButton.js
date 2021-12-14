@@ -4,7 +4,7 @@ function UXWButton(props) {
       <div className="flex flex-row">
         <div className="flex flex-col">
           <p className="pb-4 max-w-prose">
-          Buttons indicates an action therefore text or icon + text on the button expresses what action will occur when you press it.
+            Buttons indicates an action therefore text or icon + text on the button expresses what action will occur when you press it.
           </p>
         </div>
         <div className="flex-grow"></div>
@@ -13,92 +13,111 @@ function UXWButton(props) {
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
-          <a className="text-white py-4 px-12 from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md uppercase tracking-widest font-light hover:shadow-2xl transition duration-500 ease-in-out hover:bg-opacity-40" href="#"><span style={{color: "#ffffff"}}>Primary</span></a>
+            <a className="btn-primary" href="#">Primary</a>
           </div>
           <div>
-          <UXWCodePanelHTMLCSS noWrap>
-          <div>
-{`
-<h1 class="uxw-text-heading">
-Hello Wizards!
-</h1>
+            <UXWCodePanelHTMLCSS noWrap>
+              <div>
+                {`
+<a href="#" className="btn-primary">
+  Primary
+</a>
 `}
-          </div>
-          <div>
-{`
-.uxw-text-heading {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.75rem;
+              </div>
+              <div>
+                {`
+.btn-primary{
+  color: rgba(255,255,255,var(--tw-text-opacity));
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 1rem 3rem 1rem 3rem;
+  --tw-gradient-to: var(--uxw-color-magicians-cloak-3);
+  --tw-gradient-from: var(--uxw-color-acid-1);
+  --tw-gradient-stops: var(--tw-gradient-from),
+  var(--tw-gradient-to, rgba(79, 70, 229, 0));
+  background-image: linear-gradient(to right,
+  var(--tw-gradient-stops));
+  border-radius: 0.375rem;
+  transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+  transition-duration: .5s;
+  --tw-text-opacity: 1;
 }`}
-          </div>
-        </UXWCodePanelHTMLCSS>
+              </div>
+            </UXWCodePanelHTMLCSS>
           </div>
         </div>
-    <hr class="pb-10"></hr>
-    </UXWSubsection>
-    
-    <UXWSubsection anchor="#" title="Disabled">
+        <hr class="pb-10"></hr>
+      </UXWSubsection>
+
+      <UXWSubsection anchor="#" title="Disabled">
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
-          <a className="py-4 px-12  rounded-md uppercase uxw-bg-merlins-beard-3 tracking-widest font-light" href="#"><span style={{color: "#737887"}}>Disabled</span></a>
+            <a className="btn-disabled" href="#">Disabled</a>
           </div>
           <div>
-          <UXWCodePanelHTMLCSS noWrap>
-          <div>
-{`
-<h1 class="uxw-text-heading">
-Hello Wizards!
-</h1>
+            <UXWCodePanelHTMLCSS noWrap>
+              <div>
+                {`
+ <a href="#" className="btn-disabled" >
+  Disabled
+ </a>
 `}
-          </div>
-          <div>
-{`
-.uxw-text-heading {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.75rem;
+              </div>
+              <div>
+                {`
+.btn-disabled{
+  background-color: var(--uxw-color-merlins-beard-3);
+  color:#737887;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 0.375rem;
 }`}
-          </div>
-        </UXWCodePanelHTMLCSS>
+              </div>
+            </UXWCodePanelHTMLCSS>
           </div>
         </div>
-    <hr class="pb-10"></hr>
-    </UXWSubsection>
-    <UXWSubsection anchor="#" title="Button with icon">
+        <hr class="pb-10"></hr>
+      </UXWSubsection>
+      <UXWSubsection anchor="#" title="Button with icon">
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
-          <a href="#">
-              <button className="uxw-bg-merlins-beard-1 font-light uppercase tracking-widest  py-4 px-12 rounded inline-flex items-center" style={{border:'1px solid #6331FD'}}>
-              <i className="bi bi-download text-lg pr-4"></i>
-              Download
-              </button>
-          </a>
+              <a href="#" className="btn-icon">
+                <i className="bi bi-download text-lg pr-4"></i>
+                Download
+              </a>
           </div>
           <div>
-          <UXWCodePanelHTMLCSS noWrap>
-          <div>
-{`
-<h1 class="uxw-text-heading">
-Hello Wizards!
-</h1>
+            <UXWCodePanelHTMLCSS noWrap>
+              <div>
+                {`
+ <a href="#" className="btn-icon">
+  <i className="bi bi-download text-lg pr-4"></i>
+  Download
+</a>
 `}
-          </div>
-          <div>
-{`
-.uxw-text-heading {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.75rem;
+              </div>
+              <div>
+                {`
+.btn-icon{
+  border: 1px solid rgb(99, 49, 253);
+  background-color:var(--uxw-color-merlins-beard-1);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 0.25rem;
 }`}
-          </div>
-        </UXWCodePanelHTMLCSS>
+              </div>
+            </UXWCodePanelHTMLCSS>
           </div>
         </div>
-    <hr class="pb-10"></hr>
-    </UXWSubsection>
+        <hr class="pb-10"></hr>
+      </UXWSubsection>
     </div>
   )
 }

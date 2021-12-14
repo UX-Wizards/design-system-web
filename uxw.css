@@ -14,6 +14,80 @@ a {
 }
 
 /* Buttons */
+/* .btn-primary{
+color: rgba(255,255,255,var(--tw-text-opacity));
+letter-spacing: .1em;
+text-transform: uppercase;
+font-weight: 300;
+padding: 1rem 3rem 1rem 3rem;
+--tw-gradient-to: #312e81;
+--tw-gradient-from: #4f46e5;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to, rgba(79, 70, 229, 0));
+background-image: linear-gradient(to right,var(--tw-gradient-stops));
+border-radius: 0.375rem;
+transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+transition-duration: .5s;
+--tw-text-opacity: 1;
+} */
+
+.btn-primary{
+  color: rgba(255,255,255,var(--tw-text-opacity));
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 1rem 3rem 1rem 3rem;
+  --tw-gradient-to: var(--uxw-color-magicians-cloak-3);
+  --tw-gradient-from: var(--uxw-color-acid-1);
+      --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to, rgba(79, 70, 229, 0));
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
+  border-radius: 0.375rem;
+  transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+  transition-duration: .5s;
+  --tw-text-opacity: 1;
+  }
+
+.btn-disabled{
+background-color: var(--uxw-color-merlins-beard-3);
+color:#737887;
+letter-spacing: .1em;
+text-transform: uppercase;
+font-weight: 300;
+padding: 1rem 3rem 1rem 3rem;
+border-radius: 0.375rem;
+}
+
+.btn-icon{
+border: 1px solid rgb(99, 49, 253);
+background-color:var(--uxw-color-merlins-beard-1);
+letter-spacing: .1em;
+text-transform: uppercase;
+font-weight: 300;
+padding: 1rem 3rem 1rem 3rem;
+border-radius: 0.25rem;
+}
+
+/* card */
+.card-top{
+  --tw-bg-opacity: 1;
+  background-color: rgba(229,231,235,var(--tw-bg-opacity));
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  }
+  
+  .card-title{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  }
+  
+  .card-bottom{
+  --tw-bg-opacity: 1;
+  background-color: rgba(243,244,246,var(--tw-bg-opacity));
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  }
 
 /* Typography */
 

@@ -4,7 +4,8 @@ function UXWCard(props) {
       <div className="flex flex-row">
         <div className="flex flex-col">
           <p className="pb-4 max-w-prose">
-            Brand colors are part of uxwcore.css. Use the color’s class name to update a HTML elements color.
+            Each card contains information of a category.
+            Card contains a variety of content types like text, image and multimedia or button and links.
           </p>
         </div>
         <div className="flex-grow"></div>
@@ -12,38 +13,54 @@ function UXWCard(props) {
       <UXWSubsection anchor="#" title="Card">
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10 rounded-b-lg">
-          <div className="flex flex-col">
-                <div className="flex flex-row bg-gray-200 rounded-t-lg">
-                  <div className="text-base py-4 pl-6">
-                  Card Title
-                  </div>
-                  <div className="flex-grow "></div>
-                  <div className="py-2 pr-4">
-                  </div>
-                </div>
-                <div className="flex flex-row justify-center bg-gray-100 rounded-b-lg">
-                  <div style={{height:"130px"}}></div>
-                </div>
+          <div>
+            <div className="card-top">
+              <div className="card-title">
+                Card Title
               </div>
-
-
-
-
+            </div>
+            <div className="card-bottom">
+              <div style={{ height: "130px" }}></div>
+            </div>
+          </div>
           <div>
             <UXWCodePanelHTMLCSS noWrap>
               <div>
                 {`
-<h1 class="uxw-text-heading">
-Hello Wizards!
-</h1>
+ <div>
+  <div className="card-top">
+    <div className="card-title">
+      Card Title
+    </div>
+  </div>
+  <div className="card-bottom">
+    <div style={{ height: "130px" }}></div>
+  </div>
+</div>
 `}
               </div>
               <div>
                 {`
-.uxw-text-heading {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.75rem;
+.card-top{
+  --tw-bg-opacity: 1;
+  background-color: rgba(229,231,235,var(--tw-bg-opacity));
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  }
+  
+.card-title{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  }
+  
+.card-bottom{
+  --tw-bg-opacity: 1;
+  background-color: rgba(243,244,246,var(--tw-bg-opacity));
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }`}
               </div>
             </UXWCodePanelHTMLCSS>
