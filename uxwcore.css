@@ -3,34 +3,38 @@
 
 :root {
   /* Colors */
-  --uxw-color-magicians-cloak-1: #152145;
-  --uxw-color-magicians-cloak-2: #4F66AD;
-  --uxw-color-magicians-cloak-3: #2B3D72;
+  --magicianscloak-1: #152145;
+  --magicianscloak-2: #4F66AD;
+  --magicianscloak-3: #2B3D72;
 
-  --uxw-color-acid-1: #6331FD;
-  --uxw-color-acid-2: #D8CBFF;
-  --uxw-color-acid-3: #3F18B4;
+  --acid-1: #6331FD;
+  --acid-2: #D8CBFF;
+  --acid-3: #3F18B4;
 
-  --uxw-color-merlins-beard-1: #FFFFFF;
-  --uxw-color-merlins-beard-2: #E6E6E6;
-  --uxw-color-merlins-beard-3: #C9CACB;
-  --uxw-color-merlins-beard-4: #737887;
+  --merlinsbeard-1: #FFFFFF;
+  --merlinsbeard-2: #E6E6E6;
+  --merlinsbeard-3: #C9CACB;
+  --merlinsbeard-4: #737887;
 
-  --uxw-color-steel-1: #E0E6FD;
-  --uxw-color-steel-2: #F7F9FF;
-  --uxw-color-steel-3: #CCD5F5;
+  --steel-1: #E0E6FD;
+  --steel-2: #F7F9FF;
+  --steel-3: #CCD5F5;
 
-  --uxw-color-mana-1: #00BBD6;
-  --uxw-color-mana-2: #24DDFD;
-  --uxw-color-mana-3: #1F9BB1;
+  --mana-1: #00BBD6;
+  --mana-2: #24DDFD;
+  --mana-3: #299BB0;
 
-  --uxw-color-jinx-1: #FF6584;
-  --uxw-color-jinx-2: #FFA8BA;
-  --uxw-color-jinx-3: #EA4869;
+  --jinx-1: #FF6584;
+  --jinx-2: #FFA8BA;
+  --jinx-3: #EA4869;
 
-  --uxw-color-elixir-1: #F0B052;
-  --uxw-color-elixir-2: #FFD190;
-  --uxw-color-elixir-3: #D99432;
+  --elixir-1: #F0B052;
+  --elixir-2: #FFD190;
+  --elixir-3: #D99432;
+
+  --error-red: #EA3434;
+  --success-green: #1CCB6C;
+
 
   /* Typography */
   --font-primary: "Overpass", sans-serif;
@@ -140,104 +144,116 @@
 /* Colors */
 
 .uxw-bg-magicians-cloak-1 {
-  background-color: var(--uxw-color-magicians-cloak-1)
+  background-color: var(--magicianscloak-1)
 }
 
 .uxw-bg-magicians-cloak-2 {
-  background-color: var(--uxw-color-magicians-cloak-2)
+  background-color: var(--magicianscloak-2)
 }
 
 .uxw-bg-magicians-cloak-3 {
-  background-color: var(--uxw-color-magicians-cloak-3)
+  background-color: var(--magicianscloak-3)
 }
 
 
 
 .uxw-bg-acid-1 {
-  background-color: var(--uxw-color-acid-1)
+  background-color: var(--acid-1)
 }
 
 .uxw-bg-acid-2 {
-  background-color: var(--uxw-color-acid-2)
+  background-color: var(--acid-2)
 }
 
 .uxw-bg-acid-3 {
-  background-color: var(--uxw-color-acid-3)
+  background-color: var(--acid-3)
 }
 
 
 
 .uxw-bg-merlins-beard-1 {
-  background-color: var(--uxw-color-merlins-beard-1)
+  background-color: var(--merlinsbeard-1)
 }
 
 .uxw-bg-merlins-beard-2 {
-  background-color: var(--uxw-color-merlins-beard-2)
+  background-color: var(--merlinsbeard-2)
 }
 
 .uxw-bg-merlins-beard-3 {
-  background-color: var(--uxw-color-merlins-beard-3)
+  background-color: var(--merlinsbeard-3)
 }
 
 .uxw-bg-merlins-beard-4 {
-  background-color: var(--uxw-color-merlins-beard-4)
+  background-color: var(--merlinsbeard-4)
 }
 
 
 
 .uxw-bg-steel-1 {
-  background-color: var(--uxw-color-steel-1)
+  background-color: var(--steel-1)
 }
 
 .uxw-bg-steel-2 {
-  background-color: var(--uxw-color-steel-2)
+  background-color: var(--steel-2)
 }
 
 .uxw-bg-steel-3 {
-  background-color: var(--uxw-color-steel-3)
+  background-color: var(--steel-3)
 }
 
 
 
 .uxw-bg-mana-1 {
-  background-color: var(--uxw-color-mana-1)
+  background-color: var(--mana-1)
 }
 
 .uxw-bg-mana-2 {
-  background-color: var(--uxw-color-mana-2)
+  background-color: var(--mana-2)
 }
 
 .uxw-bg-mana-3 {
-  background-color: var(--uxw-color-mana-3)
+  background-color: var(--mana-3)
 }
 
 
 
 .uxw-bg-jinx-1 {
-  background-color: var(--uxw-color-jinx-1)
+  background-color: var(--jinx-1)
 }
 
 .uxw-bg-jinx-2 {
-  background-color: var(--uxw-color-jinx-2)
+  background-color: var(--jinx-2)
 }
 
 .uxw-bg-jinx-3 {
-  background-color: var(--uxw-color-jinx-3)
+  background-color: var(--jinx-3)
 }
 
 
 
 .uxw-bg-elixir-1 {
-  background-color: var(--uxw-color-elixir-1)
+  background-color: var(--elixir-1)
 }
 
 .uxw-bg-elixir-2 {
-  background-color: var(--uxw-color-elixir-2)
+  background-color: var(--elixir-2)
 }
 
 .uxw-bg-elixir-3 {
-  background-color: var(--uxw-color-elixir-3)
+  background-color: var(--elixir-3)
 }
+
+
+
+.uxw-bg-error {
+  background-color: var(--error-red)
+}
+
+.uxw-bg-success {
+  background-color: var(--success-green)
+}
+
+
 
 /* Typography */
 
