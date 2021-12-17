@@ -241,7 +241,7 @@ function UXWHowWeSound(props) {
             <div className="flex flex-col"> {/* col right */}
               <div className="flex flex-row h-2 bg-green-500 rounded-t-lg"> {/* green colored top */}
                   &nbsp;
-                </div> 
+              </div>
                 <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
                   <img className="w-8 h-8 mr-4" src="assets/icon_smile.png" alt="happy" />
                   <p><span className="font-bold">BETTER</span><br/>

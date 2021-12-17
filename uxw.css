@@ -2,13 +2,26 @@
 /* Links */
 
 a {
-  color: var(--uxw-color-acid-1);
+  color: var(--acid-1);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: var(--acid-1);
   font-weight: bold;
   text-decoration: none;
 }
 
-:visited {
-  color: var(--uxw-color-acid-3);
+a:hover {
+  color: var(--acid-3);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--acid-3);
   font-weight: bold;
   text-decoration: none;
 }
@@ -38,3 +51,23 @@ tr:nth-child(even) {
 }
 
 /* Logos and Icons */
+
+/* Colors */
+
+.booty {
+  color: var(--elixir-2);
+}
+
+.riches {
+  color: var(--acid-2);
+}
+
+.error{
+
+  color: var(--error-red)
+}
+
+.success{
+
+  color: var(--success-green)
+}
