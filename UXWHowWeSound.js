@@ -175,20 +175,20 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-red-500 rounded-t-lg"> {/* red colored top */}
                 &nbsp;
               </div> 
-              <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                <img className="w-10 h-10 mr-4" src="assets/icon_sad.png" alt="frown" />
+              <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                <img className="w-8 h-8 mr-4" src="assets/icon_sad.png" alt="frown" />
                 <p><span className="font-bold">OKAY</span><br/>
-                Merlin's beard really impressed the other wizards.</p>
+                It was concluded that the other wizards were really impressed by Merlin’s beard.</p>
               </div> 
             </div>  
             <div className="flex flex-col"> {/* col right */}
               <div className="flex flex-row h-2 bg-green-500 rounded-t-lg"> {/* green colored top */}
                   &nbsp;
                 </div> 
-                <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                  <img className="w-10 h-10 mr-4" src="assets/icon_smile.png" alt="happy" />
+                <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                  <img className="w-8 h-8 mr-4" src="assets/icon_smile.png" alt="happy" />
                   <p><span className="font-bold">BETTER</span><br/>
-                  The other wizards were really impressed with Merlin’s beard.</p>
+                  Merlin's beard really impressed the other wizards.</p>
                 </div>  
             </div>  
           </div> {/* end Active Voice ex. */}
@@ -202,8 +202,8 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-red-500 rounded-t-lg"> {/* red colored top */}
                 &nbsp;
               </div> 
-              <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                <img className="w-10 h-10 mr-4" src="assets/icon_sad.png" alt="frown" />
+              <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                <img className="w-8 h-8 mr-4" src="assets/icon_sad.png" alt="frown" />
                 <p><span className="font-bold">OKAY</span><br/>
                 On the night of the 13th we will be holding an event at the wizarding hour.</p>
               </div> 
@@ -212,8 +212,8 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-green-500 rounded-t-lg"> {/* green colored top */}
                   &nbsp;
                 </div> 
-                <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                  <img className="w-10 h-10 mr-4" src="assets/icon_smile.png" alt="happy" />
+                <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                  <img className="w-8 h-8 mr-4" src="assets/icon_smile.png" alt="happy" />
                   <p><span className="font-bold">BETTER</span><br/>
                   The event is on<br /> Friday 13th, 3:00am. </p>
                 </div>  
@@ -231,10 +231,10 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-red-500 rounded-t-lg"> {/* red colored top */}
                 &nbsp;
               </div> 
-              <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                <img className="w-10 h-10 mr-4" src="assets/icon_sad.png" alt="frown" />
+              <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                <img className="w-8 h-8 mr-4" src="assets/icon_sad.png" alt="frown" />
                 <p><span className="font-bold">OKAY</span><br/>
-                  Take a look at my <span className="font-bold">lo-fi</span> prototype.
+                  Avoid FOMO! Feel free to AMA.
                 </p>
               </div> 
             </div>  
@@ -242,10 +242,10 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-green-500 rounded-t-lg"> {/* green colored top */}
                   &nbsp;
                 </div> 
-                <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                  <img className="w-10 h-10 mr-4" src="assets/icon_smile.png" alt="happy" />
+                <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                  <img className="w-8 h-8 mr-4" src="assets/icon_smile.png" alt="happy" />
                   <p><span className="font-bold">BETTER</span><br/>
-                    Take a look at my low-fidelity prototype.
+                    Don't miss out! Feel free to ask any questions.
                   </p>
                 </div>  
             </div>  
@@ -260,8 +260,8 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-red-500 rounded-t-lg"> {/* red colored top */}
                 &nbsp;
               </div> 
-              <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                <img className="w-10 h-10 mr-4" src="assets/icon_sad.png" alt="frown" />
+              <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                <img className="w-8 h-8 mr-4" src="assets/icon_sad.png" alt="frown" />
                 <p><span className="font-bold">OKAY</span><br/>
                 <span className="italic">Wingardium Leviosa?</span></p>
               </div> 
@@ -270,8 +270,8 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-green-500 rounded-t-lg"> {/* green colored top */}
                   &nbsp;
                 </div> 
-                <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                  <img className="w-10 h-10 mr-4" src="assets/icon_smile.png" alt="happy" />
+                <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                  <img className="w-8 h-8 mr-4" src="assets/icon_smile.png" alt="happy" />
                   <p><span className="font-bold">BETTER</span><br/>
                   <span className="italic">Levitate.</span></p>
                 </div>  
@@ -287,8 +287,8 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-red-500 rounded-t-lg"> {/* red colored top */}
                 &nbsp;
               </div> 
-              <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                <img className="w-10 h-10 mr-4" src="assets/icon_sad.png" alt="frown" />
+              <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                <img className="w-8 h-8 mr-4" src="assets/icon_sad.png" alt="frown" />
                 <p><span className="font-bold">OKAY</span><br/>
                 Hey Wizards!! I hope you are having the bestest of days! Don’t forget to sign up for the latest event! It’s going to be SUPER fun! See you there!!</p>
               </div> 
@@ -297,8 +297,8 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-green-500 rounded-t-lg"> {/* green colored top */}
                   &nbsp;
                 </div> 
-                <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                  <img className="w-10 h-10 mr-4" src="assets/icon_smile.png" alt="happy" />
+                <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                  <img className="w-8 h-8 mr-4" src="assets/icon_smile.png" alt="happy" />
                   <p><span className="font-bold">BETTER</span><br/>
                   Hey Wizards! I hope you’re having a great day. A friendly reminder here to sign up for the latest event. It’s going to be super fun! See you there~</p>
                 </div>  
@@ -316,8 +316,8 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-red-500 rounded-t-lg"> {/* red colored top */}
                 &nbsp;
               </div> 
-              <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                <img className="w-10 h-10 mr-4" src="assets/icon_sad.png" alt="frown" />
+              <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                <img className="w-8 h-8 mr-4" src="assets/icon_sad.png" alt="frown" />
                 <p><span className="font-bold">OKAY</span><br/>
                 DID YOU CAST MAGIC MISSLE?</p>
               </div> 
@@ -326,8 +326,8 @@ function UXWHowWeSound(props) {
               <div className="flex flex-row h-2 bg-green-500 rounded-t-lg"> {/* green colored top */}
                   &nbsp;
                 </div> 
-                <div className="flex flex-row p-4 justify-left bg-gray-200 rounded-b-lg">
-                  <img className="w-10 h-10 mr-4" src="assets/icon_smile.png" alt="happy" />
+                <div className="flex flex-row p-4 justify-left bg-gray-100 rounded-b-lg">
+                  <img className="w-8 h-8 mr-4" src="assets/icon_smile.png" alt="happy" />
                   <p><span className="font-bold">BETTER</span><br/>
                   Did YOU just cast Magic Missle?</p>
                 </div>  
