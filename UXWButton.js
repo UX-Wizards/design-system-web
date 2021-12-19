@@ -9,7 +9,7 @@ function UXWButton(props) {
         </div>
         <div className="flex-grow"></div>
       </div>
-      <UXWSubsection anchor="#" title="Primary">
+      <UXWSubsection anchor="button" title="Primary">
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>

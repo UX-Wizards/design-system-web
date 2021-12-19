@@ -4,7 +4,7 @@ function UXWCard(props) {
       <div className="flex flex-row">
         <div className="flex flex-col">
           <p className="pb-4 max-w-prose">
-            Each card contains information of a category.
+            Each card contains information of a category.<br/>
             Card contains a variety of content types like text, image and multimedia or button and links.
           </p>
         </div>

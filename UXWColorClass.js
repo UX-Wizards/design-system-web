@@ -9,7 +9,7 @@ function UXWColorClass(props) {
         </div>
         <div className="flex-grow"></div>
       </div>
-      <UXWSubsection anchor="#" title="Background Color">
+      <UXWSubsection anchor="color-calss" title="Background Color">
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10 rounded-b-lg">
           <div className="uxw-bg-acid-2" style={{position:"relative"}}>
