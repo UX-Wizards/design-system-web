@@ -33,7 +33,7 @@ a:hover {
 
 body {
   font-family: var(--font-primary);
-  color: var(--uxw-color-magicians-cloak-1);
+  color: var(--magicianscloak-1);
 }
 
 h1 {
@@ -48,7 +48,7 @@ p {
 
 tr:nth-child(even) {
  
-  background-color: var(--uxw-color-merlins-beard-1);
+  background-color: var(--merlinsbeard-1);
 }
 
 /* Logos and Icons */
