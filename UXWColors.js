@@ -47,21 +47,43 @@ function UXWColors(props) {
         </div>
 
         <div className="flex flex-col flex-wrap flex-grow">
-          <div className="flex flex-row pb-20">
-            <div className="flex flex-col w-1/3">
-              <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">
-                Magician's Cloak
-              </div>
+            <div className="flex flex-row pb-20">
+              <div className="flex flex-col w-1/3">
+                <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">
+                  Magician's Cloak
+                </div>
 
               <div className="flex flex-col uxw-bg-steel-1 rounded-lg shadow-inner mt-4 ml-4 mr-8">
                 <div className="flex flex-col p-8 items-center justify-start">
-                  <div className="box h-24 w-64 rounded-lg border-2 border-gray-300 uxw-bg-magicians-cloak-1 shadow-xl m-4 z-1">
-                    <p className="z-2 text-left text-white pl-8 pt-5">
-                      <span className="text-black font-bold">A </span>FAIL
-                    </p>
-                    <p className="z-2 text-left text-white pl-8">
-                      <span className="text-white font-bold">A </span>PASS
-                    </p>
+                  <div className="box h-24 w-full rounded-lg border-2 border-gray-300 uxw-bg-magicians-cloak-1 shadow-xl m-4 z-1">
+                    <div className="flex flex-row">
+                      <div className="w-1/2">
+                      <p className="z-2 text-left text-white pl-8 pt-5">
+                        <span className="text-black font-bold">A </span>FAIL
+                     </p>
+                     <p className="z-2 text-left text-white pl-8">
+                       <span className="text-white font-bold">A </span>PASS
+                     </p>
+                     </div>
+
+                     <div className="w-1/2 pt-8 content-center">
+                      <p className="text-white" style={{cursor: "pointer"}} onClick={(evt)=>{
+navigator.clipboard.writeText("152145"); 
+evt.target.innerText="Copied!";
+setTimeout(()=>{
+  evt.target.classList.add("fadeout");
+  setTimeout(()=>{
+    evt.target.innerText="Click to copy HEX";
+    evt.target.classList.remove("fadeout");
+    evt.target.classList.add("fadein");
+    setTimeout(()=>{
+      evt.target.classList.remove("fadein")
+    }, 1050)
+  }, 1050)
+}, 3000);
+                      }}>Click to copy HEX</p>
+                     </div>
+                    </div>
                   </div>
 
                   <p className="justify-start text-left -ml-4 pt-6 pb-4">
@@ -75,12 +97,12 @@ function UXWColors(props) {
               </div>
             </div>
 
-            <div className="flex flex-col w-2/3">
-              <div className="flex flex-row pt-10 pb-4 mt-4 ml-4 mr-8">
-                <div className="flex flex-col mt-6 ml-2 mr-4">
-                  <div className="flex flex-col items-center justify-left pl-16">
-                    <div className="box h-24 w-64 rounded-md uxw-bg-magicians-cloak-2 border-2 border-gray-300 m-4">
-                      <p className="z-2 text-left text-white pl-8 pt-5">
+            <div className="flex flex-row w-2/3">
+                <div className="flex flex-row pt-10 pb-4 mt-4 ml-4 mr-8">
+                  <div className="flex flex-col mt-6 ml-2 mr-4 w-1/3">
+                    <div className="flex flex-col items-center justify-start pl-16">
+                      <div className="box h-24 w-64 rounded-md uxw-bg-magicians-cloak-2 border-2 border-gray-300 m-4 z-1">
+                        <p className="z-2 text-left text-white pl-8 pt-5">
                         <span className="text-black font-bold">A </span>FAIL
                       </p>
                       <p className="z-2 text-left text-white pl-8">
@@ -98,7 +120,7 @@ function UXWColors(props) {
                   </div>
                 </div>
 
-                <div className="flex flex-col mt-6 ml-2 mr-4">
+                <div className="flex flex-col mt-6 ml-2 mr-4 w-1/3">
                   <div className="flex flex-col items-center justify-left pl-16">
                     <div className="box h-24 w-64 rounded-md uxw-bg-magicians-cloak-3 border-2 border-gray-300 m-4">
                       <p className="z-2 text-left text-white pl-8 pt-5">
@@ -131,7 +153,7 @@ function UXWColors(props) {
 
                 <div className="flex flex-col uxw-bg-steel-1 rounded-lg shadow-inner mt-4 ml-4 mr-8">
                   <div className="flex flex-col p-8 items-center justify-start">
-                    <div className="box h-24 w-64 rounded-lg border-2 border-gray-300 uxw-bg-acid-1 shadow-xl m-4 z-1">
+                    <div className="box h-24 w-full rounded-lg border-2 border-gray-300 uxw-bg-acid-1 shadow-xl m-4 z-1">
                       <p className="text-left text-white pl-8 pt-5">
                         <span className="text-black font-bold">A </span>FAIL
                       </p>
@@ -153,7 +175,7 @@ function UXWColors(props) {
 
               <div className="flex flex-row w-2/3">
                 <div className="flex flex-row pt-10 pb-4 mt-4 ml-4 mr-8">
-                  <div className="flex flex-col mt-6 ml-2 mr-4">
+                  <div className="flex flex-col mt-6 ml-2 mr-4 w-1/3">
                     <div className="flex flex-col items-center justify-start pl-16">
                       <div className="box h-24 w-64 rounded-md uxw-bg-acid-2 border-2 border-gray-300 m-4 z-1">
                         <p className="z-2 text-left text-black pl-8 pt-5">
@@ -174,7 +196,7 @@ function UXWColors(props) {
                     </div>
                   </div>
 
-                  <div className="flex flex-col mt-5 ml-2 mr-4">
+                  <div className="flex flex-col mt-5 ml-2 mr-4 w-1/3">
                     <div className="flex flex-col items-center justify-start pl-16">
                       <div className="box h-24 w-64 rounded-md uxw-bg-acid-3 border-2 border-gray-300 m-4 z-1">
                         <p className="z-2 text-left text-white pl-8 pt-5">
@@ -197,17 +219,42 @@ function UXWColors(props) {
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="flex flex-col flex-wrap flex-grow">
-              <div className="flex flex-row pb-16">
-                <div className="flex flex-col w-1/3">
-                  <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">
-                    Merlin's Beard
+          <div className="flex flex-wrap flex-col flex-grow grow-0 w-4/5">
+            <div className="flex flex-row pb-16">
+              <div className="flex flex-col w-1/3">
+                <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">
+                  Merlin's Beard
+                </div>
+
+                <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg mt-4 ml-4 mr-8 mt-4">
+                  <div className="flex flex-col p-8 items-center justify-center">
+                    <div className="box h-24 w-full rounded-lg uxw-bg-merlins-beard-1 shadow-lg border-2 border-gray-300 pb-4 mt-4 ml-8 mr-8 z-1">
+                      <p className="z-2 text-left pl-8 pt-5">
+                        <span className="text-black font-bold">A </span>PASS
+                      </p>
+                      <p className="z-2 text-left text-black pl-8">
+                        <span className="text-white font-bold">A </span>FAIL
+                      </p>
+                    </div>
+
+                    <p className="text-left justify-start -ml-8 pt-10 pb-4">
+                      <span className="font-bold">Global Token: </span>
+                      <span className="font-normal">merlinsbeard-1</span>
+                      <br />
+                      <span className="font-bold">HEX:</span>{" "}
+                      <span className="font-normal"># FFFFFF</span>
+                    </p>
                   </div>
+                </div>
+              </div>
 
-                  <div className="flex flex-col uxw-bg-steel-1 shadow-inner rounded-lg mt-4 ml-4 mr-8 mt-4">
-                    <div className="flex flex-col p-8 items-center justify-center">
-                      <div className="box h-24 w-64 rounded-lg uxw-bg-merlins-beard-1 shadow-lg border-2 border-gray-300 pb-4 mt-4 ml-8 mr-8 z-1">
+              <div className="flex flex-row pt-12 mt-1 pl-4 w-2/3">
+                <div className="flex flex-row">
+                  <div className="flex flex-col mt-7 ml-2 mr-4">
+                    <div className="flex flex-col items-center justify-start pl-16">
+                      <div className="box h-24 w-64 rounded-md uxw-bg-merlins-beard-2 border-2 border-gray-300 m-4 z-1">
                         <p className="z-2 text-left pl-8 pt-5">
                           <span className="text-black font-bold">A </span>PASS
                         </p>
@@ -216,80 +263,55 @@ function UXWColors(props) {
                         </p>
                       </div>
 
-                      <p className="text-left justify-start -ml-8 pt-10 pb-4">
-                        <span className="font-bold">Global Token: </span>
-                        <span className="font-normal">merlinsbeard-1</span>
+                      <p className="text-left -ml-8 pt-6 pb-4">
+                        <span className="font-bold">Global Token: </span>{" "}
+                        <span className="font-normal">merlinsbeard-2</span>
                         <br />
                         <span className="font-bold">HEX:</span>{" "}
-                        <span className="font-normal"># FFFFFF</span>
+                        <span className="font-normal"># E6E6E6</span>
                       </p>
                     </div>
                   </div>
-                </div>
 
-                <div className="flex flex-row pt-12 mt-1 pl-4 w-2/3">
-                  <div className="flex flex-row">
-                    <div className="flex flex-col mt-7 ml-2 mr-4">
-                      <div className="flex flex-col items-center justify-start pl-16">
-                        <div className="box h-24 w-64 rounded-md uxw-bg-merlins-beard-2 border-2 border-gray-300 m-4 z-1">
-                          <p className="z-2 text-left pl-8 pt-5">
-                            <span className="text-black font-bold">A </span>PASS
-                          </p>
-                          <p className="z-2 text-left text-black pl-8">
-                            <span className="text-white font-bold">A </span>FAIL
-                          </p>
-                        </div>
-
-                        <p className="text-left -ml-8 pt-6 pb-4">
-                          <span className="font-bold">Global Token: </span>{" "}
-                          <span className="font-normal">merlinsbeard-2</span>
-                          <br />
-                          <span className="font-bold">HEX:</span>{" "}
-                          <span className="font-normal"># E6E6E6</span>
+                  <div className="flex flex-row mt-7 ml-2 mr-4">
+                    <div className="flex flex-col items-center justify-start pl-16">
+                      <div className="box h-24 w-64 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 m-4">
+                        <p className="z-2 text-left pl-8 pt-5">
+                          <span className="text-black font-bold">A </span>PASS
+                        </p>
+                        <p className="z-2 text-left text-black pl-8">
+                          <span className="text-white font-bold">A </span>FAIL
                         </p>
                       </div>
+
+                      <p className="text-left -ml-8 pt-6 pb-4">
+                        <span className="font-bold">Global Token: </span>{" "}
+                        <span className="font-normal">merlinsbeard-3</span>
+                        <br />
+                        <span className="font-bold">HEX:</span>{" "}
+                        <span className="font-normal"># C9CACB</span>
+                      </p>
                     </div>
+                  </div>
 
-                    <div className="flex flex-row mt-7 ml-2 mr-4">
-                      <div className="flex flex-col items-center justify-start pl-16">
-                        <div className="box h-24 w-64 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 m-4">
-                          <p className="z-2 text-left pl-8 pt-5">
-                            <span className="text-black font-bold">A </span>PASS
-                          </p>
-                          <p className="z-2 text-left text-black pl-8">
-                            <span className="text-white font-bold">A </span>FAIL
-                          </p>
-                        </div>
-
-                        <p className="text-left -ml-8 pt-6 pb-4">
-                          <span className="font-bold">Global Token: </span>{" "}
-                          <span className="font-normal">merlinsbeard-3</span>
-                          <br />
-                          <span className="font-bold">HEX:</span>{" "}
-                          <span className="font-normal"># C9CACB</span>
+                  <div className="flex flex-row mt-7 ml-2 mr-4">
+                    <div className="flex flex-col items-center justify-start pl-16">
+                      <div className="box h-24 w-64 rounded-md uxw-bg-merlins-beard-4 border-2 border-gray-300 m-4">
+                        <p className="z-2 text-left text-white pl-8 pt-5">
+                          <span className="text-black font-bold">A </span>FAIL
+                        </p>
+                        <p className="z-2 text-left text-white pl-8">
+                          <span className="text-white font-bold">A </span>PASS
                         </p>
                       </div>
-                    </div>
 
-                    <div className="flex flex-row mt-7 ml-2 mr-4">
-                      <div className="flex flex-col items-center justify-start pl-16">
-                        <div className="box h-24 w-64 rounded-md uxw-bg-merlins-beard-4 border-2 border-gray-300 m-4">
-                          <p className="z-2 text-left text-white pl-8 pt-5">
-                            <span className="text-black font-bold">A </span>FAIL
-                          </p>
-                          <p className="z-2 text-left text-white pl-8">
-                            <span className="text-white font-bold">A </span>PASS
-                          </p>
-                        </div>
-
-                        <p className="text-left -ml-8 pt-6 pb-4">
-                          <span className="font-bold">Global Token: </span>{" "}
-                          <span className="font-normal">merlinsbeard-4</span>
-                          <br />
-                          <span className="font-bold">HEX:</span>{" "}
-                          <span className="font-normal"># 737887</span>
-                        </p>
-                      </div>
+                      <p className="text-left -ml-8 pt-6 pb-4">
+                        <span className="font-bold">Global Token: </span>{" "}
+                        <span className="font-normal">merlinsbeard-4</span>
+                        <br />
+                        <span className="font-bold">HEX:</span>{" "}
+                        <span className="font-normal"># 737887</span>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -310,7 +332,7 @@ function UXWColors(props) {
           </p>
         </div>
 
-        <div className="flex flex-col flex-wrap flex-grow">
+        <div className="flex flex-col flex-grow">
           <div className="flex flex-row pb-10">
             <div className="flex flex-col w-1/3">
               <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">
@@ -487,7 +509,7 @@ function UXWColors(props) {
           </p>
         </div>
 
-        <div className="flex flex-col flex-wrap flex-grow">
+        <div className="flex flex-col flex-grow">
           <div className="flex flex-row pb-10">
             <div className="flex flex-col w-1/3">
               <div className="box rounded-full uxw-bg-magicians-cloak-1 text-white text-center h-8 pt-1 mr-4">
