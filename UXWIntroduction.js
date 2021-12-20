@@ -28,8 +28,25 @@ function UXWIntroduction(props) {
                   </div>
                 </div>
         </div>
+        <div className="flex-grow"></div>
+        <UXWCodePanelHTMLCSS noWrap>
+          <div>
+{`
+<h1 class="uxw-text-heading">
+  Hello Wizards!
+</h1>
+`}
+          </div>
+          <div>
+{`
+.uxw-text-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}`}
+          </div>
+        </UXWCodePanelHTMLCSS>
       </div>
-      
       <UXWSubsection anchor="introduction--installation-and-usage" title="Installation and Usage">
         <p className="pb-4 max-w-prose">
           We include two CSS stylesheets depending on how opinionated you want the CSS to be. Use <span className="uxw-code">uxwcore.css</span> for utility style usage.

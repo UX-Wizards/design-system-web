@@ -26,14 +26,13 @@ a:hover {
   text-decoration: none;
 }
 
-
 /* Buttons */
 
 /* Typography */
 
 body {
   font-family: var(--font-primary);
-  color: var(--magicianscloak-1);
+  color: var(--uxw-color-magicians-cloak-1);
 }
 
 h1 {
@@ -48,7 +47,7 @@ p {
 
 tr:nth-child(even) {
  
-  background-color: var(--merlinsbeard-1);
+  background-color: var(--uxw-color-merlins-beard-1);
 }
 
 /* Logos and Icons */
@@ -72,16 +71,3 @@ tr:nth-child(even) {
 
   color: var(--success-green)
 }
-
-
-.fadeout{
-opacity:0;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1050ms;
-}
-
-.fadein{
-  opacity:1;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 1050ms;
-  }

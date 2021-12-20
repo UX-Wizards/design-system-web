@@ -132,7 +132,7 @@ function UXWTypography(props) {
             <p class="m-2 uxw-text-display-1">Design Meets Magic</p>
             <p class="m-2 uxw-text-display-2">The UX Wizards are here. </p>
             <p class="m-2">We're looking for designers of all levels to come on board. Ready to work your wizardly? </p>
-            <a className="m-2 w-56 text-center text-white py-4 px-4 from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md uppercase tracking-widest font-light hover:shadow-2xl transition duration-500 ease-in-out hover:bg-opacity-40"><span style ={{color: "#ffffff"}}>JOIN OUR TEAM</span></a>
+            <a className="m-2 w-56 text-center text-white py-4 px-4 from-indigo-600 to-indigo-900 bg-gradient-to-r rounded-md uppercase tracking-widest font-light hover:shadow-2xl transition duration-500 ease-in-out hover:bg-opacity-40">JOIN OUR TEAM</a>
 
           </div>
         </div>

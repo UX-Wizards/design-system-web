@@ -4,11 +4,11 @@ function UXWLogosAndIcons(props) {
       <div className="flex-col flex-shrink-0 py-4">
         <div className="container">
           <UXWSubsection anchor="snav-logos" title="Logos" >
-            <p className="max-w-prose">Our primary logo combines our brand mark, wizard hat, and the UX WIZARDS text. Wherever possible, we aim to use the primary logo in full color.</p><br />
-            <p className="max-w-prose">The circle logo variations are used for social media icons and graphics. Word Mark is often incorporated with graphics and for the banners. </p><br />
+            <p className="max-w-prose">Our primary logo combines our brand mark, wizard hat, and the UX WIZARDS text. Wherever possible, we aim to use the primary logo in full-color.</p><br />
+            <p className="max-w-prose">The circle logo variations are to be used as social media icons and graphics. Word Mark is often incoorporate with graphic and for the banners. </p><br />
           </UXWSubsection>
           <UXWSubsection anchor="snav-primary-logo" title="Primary Logo" >
-            <p className="max-w-prose">The main logo should be used in this form whenever possible. The inverted version helps with legibility on dark or busy backgrounds.</p>
+            <p className="max-w-prose">The main logo should be used in this form whenever possible. The inverted version features a greater legibility on dark or busy backgrounds.</p>
             <img src="assets/primary_logo.png" alt="" className="w-2/4"/>
           </UXWSubsection>
           <UXWSubsection anchor="snav-monotone-logo" title="Monotone Logos">
