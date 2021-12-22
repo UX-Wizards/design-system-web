@@ -30,7 +30,7 @@ function UXWComponent(props) {
             </RouterLink>
             <RouterLink to="/card">
             <div className="py-4 px-6 bg-gray-100 text-lg font-bold rounded-lg">
-              <p>Cards</p>
+              <p>Card</p>
               <img src="assets/comp-3.svg" className="mx-auto my-10" alt=""/>
             </div>
             </RouterLink>

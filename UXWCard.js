@@ -24,16 +24,16 @@ function UXWCard(props) {
             </div>
           </div>
           <div>
-            <UXWCodePanelHTMLCSS noWrap>
+            <UXWCodePanelHTMLCSS>
               <div>
                 {`
  <div>
-  <div className="card-top">
+  <div class="card-top">
     <div className="card-title">
       Card Title
     </div>
   </div>
-  <div className="card-bottom">
+  <div class="card-bottom">
     <div style={{ height: "130px" }}></div>
   </div>
 </div>

@@ -16,10 +16,10 @@ function UXWButton(props) {
             <a className="btn-primary" href="#">Primary</a>
           </div>
           <div>
-            <UXWCodePanelHTMLCSS noWrap>
+            <UXWCodePanelHTMLCSS>
               <div>
                 {`
-<a href="#" className="btn-primary">
+<a href="#" class="btn-primary">
   Primary
 </a>
 `}
@@ -57,10 +57,10 @@ function UXWButton(props) {
             <a className="btn-disabled" href="#">Disabled</a>
           </div>
           <div>
-            <UXWCodePanelHTMLCSS noWrap>
+            <UXWCodePanelHTMLCSS>
               <div>
                 {`
- <a href="#" className="btn-disabled" >
+ <a href="#" class="btn-disabled" >
   Disabled
  </a>
 `}
@@ -92,11 +92,11 @@ function UXWButton(props) {
               </a>
           </div>
           <div>
-            <UXWCodePanelHTMLCSS noWrap>
+            <UXWCodePanelHTMLCSS>
               <div>
                 {`
- <a href="#" className="btn-icon">
-  <i className="bi bi-download text-lg pr-4"></i>
+ <a href="#" class="btn-icon">
+  <i class="bi bi-download text-lg pr-4"></i>
   Download
 </a>
 `}

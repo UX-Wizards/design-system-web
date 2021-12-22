@@ -271,6 +271,12 @@
         {
           subtitle: "Color Class",
           anchor: "color-class",
+          // subsubtitle:[
+          //   {
+          //     subtitle:"Background Color",
+          //     anchor: "#",
+          //   },
+          // ],
         },
         {
           subtitle: "Buttons",
@@ -288,8 +294,8 @@
       heading: "Color Class",
       subheadings: [
         {
-          subtitle: "",
-          anchor: "#",
+          subtitle: "Background Color",
+          anchor: "bg-color",
         },
       ],
       route: "/colorclass",
@@ -752,6 +758,14 @@ function ScrollToTop() {
                       </ListItem>
                     </RouterLink>
                     }
+
+
+
+
+
+
+
+                    
                      {location.pathname === "/component" &&
                     <RouterLink key="navlink-sub-5-2"  to="/button" >
                       <ListItem button>
@@ -767,6 +781,20 @@ function ScrollToTop() {
                     </RouterLink>
                     }
                     </React.Fragment>
+                    <React.Fragment key="navlink-fragment-6">
+                    <RouterLink to="/colorclass" >
+                      <ListItem button key="navlink-6">
+                        <ListItemText disableTypography primary="Color Class" className={`pl-4 ${location.pathname === "/colorclass" ? classesMain.navitemselected : classesMain.navitem}`} />
+                      </ListItem>
+                    </RouterLink>
+                    {location.pathname === "/colorclass" &&
+                    <div key="navlink-sub-6-0" onClick={() => document.getElementById("bg-color").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                      <ListItem button>
+                        <ListItemText disableTypography primary="Background Color" className={`pl-12 ${activeSubsections.findIndex((element) => element === "bg-color") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
+                      </ListItem>
+                    </div>
+                    }
+                  </React.Fragment>
               </List>
             </nav>
           </Drawer>
