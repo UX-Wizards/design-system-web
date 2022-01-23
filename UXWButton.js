@@ -9,7 +9,7 @@ function UXWButton(props) {
         </div>
         <div className="flex-grow"></div>
       </div>
-      <UXWSubsection anchor="button" title="Primary">
+      {/* <UXWSubsection anchor="button" title="Primary"> */}
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
@@ -48,9 +48,9 @@ function UXWButton(props) {
           </div>
         </div>
         <hr class="pb-10"></hr>
-      </UXWSubsection>
+      {/* </UXWSubsection> */}
 
-      <UXWSubsection anchor="#" title="Disabled">
+      {/* <UXWSubsection anchor="#" title="Disabled"> */}
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
@@ -81,8 +81,8 @@ function UXWButton(props) {
           </div>
         </div>
         <hr class="pb-10"></hr>
-      </UXWSubsection>
-      <UXWSubsection anchor="#" title="Button with icon">
+      {/* </UXWSubsection> */}
+      {/* <UXWSubsection anchor="#" title="Button with icon"> */}
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
           <div>
@@ -117,7 +117,7 @@ function UXWButton(props) {
           </div>
         </div>
         <hr class="pb-10"></hr>
-      </UXWSubsection>
+      {/* </UXWSubsection> */}
     </div>
   )
 }

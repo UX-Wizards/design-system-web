@@ -147,7 +147,7 @@
       route: "/about",
       component: <UXWWhoWeAre />,
     },
-    
+
     {
       heading: "How We Sound",
       subheadings: [
@@ -171,7 +171,7 @@
       route: "/voice",
       component: <UXWHowWeSound />,
     },
-    
+
     {
       heading: "Logos and Icons",
       subheadings: [
@@ -337,7 +337,7 @@
         {...other}
       >
         {value === index && (
-          <Box className="uxw-bg-steel-2" px={3} py={1} style={{minHeight: `${height * 4}ex`}} dangerouslySetInnerHTML={{__html: children}} />
+          <Box className="uxw-bg-steel-2" px={3} py={1} style={{ minHeight: `${height * 4}ex` }} dangerouslySetInnerHTML={{ __html: children }} />
         )}
       </div>
     );
@@ -386,7 +386,7 @@
 
     return (
       <div className="w-128 relative">
-        <Box className="uxw-bg-steel-2" style={{fontFamily: "monospace"}} p={3} dangerouslySetInnerHTML={{__html: finalSnippet}} />
+        <Box className="uxw-bg-steel-2" style={{ fontFamily: "monospace" }} p={3} dangerouslySetInnerHTML={{ __html: finalSnippet }} />
         <ClickAwayListener onClickAway={() => setOpen(false)}>
           <Tooltip
             PopperProps={{
@@ -400,7 +400,7 @@
             title="Copied!"
           >
             <Fab style={fabCopy} size="small" onClick={onCopyClick}>
-              <i className="bi bi-clipboard" style={{color: "#6331FD"}}></i>
+              <i className="bi bi-clipboard" style={{ color: "#6331FD" }}></i>
             </Fab>
           </Tooltip>
         </ClickAwayListener>
@@ -453,20 +453,20 @@
 
     return (
       <div className="relative">
-        <AppBar position="static" classes={{colorPrimary: classesTopPanel.colorPrimary}}>
-          <Tabs value={value} onChange={handleChange} TabIndicatorProps={{style: {backgroundColor: "#ED6F85", minHeight: "6px"}}}>
+        <AppBar position="static" classes={{ colorPrimary: classesTopPanel.colorPrimary }}>
+          <Tabs value={value} onChange={handleChange} TabIndicatorProps={{ style: { backgroundColor: "#ED6F85", minHeight: "6px" } }}>
             <Tab label="HTML" className={value === 0 ? classesMain.codesnippettabselected : classesMain.codesnippettab} />
             <Tab label="CSS" className={value === 1 ? classesMain.codesnippettabselected : classesMain.codesnippettab} />
           </Tabs>
         </AppBar>
-          <div style={codeStyle}>
-            <TabPanel value={value} index={0} height={maxTextHeight} >
-              {finalHtmlSnippet}
-            </TabPanel>
-            <TabPanel value={value} index={1} height={maxTextHeight} >
-              {finalCssSnippet}
-            </TabPanel>
-          </div>
+        <div style={codeStyle}>
+          <TabPanel value={value} index={0} height={maxTextHeight} >
+            {finalHtmlSnippet}
+          </TabPanel>
+          <TabPanel value={value} index={1} height={maxTextHeight} >
+            {finalCssSnippet}
+          </TabPanel>
+        </div>
         <ClickAwayListener onClickAway={() => setOpen(false)}>
           <Tooltip
             PopperProps={{
@@ -480,7 +480,7 @@
             title="Copied!"
           >
             <Fab style={fabCopy} size="small" onClick={onCopyClick}>
-              <i className="bi bi-clipboard" style={{color: "#6331FD"}}></i>
+              <i className="bi bi-clipboard" style={{ color: "#6331FD" }}></i>
             </Fab>
           </Tooltip>
         </ClickAwayListener>
@@ -488,7 +488,7 @@
     );
   }
 
-  function UXWSubsection({title, anchor, children}) {
+  function UXWSubsection({ title, anchor, children }) {
     const ref = React.useRef();
     const isInView = useInView(ref, { threshold: 0 })
 
@@ -511,8 +511,7 @@
   }
 
   function NextSectionLink(props) {
-    if (props.index >= dswContent.length - 1)
-    {
+    if (props.index >= dswContent.length - 1) {
       return null;
     }
     var next = dswContent[props.index + 1];
@@ -524,11 +523,11 @@
     );
   }
 
-function ScrollToTop() {
+  function ScrollToTop() {
     const { pathname } = useLocation();
 
     useEffect(() => {
-      window.scrollTo({top:0,left:0, behavior: "smooth"});
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }, [pathname]);
 
     return null;
@@ -541,6 +540,8 @@ function ScrollToTop() {
     const classesMain = useStylesMain();
     const classesDrawer = useStylesDrawer();
 
+    const [activeMenuState, setActiveMenuState] = React.useState(location.pathname.substr(1));
+
     return (
       <div className="bg-white">
         <React.Fragment>
@@ -552,236 +553,276 @@ function ScrollToTop() {
               </div>
             </Toolbar>
           </AppBar>
-          <Drawer variant="permanent" classes={{root: classesDrawer.root, paper: classesDrawer.paper}} >
-            <Toolbar className={classesMain.fromtop}/> {/* Spacer */}
+          <Drawer variant="permanent" classes={{ root: classesDrawer.root, paper: classesDrawer.paper }} >
+            <Toolbar className={classesMain.fromtop} /> {/* Spacer */}
             <nav>
               <List>
-                  <React.Fragment key="navlink-fragment-0">
-                    <RouterLink to="/introduction" >
-                      <ListItem button key="navlink-0">
-                        <ListItemText disableTypography primary="Introduction" className={`pl-4 ${location.pathname === "/introduction" ? classesMain.navitemselected : classesMain.navitem}`} />
-                      </ListItem>
-                    </RouterLink>
-                    {location.pathname === "/introduction" &&
-                    <div key="navlink-sub-0-0" onClick={() => document.getElementById("introduction--installation-and-usage").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                <React.Fragment key="navlink-fragment-0">
+                  <RouterLink to="/introduction" onClick={() => setActiveMenuState("introduction")}>
+                    <ListItem button key="navlink-0">
+                      <ListItemText disableTypography primary="Introduction" className={`pl-4 ${activeMenuState === "introduction" ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                  </RouterLink>
+                  {activeMenuState === "introduction" &&
+                    <div key="navlink-sub-0-0" onClick={() => document.getElementById("introduction--installation-and-usage").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Installation and Usage" className={`pl-12 ${activeSubsections.findIndex((element) => element === "introduction--installation-and-usage") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                  </React.Fragment>
-                  <React.Fragment key="navlink-fragment-1">
-                    <RouterLink to="/about" >
-                      <ListItem button key="navlink-1">
-                        <ListItemText disableTypography primary="Who We Are" className={`pl-4 ${location.pathname === "/about" ? classesMain.navitemselected : classesMain.navitem}`} />
-                      </ListItem>
-                    </RouterLink>
-                    {location.pathname === "/about" &&
-                    <div key="navlink-sub-1-0" onClick={() => document.getElementById("about--about").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                </React.Fragment>
+                <React.Fragment key="navlink-fragment-1">
+                  <RouterLink to="/about" onClick={() => setActiveMenuState("about")}>
+                    <ListItem button key="navlink-1">
+                      <ListItemText disableTypography primary="Who We Are" className={`pl-4 ${activeMenuState === "about" ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                  </RouterLink>
+                  {activeMenuState === "about" &&
+                    <div key="navlink-sub-1-0" onClick={() => document.getElementById("about--about").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="About Us" className={`pl-12 ${activeSubsections.findIndex((element) => element === "about--about") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/about" &&
-                    <div key="navlink-sub-1-1" onClick={() => document.getElementById("about--mission").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "about" &&
+                    <div key="navlink-sub-1-1" onClick={() => document.getElementById("about--mission").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Our Mission" className={`pl-12 ${activeSubsections.findIndex((element) => element === "about--mission") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/about" &&
-                    <div key="navlink-sub-1-2" onClick={() => document.getElementById("about--personality").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "about" &&
+                    <div key="navlink-sub-1-2" onClick={() => document.getElementById("about--personality").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Personality" className={`pl-12 ${activeSubsections.findIndex((element) => element === "about--personality") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/about" &&
-                    <div key="navlink-sub-1-3" onClick={() => document.getElementById("about--values").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "about" &&
+                    <div key="navlink-sub-1-3" onClick={() => document.getElementById("about--values").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Values" className={`pl-12 ${activeSubsections.findIndex((element) => element === "about--values") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/about" &&
-                    <div key="navlink-sub-1-4" onClick={() => document.getElementById("about--wizards").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "about" &&
+                    <div key="navlink-sub-1-4" onClick={() => document.getElementById("about--wizards").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Contributors" className={`pl-12 ${activeSubsections.findIndex((element) => element === "about--wizards") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                  </React.Fragment>
-                  <React.Fragment key="navlink-fragment-2">
-                    <RouterLink to="/voice" >
-                      <ListItem button key="navlink-2">
-                        <ListItemText disableTypography primary="How We Sound" className={`pl-4 ${location.pathname === "/voice" ? classesMain.navitemselected : classesMain.navitem}`} />
-                      </ListItem>
-                    </RouterLink>
-                    {location.pathname === "/voice" &&
-                    <div key="navlink-sub-2-0" onClick={() => document.getElementById("voice--ref").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                </React.Fragment>
+                <React.Fragment key="navlink-fragment-2">
+                  <RouterLink to="/voice" onClick={() => setActiveMenuState("voice")}>
+                    <ListItem button key="navlink-2">
+                      <ListItemText disableTypography primary="How We Sound" className={`pl-4 ${location.pathname === "/voice" ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                  </RouterLink>
+                  {activeMenuState === "voice" &&
+                    <div key="navlink-sub-2-0" onClick={() => document.getElementById("voice--ref").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Reference" className={`pl-12 ${activeSubsections.findIndex((element) => element === "voice--ref") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/voice" &&
-                    <div key="navlink-sub-2-1" onClick={() => document.getElementById("voice--voice").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {location.pathname === "/voice" &&
+                    <div key="navlink-sub-2-1" onClick={() => document.getElementById("voice--voice").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Voice" className={`pl-12 ${activeSubsections.findIndex((element) => element === "voice--voice") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/voice" &&
-                    <div key="navlink-sub-2-2" onClick={() => document.getElementById("voice--tone").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "voice" &&
+                    <div key="navlink-sub-2-2" onClick={() => document.getElementById("voice--tone").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Tone" className={`pl-12 ${activeSubsections.findIndex((element) => element === "voice--tone") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/voice" &&
-                    <div key="navlink-sub-2-3" onClick={() => document.getElementById("voice--styling").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "voice" &&
+                    <div key="navlink-sub-2-3" onClick={() => document.getElementById("voice--styling").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Styling Tips" className={`pl-12 ${activeSubsections.findIndex((element) => element === "voice--styling") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                  </React.Fragment>
-                  <React.Fragment key="navlink-fragment-3">
-                    <RouterLink to="/logos" >
-                      <ListItem button key="navlink-3">
-                        <ListItemText disableTypography primary="Logos and Icons" className={`pl-4 ${location.pathname === "/logos" ? classesMain.navitemselected : classesMain.navitem}`} />
-                      </ListItem>
-                    </RouterLink>
-                    {location.pathname === "/logos" &&
-                    <div key="navlink-sub-3-0" onClick={() => document.getElementById("snav-logos").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                </React.Fragment>
+                <React.Fragment key="navlink-fragment-3">
+                  <RouterLink to="/logos" onClick={() => setActiveMenuState("logos")}>
+                    <ListItem button key="navlink-3">
+                      <ListItemText disableTypography primary="Logos and Icons" className={`pl-4 ${activeMenuState === "logos" ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                  </RouterLink>
+                  {activeMenuState === "logos" &&
+                    <div key="navlink-sub-3-0" onClick={() => document.getElementById("snav-logos").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Logos" className={`pl-12 ${activeSubsections.findIndex((element) => element === "snav-logos") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/logos" &&
-                    <div key="navlink-sub-3-1" onClick={() => document.getElementById("snav-primary-logo").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "logos" &&
+                    <div key="navlink-sub-3-1" onClick={() => document.getElementById("snav-primary-logo").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Primary Logo" className={`pl-12 ${activeSubsections.findIndex((element) => element === "snav-primary-logo") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/logos" &&
-                    <div key="navlink-sub-3-2" onClick={() => document.getElementById("snav-monotone-logo").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "logos" &&
+                    <div key="navlink-sub-3-2" onClick={() => document.getElementById("snav-monotone-logo").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Monotone Logos" className={`pl-12 ${activeSubsections.findIndex((element) => element === "snav-monotone-logo") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/logos" &&
-                    <div key="navlink-sub-3-3" onClick={() => document.getElementById("snav-word-mark").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "logos" &&
+                    <div key="navlink-sub-3-3" onClick={() => document.getElementById("snav-word-mark").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Word Mark" className={`pl-12 ${activeSubsections.findIndex((element) => element === "snav-monotone-logo") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                     {location.pathname === "/logos" &&
-                    <div key="navlink-sub-3-4" onClick={() => document.getElementById("snav-clearance").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "logos" &&
+                    <div key="navlink-sub-3-4" onClick={() => document.getElementById("snav-clearance").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Clearance" className={`pl-12 ${activeSubsections.findIndex((element) => element === "snav-clearance") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/logos" &&
-                    <div key="navlink-sub-3-5" onClick={() => document.getElementById("snav-icongraphy").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "logos" &&
+                    <div key="navlink-sub-3-5" onClick={() => document.getElementById("snav-icongraphy").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Icon Style" className={`pl-12 ${activeSubsections.findIndex((element) => element === "snav-icongraphy") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/logos" &&
-                    <div key="navlink-sub-3-6" onClick={() => document.getElementById("snav-library").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "logos" &&
+                    <div key="navlink-sub-3-6" onClick={() => document.getElementById("snav-library").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Downloads" className={`pl-12 ${activeSubsections.findIndex((element) => element === "snav-library") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                  </React.Fragment>
-                  <React.Fragment key="navlink-fragment-4">
-                    <RouterLink to="/colors" >
-                      <ListItem button key="navlink-4">
-                        <ListItemText disableTypography primary="Colors" className={`pl-4 ${location.pathname === "/colors" ? classesMain.navitemselected : classesMain.navitem}`} />
-                      </ListItem>
-                    </RouterLink>
-                    {location.pathname === "/colors" &&
-                    <div key="navlink-sub-4-0" onClick={() => document.getElementById("colors--thinking").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                </React.Fragment>
+                <React.Fragment key="navlink-fragment-4">
+                  <RouterLink to="/colors" onClick={() => setActiveMenuState("colors")}>
+                    <ListItem button key="navlink-4">
+                      <ListItemText disableTypography primary="Colors" className={`pl-4 ${activeMenuState === "colors" ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                  </RouterLink>
+                  {activeMenuState === "colors" &&
+                    <div key="navlink-sub-4-0" onClick={() => document.getElementById("colors--thinking").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Our Thinking" className={`pl-12 ${activeSubsections.findIndex((element) => element === "colors--thinking") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/colors" &&
-                    <div key="navlink-sub-4-1" onClick={() => document.getElementById("colors--palette").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "colors" &&
+                    <div key="navlink-sub-4-1" onClick={() => document.getElementById("colors--palette").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Using Our Palette" className={`pl-12 ${activeSubsections.findIndex((element) => element === "colors--palette") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                      {location.pathname === "/colors" &&
-                    <div key="navlink-sub-4-2" onClick={() => document.getElementById("colors--primary").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "colors" &&
+                    <div key="navlink-sub-4-2" onClick={() => document.getElementById("colors--primary").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Primary Colors" className={`pl-12 ${activeSubsections.findIndex((element) => element === "colors--primary") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/colors" &&
-                    <div key="navlink-sub-4-3" onClick={() => document.getElementById("colors--secondary").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "colors" &&
+                    <div key="navlink-sub-4-3" onClick={() => document.getElementById("colors--secondary").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Secondary Colors" className={`pl-12 ${activeSubsections.findIndex((element) => element === "colors--secondary") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    {location.pathname === "/colors" &&
-                    <div key="navlink-sub-4-4" onClick={() => document.getElementById("colors--accent").scrollIntoView({behavior: 'smooth', block: 'center'})}>
+                  }
+                  {activeMenuState === "colors" &&
+                    <div key="navlink-sub-4-4" onClick={() => document.getElementById("colors--accent").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Accent Colors" className={`pl-12 ${activeSubsections.findIndex((element) => element === "colors--accent") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </div>
-                    }
-                    </React.Fragment>
-                    <React.Fragment key="navlink-fragment-5">
-                    <RouterLink to="/component" >
-                      <ListItem button key="navlink-5">
-                        <ListItemText disableTypography primary="Component" className={`pl-4 ${location.pathname === "/component" ? classesMain.navitemselected : classesMain.navitem}`} />
-                      </ListItem>
-                    </RouterLink>
-                    {location.pathname === "/component" &&
-                    <RouterLink key="navlink-sub-5-1"  to="/colorclass" >
+                  }
+                </React.Fragment>
+                <React.Fragment key="navlink-fragment-0">
+                <RouterLink to="/typography" onClick={() => setActiveMenuState("typography")}>
+                <ListItem button key="navlink-5">
+                    <ListItemText disableTypography primary="Typography" className={`pl-4 ${activeMenuState === "typography" ? classesMain.navitemselected : classesMain.navitem}`} />
+                </ListItem>
+                </RouterLink>
+                {activeMenuState === "typography" &&
+                <div key="navlink-sub-5-0" onClick={() => document.getElementById("typography--font").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
+                    <ListItem button>
+                    <ListItemText disableTypography primary="Font" className={`pl-12 ${activeSubsections.findIndex((element) => element === "typography--font") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                </div>
+                }
+                {activeMenuState === "typography" &&
+                <div key="navlink-sub-5-1" onClick={() => document.getElementById("typography--scale").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
+                    <ListItem button>
+                    <ListItemText disableTypography primary="Scale" className={`pl-12 ${activeSubsections.findIndex((element) => element === "typography--scale") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                </div>
+                }
+                {activeMenuState === "typography" &&
+                <div key="navlink-sub-5-2" onClick={() => document.getElementById("typography--guidelines").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
+                    <ListItem button>
+                    <ListItemText disableTypography primary="Guidelines" className={`pl-12 ${activeSubsections.findIndex((element) => element === "typography--guidelines") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                </div>
+                }
+                 {activeMenuState === "typography" &&
+                <div key="navlink-sub-5-3" onClick={() => document.getElementById("typography--usage").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
+                    <ListItem button>
+                    <ListItemText disableTypography primary="Usage" className={`pl-12 ${activeSubsections.findIndex((element) => element === "typography--usage") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                </div>
+                }
+            </React.Fragment>
+                <React.Fragment key="navlink-fragment-5">
+                  <RouterLink to="/component" onClick={() => {
+                    setActiveMenuState("component");
+                    reduxStore.dispatch(clearNavAction());
+                  }}
+                  >
+                    <ListItem button key="navlink-5">
+                      <ListItemText disableTypography primary="Component" className={`pl-4 ${activeMenuState === "component" ? classesMain.navitemselected : classesMain.navitem}`} />
+                    </ListItem>
+                  </RouterLink>
+                  {activeMenuState === "component" &&
+                    <RouterLink key="navlink-sub-5-1" to="/colorclass" onClick={() => {
+                      reduxStore.dispatch(clearNavAction())
+                      reduxStore.dispatch(addNavAction("color-class"))
+                    }}>
                       <ListItem button>
-                        <ListItemText disableTypography primary="Color Classes" className={`pl-12 ${activeSubsections.findIndex((element) => element === "color-calss") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
+                        <ListItemText disableTypography primary="Color Classes" className={`pl-12 ${activeSubsections.findIndex((element) => element === "color-class") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </RouterLink>
-                    }
-
-
-
-
-
-
-
-                    
-                     {location.pathname === "/component" &&
-                    <RouterLink key="navlink-sub-5-2"  to="/button" >
+                  }
+                  {activeMenuState === "component" &&
+                    <RouterLink key="navlink-sub-5-2" to="/button" onClick={() => {
+                      reduxStore.dispatch(clearNavAction())
+                      reduxStore.dispatch(addNavAction("button"))
+                    }}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Buttons" className={`pl-12 ${activeSubsections.findIndex((element) => element === "button") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </RouterLink>
-                    }
-                    {location.pathname === "/component" &&
-                    <RouterLink key="navlink-sub-5-3"  to="/card" >
+                  }
+                  {activeMenuState === "component" &&
+                    <RouterLink key="navlink-sub-5-3" to="/card" onClick={() => {
+                      reduxStore.dispatch(clearNavAction())
+                      reduxStore.dispatch(addNavAction("card"))
+                    }}>
                       <ListItem button>
                         <ListItemText disableTypography primary="Card" className={`pl-12 ${activeSubsections.findIndex((element) => element === "card") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
                       </ListItem>
                     </RouterLink>
-                    }
-                    </React.Fragment>
-                    <React.Fragment key="navlink-fragment-6">
+                  }
+                </React.Fragment>
+                {/* <React.Fragment key="navlink-fragment-6">
                     <RouterLink to="/colorclass" >
                       <ListItem button key="navlink-6">
                         <ListItemText disableTypography primary="Color Class" className={`pl-4 ${location.pathname === "/colorclass" ? classesMain.navitemselected : classesMain.navitem}`} />
@@ -794,13 +835,13 @@ function ScrollToTop() {
                       </ListItem>
                     </div>
                     }
-                  </React.Fragment>
+                  </React.Fragment> */}
               </List>
             </nav>
           </Drawer>
           <div className="flex">
             <main className="flex-grow ml-80 py-4 pr-8">
-              <Toolbar className={classesMain.fromtop}/> {/* Spacer */}
+              <Toolbar className={classesMain.fromtop} /> {/* Spacer */}
 
               <Switch>
                 <Route exact path="/">
@@ -809,10 +850,10 @@ function ScrollToTop() {
                 {dswContent.map(({ route, component, heading }, index) => {
                   return (
                     <Route key={`route-${index}`} path={route}>
-                      <div className="flex-col flex-shrink-0 pb-8" style={{fontFamily: "Overpass", color: "#152145"}} key={`section-${index}`}>
+                      <div className="flex-col flex-shrink-0 pb-8" style={{ fontFamily: "Overpass", color: "#152145" }} key={`section-${index}`}>
                         <h1 className="pb-4 uxw-text-display-2">{heading}</h1>
                         {component}
-                        <NextSectionLink index={index}/>
+                        <NextSectionLink index={index} />
                       </div>
                     </Route>
                   )
@@ -828,7 +869,7 @@ function ScrollToTop() {
   ReactDOM.render(
     <Provider store={reduxStore}>
       <Router>
-        <ScrollToTop/>
+        <ScrollToTop />
         <Main />
       </Router>
     </Provider>
