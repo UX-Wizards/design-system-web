@@ -315,18 +315,12 @@
       heading: "Component",
       subheadings: [
         {
-          subtitle: "Getting Started",
-          anchor: "#",
+          subtitle: "",
+          anchor: "",
         },
         {
           subtitle: "Color Class",
           anchor: "color-class",
-          // subsubtitle:[
-          //   {
-          //     subtitle:"Background Color",
-          //     anchor: "#",
-          //   },
-          // ],
         },
         {
           subtitle: "Buttons",
@@ -872,20 +866,6 @@
                     </RouterLink>
                   }
                 </React.Fragment>
-                {/* <React.Fragment key="navlink-fragment-6">
-                    <RouterLink to="/colorclass" >
-                      <ListItem button key="navlink-6">
-                        <ListItemText disableTypography primary="Color Class" className={`pl-4 ${location.pathname === "/colorclass" ? classesMain.navitemselected : classesMain.navitem}`} />
-                      </ListItem>
-                    </RouterLink>
-                    {location.pathname === "/colorclass" &&
-                    <div key="navlink-sub-6-0" onClick={() => document.getElementById("bg-color").scrollIntoView({behavior: 'smooth', block: 'center'})}>
-                      <ListItem button>
-                        <ListItemText disableTypography primary="Background Color" className={`pl-12 ${activeSubsections.findIndex((element) => element === "bg-color") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
-                      </ListItem>
-                    </div>
-                    }
-                  </React.Fragment> */}
               </List>
             </nav>
           </Drawer>
@@ -903,7 +883,7 @@
                       <div className="flex-col flex-shrink-0 pb-8" style={{ fontFamily: "Overpass", color: "#152145" }} key={`section-${index}`}>
                         <h1 className="pb-4 uxw-text-display-2">{heading}</h1>
                         {component}
-                        <NextSectionLink index={index} />
+                        {/* <NextSectionLink index={index} /> */}
                       </div>
                     </Route>
                   )

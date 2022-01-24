@@ -9,23 +9,22 @@ function UXWButton(props) {
         </div>
         <div className="flex-grow"></div>
       </div>
-      {/* <UXWSubsection anchor="button" title="Primary"> */}
-        <div className="flex max-w-prose"></div>
-        <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
-          <div>
-            <a className="btn-primary" href="#">Primary</a>
-          </div>
-          <div>
-            <UXWCodePanelHTMLCSS>
-              <div>
-                {`
+      <div className="flex max-w-prose"></div>
+      <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
+        <div>
+          <a className="btn-primary" href="#">Primary</a>
+        </div>
+        <div>
+          <UXWCodePanelHTMLCSS>
+            <div>
+              {`
 <a href="#" class="btn-primary">
   Primary
 </a>
 `}
-              </div>
-              <div>
-                {`
+            </div>
+            <div>
+              {`
 .btn-primary{
   color: rgba(255,255,255,var(--tw-text-opacity));
   letter-spacing: .1em;
@@ -43,30 +42,27 @@ function UXWButton(props) {
   transition-duration: .5s;
   --tw-text-opacity: 1;
 }`}
-              </div>
-            </UXWCodePanelHTMLCSS>
-          </div>
+            </div>
+          </UXWCodePanelHTMLCSS>
         </div>
-        <hr class="pb-10"></hr>
-      {/* </UXWSubsection> */}
-
-      {/* <UXWSubsection anchor="#" title="Disabled"> */}
-        <div className="flex max-w-prose"></div>
-        <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
-          <div>
-            <a className="btn-disabled" href="#">Disabled</a>
-          </div>
-          <div>
-            <UXWCodePanelHTMLCSS>
-              <div>
-                {`
+      </div>
+      <hr class="pb-10"></hr>
+      <div className="flex max-w-prose"></div>
+      <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
+        <div>
+          <a className="btn-disabled" href="#">Disabled</a>
+        </div>
+        <div>
+          <UXWCodePanelHTMLCSS>
+            <div>
+              {`
  <a href="#" class="btn-disabled" >
   Disabled
  </a>
 `}
-              </div>
-              <div>
-                {`
+            </div>
+            <div>
+              {`
 .btn-disabled{
   background-color: var(--uxw-color-merlins-beard-3);
   color:#737887;
@@ -76,33 +72,31 @@ function UXWButton(props) {
   padding: 1rem 3rem 1rem 3rem;
   border-radius: 0.375rem;
 }`}
-              </div>
-            </UXWCodePanelHTMLCSS>
-          </div>
+            </div>
+          </UXWCodePanelHTMLCSS>
         </div>
-        <hr class="pb-10"></hr>
-      {/* </UXWSubsection> */}
-      {/* <UXWSubsection anchor="#" title="Button with icon"> */}
-        <div className="flex max-w-prose"></div>
-        <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
-          <div>
-              <a href="#" className="btn-icon">
-                <i className="bi bi-download text-lg pr-4"></i>
-                Download
-              </a>
-          </div>
-          <div>
-            <UXWCodePanelHTMLCSS>
-              <div>
-                {`
+      </div>
+      <hr class="pb-10"></hr>
+      <div className="flex max-w-prose"></div>
+      <div className="max-w-7xl grid grid-cols-2 gap-8 my-10">
+        <div>
+          <a href="#" className="btn-icon">
+            <i className="bi bi-download text-lg pr-4"></i>
+            Download
+          </a>
+        </div>
+        <div>
+          <UXWCodePanelHTMLCSS>
+            <div>
+              {`
  <a href="#" class="btn-icon">
   <i class="bi bi-download text-lg pr-4"></i>
   Download
 </a>
 `}
-              </div>
-              <div>
-                {`
+            </div>
+            <div>
+              {`
 .btn-icon{
   border: 1px solid rgb(99, 49, 253);
   background-color:var(--uxw-color-merlins-beard-1);
@@ -112,12 +106,11 @@ function UXWButton(props) {
   padding: 1rem 3rem 1rem 3rem;
   border-radius: 0.25rem;
 }`}
-              </div>
-            </UXWCodePanelHTMLCSS>
-          </div>
+            </div>
+          </UXWCodePanelHTMLCSS>
         </div>
-        <hr class="pb-10"></hr>
-      {/* </UXWSubsection> */}
+      </div>
+      <hr class="pb-10"></hr>
     </div>
   )
 }
