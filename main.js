@@ -554,18 +554,18 @@
     )
   }
 
-  function NextSectionLink(props) {
-    if (props.index >= dswContent.length - 1) {
-      return null;
-    }
-    var next = dswContent[props.index + 1];
-    return (
-      <div className="container text-right pt-16">
-        <p className="uxw-text-meta">Next</p>
-        <RouterLink to={next.route}>{next.heading}</RouterLink>
-      </div>
-    );
-  }
+  // function NextSectionLink(props) {
+  //   if (props.index >= dswContent.length - 1) {
+  //     return null;
+  //   }
+  //   var next = dswContent[props.index + 1];
+  //   return (
+  //     <div className="container text-right pt-16">
+  //       <p className="uxw-text-meta">Next</p>
+  //       <RouterLink to={next.route}>{next.heading}</RouterLink>
+  //     </div>
+  //   );
+  // }
 
   function ScrollToTop() {
     const { pathname } = useLocation();
