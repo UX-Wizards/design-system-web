@@ -10,7 +10,7 @@ function UXWCard(props) {
         </div>
         <div className="flex-grow"></div>
       </div>
-      <UXWSubsection anchor="#" title="Card">
+      {/* <UXWSubsection anchor="#" title="Card"> */}
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10 rounded-b-lg">
           <div>
@@ -67,7 +67,7 @@ function UXWCard(props) {
           </div>
         </div>
         <hr ></hr>
-      </UXWSubsection>
+      {/* </UXWSubsection> */}
     </div>
   )
 }
