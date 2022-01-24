@@ -147,7 +147,6 @@
       route: "/about",
       component: <UXWWhoWeAre />,
     },
-
     {
       heading: "How We Sound",
       subheadings: [
@@ -171,7 +170,6 @@
       route: "/voice",
       component: <UXWHowWeSound />,
     },
-
     {
       heading: "Logos and Icons",
       subheadings: [
@@ -196,7 +194,7 @@
           anchor: "snav-clearance",
         },
         {
-          subtitle: "Icon Style",
+          subtitle: "Icongraphy Style",
           anchor: "snav-icongraphy",
         },
         {
@@ -210,13 +208,10 @@
     {
       heading: "Colors",
       subheadings: [
-        {
-          subtitle: "Our Thinking",
-          anchor: "colors--thinking",
-        },
+        
 
         {
-          subtitle: "Using Our Palette",
+          subtitle: "Our Palette",
           anchor: "colors--palette",
         },
 
@@ -233,6 +228,61 @@
         {
           subtitle: "Accent Colors",
           anchor: "colors--accent",
+        },
+
+        {
+          subtitle: "Use Guidelines",
+          anchor: "colors--usage",
+
+          subheadings: [
+
+            {
+              subtitle: "Accessibility",
+              anchor: "guidelines--accessibility",
+            },
+
+            {
+              subtitle: "Guides in Action",
+              anchor: "guidelines--inaction",
+            },
+
+            {
+              subtitle: "Text",
+              anchor: "guidelines--text",
+            },
+
+            {
+              subtitle: "Buttons",
+              anchor: "guidelines--buttons",
+            },
+
+            {
+              subtitle: "Backgrounds",
+              anchor: "guidelines--backgrounds",
+            },
+
+            {
+              subtitle: "Borders and lines",
+              anchor: "guidelines--borders",
+            },
+
+            {
+              subtitle: "Accents",
+              anchor: "guidelines--accents",
+            },
+
+            {
+              subtitle: "Error and success",
+              anchor: "guidelines--semantics",
+            },
+
+            {
+              subtitle: "Do / Don'ts",
+              anchor: "guidelines--dodont",
+            },
+
+
+          ]
         },
       ],
       route: "/colors",
