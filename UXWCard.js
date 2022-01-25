@@ -19,7 +19,7 @@ function UXWCard(props) {
             </div>
           </div>
           <div className="card-bottom">
-            <div style={{ height: "130px" }}></div>
+            <div style={{ height: "150px" }}></div>
           </div>
         </div>
         <div>
@@ -33,7 +33,7 @@ function UXWCard(props) {
     </div>
   </div>
   <div class="card-bottom">
-    <div style={{ height: "130px" }}></div>
+    <div style="height=150px"></div>
   </div>
 </div>
 `}
