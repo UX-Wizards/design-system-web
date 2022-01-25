@@ -38,7 +38,7 @@ function UXWLogosAndIcons(props) {
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
                     <a href="assets/library/primary-logo.zip" download>
-                    <button class=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                    <button className=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
                       <i className="bi bi-download text-lg pr-4"></i>
                       <span>Download</span>
                     </button>
@@ -57,7 +57,7 @@ function UXWLogosAndIcons(props) {
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
                     <a href="assets/library/circle-logo.zip" download>
-                    <button class=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                    <button className=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
                       <i className="bi bi-download text-lg pr-4"></i>
                       <span>Download</span>
                     </button>
@@ -76,7 +76,7 @@ function UXWLogosAndIcons(props) {
                   <div className="flex-grow "></div>
                   <div className="py-2 pr-4">
                     <a href="assets/library/wordmark.zip" download>
-                      <button class=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                      <button className=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
                         <i className="bi bi-download text-lg pr-4"></i>
                         <span>Download</span>
                       </button>
@@ -97,7 +97,7 @@ function UXWLogosAndIcons(props) {
                   <div className="flex-grow"></div>
                   <div className="py-2 pr-4">
                     <a href="assets/library/icongraphy.zip" download>
-                      <button class=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                      <button className=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
                         <i className="bi bi-download text-lg pr-4"></i>
                         <span>Download</span>
                       </button>
