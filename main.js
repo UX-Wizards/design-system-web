@@ -315,10 +315,6 @@
       heading: "Component",
       subheadings: [
         {
-          subtitle: "",
-          anchor: "",
-        },
-        {
           subtitle: "Color Class",
           anchor: "color-class",
         },

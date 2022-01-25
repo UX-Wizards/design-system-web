@@ -9,7 +9,6 @@ function UXWColorClass(props) {
         </div>
         <div className="flex-grow"></div>
       </div>
-      {/* <UXWSubsection anchor="color-class" title="Background Color"> */}
         <div className="flex max-w-prose"></div>
         <div className="max-w-7xl grid grid-cols-2 gap-8 my-10 rounded-b-lg">
           <div className="uxw-bg-acid-2" style={{position:"relative"}}>
@@ -34,14 +33,13 @@ function UXWColorClass(props) {
           </div>
         </div>
         <p className="py-10">
-        CSS Color variables is set in 
+        CSS Color variables is set in&nbsp;
           <a href="https://github.com/UX-Wizards/design-system-web/blob/main/uxwcore.css" target="_blank">
            uxwcore.css
           </a>
           <br/>
           To see more <a href="https://docs.google.com/spreadsheets/d/1BUleu0hiXhpPBktGeiHm-GSKYveO-F4JCU9KFHeGnJ4/edit?usp=sharing" target="_blank">CSS background classes</a></p>
         <hr ></hr>
-      {/* </UXWSubsection> */}
     </div>
   )
 }

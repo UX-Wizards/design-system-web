@@ -25,22 +25,21 @@ function UXWButton(props) {
             </div>
             <div>
               {`
-.btn-primary{
-  color: rgba(255,255,255,var(--tw-text-opacity));
+a.btn-primary{
+  color:var(--merlinsbeard-1);
   letter-spacing: .1em;
   text-transform: uppercase;
   font-weight: 300;
   padding: 1rem 3rem 1rem 3rem;
-  --tw-gradient-to: var(--uxw-color-magicians-cloak-3);
-  --tw-gradient-from: var(--uxw-color-acid-1);
-  --tw-gradient-stops: var(--tw-gradient-from),
+  --tw-gradient-to: var(--magicianscloak-3);
+  --tw-gradient-from: var(--acid-1);
+  --tw-gradient-stops: var(--acid-3),
   var(--tw-gradient-to, rgba(79, 70, 229, 0));
   background-image: linear-gradient(to right,
   var(--tw-gradient-stops));
   border-radius: 0.375rem;
   transition-timing-function: cubic-bezier(0.4,0,0.2,1);
   transition-duration: .5s;
-  --tw-text-opacity: 1;
 }`}
             </div>
           </UXWCodePanelHTMLCSS>
@@ -63,9 +62,9 @@ function UXWButton(props) {
             </div>
             <div>
               {`
-.btn-disabled{
-  background-color: var(--uxw-color-merlins-beard-3);
-  color:#737887;
+a.btn-disabled{
+  background-color: var(--merlinsbeard-3);
+  color: var(--merlinsbeard-4);
   letter-spacing: .1em;
   text-transform: uppercase;
   font-weight: 300;
@@ -97,9 +96,9 @@ function UXWButton(props) {
             </div>
             <div>
               {`
-.btn-icon{
+a.btn-icon{
   border: 1px solid rgb(99, 49, 253);
-  background-color:var(--uxw-color-merlins-beard-1);
+  background-color:var(--merlinsbeard-1);
   letter-spacing: .1em;
   text-transform: uppercase;
   font-weight: 300;
