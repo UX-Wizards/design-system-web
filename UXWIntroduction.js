@@ -2,50 +2,32 @@ function UXWIntroduction(props) {
   return (
     <div className="container">
       <div className="flex flex-row">
-        <div className="flex flex-col">
+        <div className="flex flex-col pb-8">
           <p className="pb-4 max-w-prose">
             Welcome to the UX Wizards Design System! We created this so we could build out future websites faster based on our brand and style guide.
             It is not a Javascript component library, but rather a CSS framework with prebuilt UI elements.
-            As you look through our design system, you'll find usable code snippets (as shown in the panel on the right) with relevant HTML and/or CSS.
+            As you look through our design system, you'll find usable code snippets with relevant HTML and/or CSS.
           </p>
           <p className="max-w-prose">
             If you have any questions or feedback, feel free to create an issue on our <a href="https://github.com/UX-Wizards/design-system-web" target="_blank">Github project</a>.
             If you need help creating an issue, please refer to the <a href="https://docs.github.com/en/github/managing-your-work-on-github/creating-an-issue">Github documentation</a>
           </p>
-
           <div className="flex flex-row bg-gray-200 mt-4 rounded-lg">
-                  <div className="text-base py-4 pl-6">
-                  Download Our Latest Brand Guide
-                  </div>
-                  <div className="flex-grow "></div>
-                  <div className="py-2 pr-4">
-                    <a href="assets/UXW Brand Guide.pdf" download>
-                      <button className=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
-                        <i className="bi bi-download text-lg pr-4"></i>
-                        <span>Download</span>
-                      </button>
-                    </a>
-                  </div>
-                </div>
+            <div className="text-base py-4 pl-6">
+              Download Our Latest Brand Guide
+            </div>
+            <div className="flex-grow "></div>
+            <div className="py-2 pr-4">
+              <a href="assets/UXW Brand Guide.pdf" download>
+                <button className=" uxw-bg-merlins-beard-1 font-light uppercase text-xs py-1 px-4 rounded inline-flex items-center">
+                  <i className="bi bi-download text-lg pr-4"></i>
+                  <span>Download</span>
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="flex-grow"></div>
-        <UXWCodePanelHTMLCSS noWrap>
-          <div>
-{`
-<h1 class="uxw-text-heading">
-  Hello Wizards!
-</h1>
-`}
-          </div>
-          <div>
-{`
-.uxw-text-heading {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.75rem;
-}`}
-          </div>
-        </UXWCodePanelHTMLCSS>
+        {/* <div className="flex-grow"></div> */}
       </div>
       <UXWSubsection anchor="introduction--installation-and-usage" title="Installation and Usage">
         <p className="pb-4 max-w-prose">
@@ -55,7 +37,7 @@ function UXWIntroduction(props) {
           for a full example.
         </p>
         <UXWCodePanelSingle lang="html">
-{`
+          {`
 <!DOCTYPE html>
 <html lang="en">
   <head>
