@@ -1,12 +1,5 @@
 const data = [
   {
-    name: 'Keri',
-    role: 'Co-Organizer of UX Wizards',
-    image: '/assets/keri.jpg',
-    description: 'Organizer of the UX Wizards.',
-    link: 'https://www.linkedin.com/in/kerikeri/'
-  },
-  {
     name: 'Laura',
     role: 'Co-Organizer of UX Wizards',
     image: '/assets/laura.jpg',
@@ -17,7 +10,7 @@ const data = [
     name: 'Seiko',
     role: 'Product Designer',
     image: '/assets/seiko.jpg',
-    description: 'Seiko built the Logos and Icons Page.',
+    description: 'Seiko built the Logo and Component.',
     link: 'https://www.linkedin.com/in/seikoigi/'
   },
   {
@@ -37,7 +30,7 @@ const data = [
   {
     name: 'Max',
     role: 'Product Designer',
-    image: '/assets/max.jpg',
+    image: '/assets/max.png',
     description: 'Max built the Colors page.',
     link: 'https://linkedin.com/in/maxux'
   },
@@ -50,23 +43,23 @@ const data = [
   },
   {
     name: 'Dhruv',
-    role: 'Software',
+    role: 'Software Engineer',
     image: '/assets/dhruv.jpg',
-    description: 'Dhruv worked on this page.',
+    description: 'Dhruv built contributors.',
     link: 'https://www.linkedin.com/in/dhruv-madhok-9290a2a3/'
   },
   {
     name: 'Chaela',
     role: 'Product Designer',
-    image: '/assets/chaela.png',
+    image: '/assets/chaela.jpg',
     description: 'Chaela worked on the Colors page.',
     link: 'https://www.linkedin.com/in/chaelacristobal/'
   },
   {
     name: 'Bi',
     role: 'Product Designer',
-    image: '/assets/bi.png',
-    description: '',
+    image: '/assets/bi.jpg',
+    description: 'Bi updated Typography page.',
     link: 'https://www.linkedin.com/in/dungtnguyen/'
   },
 
