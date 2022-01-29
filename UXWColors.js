@@ -1122,7 +1122,7 @@ function UXWColors(props) {
                 </p>
               </div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✗ Don't
               </div>
 
@@ -1136,7 +1136,7 @@ function UXWColors(props) {
                 <p className="text-white text-center pt-4 font-bold">Button</p>
               </div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✓ Do
               </div>
 
@@ -1152,7 +1152,7 @@ function UXWColors(props) {
                 </p>
               </div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✗ Don't
               </div>
 
@@ -1166,7 +1166,7 @@ function UXWColors(props) {
                 </p>
               </div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✓ Do
               </div>
 
@@ -1180,7 +1180,7 @@ function UXWColors(props) {
                 <p className="riches text-center pt-4 font-bold">UX Wizards</p>
               </div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✗ Don't
               </div>
 
@@ -1196,7 +1196,7 @@ function UXWColors(props) {
                 </p>
               </div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✓ Do
               </div>
 
@@ -1210,7 +1210,7 @@ function UXWColors(props) {
                 <div className="box w-24 h-10 z-2 uxw-bg-steel-2 rounded-md absolute bottom-3 right-3"></div>
               </div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✗ Don't
               </div>
 
@@ -1222,7 +1222,7 @@ function UXWColors(props) {
                 <div className="box w-24 h-10 z-2 uxw-bg-jinx-1 rounded-md absolute bottom-3 right-3"></div>
               </div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✓ Do
               </div>
 
@@ -1234,7 +1234,7 @@ function UXWColors(props) {
             <div className="flex flex-col w-1/4 items-left">
               <div className="box h-24 w-2/3 pt-4 z-1 rounded-lg uxw-bg-mana-3 border-2 border-gray-300 relative mb-4"></div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✗ Don't
               </div>
 
@@ -1251,7 +1251,7 @@ function UXWColors(props) {
                 </div>
               </div>
 
-              <div className="box px-4 align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
+              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
                 ✓ Do
               </div>
 
