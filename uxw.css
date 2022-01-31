@@ -137,3 +137,48 @@ a.btn-icon{
   padding: 1rem 3rem 1rem 3rem;
   border-radius: 0.25rem;
 }
+
+
+/* Colors style */
+.colorswatch{
+  position: relative;
+  width:12rem;
+  height: 6em;
+  border-radius: 0.5rem;
+  margin-right: 2.5rem;
+  margin-bottom:0.5rem;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
+/* .colorswatch:hover .overlay{
+  cursor:pointer;
+  border-radius: 0.5rem;
+  transform:scale(1.1);
+  opacity:1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #54555a;
+}
+
+.txt-copy{
+  color: #99157c;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity:1;
+} */
