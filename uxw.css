@@ -107,12 +107,7 @@ a.btn-primary{
   text-transform: uppercase;
   font-weight: 300;
   padding: 1rem 3rem 1rem 3rem;
-  --tw-gradient-to: var(--magicianscloak-3);
-  --tw-gradient-from: var(--acid-1);
-  --tw-gradient-stops: var(--acid-3),
-  var(--tw-gradient-to, rgba(79, 70, 229, 0));
-  background-image: linear-gradient(to right,
-  var(--tw-gradient-stops));
+  background-image: linear-gradient(to right, #6331FD, #3F18B4);
   border-radius: 0.375rem;
   transition-timing-function: cubic-bezier(0.4,0,0.2,1);
   transition-duration: .5s;
@@ -156,6 +151,12 @@ a.btn-icon{
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight:700;
+}
+
+.bg-gradient{
+background-image: linear-gradient(to right, #6331FD, #3F18B4);
+  transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+  transition-duration: .5s;
 }
 
 /* .colorswatch:hover .overlay{

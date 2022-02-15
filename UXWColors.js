@@ -673,8 +673,8 @@ function UXWColors(props) {
           </div>
           <div className="flex mb-16">
             <div className="mr-16 flex-none">
-              <p className="font-bold mb-4">Button (gradient to r)</p>
-              <div className="h-16 w-32 rounded-md from-indigo-600 to-indigo-900 bg-gradient-to-r mb-4">
+              <p className="font-bold mb-4">Button (gradient)</p>
+              <div className="h-16 w-32 rounded-md bg-gradient mb-4">
               </div>
               <p className="text-left">
                 From: acid-1
@@ -684,7 +684,7 @@ function UXWColors(props) {
                 <br />
                 To: acid-3
                 <br />
-                HEX: # 3F18B4
+                HEX: #3F18B4
               </p>
             </div>
             <div className="mr-16">
@@ -897,7 +897,7 @@ function UXWColors(props) {
 
           <div className="flex mb-16">
             <div className="mr-16">
-              <div className="colorswatch from-indigo-600 to-indigo-900 bg-gradient-to-r mb-4">
+              <div className="colorswatch bg-gradient mb-4">
                 <p className="txt-center">
                   Button
                 </p>
@@ -910,7 +910,7 @@ function UXWColors(props) {
               </p>
             </div>
             <div>
-              <div className="colorswatch from-indigo-600 to-indigo-900 bg-gradient-to-r mb-4">
+              <div className="colorswatch bg-gradient mb-4">
                 <p className="txt-center text-white">
                   Button
                 </p>
@@ -925,7 +925,7 @@ function UXWColors(props) {
           </div>
           <div className="flex mb-16">
             <div className="mr-16">
-              <div className="colorswatch from-indigo-600 to-indigo-900 bg-gradient-to-r mb-4">
+              <div className="colorswatch bg-gradient mb-4">
                 <p className="text-white txt-center">
                   Join <span className="booty">us!</span>
                 </p>
