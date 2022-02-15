@@ -36,14 +36,15 @@ function UXWColors(props) {
           They're most often used as foundational elements of your UX Wizards
           designs.
         </p>
-        <div className="flex">
+        <p className="mb-16">*Each color's Global Token is located under color swatch.</p>
+        {/* <div className="flex">
           <div className="flex flex-auto max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center italic py-6 px-12 mt-4 mb-16">
             <p>
               Remember to start with the highlighted box on the left, and then
               supplement with the other colors in the row.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="flex mb-12">
           <div>
             <div className="colorswatch uxw-bg-magicians-cloak-1">
@@ -212,15 +213,15 @@ function UXWColors(props) {
               <span className="font-normal">#737887</span>
             </p>
           </div>
-        </div> 
+        </div>
       </UXWSubsection>
 
       <hr className="pb-10"></hr>
       <UXWSubsection anchor="colors--secondary" title="Secondary Colors">
         <p className="pb-16 mt-4 max-w-prose">
-            Use <span className="font-bold">Steel</span> and{" "}
-            <span className="font-bold">Mana</span> as supporting tones to help
-            build environments in your UXW content.
+          Use <span className="font-bold">Steel</span> and{" "}
+          <span className="font-bold">Mana</span> as supporting tones to help
+          build environments in your UXW content.
         </p>
         <div className="flex mb-12">
           <div>
@@ -326,11 +327,11 @@ function UXWColors(props) {
       <hr className="pt-4 pb-8"></hr>
       <UXWSubsection anchor="colors--accent" title="Accent Colors">
         <p className="max-w-prose pb-12 mt-4">
-            <span className="font-bold">Jinx</span> and{" "}
-            <span className="font-bold">Elixir</span> should be used with
-            restraint and finesse. Think of these colors as ways to draw
-            attention to specific things on purpose.
-          </p>
+          <span className="font-bold">Jinx</span> and{" "}
+          <span className="font-bold">Elixir</span> should be used with
+          restraint and finesse. Think of these colors as ways to draw
+          attention to specific things on purpose.
+        </p>
         <div className="flex mb-12">
           <div>
             <div className="colorswatch uxw-bg-jinx-1">
@@ -519,7 +520,7 @@ function UXWColors(props) {
           </p>
         </div>
 
-        <div className="max-w-prose bg-transparent">
+        <div className="max-w-prose">
           <p className="pb-8 mt-4">
             Use these color guidelines to ground the interactive elements on our
             UX Wizards branded webpages in a consistent look and feel. With
@@ -536,7 +537,7 @@ function UXWColors(props) {
         </div>
 
         <UXWSubsection anchor="guidelines--accessibility" title="Accessibility">
-          <div className="max-w-prose bg-transparent">
+          <div className="max-w-prose">
             <p className="pb-12 mt-4">
               It’s important that users can see the content in our UX Wizards
               pages. Ideally, your color contrast ratio should be at least
@@ -556,8 +557,8 @@ function UXWColors(props) {
           anchor="guidelines--inaction"
           title="Use Guidelines in Action"
         >
-          <div className="mt-4 pb-16">
-            <img
+          <div className="mt-4 pb-16 w-10/12">
+            <img 
               src="assets/guidelines-inaction.svg"
               alt="A sample UX Wizards web page"
             ></img>
@@ -566,7 +567,7 @@ function UXWColors(props) {
 
         <UXWSubsection anchor="guidelines--text" title="Text">
           <a name="text"></a>
-          <div className="max-w-prose bg-transparent">
+          <div className="max-w-prose">
             <p className="pb-12 mt-4">
               Text is a way to communicate information to visitors. We always
               want to make sure that text is visible, legible, and clear. Please
@@ -587,150 +588,150 @@ function UXWColors(props) {
               sections for more guidance.
             </p>
           </div>
-
-          <div className="flex flex-row mb-16">
-            <div className="flex flex-col w-1/6 justify-start">
+          <div className="flex mb-16">
+            <div className="mr-16">
               <p className="font-bold mb-4">Main text</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-magicians-cloak-1 border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md uxw-bg-magicians-cloak-1 mb-4">
+              </div>
               <p className="text-left">
                 magicianscloak-1
                 <br />
-                HEX: # 152145
+                HEX: #152145
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
+            <div className="mr-16">
               <p className="font-bold mb-4">Link text</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-acid-1 border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md uxw-bg-acid-1 mb-4">
+              </div>
               <p className="text-left">
                 acid-1
                 <br />
-                HEX: # 6331FD
+                HEX: #6331FD
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
+            <div className="mr-16">
               <p className="font-bold mb-4">Hovered link</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-acid-3 border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md uxw-bg-acid-3 mb-4">
+              </div>
               <p className="text-left">
                 acid-3
                 <br />
-                HEX: # 3F18B4
+                HEX: #3F18B4
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
-              <p className="font-bold mb-4">Active link (on click)</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-mana-3 border-2 border-gray-300 mb-4"></div>
+            <div className="mr-16">
+              <p className="font-bold mb-4">Active link</p>
+              <div className="h-16 w-32 rounded-md uxw-bg-mana-3 mb-4">
+              </div>
               <p className="text-left">
                 mana-3
                 <br />
-                HEX: # 299BB0
+                HEX: #299BB0
               </p>
             </div>
           </div>
-
-          <div className="flex flex-row">
-            <div className="flex flex-col w-1/6 justify-start">
-              <p className="font-bold mb-4">Button text</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4"></div>
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <p className="font-bold mb-4 uxw-bg-merlins-beard-1 ">Button text</p>
+              <div className="h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-solid border-2 border-gray-300 mb-4">
+              </div>
               <p className="text-left">
                 merlinsbeard-1
                 <br />
-                HEX: # FFFFFF
+                HEX: #FFFFFF
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
+            <div className="mr-16 flex-none">
               <p className="font-bold mb-4">Disabled button text</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-4 border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md uxw-bg-merlins-beard-4 mb-4">
+              </div>
               <p className="text-left">
                 merlinsbeard-4
                 <br />
-                HEX: # 737887
+                HEX: #737887
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start pb-16">
+            <div className="mr-16">
               <p className="font-bold mb-4">Banner text</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-solid border-2 border-gray-300 mb-4">
+              </div>
               <p className="text-left">
-                merlinsbeard-1
+                uxw-bg-merlins-beard-1
                 <br />
-                HEX: # FFFFFF
+                HEX: #FFFFFF
               </p>
             </div>
           </div>
         </UXWSubsection>
 
         <UXWSubsection anchor="guidelines--buttons" title="Buttons">
-          <div className="mt-4 max-w-prose bg-transparent">
+          <div className="mt-4 max-w-prose">
             <p className="pb-12 mt-4">
               Buttons communicate action potential. There are three states for
               buttons: standard, hovered, and disabled.
             </p>
           </div>
-
-          <div className="flex flex-row mb-16">
-            <div className="flex flex-col w-1/6 justify-start">
+          <div className="flex mb-16">
+            <div className="mr-16 flex-none">
               <p className="font-bold mb-4">Button (gradient to r)</p>
-              <div className="box h-16 w-32 rounded-md from-indigo-600 to-indigo-900 bg-gradient-to-r border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md from-indigo-600 to-indigo-900 bg-gradient-to-r mb-4">
+              </div>
               <p className="text-left">
-                <span className="font-bold">From: </span>acid-1
+                From: acid-1
                 <br />
-                HEX: # 6331FD
+                HEX: #6331FD
                 <br />
                 <br />
-                <span className="font-bold">To: </span>acid-3
+                To: acid-3
                 <br />
                 HEX: # 3F18B4
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
+            <div className="mr-16">
               <p className="font-bold mb-4">Hovered button</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-acid-3 border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md uxw-bg-acid-3 mb-4">
+              </div>
               <p className="text-left">
                 acid-3
                 <br />
-                HEX: # 3F18B4
+                HEX: #3F18B4
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
+            <div className="mr-16">
               <p className="font-bold mb-4">Disabled button</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md uxw-bg-merlins-beard-3 mb-4">
+              </div>
               <p className="text-left">
                 merlinsbeard-3
                 <br />
-                HEX: # C9CACB
+                HEX: #C9CACB
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
+            <div className="mr-16">
               <p className="font-bold mb-4">Button text</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4">
+              </div>
               <p className="text-left">
                 merlinsbeard-1
                 <br />
-                HEX: # FFFFFF
+                HEX: #FFFFFF
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
+            <div className="mr-16 flex-none">
               <p className="font-bold mb-4">Disabled button text</p>
-              <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-4 border-2 border-gray-300 mb-4"></div>
+              <div className="h-16 w-32 rounded-md uxw-bg-merlins-beard-4 mb-4">
+              </div>
               <p className="text-left">
                 merlinsbeard-4
                 <br />
-                HEX: # 737887
+                HEX: #737887
               </p>
             </div>
           </div>
         </UXWSubsection>
 
         <UXWSubsection anchor="guidelines--backgrounds" title="Backgrounds">
-          <div className="mt-4 max-w-prose bg-transparent">
+          <div className="mt-4 max-w-prose">
             <p className="pb-12 mt-4">
               These colors provide the airy, magical background that UX Wizards
               content floats on. Use them to create spaces, areas, and gradients
@@ -738,110 +739,109 @@ function UXWColors(props) {
               elements.
             </p>
           </div>
-
-          <div className="flex flex-row mb-16">
-            <div className="flex flex-col w-1/6 justify-start">
-              <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4"></div>
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <div className="h-16 w-32 rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300 mb-4">
+              </div>
               <p className="text-left">
                 merlinsbeard-1
                 <br />
-                HEX: # FFFFFF
+                HEX: #FFFFFF
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
-              <div className="box h-16 w-32 rounded-md uxw-bg-steel-2 border-2 border-gray-300 mb-4"></div>
+            <div className="mr-16">
+              <div className="h-16 w-32 rounded-md uxw-bg-acid-1 uxw-bg-steel-2 border-2 border-gray-300 mb-4">
+              </div>
               <p className="text-left">
                 steel-2
                 <br />
-                HEX: # F7F9FF
+                HEX: #F7F9FF
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
-              <div className="box h-16 w-32 rounded-md uxw-bg-steel-1 border-2 border-gray-300 mb-4"></div>
+            <div className="mr-16">
+              <div className="h-16 w-32 rounded-md uxw-bg-steel-1 mb-4">
+              </div>
               <p className="text-left">
                 steel-1
                 <br />
-                HEX: # E0E6FD
+                HEX: #E0E6FD
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
-              <div className="box h-16 w-32 rounded-md uxw-bg-acid-2 border-2 border-gray-300 mb-4"></div>
+            <div className="mr-16">
+              <div className="h-16 w-32 rounded-md uxw-bg-acid-2 mb-4">
+              </div>
               <p className="text-left">
                 acid-2
                 <br />
-                HEX: # D8CBFF
+                HEX: #D8CBFF
               </p>
             </div>
           </div>
 
-          <div className="mt-4 max-w-prose bg-transparent">
+          <div className="mt-4 max-w-prose">
             <p className="pb-12 mt-4">
               If you choose to use a top banner, like the one on the UX Wizards
               Design system, use Magician’s Cloak for the background.
             </p>
           </div>
-
-          <div className="flex flex-col w-1/6 justify-start mb-16">
-            <div className="box h-16 w-32 rounded-md uxw-bg-magicians-cloak-1 border-2 border-gray-300 mb-4"></div>
+          <div className="mr-16">
+            <div className="h-16 w-32 rounded-md uxw-bg-magicians-cloak-1 mb-4">
+            </div>
             <p className="text-left">
               magicianscloak-1
               <br />
-              HEX: # 152145
+              HEX: #152145
             </p>
           </div>
         </UXWSubsection>
-
         <UXWSubsection anchor="guidelines--borders" title="Borders and Lines">
-          <div className="mt-4 max-w-prose bg-transparent">
+          <div className="mt-4 max-w-prose">
             <p className="pb-12 mt-4">
               When an element needs to be outlined to be seen, or for dividers
               and spacers on lists, UX Wizards sites use a singular color to
               maintain consistency.
             </p>
           </div>
-
-          <div className="flex flex-col w-1/6 justify-start mb-16">
-            <div className="box h-16 w-32 rounded-md uxw-bg-merlins-beard-3 border-2 border-gray-300 mb-4"></div>
-            <p className="text-left">
-              merlinsbeard-3
-              <br />
-              HEX: # C9CACB
-            </p>
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <div className="h-16 w-32 rounded-md uxw-bg-merlins-beard-3 mb-4">
+              </div>
+              <p className="text-left">
+                merlinsbeard-3
+                <br />
+                HEX: #C9CACB
+              </p>
+            </div>
           </div>
         </UXWSubsection>
-
         <UXWSubsection anchor="guidelines--accents" title="Accents">
-          <div className="mt-4 max-w-prose bg-transparent pr-12">
+          <div className="mt-4 max-w-prose pr-12">
             <p className="pb-12 mt-4">
               Use these colors to draw attention to highlighted elements on the
               page, such as selected tabs.
             </p>
           </div>
-
-          <div className="flex flex-row mb-16">
-            <div className="flex flex-col w-1/6 justify-start">
-              <div className="box h-16 w-32 rounded-md uxw-bg-jinx-1 border-2 border-gray-300 mb-4"></div>
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <div className="h-16 w-32 rounded-md uxw-bg-jinx-1 mb-4">
+              </div>
               <p className="text-left">
                 jinx-1
                 <br />
-                HEX: # FF6584
+                HEX: #FF6584
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
-              <div className="box h-16 w-32 rounded-md uxw-bg-elixir-1 border-2 border-gray-300 mb-4"></div>
+            <div className="mr-16">
+              <div className="h-16 w-32 rounded-md uxw-bg-elixir-1 mb-4">
+              </div>
               <p className="text-left">
                 elixir-1
                 <br />
-                HEX: # F0B052
+                HEX: #F0B052
               </p>
             </div>
           </div>
         </UXWSubsection>
-
         <UXWSubsection anchor="guidelines--semantics" title="Error and Success">
           <div className="mt-4 max-w-prose bg-transparent">
             <p className="pb-12 mt-4">
@@ -849,23 +849,23 @@ function UXWColors(props) {
               to be found in form fields.
             </p>
           </div>
-
-          <div className="flex flex-row mb-16">
-            <div className="flex flex-col w-1/6 justify-start">
-              <div className="box h-16 w-32 rounded-md uxw-bg-error border-2 border-gray-300 mb-4"></div>
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <div className="h-16 w-32 rounded-md uxw-bg-error mb-4">
+              </div>
               <p className="text-left">
                 error-red
                 <br />
-                HEX: # EA3434
+                HEX: #EA3434
               </p>
             </div>
-
-            <div className="flex flex-col w-1/6 justify-start">
-              <div className="box h-16 w-32 rounded-md uxw-bg-success border-2 border-gray-300 mb-4"></div>
+            <div className="mr-16">
+              <div className="h-16 w-32 rounded-md uxw-bg-success mb-4">
+              </div>
               <p className="text-left">
                 success-green
                 <br />
-                HEX: # 1CCB6C
+                HEX: #1CCB6C
               </p>
             </div>
           </div>
@@ -886,7 +886,7 @@ function UXWColors(props) {
             </p>
           </div>
 
-          <div className="max-w-prose bg-transparent">
+          <div className="max-w-prose">
             <p className="pb-16">
               Use these color guidelines to ground the interactive elements on
               our UX Wizards branded webpages in a consistent look and feel.
@@ -895,148 +895,144 @@ function UXWColors(props) {
             </p>
           </div>
 
-          <div className="flex flex-row mb-20">
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 pt-4 rounded-lg from-indigo-600 to-indigo-900 bg-gradient-to-r border-2 border-gray-300 mb-4">
-                <p className="text-magicianscloak-1 text-center pt-4 font-bold">
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <div className="colorswatch from-indigo-600 to-indigo-900 bg-gradient-to-r mb-4">
+                <p className="txt-center">
                   Button
                 </p>
               </div>
-
-              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✗ Don't
+              <div className="rounded-full uxw-bg-error text-center font-extrabold text-white mb-4 mr-40">
+                  ✗ Don't
               </div>
-
-              <p className="text-magicianscloak-1">
+              <p className="w-48">
                 Use any other colors for button text
               </p>
             </div>
-
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 pt-4 rounded-lg from-indigo-600 to-indigo-900 bg-gradient-to-r border-2 border-gray-300 mb-4">
-                <p className="text-white text-center pt-4 font-bold">Button</p>
-              </div>
-
-              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✓ Do
-              </div>
-
-              <p>Use white text on buttons</p>
-            </div>
-          </div>
-
-          <div className="flex flex-row mb-20">
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 pt-4 rounded-lg from-indigo-600 to-indigo-900 bg-gradient-to-r border-2 border-gray-300 mb-4">
-                <p className="text-center pt-4 font-bold text-white">
-                  Join <span className="booty">us!</span>
-                </p>
-              </div>
-
-              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✗ Don't
-              </div>
-
-              <p>Combine text colors on buttons</p>
-            </div>
-
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 pt-4 rounded-lg uxw-bg-merlins-beard-3 border-2 border-gray-300 mb-4">
-                <p className="text-gray-700 text-center pt-4 font-bold">
+            <div>
+              <div className="colorswatch from-indigo-600 to-indigo-900 bg-gradient-to-r mb-4">
+                <p className="txt-center text-white">
                   Button
                 </p>
               </div>
-
-              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✓ Do
+              <div className="rounded-full uxw-bg-success text-center font-extrabold text-white mb-4 mr-40">
+              ✓ Do
               </div>
-
-              <p>Use greys for disabled states</p>
-            </div>
-          </div>
-
-          <div className="flex flex-row mb-20">
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 pt-4 rounded-lg uxw-bg-steel-2 border-2 border-gray-300 mb-4">
-                <p className="riches text-center pt-4 font-bold">UX Wizards</p>
-              </div>
-
-              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✗ Don't
-              </div>
-
-              <p className="text-magicianscloak-1">
-                Pick unauthorized text colors
+              <p className="w-48">
+              Use white text on buttons
               </p>
             </div>
-
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 pt-4 rounded-lg uxw-bg-steel-2 border-2 border-gray-300 mb-4">
-                <p className="text-magicianscloak-1 text-center pt-4 font-bold">
+          </div>
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <div className="colorswatch from-indigo-600 to-indigo-900 bg-gradient-to-r mb-4">
+                <p className="text-white txt-center">
+                  Join <span className="booty">us!</span>
+                </p>
+              </div>
+              <div className="rounded-full uxw-bg-error text-center font-extrabold text-white mb-4 mr-40">
+                  ✗ Don't
+              </div>
+              <p className="w-48">
+              Combine text colors on buttons
+              </p>
+            </div>
+            <div>
+              <div className="colorswatch uxw-bg-merlins-beard-3 mb-4">
+                <p className="txt-center">
+                  Button
+                </p>
+              </div>
+              <div className="rounded-full uxw-bg-success text-center font-extrabold text-white mb-4 mr-40">
+              ✓ Do
+              </div>
+              <p className="w-48">
+              Use greys for disabled states
+              </p>
+            </div>
+          </div>
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <div className="colorswatch uxw-bg-steel-2 border-2 border-gray-300 mb-4">
+                <p className="riches txt-center">
                   UX Wizards
                 </p>
               </div>
-
-              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✓ Do
+              <div className="rounded-full uxw-bg-error text-center font-extrabold text-white mb-4 mr-40">
+                  ✗ Don't
               </div>
-
-              <p>Make sure there is enough contrast for text</p>
+              <p className="w-48">
+              Pick unauthorized text colors
+              </p>
+            </div>
+            <div className="mr-16">
+              <div className="colorswatch uxw-bg-steel-2 border-2 border-gray-300 mb-4">
+                <p className="txt-center">
+                  UX Wizards
+                </p>
+              </div>
+              <div className="rounded-full uxw-bg-success text-center font-extrabold text-white mb-4 mr-40">
+              ✓ Do
+              </div>
+              <p className="w-48">
+              Make sure there is enough contrast for text
+              </p>
             </div>
           </div>
-
-          <div className="flex flex-row mb-20">
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 pt-4 z-1 rounded-lg uxw-bg-jinx-1 border-2 border-gray-300 relative mb-4">
-                <div className="box w-24 h-10 z-2 uxw-bg-steel-2 rounded-md absolute bottom-3 right-3"></div>
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <div className="colorswatch uxw-bg-jinx-1 mb-4">
+              <div class="w-24 h-10 uxw-bg-steel-2 rounded-md absolute bottom-3 right-3"></div>
               </div>
-
-              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✗ Don't
+              <div className="rounded-full uxw-bg-error text-center font-extrabold text-white mb-4 mr-40">
+                  ✗ Don't
               </div>
-
-              <p className="text-left">Use an accent as a background color</p>
+              <p className="w-48">
+              Use an accent as a background color
+              </p>
             </div>
-
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 pt-4 z-1 rounded-lg uxw-bg-steel-2 border-2 border-gray-300 relative mb-4">
-                <div className="box w-24 h-10 z-2 uxw-bg-jinx-1 rounded-md absolute bottom-3 right-3"></div>
+            <div className="mr-16">
+              <div className="colorswatch uxw-bg-steel-2 border-2 border-gray-300 mb-4">
+              <div class="w-24 h-10 uxw-bg-jinx-1 rounded-md absolute bottom-3 right-3"></div>
               </div>
-
-              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✓ Do
+              <div className="rounded-full uxw-bg-success text-center font-extrabold text-white mb-4 mr-40">
+              ✓ Do
               </div>
-
-              <p>Use an accent as a highlight</p>
+              <p className="w-48">
+              Use an accent as a highlight
+              </p>
             </div>
           </div>
-
-          <div className="flex flex-row mb-20">
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 pt-4 z-1 rounded-lg uxw-bg-mana-3 border-2 border-gray-300 relative mb-4"></div>
-
-              <div className="align-middle rounded-full uxw-bg-error text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✗ Don't
+          <div className="flex mb-16">
+            <div className="mr-16">
+              <div className="colorswatch uxw-bg-mana-3 mb-4">
               </div>
-
-              <p>Improvise with other background colors</p>
+              <div className="rounded-full uxw-bg-error text-center font-extrabold text-white mb-4 mr-40">
+                  ✗ Don't
+              </div>
+              <p className="w-48">
+              Improvise with other background colors
+              </p>
             </div>
-
-            <div className="flex flex-col w-1/4 items-left">
-              <div className="box h-24 w-2/3 mb-4">
-                <div className="grid grid-cols-2 grid-rows-2 gap-2">
-                  <div className="box h-11 w-full rounded-md uxw-bg-steel-2 border-2 border-gray-300"></div>
-                  <div className="box h-11 w-full rounded-md uxw-bg-steel-1 border-2 border-gray-300"></div>
-                  <div className="box h-11 w-full rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300"></div>
-                  <div className="box h-11 w-full rounded-md uxw-bg-acid-2 border-2 border-gray-300"></div>
+            <div className="mr-16">
+              <div className="colorswatch uxw-bg-steel-2 mb-4">
+                <div class="grid grid-cols-2 grid-rows-2 gap-2">
+                  <div class="h-11 w-full rounded-md uxw-bg-steel-2 border-2 border-gray-300">
+                  </div>
+                  <div class="h-11 w-full rounded-md uxw-bg-steel-1 border-2 border-gray-300">
+                  </div>
+                  <div class="h-11 w-full rounded-md uxw-bg-merlins-beard-1 border-2 border-gray-300">
+                  </div>
+                  <div class="h-11 w-full rounded-md uxw-bg-acid-2 border-2 border-gray-300">
+                  </div>
                 </div>
               </div>
-
-              <div className="align-middle rounded-full uxw-bg-success text-center mt-2 font-extrabold text-white w-1/4 mb-4 mr-40">
-                ✓ Do
+              <div className="rounded-full uxw-bg-success text-center font-extrabold text-white mb-4 mr-40">
+              ✓ Do
               </div>
-
-              <p>Use background colors as a base</p>
+              <p className="w-48">
+              Use background colors as a base
+              </p>
             </div>
           </div>
         </UXWSubsection>
