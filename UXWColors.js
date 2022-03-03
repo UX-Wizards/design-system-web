@@ -1,12 +1,98 @@
+function UXWColorBlock(props) {
+  const [hovered, setHovered] = useState(false);
+  const [copyText, setCopyText] = useState("Copy HEX");
+
+  const overlayStyle = {
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: "100%",
+    width: "100%",
+    opacity: 1,
+    // transition: ".5s ease",
+    cursor: "pointer",
+    //transform: "scale(1.1)"
+  }
+
+  const textCopyStyle = {
+    color: props.copyHexColor,
+    fontSize: "12px",
+    fontWeight:"700",
+    padding: "4px 8px",
+    borderWidth:"2px",
+    borderStyle:"solid",
+    borderColor:props.copyHexColor,
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    // -webkit-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    transform: "translate(-50%, -50%)",
+    textAlign: "center",
+    opacity: 1
+  }
+
+  const mouseEnter = () => {
+    setHovered(true);
+  }
+
+  const mouseLeave = () => {
+    setHovered(false);
+    setCopyText("Copy HEX");
+  }
+
+  const finalStyle = {...overlayStyle, visibility: hovered ? "visible" : "hidden"}
+  const topClass = `colorswatch ${props.colorSymbol}`
+
+  return (
+    <div>
+      <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={topClass}>
+        {!hovered && (
+          <div>
+            <p className="text-left text-black pl-8 pt-5">
+              <span className="font-bold">A </span>{props.copyHexColor == "black" ? "PASS" : "FAIL"}
+            </p>
+            <p className="text-left text-white pl-8">
+              <span className="font-bold">A </span>{props.copyHexColor == "white" ? "PASS" : "FAIL"}
+            </p>
+          </div>
+        )}
+        <div style={finalStyle}>
+          <div onClick={() => {
+            navigator.clipboard.writeText(props.hexCode)
+            setCopyText("HEX Copied")
+          }} style={textCopyStyle}>{copyText}</div>
+        </div>
+      </div>
+      <p>
+        <span className="font-bold">{props.colorName}</span>
+        <br></br>
+        <span>HEX:</span>{" "}
+        <span className="font-normal">{props.hexCode}</span>
+      </p>
+    </div>
+  )
+}
+
+
 function UXWColors(props) {
   return (
     <div className="container">
-      <p className="pb-12 max-w-prose italic">
+      <p className="pb-8 max-w-prose italic">
         <br />
         This page provides a directory of available UX Wizards colors, and then
         color use guidelines to maintain consistency across UX Wizards-branded
         websites.
       </p>
+      <div className="flex">
+          <div className="flex flex-auto max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center italic py-6 px-12 mt-4 mb-16">
+            <p>
+            Each brand color’s <b>global token</b> is located under its color swatch. We use global tokens to simplify HEX value in order to maintain a consistent UI.   
+            </p>
+          </div>
+        </div>
 
       <UXWSubsection anchor="colors--palette" title="Our Palette">
         <p className="pb-8 mt-4 max-w-prose">
@@ -28,7 +114,7 @@ function UXWColors(props) {
       <hr className="pt-8"></hr>
 
       <UXWSubsection anchor="colors--primary" title="Primary Colors">
-        <p className="max-w-prose my-4">
+        <p className="pb-16 max-w-prose my-4">
           The flexible and neutral{" "}
           <span className="font-bold">Magician's Cloak</span>,
           <span className="font-bold"> Acid</span>, and{" "}
@@ -36,183 +122,21 @@ function UXWColors(props) {
           They're most often used as foundational elements of your UX Wizards
           designs.
         </p>
-        <p className="mb-16">*Each color's Global Token is located under color swatch.</p>
-        {/* <div className="flex">
-          <div className="flex flex-auto max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner items-center justify-center italic py-6 px-12 mt-4 mb-16">
-            <p>
-              Remember to start with the highlighted box on the left, and then
-              supplement with the other colors in the row.
-            </p>
-          </div>
-        </div> */}
         <div className="flex mb-12">
-          <div>
-            <div className="colorswatch uxw-bg-magicians-cloak-1">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-              {/* <div class="overlay"> 
-                  <div class="txt-copy">Copy HEX</div>
-              </div> */}
-            </div>
-            <p>
-              <span className="font-bold">magicianscloak-1</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#152145</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-magicians-cloak-2">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">magicianscloak-2</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#4F66AD</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-magicians-cloak-3">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">magicianscloak-3</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#2B3D72</span>
-            </p>
-          </div>
+          <UXWColorBlock colorSymbol="uxw-bg-magicians-cloak-1" colorName="magicianscloak-1" copyHexColor="white" hexCode="#152145"/>
+          <UXWColorBlock colorSymbol="uxw-bg-magicians-cloak-2" colorName="magicianscloak-2" copyHexColor="white" hexCode="#4F66AD"/>
+          <UXWColorBlock colorSymbol="uxw-bg-magicians-cloak-3" colorName="magicianscloak-3" copyHexColor="white" hexCode="#2B3D72"/>
         </div>
         <div className="flex mb-12">
-          <div>
-            <div className="colorswatch uxw-bg-acid-1">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">acid-1</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#6331FD</span>
-            </p>
+          <UXWColorBlock colorSymbol="uxw-bg-acid-1" colorName="acid-1" copyHexColor="white" hexCode="#6331FD"/>
+          <UXWColorBlock colorSymbol="uxw-bg-acid-2" colorName="acid-2" copyHexColor="black" hexCode="#D8CBFF"/>
+          <UXWColorBlock colorSymbol="uxw-bg-acid-3" colorName="acid-3" copyHexColor="white" hexCode="#3F18B4"/>
           </div>
-          <div>
-            <div className="colorswatch uxw-bg-acid-2">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>PASS
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>FAIL
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">acid-2</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#D8CBFF</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-acid-3">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">acid-3</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#3F18B4</span>
-            </p>
-          </div>
-        </div>
-        <div className="flex mb-12">
-          <div>
-            <div className="colorswatch border-solid border-2 border-gray-300 uxw-bg-merlins-beard-1">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>PASS
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>FAIL
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">merlinsbeard-1</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#FFFFFF</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-merlins-beard-2">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>PASS
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>FAIL
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">merlinsbeard-2</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#E6E6E6</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-merlins-beard-3">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>PASS
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>FAIL
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">merlinsbeard-3</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#C9CACB</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-merlins-beard-3">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">merlinsbeard-4</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#737887</span>
-            </p>
-          </div>
+          <div className="flex mb-12">
+          <UXWColorBlock colorSymbol="uxw-bg-merlins-beard-1" colorName="merlinsbeard-1" copyHexColor="black" hexCode="#FFFFFF"/>
+          <UXWColorBlock colorSymbol="uxw-bg-merlins-beard-2" colorName="merlinsbeard-2" copyHexColor="black" hexCode="#E6E6E6"/>
+          <UXWColorBlock colorSymbol="uxw-bg-merlins-beard-3" colorName="merlinsbeard-3" copyHexColor="black" hexCode="#C9CACB"/>
+          <UXWColorBlock colorSymbol="uxw-bg-merlins-beard-4" colorName="merlinsbeard-4" copyHexColor="white" hexCode="#737887"/>
         </div>
       </UXWSubsection>
 
@@ -224,104 +148,14 @@ function UXWColors(props) {
           build environments in your UXW content.
         </p>
         <div className="flex mb-12">
-          <div>
-            <div className="colorswatch uxw-bg-steel-1">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>PASS
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>FAIL
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">steel-1</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#E0E6FD</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-steel-2">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>PASS
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>FAIL
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">steel-2</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#F7F9FF</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-steel-3">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>PASS
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>FAIL
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">steel-3</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#CCD5F5</span>
-            </p>
-          </div>
+        <UXWColorBlock colorSymbol="uxw-bg-steel-1" colorName="steel-1" copyHexColor="black" hexCode="#E0E6FD"/>
+        <UXWColorBlock colorSymbol="uxw-bg-steel-2" colorName="steel-2" copyHexColor="black" hexCode="#F7F9FF"/>
+        <UXWColorBlock colorSymbol="uxw-bg-steel-3" colorName="steel-3" copyHexColor="black" hexCode="#CCD5F5"/>
         </div>
         <div className="flex mb-12">
-          <div>
-            <div className="colorswatch uxw-bg-mana-1">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">mana-1</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#00BBD6</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-mana-2">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">mana-2</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#24DDFD</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-mana-3">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">steel-3</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#299BB0</span>
-            </p>
-          </div>
+        <UXWColorBlock colorSymbol="uxw-bg-mana-1" colorName="mana-1" copyHexColor="black" hexCode="#00BBD6"/>
+        <UXWColorBlock colorSymbol="uxw-bg-mana-2" colorName="mana-2" copyHexColor="black" hexCode="#24DDFD"/>
+        <UXWColorBlock colorSymbol="uxw-bg-mana-3" colorName="mana-3" copyHexColor="white" hexCode="#299BB0"/>
         </div>
       </UXWSubsection>
       <hr className="pt-4 pb-8"></hr>
@@ -333,104 +167,14 @@ function UXWColors(props) {
           attention to specific things on purpose.
         </p>
         <div className="flex mb-12">
-          <div>
-            <div className="colorswatch uxw-bg-jinx-1">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">jinx-1</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#FF6584</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-jinx-2">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">jinx-2</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#FFA8BA</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-jinx-3">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">jinx-3</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#EA4869</span>
-            </p>
-          </div>
+        <UXWColorBlock colorSymbol="uxw-bg-jinx-1" colorName="jinx-1" copyHexColor="black" hexCode="#FF6584"/>
+        <UXWColorBlock colorSymbol="uxw-bg-jinx-2" colorName="jinx-2" copyHexColor="black" hexCode="#FF6584"/>
+        <UXWColorBlock colorSymbol="uxw-bg-jinx-3" colorName="jinx-3" copyHexColor="black" hexCode="#EA4869"/>
         </div>
         <div className="flex mb-12">
-          <div>
-            <div className="colorswatch uxw-bg-elixir-1">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>PASS
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>FAIL
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">elixir-1</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#F0B052</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-elixir-2">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>PASS
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>FAIL
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">elixir-2</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#FFD190</span>
-            </p>
-          </div>
-          <div>
-            <div className="colorswatch uxw-bg-elixir-3">
-              <p className="text-left text-black pl-8 pt-5">
-                <span className="font-bold">A </span>FAIL
-              </p>
-              <p className="text-left text-white pl-8">
-                <span className="font-bold">A </span>PASS
-              </p>
-            </div>
-            <p>
-              <span className="font-bold">elixir-3</span>
-              <br></br>
-              <span>HEX:</span>{" "}
-              <span className="font-normal">#D99432</span>
-            </p>
-          </div>
+        <UXWColorBlock colorSymbol="uxw-bg-elixir-1" colorName="elixir-1" copyHexColor="black" hexCode="#F0B052"/>
+        <UXWColorBlock colorSymbol="uxw-bg-elixir-2" colorName="elixir-2" copyHexColor="black" hexCode="#FFD190"/>
+        <UXWColorBlock colorSymbol="uxw-bg-elixir-3" colorName="elixir-3" copyHexColor="black" hexCode="#D99432"/>
         </div>
       </UXWSubsection>
 
@@ -897,7 +641,7 @@ function UXWColors(props) {
 
           <div className="flex mb-16">
             <div className="mr-16">
-              <div className="colorswatch bg-gradient mb-4">
+              <div className="doanddont bg-gradient mb-4">
                 <p className="txt-center">
                   Button
                 </p>
@@ -910,7 +654,7 @@ function UXWColors(props) {
               </p>
             </div>
             <div>
-              <div className="colorswatch bg-gradient mb-4">
+              <div className="doanddont bg-gradient mb-4">
                 <p className="txt-center text-white">
                   Button
                 </p>
@@ -925,7 +669,7 @@ function UXWColors(props) {
           </div>
           <div className="flex mb-16">
             <div className="mr-16">
-              <div className="colorswatch bg-gradient mb-4">
+              <div className="doanddont bg-gradient mb-4">
                 <p className="text-white txt-center">
                   Join <span className="booty">us!</span>
                 </p>
@@ -938,7 +682,7 @@ function UXWColors(props) {
               </p>
             </div>
             <div>
-              <div className="colorswatch uxw-bg-merlins-beard-3 mb-4">
+              <div className="doanddont uxw-bg-merlins-beard-3 mb-4">
                 <p className="txt-center">
                   Button
                 </p>
@@ -953,7 +697,7 @@ function UXWColors(props) {
           </div>
           <div className="flex mb-16">
             <div className="mr-16">
-              <div className="colorswatch uxw-bg-steel-2 border-2 border-gray-300 mb-4">
+              <div className="doanddont uxw-bg-steel-2 border-2 border-gray-300 mb-4">
                 <p className="riches txt-center">
                   UX Wizards
                 </p>
@@ -966,7 +710,7 @@ function UXWColors(props) {
               </p>
             </div>
             <div className="mr-16">
-              <div className="colorswatch uxw-bg-steel-2 border-2 border-gray-300 mb-4">
+              <div className="doanddont uxw-bg-steel-2 border-2 border-gray-300 mb-4">
                 <p className="txt-center">
                   UX Wizards
                 </p>
@@ -981,7 +725,7 @@ function UXWColors(props) {
           </div>
           <div className="flex mb-16">
             <div className="mr-16">
-              <div className="colorswatch uxw-bg-jinx-1 mb-4">
+              <div className="doanddont uxw-bg-jinx-1 mb-4">
               <div class="w-24 h-10 uxw-bg-steel-2 rounded-md absolute bottom-3 right-3"></div>
               </div>
               <div className="rounded-full uxw-bg-error text-center font-extrabold text-white mb-4 mr-40">
@@ -992,7 +736,7 @@ function UXWColors(props) {
               </p>
             </div>
             <div className="mr-16">
-              <div className="colorswatch uxw-bg-steel-2 border-2 border-gray-300 mb-4">
+              <div className="doanddont uxw-bg-steel-2 border-2 border-gray-300 mb-4">
               <div class="w-24 h-10 uxw-bg-jinx-1 rounded-md absolute bottom-3 right-3"></div>
               </div>
               <div className="rounded-full uxw-bg-success text-center font-extrabold text-white mb-4 mr-40">
@@ -1005,7 +749,7 @@ function UXWColors(props) {
           </div>
           <div className="flex mb-16">
             <div className="mr-16">
-              <div className="colorswatch uxw-bg-mana-3 mb-4">
+              <div className="doanddont uxw-bg-mana-3 mb-4">
               </div>
               <div className="rounded-full uxw-bg-error text-center font-extrabold text-white mb-4 mr-40">
                   ✗ Don't
@@ -1015,7 +759,7 @@ function UXWColors(props) {
               </p>
             </div>
             <div className="mr-16">
-              <div className="colorswatch uxw-bg-steel-2 mb-4">
+              <div className="doanddont uxw-bg-steel-2 mb-4">
                 <div class="grid grid-cols-2 grid-rows-2 gap-2">
                   <div class="h-11 w-full rounded-md uxw-bg-steel-2 border-2 border-gray-300">
                   </div>

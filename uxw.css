@@ -135,7 +135,7 @@ a.btn-icon{
 
 
 /* Colors style */
-.colorswatch{
+.colorswatch, .doanddont{
   position: relative;
   width:12rem;
   height: 6em;
@@ -159,13 +159,14 @@ background-image: linear-gradient(to right, #6331FD, #3F18B4);
   transition-duration: .5s;
 }
 
-/* .colorswatch:hover .overlay{
+/***************** Hove Color swatch*****************/
+.colorswatch:hover{
   cursor:pointer;
   border-radius: 0.5rem;
   transform:scale(1.1);
   opacity:1;
 }
-
+/* 
 .overlay {
   position: absolute;
   top: 0;
@@ -177,9 +178,9 @@ background-image: linear-gradient(to right, #6331FD, #3F18B4);
   opacity: 0;
   transition: .5s ease;
   background-color: #54555a;
-}
+} */
 
-.txt-copy{
+/* .txt-copy{
   color: #99157c;
   font-size: 20px;
   position: absolute;
