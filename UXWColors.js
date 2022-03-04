@@ -34,6 +34,12 @@ function UXWColorBlock(props) {
     opacity: 1
   }
 
+  const grayBorderSwatch = {
+    borderStyle:"solid",
+    borderWidth: "2px",
+    borderColor: "rgba(209,213,219,var(--tw-border-opacity))",
+  }
+
   const mouseEnter = () => {
     setHovered(true);
   }
@@ -45,10 +51,12 @@ function UXWColorBlock(props) {
 
   const finalStyle = {...overlayStyle, visibility: hovered ? "visible" : "hidden"}
   const topClass = `colorswatch ${props.colorSymbol}`
+  const swatchBorder = {...grayBorderSwatch, borderStyle: props.grayBorder == "gray" ? "solid" : "none"}
+  
 
   return (
     <div>
-      <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={topClass}>
+      <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={topClass} style={swatchBorder}>
         {!hovered && (
           <div>
             <p className="text-left text-black pl-8 pt-5">
@@ -133,7 +141,7 @@ function UXWColors(props) {
           <UXWColorBlock colorSymbol="uxw-bg-acid-3" colorName="acid-3" copyHexColor="white" hexCode="#3F18B4"/>
           </div>
           <div className="flex mb-12">
-          <UXWColorBlock colorSymbol="uxw-bg-merlins-beard-1" colorName="merlinsbeard-1" copyHexColor="black" hexCode="#FFFFFF"/>
+          <UXWColorBlock colorSymbol="uxw-bg-merlins-beard-1" colorName="merlinsbeard-1" copyHexColor="black" hexCode="#FFFFFF" grayBorder="gray"/>
           <UXWColorBlock colorSymbol="uxw-bg-merlins-beard-2" colorName="merlinsbeard-2" copyHexColor="black" hexCode="#E6E6E6"/>
           <UXWColorBlock colorSymbol="uxw-bg-merlins-beard-3" colorName="merlinsbeard-3" copyHexColor="black" hexCode="#C9CACB"/>
           <UXWColorBlock colorSymbol="uxw-bg-merlins-beard-4" colorName="merlinsbeard-4" copyHexColor="white" hexCode="#737887"/>
@@ -149,7 +157,7 @@ function UXWColors(props) {
         </p>
         <div className="flex mb-12">
         <UXWColorBlock colorSymbol="uxw-bg-steel-1" colorName="steel-1" copyHexColor="black" hexCode="#E0E6FD"/>
-        <UXWColorBlock colorSymbol="uxw-bg-steel-2" colorName="steel-2" copyHexColor="black" hexCode="#F7F9FF"/>
+        <UXWColorBlock colorSymbol="uxw-bg-steel-2" colorName="steel-2" copyHexColor="black" hexCode="#F7F9FF" grayBorder="gray"/>
         <UXWColorBlock colorSymbol="uxw-bg-steel-3" colorName="steel-3" copyHexColor="black" hexCode="#CCD5F5"/>
         </div>
         <div className="flex mb-12">
