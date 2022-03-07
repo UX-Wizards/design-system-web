@@ -176,7 +176,7 @@ function UXWColors(props) {
         </p>
         <div className="flex mb-12">
         <UXWColorBlock colorSymbol="uxw-bg-jinx-1" colorName="jinx-1" copyHexColor="black" hexCode="#FF6584"/>
-        <UXWColorBlock colorSymbol="uxw-bg-jinx-2" colorName="jinx-2" copyHexColor="black" hexCode="#FF6584"/>
+        <UXWColorBlock colorSymbol="uxw-bg-jinx-2" colorName="jinx-2" copyHexColor="black" hexCode="#FFA8BA"/>
         <UXWColorBlock colorSymbol="uxw-bg-jinx-3" colorName="jinx-3" copyHexColor="black" hexCode="#EA4869"/>
         </div>
         <div className="flex mb-12">
