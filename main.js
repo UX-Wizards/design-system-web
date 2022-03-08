@@ -750,13 +750,6 @@
                       <ListItemText disableTypography primary="Colors" className={`pl-4 ${activeMenuState === "colors" ? classesMain.navitemselected : classesMain.navitem}`} />
                     </ListItem>
                   </RouterLink>
-                  {/* {activeMenuState === "colors" &&
-                    <div key="navlink-sub-4-0" onClick={() => document.getElementById("colors--thinking").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
-                      <ListItem button>
-                        <ListItemText disableTypography primary="Our Thinking" className={`pl-12 ${activeSubsections.findIndex((element) => element === "colors--thinking") !== -1 ? classesMain.navitemselected : classesMain.navitem}`} />
-                      </ListItem>
-                    </div>
-                  } */}
                   {activeMenuState === "colors" &&
                     <div key="navlink-sub-4-1" onClick={() => document.getElementById("colors--palette").scrollIntoView({ behavior: 'smooth', block: 'center' })}>
                       <ListItem button>
