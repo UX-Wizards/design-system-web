@@ -32,7 +32,7 @@ const data = [
     role: 'Product Designer',
     image: '/assets/max.png',
     description: 'Max built the Colors page.',
-    link: 'https://linkedin.com/in/maxux'
+    link: 'https://linkedin.com/in/uxeverything'
   },
   {
     name: 'Sidney',
