@@ -623,7 +623,7 @@ function UXWColors(props) {
           </div>
         </UXWSubsection>
 
-        <UXWSubsection anchor="colors--dodont" title="Don't and Do">
+        <UXWSubsection anchor="colors--dodont" title="Dos and Don'ts">
           <div className="flex flex-col max-w-prose uxw-bg-steel-2 border-black rounded-md shadow-inner italic py-6 px-12 mt-8 mb-12">
             <p className="italic">
               Remember to aim for 7.2:1 as your standard for accessible color
